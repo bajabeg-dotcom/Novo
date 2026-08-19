@@ -5,7 +5,7 @@ from dataclasses import dataclass
 
 from ..retrieval.factory import FactoryIndex, FactoryQuery
 from ..retrieval.factory_corpus import FactoryElementPattern, FactoryPatternCatalog
-from .energy import EnergyPlan, SectionEnergy
+from .energy import EnergyPlan
 
 
 DEFAULT_ROLES=("bass","drums","percussion","guitar","accompaniment")

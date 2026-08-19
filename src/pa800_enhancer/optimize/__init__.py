@@ -1,33 +1,22 @@
+from .auto_workflow import (
+    AUTO_REPORT_SCHEMA_VERSION,
+    AutoWorkflow,
+    PreparedAutoRun,
+    build_auto_report,
+    write_auto_report,
+)
 from .base import OptimizationContext, OptimizationModule
 from .engine import ChangeEngine
 from .history import CommandHistory, HistoryEntry
 from .pipeline import OptimizationPipeline
-from .quantize import QuantizeModule
-from .velocity import (
-    INSTRUMENT_VELOCITY_PROFILES,
-    InstrumentVelocityProfile,
-    VelocityRangeModule,
-    VelocityShapeResult,
-    detect_trill_note_ids,
-    shape_instrument_velocity,
-)
-from .ppq import PpqResampleResult, resample_ppq
-from .proposals import (
-    Proposal,
-    ProposalConflict,
-    ProposalPlan,
-    ProposalPlanEntry,
-    ProposalRegistry,
-    ProposalStatus,
-)
 from .policy import (
     AUTO_POLICY_SCHEMA,
     AUTO_POLICY_SCHEMA_VERSION,
+    AutomationMode,
+    AutomationPackage,
     AutoPolicy,
     AutoPolicyFormatError,
     AutoPolicyLoader,
-    AutomationMode,
-    AutomationPackage,
     ErrorBudgets,
     ModulePolicy,
     PolicyAction,
@@ -36,6 +25,7 @@ from .policy import (
     PolicyProfile,
     evaluate_policy,
 )
+from .ppq import PpqResampleResult, resample_ppq
 from .proposal_adapters import (
     adapt_controller_thinning,
     adapt_drum_mapping,
@@ -45,6 +35,15 @@ from .proposal_adapters import (
     proposal_from_transaction,
     register_all,
 )
+from .proposals import (
+    Proposal,
+    ProposalConflict,
+    ProposalPlan,
+    ProposalPlanEntry,
+    ProposalRegistry,
+    ProposalStatus,
+)
+from .quantize import QuantizeModule
 from .simulation import (
     AnalyzerSnapshot,
     ProposalSimulator,
@@ -54,12 +53,68 @@ from .simulation import (
     SimulationReport,
     SimulationStep,
 )
-from .auto_workflow import (
-    AUTO_REPORT_SCHEMA_VERSION,
-    AutoWorkflow,
-    PreparedAutoRun,
-    build_auto_report,
-    write_auto_report,
+from .velocity import (
+    INSTRUMENT_VELOCITY_PROFILES,
+    InstrumentVelocityProfile,
+    VelocityRangeModule,
+    VelocityShapeResult,
+    detect_trill_note_ids,
+    shape_instrument_velocity,
 )
 
-__all__ = ["AUTO_POLICY_SCHEMA", "AUTO_POLICY_SCHEMA_VERSION", "AUTO_REPORT_SCHEMA_VERSION", "AnalyzerSnapshot", "AutoPolicy", "AutoPolicyFormatError", "AutoPolicyLoader", "AutoWorkflow", "AutomationMode", "AutomationPackage", "ChangeEngine", "CommandHistory", "ErrorBudgets", "HistoryEntry", "ModulePolicy", "OptimizationContext", "OptimizationModule", "OptimizationPipeline", "PolicyAction", "PolicyDecision", "PolicyLocks", "PolicyProfile", "PpqResampleResult", "PreparedAutoRun", "Proposal", "ProposalConflict", "ProposalPlan", "ProposalPlanEntry", "ProposalRegistry", "ProposalSimulator", "ProposalStatus", "QuantizeModule", "SimulationDelta", "SimulationMetrics", "SimulationOutcome", "SimulationReport", "SimulationStep", "VelocityRangeModule", "adapt_controller_thinning", "adapt_drum_mapping", "adapt_expression_conversion", "adapt_initialization_update", "adapt_sound_mapping", "build_auto_report", "evaluate_policy", "proposal_from_transaction", "register_all", "resample_ppq", "write_auto_report"]
+__all__ = [
+    "AUTO_POLICY_SCHEMA",
+    "AUTO_POLICY_SCHEMA_VERSION",
+    "AUTO_REPORT_SCHEMA_VERSION",
+    "INSTRUMENT_VELOCITY_PROFILES",
+    "AnalyzerSnapshot",
+    "AutoPolicy",
+    "AutoPolicyFormatError",
+    "AutoPolicyLoader",
+    "AutoWorkflow",
+    "AutomationMode",
+    "AutomationPackage",
+    "ChangeEngine",
+    "CommandHistory",
+    "ErrorBudgets",
+    "HistoryEntry",
+    "InstrumentVelocityProfile",
+    "ModulePolicy",
+    "OptimizationContext",
+    "OptimizationModule",
+    "OptimizationPipeline",
+    "PolicyAction",
+    "PolicyDecision",
+    "PolicyLocks",
+    "PolicyProfile",
+    "PpqResampleResult",
+    "PreparedAutoRun",
+    "Proposal",
+    "ProposalConflict",
+    "ProposalPlan",
+    "ProposalPlanEntry",
+    "ProposalRegistry",
+    "ProposalSimulator",
+    "ProposalStatus",
+    "QuantizeModule",
+    "SimulationDelta",
+    "SimulationMetrics",
+    "SimulationOutcome",
+    "SimulationReport",
+    "SimulationStep",
+    "VelocityRangeModule",
+    "VelocityShapeResult",
+    "adapt_controller_thinning",
+    "adapt_drum_mapping",
+    "adapt_expression_conversion",
+    "adapt_initialization_update",
+    "adapt_sound_mapping",
+    "build_auto_report",
+    "detect_trill_note_ids",
+    "evaluate_policy",
+    "proposal_from_transaction",
+    "register_all",
+    "resample_ppq",
+    "shape_instrument_velocity",
+    "write_auto_report",
+]

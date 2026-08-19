@@ -23,6 +23,14 @@ from typing import Any
 EXPECTED_ROLES = {"solo", "accompaniment", "bass", "drums", "guitar"}
 
 
+def _file_sha256(path: str) -> str:
+    digest = hashlib.sha256()
+    with open(path, "rb") as handle:
+        for chunk in iter(lambda: handle.read(1 << 20), b""):
+            digest.update(chunk)
+    return digest.hexdigest()
+
+
 def _rows(conn: sqlite3.Connection, sql: str, *params: Any) -> list[tuple]:
     return conn.execute(sql, params).fetchall()
 
@@ -382,9 +390,7 @@ def main() -> int:
         "database": {
             "path": os.path.abspath(args.database),
             "size": os.path.getsize(args.database),
-            "sha256": hashlib.sha256(
-                open(args.database, "rb").read()
-            ).hexdigest(),
+            "sha256": _file_sha256(args.database),
         },
         "integrity": integrity(conn),
         "schema": schema(conn),

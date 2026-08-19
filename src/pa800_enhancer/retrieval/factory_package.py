@@ -3,7 +3,7 @@ from __future__ import annotations
 from collections import Counter, defaultdict
 from dataclasses import dataclass
 
-from .factory import FactoryCandidate, FactoryIndex, FactoryQuery
+from .factory import FactoryIndex, FactoryQuery
 from .factory_corpus import FactoryElementPattern, FactoryPatternCatalog
 
 

@@ -14,6 +14,21 @@ on:
   pull_request:
 
 jobs:
+  lint:
+    name: Lint
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install ruff
+      - name: Ruff check
+        run: ruff check .
+      - name: Ruff format check
+        run: ruff format --check .
+        continue-on-error: true
+
   test:
     name: ${{ matrix.os }} / py${{ matrix.python }}
     runs-on: ${{ matrix.os }}
@@ -43,6 +58,42 @@ jobs:
 
       - name: Tests
         run: pytest --cov=pa800_enhancer --cov-report=term-missing
+
+  coverage-gate:
+    name: Coverage prag (kriticni moduli)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -e ".[dev]"
+      # Moduli koji mogu tiho pokvariti korisnikov MIDI moraju ostati pokriveni.
+      - name: SMF, export i konzervativni optimizer
+        run: |
+          pytest \
+            --cov=pa800_enhancer.smf \
+            --cov=pa800_enhancer.export \
+            --cov=pa800_enhancer.optimize.conservative \
+            --cov=pa800_enhancer.optimize.rx_guard \
+            --cov=pa800_enhancer.optimize.leveling \
+            --cov=pa800_enhancer.profiles.rx \
+            --cov-fail-under=70 \
+            --cov-report=term-missing
+
+  preservation:
+    name: Ugovor o ocuvanju
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -e ".[dev]"
+      # Ovaj job ne smije pasti ni pod kojim uslovom: garantuje da
+      # konzervativni Optimize ne gubi trackove, note, lyrics ni pitch bend.
+      - name: Regresijski ugovor
+        run: pytest tests/regression/ -v
 
   build:
     name: Build wheel
