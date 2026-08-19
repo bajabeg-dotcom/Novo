@@ -1,0 +1,3112 @@
+{
+ "anomalies": {
+  "channel_overflow": [],
+  "format2_files": [],
+  "no_eot_tracks": [],
+  "smpte_files": [],
+  "trailing_bytes": [],
+  "unbalanced_notes": [
+   {
+    "off": 9733,
+    "on": 9683,
+    "path": "Gold DNA/AL PROLECE-SEMSA UZIVO.MID"
+   },
+   {
+    "off": 10493,
+    "on": 10479,
+    "path": "Gold DNA/BARABA SA SELA-KNINDZA UZIVO (2).MID"
+   },
+   {
+    "off": 10318,
+    "on": 10314,
+    "path": "Gold DNA/DA LI STE ME POZELJELI-BRANE PAJIC- UZIVO.MID"
+   },
+   {
+    "off": 11253,
+    "on": 11247,
+    "path": "Gold DNA/DJE ZAPELO ZEMO-CRNI BISERI- UZIVO (2).MID"
+   },
+   {
+    "off": 9868,
+    "on": 9862,
+    "path": "Gold DNA/GLUMIS DA SI SRECNA-BRANE PAJIC- UZIVO.MID"
+   },
+   {
+    "off": 9088,
+    "on": 9084,
+    "path": "Gold DNA/JOZA TUZNI-KNINDZA UZIVO (2).MID"
+   },
+   {
+    "off": 9088,
+    "on": 9084,
+    "path": "Gold DNA/JOZA TUZNI-KNINDZA UZIVO.MID"
+   },
+   {
+    "off": 10437,
+    "on": 10407,
+    "path": "Gold DNA/NEPOPRAVLJIV-MITAR- UZIVO.MID"
+   },
+   {
+    "off": 10899,
+    "on": 10861,
+    "path": "Gold DNA/OJ KRAJINO-RIFAT UZIVO T.MID"
+   },
+   {
+    "off": 7512,
+    "on": 7494,
+    "path": "Gold DNA/ZAVOLEH GA-SNEZANA,DJ UZIVO3 verzija.mid"
+   },
+   {
+    "off": 516,
+    "on": 530,
+    "path": "Workspace_Styles/60's Dance/60's Dance_End1.mid"
+   },
+   {
+    "off": 544,
+    "on": 530,
+    "path": "Workspace_Styles/60's Dance/60's Dance_End2.mid"
+   },
+   {
+    "off": 130,
+    "on": 146,
+    "path": "Workspace_Styles/70's Disco 1/70's Disco 1_End1.mid"
+   },
+   {
+    "off": 59,
+    "on": 43,
+    "path": "Workspace_Styles/70's Disco 1/70's Disco 1_End2.mid"
+   },
+   {
+    "off": 22,
+    "on": 20,
+    "path": "Workspace_Styles/8 Beat Analog 1/8 Beat Analog 1_Break.mid"
+   },
+   {
+    "off": 36,
+    "on": 35,
+    "path": "Workspace_Styles/8 Beat Analog 1/8 Beat Analog 1_Fill1.mid"
+   },
+   {
+    "off": 47,
+    "on": 49,
+    "path": "Workspace_Styles/8 Beat Analog 1/8 Beat Analog 1_Fill2.mid"
+   },
+   {
+    "off": 223,
+    "on": 225,
+    "path": "Workspace_Styles/8 Beat Analog 1/8 Beat Analog 1_Intro1.mid"
+   },
+   {
+    "off": 107,
+    "on": 106,
+    "path": "Workspace_Styles/8 Beat Analog 1/8 Beat Analog 1_Intro2.mid"
+   },
+   {
+    "off": 5,
+    "on": 15,
+    "path": "Workspace_Styles/8 Beat Analog 2/8 Beat Analog 2_End2.mid"
+   },
+   {
+    "off": 80,
+    "on": 70,
+    "path": "Workspace_Styles/8 Beat Analog 2/8 Beat Analog 2_End3.mid"
+   },
+   {
+    "off": 15,
+    "on": 18,
+    "path": "Workspace_Styles/80's Dance/80's Dance_End2.mid"
+   },
+   {
+    "off": 121,
+    "on": 118,
+    "path": "Workspace_Styles/80's Dance/80's Dance_End3.mid"
+   },
+   {
+    "off": 97,
+    "on": 96,
+    "path": "Workspace_Styles/AM /AM _ PM_Break.mid"
+   },
+   {
+    "off": 206,
+    "on": 208,
+    "path": "Workspace_Styles/AM /AM _ PM_End2.mid"
+   },
+   {
+    "off": 127,
+    "on": 125,
+    "path": "Workspace_Styles/AM /AM _ PM_End3.mid"
+   },
+   {
+    "off": 91,
+    "on": 89,
+    "path": "Workspace_Styles/AM /AM _ PM_Fill1.mid"
+   },
+   {
+    "off": 85,
+    "on": 86,
+    "path": "Workspace_Styles/AM /AM _ PM_Fill2.mid"
+   },
+   {
+    "off": 871,
+    "on": 872,
+    "path": "Workspace_Styles/AM /AM _ PM_Intro1.mid"
+   },
+   {
+    "off": 28,
+    "on": 29,
+    "path": "Workspace_Styles/AM /AM _ PM_Intro2.mid"
+   },
+   {
+    "off": 717,
+    "on": 736,
+    "path": "Workspace_Styles/Al Funk/Al Funk_End1.mid"
+   },
+   {
+    "off": 72,
+    "on": 53,
+    "path": "Workspace_Styles/Al Funk/Al Funk_End2.mid"
+   },
+   {
+    "off": 419,
+    "on": 507,
+    "path": "Workspace_Styles/Al Swing/Al Swing_End1.mid"
+   },
+   {
+    "off": 182,
+    "on": 94,
+    "path": "Workspace_Styles/Al Swing/Al Swing_End2.mid"
+   },
+   {
+    "off": 434,
+    "on": 464,
+    "path": "Workspace_Styles/Alpen Ballade/Alpen Ballade_End1.mid"
+   },
+   {
+    "off": 319,
+    "on": 289,
+    "path": "Workspace_Styles/Alpen Ballade/Alpen Ballade_End2.mid"
+   },
+   {
+    "off": 687,
+    "on": 692,
+    "path": "Workspace_Styles/Alpen Rock/Alpen Rock_End1.mid"
+   },
+   {
+    "off": 241,
+    "on": 236,
+    "path": "Workspace_Styles/Alpen Rock/Alpen Rock_End2.mid"
+   },
+   {
+    "off": 71,
+    "on": 72,
+    "path": "Workspace_Styles/Analog Ballad 1/Analog Ballad 1_Break.mid"
+   },
+   {
+    "off": 981,
+    "on": 985,
+    "path": "Workspace_Styles/Analog Ballad 1/Analog Ballad 1_End1.mid"
+   },
+   {
+    "off": 519,
+    "on": 517,
+    "path": "Workspace_Styles/Analog Ballad 1/Analog Ballad 1_End2.mid"
+   },
+   {
+    "off": 133,
+    "on": 130,
+    "path": "Workspace_Styles/Analog Ballad 1/Analog Ballad 1_End3.mid"
+   },
+   {
+    "off": 962,
+    "on": 1257,
+    "path": "Workspace_Styles/Analog Ballad 2/Analog Ballad 2_End1.mid"
+   },
+   {
+    "off": 325,
+    "on": 193,
+    "path": "Workspace_Styles/Analog Ballad 2/Analog Ballad 2_End2.mid"
+   },
+   {
+    "off": 291,
+    "on": 126,
+    "path": "Workspace_Styles/Analog Ballad 2/Analog Ballad 2_End3.mid"
+   },
+   {
+    "off": 1130,
+    "on": 1134,
+    "path": "Workspace_Styles/Analog Ballad 2/Analog Ballad 2_Intro1.mid"
+   },
+   {
+    "off": 194,
+    "on": 190,
+    "path": "Workspace_Styles/Analog Ballad 2/Analog Ballad 2_Intro2.mid"
+   },
+   {
+    "off": 33,
+    "on": 32,
+    "path": "Workspace_Styles/Analog Beat 1/Analog Beat 1_Break.mid"
+   },
+   {
+    "off": 2500,
+    "on": 2868,
+    "path": "Workspace_Styles/Analog Beat 1/Analog Beat 1_End1.mid"
+   },
+   {
+    "off": 132,
+    "on": 133,
+    "path": "Workspace_Styles/Analog Beat 1/Analog Beat 1_Fill2.mid"
+   },
+   {
+    "off": 560,
+    "on": 562,
+    "path": "Workspace_Styles/Analog Beat 1/Analog Beat 1_Intro1.mid"
+   },
+   {
+    "off": 136,
+    "on": 134,
+    "path": "Workspace_Styles/Analog Beat 1/Analog Beat 1_Intro2.mid"
+   },
+   {
+    "off": 17,
+    "on": 16,
+    "path": "Workspace_Styles/Analog Beat 2/Analog Beat 2_Break.mid"
+   },
+   {
+    "off": 559,
+    "on": 578,
+    "path": "Workspace_Styles/Analog Beat 2/Analog Beat 2_End1.mid"
+   },
+   {
+    "off": 408,
+    "on": 399,
+    "path": "Workspace_Styles/Analog Beat 2/Analog Beat 2_End2.mid"
+   },
+   {
+    "off": 116,
+    "on": 106,
+    "path": "Workspace_Styles/Analog Beat 2/Analog Beat 2_End3.mid"
+   },
+   {
+    "off": 104,
+    "on": 105,
+    "path": "Workspace_Styles/Analog Beat 2/Analog Beat 2_Fill2.mid"
+   },
+   {
+    "off": 928,
+    "on": 1115,
+    "path": "Workspace_Styles/Argentina Tango/Argentina Tango_End1.mid"
+   },
+   {
+    "off": 335,
+    "on": 148,
+    "path": "Workspace_Styles/Argentina Tango/Argentina Tango_End2.mid"
+   },
+   {
+    "off": 251,
+    "on": 259,
+    "path": "Workspace_Styles/Ballad 6/Ballad 6_8 1_End1.mid"
+   },
+   {
+    "off": 46,
+    "on": 38,
+    "path": "Workspace_Styles/Ballad 6/Ballad 6_8 1_End3.mid"
+   },
+   {
+    "off": 825,
+    "on": 1071,
+    "path": "Workspace_Styles/Ballad 6/Ballad 6_8 2_End1.mid"
+   },
+   {
+    "off": 445,
+    "on": 210,
+    "path": "Workspace_Styles/Ballad 6/Ballad 6_8 2_End2.mid"
+   },
+   {
+    "off": 152,
+    "on": 141,
+    "path": "Workspace_Styles/Ballad 6/Ballad 6_8 2_End3.mid"
+   },
+   {
+    "off": 1076,
+    "on": 1077,
+    "path": "Workspace_Styles/Ballad 6/Ballad 6_8 2_Intro1.mid"
+   },
+   {
+    "off": 50,
+    "on": 49,
+    "path": "Workspace_Styles/Ballad 6/Ballad 6_8 2_Intro2.mid"
+   },
+   {
+    "off": 2027,
+    "on": 2065,
+    "path": "Workspace_Styles/Bar Country/Bar Country_Intro3.mid"
+   },
+   {
+    "off": 452,
+    "on": 488,
+    "path": "Workspace_Styles/Blue Ballad/Blue Ballad_End1.mid"
+   },
+   {
+    "off": 73,
+    "on": 37,
+    "path": "Workspace_Styles/Blue Ballad/Blue Ballad_End2.mid"
+   },
+   {
+    "off": 94,
+    "on": 90,
+    "path": "Workspace_Styles/Blue Ballad/Blue Ballad_End3.mid"
+   },
+   {
+    "off": 15,
+    "on": 13,
+    "path": "Workspace_Styles/Classic Beat/Classic Beat_Break.mid"
+   },
+   {
+    "off": 180,
+    "on": 182,
+    "path": "Workspace_Styles/Classic Beat/Classic Beat_End1.mid"
+   },
+   {
+    "off": 58,
+    "on": 60,
+    "path": "Workspace_Styles/Classic Beat/Classic Beat_End2.mid"
+   },
+   {
+    "off": 1157,
+    "on": 1299,
+    "path": "Workspace_Styles/Classic Beat/Classic Beat_End3.mid"
+   },
+   {
+    "off": 419,
+    "on": 561,
+    "path": "Workspace_Styles/Classic Beat/Classic Beat_Intro1.mid"
+   },
+   {
+    "off": 195,
+    "on": 197,
+    "path": "Workspace_Styles/Classic Beat/Classic Beat_Intro2.mid"
+   },
+   {
+    "off": 1218,
+    "on": 1356,
+    "path": "Workspace_Styles/Classic Beat/Classic Beat_Var1.mid"
+   },
+   {
+    "off": 557,
+    "on": 568,
+    "path": "Workspace_Styles/Classic Beat/Classic Beat_Var2.mid"
+   },
+   {
+    "off": 559,
+    "on": 697,
+    "path": "Workspace_Styles/Classic Beat/Classic Beat_Var3.mid"
+   },
+   {
+    "off": 229,
+    "on": 239,
+    "path": "Workspace_Styles/Classic Beat/Classic Beat_Var4.mid"
+   },
+   {
+    "off": 4989,
+    "on": 5140,
+    "path": "Workspace_Styles/Classic Funk/Classic Funk_Intro1.mid"
+   },
+   {
+    "off": 654,
+    "on": 1101,
+    "path": "Workspace_Styles/Club House/Club House_End1.mid"
+   },
+   {
+    "off": 887,
+    "on": 441,
+    "path": "Workspace_Styles/Club House/Club House_End2.mid"
+   },
+   {
+    "off": 97,
+    "on": 95,
+    "path": "Workspace_Styles/Club House/Club House_End3.mid"
+   },
+   {
+    "off": 1306,
+    "on": 1307,
+    "path": "Workspace_Styles/Club House/Club House_Intro1.mid"
+   },
+   {
+    "off": 169,
+    "on": 183,
+    "path": "Workspace_Styles/Color Ballad/Color Ballad_End1.mid"
+   },
+   {
+    "off": 126,
+    "on": 124,
+    "path": "Workspace_Styles/Color Ballad/Color Ballad_End2.mid"
+   },
+   {
+    "off": 63,
+    "on": 51,
+    "path": "Workspace_Styles/Color Ballad/Color Ballad_End3.mid"
+   },
+   {
+    "off": 2871,
+    "on": 2893,
+    "path": "Workspace_Styles/Country 16 Beat/Country 16 Beat_Intro1.mid"
+   },
+   {
+    "off": 190,
+    "on": 218,
+    "path": "Workspace_Styles/Country 3/Country 3_4_End1.mid"
+   },
+   {
+    "off": 205,
+    "on": 195,
+    "path": "Workspace_Styles/Country 3/Country 3_4_End2.mid"
+   },
+   {
+    "off": 98,
+    "on": 80,
+    "path": "Workspace_Styles/Country 3/Country 3_4_End3.mid"
+   },
+   {
+    "off": 143,
+    "on": 223,
+    "path": "Workspace_Styles/Country Ballad 1/Country Ballad 1_End1.mid"
+   },
+   {
+    "off": 235,
+    "on": 169,
+    "path": "Workspace_Styles/Country Ballad 1/Country Ballad 1_End2.mid"
+   },
+   {
+    "off": 92,
+    "on": 78,
+    "path": "Workspace_Styles/Country Ballad 1/Country Ballad 1_End3.mid"
+   },
+   {
+    "off": 184,
+    "on": 222,
+    "path": "Workspace_Styles/Country Ballad 2/Country Ballad 2_End1.mid"
+   },
+   {
+    "off": 5494,
+    "on": 6457,
+    "path": "Workspace_Styles/Country Ballad 2/Country Ballad 2_Var1.mid"
+   },
+   {
+    "off": 209,
+    "on": 227,
+    "path": "Workspace_Styles/Country Beat 2/Country Beat 2_End1.mid"
+   },
+   {
+    "off": 38,
+    "on": 26,
+    "path": "Workspace_Styles/Country Beat 2/Country Beat 2_End2.mid"
+   },
+   {
+    "off": 94,
+    "on": 88,
+    "path": "Workspace_Styles/Country Beat 2/Country Beat 2_End3.mid"
+   },
+   {
+    "off": 862,
+    "on": 870,
+    "path": "Workspace_Styles/Country Boogie/Country Boogie_End1.mid"
+   },
+   {
+    "off": 107,
+    "on": 99,
+    "path": "Workspace_Styles/Country Boogie/Country Boogie_End2.mid"
+   },
+   {
+    "off": 12,
+    "on": 13,
+    "path": "Workspace_Styles/Country Pop/Country Pop_Break.mid"
+   },
+   {
+    "off": 632,
+    "on": 711,
+    "path": "Workspace_Styles/Country Pop/Country Pop_End1.mid"
+   },
+   {
+    "off": 2428,
+    "on": 2640,
+    "path": "Workspace_Styles/Country Pop/Country Pop_Intro1.mid"
+   },
+   {
+    "off": 103,
+    "on": 104,
+    "path": "Workspace_Styles/Country QuikStep/Country QuikStep_End2.mid"
+   },
+   {
+    "off": 6321,
+    "on": 7542,
+    "path": "Workspace_Styles/Country QuikStep/Country QuikStep_Var1.mid"
+   },
+   {
+    "off": 354,
+    "on": 370,
+    "path": "Workspace_Styles/Country Schlager/Country Schlager_End1.mid"
+   },
+   {
+    "off": 273,
+    "on": 265,
+    "path": "Workspace_Styles/Country Schlager/Country Schlager_End2.mid"
+   },
+   {
+    "off": 143,
+    "on": 135,
+    "path": "Workspace_Styles/Country Schlager/Country Schlager_End3.mid"
+   },
+   {
+    "off": 483,
+    "on": 492,
+    "path": "Workspace_Styles/Country Strum/Country Strum_End2.mid"
+   },
+   {
+    "off": 144,
+    "on": 135,
+    "path": "Workspace_Styles/Country Strum/Country Strum_End3.mid"
+   },
+   {
+    "off": 227,
+    "on": 238,
+    "path": "Workspace_Styles/CountryShuffle 2/CountryShuffle 2_End1.mid"
+   },
+   {
+    "off": 447,
+    "on": 486,
+    "path": "Workspace_Styles/CountryShuffle 2/CountryShuffle 2_End2.mid"
+   },
+   {
+    "off": 264,
+    "on": 214,
+    "path": "Workspace_Styles/CountryShuffle 2/CountryShuffle 2_End3.mid"
+   },
+   {
+    "off": 844,
+    "on": 843,
+    "path": "Workspace_Styles/Dance Fever/Dance Fever_End1.mid"
+   },
+   {
+    "off": 87,
+    "on": 92,
+    "path": "Workspace_Styles/Dance Fever/Dance Fever_End2.mid"
+   },
+   {
+    "off": 168,
+    "on": 163,
+    "path": "Workspace_Styles/Dance Fever/Dance Fever_End3.mid"
+   },
+   {
+    "off": 148,
+    "on": 149,
+    "path": "Workspace_Styles/Dance Fever/Dance Fever_Fill2.mid"
+   },
+   {
+    "off": 361,
+    "on": 373,
+    "path": "Workspace_Styles/Dance Motown/Dance Motown_Intro2.mid"
+   },
+   {
+    "off": 6060,
+    "on": 6756,
+    "path": "Workspace_Styles/Dance Motown/Dance Motown_Var1.mid"
+   },
+   {
+    "off": 175,
+    "on": 182,
+    "path": "Workspace_Styles/Disco Latin/Disco Latin_End1.mid"
+   },
+   {
+    "off": 72,
+    "on": 78,
+    "path": "Workspace_Styles/Disco Latin/Disco Latin_End3.mid"
+   },
+   {
+    "off": 2694,
+    "on": 2791,
+    "path": "Workspace_Styles/Disco Latin/Disco Latin_Intro1.mid"
+   },
+   {
+    "off": 43,
+    "on": 42,
+    "path": "Workspace_Styles/Disco Latin/Disco Latin_Intro2.mid"
+   },
+   {
+    "off": 30,
+    "on": 32,
+    "path": "Workspace_Styles/Disco Schlager/Disco Schlager_End2.mid"
+   },
+   {
+    "off": 19,
+    "on": 17,
+    "path": "Workspace_Styles/Disco Schlager/Disco Schlager_End3.mid"
+   },
+   {
+    "off": 3993,
+    "on": 4125,
+    "path": "Workspace_Styles/Disco Schlager/Disco Schlager_Var4.mid"
+   },
+   {
+    "off": 698,
+    "on": 746,
+    "path": "Workspace_Styles/Easy Ballad/Easy Ballad_End1.mid"
+   },
+   {
+    "off": 212,
+    "on": 164,
+    "path": "Workspace_Styles/Easy Ballad/Easy Ballad_End2.mid"
+   },
+   {
+    "off": 111,
+    "on": 113,
+    "path": "Workspace_Styles/Easy Beat 1/Easy Beat 1_End1.mid"
+   },
+   {
+    "off": 87,
+    "on": 85,
+    "path": "Workspace_Styles/Easy Beat 1/Easy Beat 1_End2.mid"
+   },
+   {
+    "off": 24,
+    "on": 26,
+    "path": "Workspace_Styles/Easy Beat 1/Easy Beat 1_End3.mid"
+   },
+   {
+    "off": 50,
+    "on": 60,
+    "path": "Workspace_Styles/Easy Beat 1/Easy Beat 1_Intro2.mid"
+   },
+   {
+    "off": 3706,
+    "on": 3923,
+    "path": "Workspace_Styles/Easy Beat 1/Easy Beat 1_Var2.mid"
+   },
+   {
+    "off": 127,
+    "on": 128,
+    "path": "Workspace_Styles/Easy Beat 2/Easy Beat 2_End1.mid"
+   },
+   {
+    "off": 35,
+    "on": 34,
+    "path": "Workspace_Styles/Easy Beat 2/Easy Beat 2_End3.mid"
+   },
+   {
+    "off": 2218,
+    "on": 2260,
+    "path": "Workspace_Styles/Easy Beat 2/Easy Beat 2_Intro1.mid"
+   },
+   {
+    "off": 550,
+    "on": 630,
+    "path": "Workspace_Styles/Easy Pop 1/Easy Pop 1_End1.mid"
+   },
+   {
+    "off": 257,
+    "on": 218,
+    "path": "Workspace_Styles/Easy Pop 1/Easy Pop 1_End2.mid"
+   },
+   {
+    "off": 143,
+    "on": 102,
+    "path": "Workspace_Styles/Easy Pop 1/Easy Pop 1_End3.mid"
+   },
+   {
+    "off": 560,
+    "on": 619,
+    "path": "Workspace_Styles/Easy Pop 2/Easy Pop 2_End1.mid"
+   },
+   {
+    "off": 30,
+    "on": 28,
+    "path": "Workspace_Styles/Easy Pop 2/Easy Pop 2_End3.mid"
+   },
+   {
+    "off": 35,
+    "on": 37,
+    "path": "Workspace_Styles/Easy Pop 2/Easy Pop 2_Fill2.mid"
+   },
+   {
+    "off": 792,
+    "on": 794,
+    "path": "Workspace_Styles/Easy Pop 2/Easy Pop 2_Intro1.mid"
+   },
+   {
+    "off": 3163,
+    "on": 3357,
+    "path": "Workspace_Styles/Easy Pop 2/Easy Pop 2_Intro2.mid"
+   },
+   {
+    "off": 1804,
+    "on": 1959,
+    "path": "Workspace_Styles/Elektrik Funk/Elektrik Funk_End1.mid"
+   },
+   {
+    "off": 793,
+    "on": 638,
+    "path": "Workspace_Styles/Elektrik Funk/Elektrik Funk_End2.mid"
+   },
+   {
+    "off": 96,
+    "on": 97,
+    "path": "Workspace_Styles/Elektrik Funk/Elektrik Funk_Fill1.mid"
+   },
+   {
+    "off": 134,
+    "on": 133,
+    "path": "Workspace_Styles/Elektrik Funk/Elektrik Funk_Fill2.mid"
+   },
+   {
+    "off": 2734,
+    "on": 2736,
+    "path": "Workspace_Styles/Elektrik Funk/Elektrik Funk_Intro1.mid"
+   },
+   {
+    "off": 11,
+    "on": 9,
+    "path": "Workspace_Styles/Elektrik Funk/Elektrik Funk_Intro3.mid"
+   },
+   {
+    "off": 1098,
+    "on": 1103,
+    "path": "Workspace_Styles/Elektro Funk/Elektro Funk_End1.mid"
+   },
+   {
+    "off": 265,
+    "on": 262,
+    "path": "Workspace_Styles/Elektro Funk/Elektro Funk_End2.mid"
+   },
+   {
+    "off": 140,
+    "on": 137,
+    "path": "Workspace_Styles/Elektro Funk/Elektro Funk_End3.mid"
+   },
+   {
+    "off": 721,
+    "on": 723,
+    "path": "Workspace_Styles/Elektro Funk/Elektro Funk_Intro1.mid"
+   },
+   {
+    "off": 42,
+    "on": 41,
+    "path": "Workspace_Styles/Elektro Funk/Elektro Funk_Intro2.mid"
+   },
+   {
+    "off": 47,
+    "on": 46,
+    "path": "Workspace_Styles/Elektro Pop/Elektro Pop_Break.mid"
+   },
+   {
+    "off": 1115,
+    "on": 1199,
+    "path": "Workspace_Styles/Elektro Pop/Elektro Pop_End1.mid"
+   },
+   {
+    "off": 714,
+    "on": 629,
+    "path": "Workspace_Styles/Elektro Pop/Elektro Pop_End2.mid"
+   },
+   {
+    "off": 105,
+    "on": 106,
+    "path": "Workspace_Styles/Elektro Pop/Elektro Pop_Fill2.mid"
+   },
+   {
+    "off": 1480,
+    "on": 1482,
+    "path": "Workspace_Styles/Elektro Pop/Elektro Pop_Intro1.mid"
+   },
+   {
+    "off": 13,
+    "on": 12,
+    "path": "Workspace_Styles/Elektro Pop/Elektro Pop_Intro3.mid"
+   },
+   {
+    "off": 1331,
+    "on": 1447,
+    "path": "Workspace_Styles/Fast Big Band 1/Fast Big Band 1_Intro1.mid"
+   },
+   {
+    "off": 134,
+    "on": 154,
+    "path": "Workspace_Styles/Fast Big Band 1/Fast Big Band 1_Intro2.mid"
+   },
+   {
+    "off": 332,
+    "on": 339,
+    "path": "Workspace_Styles/Fast Big Band 2/Fast Big Band 2_End2.mid"
+   },
+   {
+    "off": 262,
+    "on": 255,
+    "path": "Workspace_Styles/Fast Big Band 2/Fast Big Band 2_End3.mid"
+   },
+   {
+    "off": 911,
+    "on": 941,
+    "path": "Workspace_Styles/Fast Pop/Fast Pop_End1.mid"
+   },
+   {
+    "off": 811,
+    "on": 781,
+    "path": "Workspace_Styles/Fast Pop/Fast Pop_End2.mid"
+   },
+   {
+    "off": 1946,
+    "on": 1959,
+    "path": "Workspace_Styles/Folk Ballad 2/Folk Ballad 2_End1.mid"
+   },
+   {
+    "off": 555,
+    "on": 550,
+    "path": "Workspace_Styles/Folk Ballad 2/Folk Ballad 2_End2.mid"
+   },
+   {
+    "off": 328,
+    "on": 320,
+    "path": "Workspace_Styles/Folk Ballad 2/Folk Ballad 2_End3.mid"
+   },
+   {
+    "off": 20,
+    "on": 19,
+    "path": "Workspace_Styles/Folk Beat/Folk Beat_Break.mid"
+   },
+   {
+    "off": 1222,
+    "on": 1230,
+    "path": "Workspace_Styles/Folk Beat/Folk Beat_End1.mid"
+   },
+   {
+    "off": 368,
+    "on": 360,
+    "path": "Workspace_Styles/Folk Beat/Folk Beat_End2.mid"
+   },
+   {
+    "off": 75,
+    "on": 76,
+    "path": "Workspace_Styles/Folk Beat/Folk Beat_Fill1.mid"
+   },
+   {
+    "off": 44,
+    "on": 45,
+    "path": "Workspace_Styles/Fox Shuffle 1/Fox Shuffle 1_Break.mid"
+   },
+   {
+    "off": 206,
+    "on": 205,
+    "path": "Workspace_Styles/Fox Shuffle 1/Fox Shuffle 1_End1.mid"
+   },
+   {
+    "off": 147,
+    "on": 146,
+    "path": "Workspace_Styles/Fox Shuffle 1/Fox Shuffle 1_End2.mid"
+   },
+   {
+    "off": 1643,
+    "on": 1763,
+    "path": "Workspace_Styles/Fox Shuffle 1/Fox Shuffle 1_Intro1.mid"
+   },
+   {
+    "off": 89,
+    "on": 90,
+    "path": "Workspace_Styles/Fox Shuffle 1/Fox Shuffle 1_Intro2.mid"
+   },
+   {
+    "off": 20,
+    "on": 19,
+    "path": "Workspace_Styles/Fox Shuffle 2/Fox Shuffle 2_Break.mid"
+   },
+   {
+    "off": 179,
+    "on": 204,
+    "path": "Workspace_Styles/Fox Shuffle 2/Fox Shuffle 2_End2.mid"
+   },
+   {
+    "off": 31,
+    "on": 30,
+    "path": "Workspace_Styles/Fox Shuffle 2/Fox Shuffle 2_Fill1.mid"
+   },
+   {
+    "off": 38,
+    "on": 39,
+    "path": "Workspace_Styles/Fox Shuffle 2/Fox Shuffle 2_Fill2.mid"
+   },
+   {
+    "off": 2478,
+    "on": 2660,
+    "path": "Workspace_Styles/Fox Shuffle 2/Fox Shuffle 2_Intro1.mid"
+   },
+   {
+    "off": 410,
+    "on": 414,
+    "path": "Workspace_Styles/Foxtrot 2/Foxtrot 2_End1.mid"
+   },
+   {
+    "off": 211,
+    "on": 207,
+    "path": "Workspace_Styles/Foxtrot 2/Foxtrot 2_End2.mid"
+   },
+   {
+    "off": 357,
+    "on": 446,
+    "path": "Workspace_Styles/French Waltz/French Waltz_End1.mid"
+   },
+   {
+    "off": 189,
+    "on": 108,
+    "path": "Workspace_Styles/French Waltz/French Waltz_End2.mid"
+   },
+   {
+    "off": 46,
+    "on": 38,
+    "path": "Workspace_Styles/French Waltz/French Waltz_End3.mid"
+   },
+   {
+    "off": 64,
+    "on": 63,
+    "path": "Workspace_Styles/Funk R&B/Funk R&B_Break.mid"
+   },
+   {
+    "off": 1687,
+    "on": 1699,
+    "path": "Workspace_Styles/Funk R&B/Funk R&B_End1.mid"
+   },
+   {
+    "off": 407,
+    "on": 403,
+    "path": "Workspace_Styles/Funk R&B/Funk R&B_End2.mid"
+   },
+   {
+    "off": 315,
+    "on": 307,
+    "path": "Workspace_Styles/Funk R&B/Funk R&B_End3.mid"
+   },
+   {
+    "off": 117,
+    "on": 118,
+    "path": "Workspace_Styles/Funk R&B/Funk R&B_Fill2.mid"
+   },
+   {
+    "off": 49,
+    "on": 48,
+    "path": "Workspace_Styles/Funky Disco/Funky Disco_Break.mid"
+   },
+   {
+    "off": 1276,
+    "on": 1288,
+    "path": "Workspace_Styles/Funky Disco/Funky Disco_End1.mid"
+   },
+   {
+    "off": 251,
+    "on": 263,
+    "path": "Workspace_Styles/Funky Disco/Funky Disco_End2.mid"
+   },
+   {
+    "off": 174,
+    "on": 150,
+    "path": "Workspace_Styles/Funky Disco/Funky Disco_End3.mid"
+   },
+   {
+    "off": 1042,
+    "on": 1043,
+    "path": "Workspace_Styles/Funky Disco/Funky Disco_Intro1.mid"
+   },
+   {
+    "off": 881,
+    "on": 880,
+    "path": "Workspace_Styles/Funky R&B/Funky R&B_End1.mid"
+   },
+   {
+    "off": 937,
+    "on": 938,
+    "path": "Workspace_Styles/Funky R&B/Funky R&B_Intro1.mid"
+   },
+   {
+    "off": 29,
+    "on": 28,
+    "path": "Workspace_Styles/Funky R&B/Funky R&B_Intro2.mid"
+   },
+   {
+    "off": 31,
+    "on": 32,
+    "path": "Workspace_Styles/Funky R&B/Funky R&B_Intro3.mid"
+   },
+   {
+    "off": 83,
+    "on": 85,
+    "path": "Workspace_Styles/Funky R&B/Funky R&B_Var1.mid"
+   },
+   {
+    "off": 91,
+    "on": 89,
+    "path": "Workspace_Styles/Funky R&B/Funky R&B_Var2.mid"
+   },
+   {
+    "off": 999,
+    "on": 1010,
+    "path": "Workspace_Styles/Funky Sisters/Funky Sisters_End1.mid"
+   },
+   {
+    "off": 773,
+    "on": 764,
+    "path": "Workspace_Styles/Funky Sisters/Funky Sisters_End2.mid"
+   },
+   {
+    "off": 440,
+    "on": 438,
+    "path": "Workspace_Styles/Funky Sisters/Funky Sisters_End3.mid"
+   },
+   {
+    "off": 920,
+    "on": 922,
+    "path": "Workspace_Styles/Funky Sisters/Funky Sisters_Intro1.mid"
+   },
+   {
+    "off": 189,
+    "on": 187,
+    "path": "Workspace_Styles/Funky Sisters/Funky Sisters_Intro2.mid"
+   },
+   {
+    "off": 2396,
+    "on": 2398,
+    "path": "Workspace_Styles/Gospel Shuffle/Gospel Shuffle_End1.mid"
+   },
+   {
+    "off": 348,
+    "on": 346,
+    "path": "Workspace_Styles/Gospel Shuffle/Gospel Shuffle_End2.mid"
+   },
+   {
+    "off": 178,
+    "on": 175,
+    "path": "Workspace_Styles/Gospel Swing/Gospel Swing_End1.mid"
+   },
+   {
+    "off": 85,
+    "on": 89,
+    "path": "Workspace_Styles/Gospel Swing/Gospel Swing_End2.mid"
+   },
+   {
+    "off": 69,
+    "on": 87,
+    "path": "Workspace_Styles/Gospel Swing/Gospel Swing_End3.mid"
+   },
+   {
+    "off": 3032,
+    "on": 3138,
+    "path": "Workspace_Styles/Gospel Swing/Gospel Swing_Intro2.mid"
+   },
+   {
+    "off": 1168,
+    "on": 1203,
+    "path": "Workspace_Styles/Groove Ballad/Groove Ballad_End1.mid"
+   },
+   {
+    "off": 294,
+    "on": 259,
+    "path": "Workspace_Styles/Groove Ballad/Groove Ballad_End2.mid"
+   },
+   {
+    "off": 1234,
+    "on": 1245,
+    "path": "Workspace_Styles/Groove Funk/Groove Funk_End1.mid"
+   },
+   {
+    "off": 51,
+    "on": 40,
+    "path": "Workspace_Styles/Groove Funk/Groove Funk_End2.mid"
+   },
+   {
+    "off": 560,
+    "on": 686,
+    "path": "Workspace_Styles/Guitar Ballad/Guitar Ballad_End1.mid"
+   },
+   {
+    "off": 237,
+    "on": 111,
+    "path": "Workspace_Styles/Guitar Ballad/Guitar Ballad_End2.mid"
+   },
+   {
+    "off": 95,
+    "on": 96,
+    "path": "Workspace_Styles/Guitar Ballad/Guitar Ballad_Intro2.mid"
+   },
+   {
+    "off": 12,
+    "on": 11,
+    "path": "Workspace_Styles/Guitar Ballad/Guitar Ballad_Intro3.mid"
+   },
+   {
+    "off": 233,
+    "on": 234,
+    "path": "Workspace_Styles/Guitar Beat/Guitar Beat_End1.mid"
+   },
+   {
+    "off": 95,
+    "on": 93,
+    "path": "Workspace_Styles/Guitar Beat/Guitar Beat_End2.mid"
+   },
+   {
+    "off": 1404,
+    "on": 1526,
+    "path": "Workspace_Styles/Guitar Beat/Guitar Beat_End3.mid"
+   },
+   {
+    "off": 37,
+    "on": 35,
+    "path": "Workspace_Styles/Guitar Beat/Guitar Beat_Fill2.mid"
+   },
+   {
+    "off": 171,
+    "on": 195,
+    "path": "Workspace_Styles/Guitar Beat/Guitar Beat_Intro1.mid"
+   },
+   {
+    "off": 176,
+    "on": 230,
+    "path": "Workspace_Styles/Guitar Beat/Guitar Beat_Intro2.mid"
+   },
+   {
+    "off": 12,
+    "on": 11,
+    "path": "Workspace_Styles/Guitar Beat/Guitar Beat_Intro3.mid"
+   },
+   {
+    "off": 1622,
+    "on": 1725,
+    "path": "Workspace_Styles/Guitar Beat/Guitar Beat_Var1.mid"
+   },
+   {
+    "off": 481,
+    "on": 490,
+    "path": "Workspace_Styles/Guitar Beat/Guitar Beat_Var2.mid"
+   },
+   {
+    "off": 382,
+    "on": 469,
+    "path": "Workspace_Styles/Guitar Beat/Guitar Beat_Var3.mid"
+   },
+   {
+    "off": 443,
+    "on": 446,
+    "path": "Workspace_Styles/Guitar Beat/Guitar Beat_Var4.mid"
+   },
+   {
+    "off": 1518,
+    "on": 1517,
+    "path": "Workspace_Styles/Guitar Pop/Guitar Pop_End1.mid"
+   },
+   {
+    "off": 358,
+    "on": 372,
+    "path": "Workspace_Styles/Guitar Pop/Guitar Pop_End2.mid"
+   },
+   {
+    "off": 207,
+    "on": 193,
+    "path": "Workspace_Styles/Guitar Pop/Guitar Pop_End3.mid"
+   },
+   {
+    "off": 193,
+    "on": 194,
+    "path": "Workspace_Styles/Guitar Pop/Guitar Pop_Fill2.mid"
+   },
+   {
+    "off": 1221,
+    "on": 1225,
+    "path": "Workspace_Styles/Guitar Pop/Guitar Pop_Intro1.mid"
+   },
+   {
+    "off": 81,
+    "on": 77,
+    "path": "Workspace_Styles/Guitar Pop/Guitar Pop_Intro2.mid"
+   },
+   {
+    "off": 1164,
+    "on": 1322,
+    "path": "Workspace_Styles/Half Beat/Half Beat_End1.mid"
+   },
+   {
+    "off": 705,
+    "on": 546,
+    "path": "Workspace_Styles/Half Beat/Half Beat_End2.mid"
+   },
+   {
+    "off": 144,
+    "on": 145,
+    "path": "Workspace_Styles/Half Beat/Half Beat_Fill2.mid"
+   },
+   {
+    "off": 1631,
+    "on": 1649,
+    "path": "Workspace_Styles/House Garage/House Garage_End1.mid"
+   },
+   {
+    "off": 230,
+    "on": 221,
+    "path": "Workspace_Styles/House Garage/House Garage_End2.mid"
+   },
+   {
+    "off": 150,
+    "on": 141,
+    "path": "Workspace_Styles/House Garage/House Garage_End3.mid"
+   },
+   {
+    "off": 137,
+    "on": 449,
+    "path": "Workspace_Styles/Irish Fox/Irish Fox_End1.mid"
+   },
+   {
+    "off": 381,
+    "on": 221,
+    "path": "Workspace_Styles/Irish Fox/Irish Fox_End2.mid"
+   },
+   {
+    "off": 305,
+    "on": 153,
+    "path": "Workspace_Styles/Irish Fox/Irish Fox_End3.mid"
+   },
+   {
+    "off": 467,
+    "on": 487,
+    "path": "Workspace_Styles/Irish Waltz/Irish Waltz_End1.mid"
+   },
+   {
+    "off": 102,
+    "on": 94,
+    "path": "Workspace_Styles/Irish Waltz/Irish Waltz_End2.mid"
+   },
+   {
+    "off": 58,
+    "on": 46,
+    "path": "Workspace_Styles/Irish Waltz/Irish Waltz_End3.mid"
+   },
+   {
+    "off": 1548,
+    "on": 1551,
+    "path": "Workspace_Styles/Island View/Island View_End1.mid"
+   },
+   {
+    "off": 618,
+    "on": 624,
+    "path": "Workspace_Styles/Island View/Island View_End2.mid"
+   },
+   {
+    "off": 195,
+    "on": 185,
+    "path": "Workspace_Styles/Island View/Island View_End3.mid"
+   },
+   {
+    "off": 906,
+    "on": 908,
+    "path": "Workspace_Styles/Island View/Island View_Intro1.mid"
+   },
+   {
+    "off": 100,
+    "on": 99,
+    "path": "Workspace_Styles/Island View/Island View_Intro2.mid"
+   },
+   {
+    "off": 60,
+    "on": 66,
+    "path": "Workspace_Styles/Jazz Club/Jazz Club_End2.mid"
+   },
+   {
+    "off": 29,
+    "on": 23,
+    "path": "Workspace_Styles/Jazz Club/Jazz Club_End3.mid"
+   },
+   {
+    "off": 3566,
+    "on": 4006,
+    "path": "Workspace_Styles/Jazz Club/Jazz Club_Var1.mid"
+   },
+   {
+    "off": 314,
+    "on": 330,
+    "path": "Workspace_Styles/Jazz Funk/Jazz Funk_End1.mid"
+   },
+   {
+    "off": 374,
+    "on": 358,
+    "path": "Workspace_Styles/Jazz Funk/Jazz Funk_End2.mid"
+   },
+   {
+    "off": 1671,
+    "on": 1680,
+    "path": "Workspace_Styles/Jazzy PopFunk/Jazzy PopFunk_End1.mid"
+   },
+   {
+    "off": 166,
+    "on": 156,
+    "path": "Workspace_Styles/Jazzy PopFunk/Jazzy PopFunk_End3.mid"
+   },
+   {
+    "off": 1320,
+    "on": 1322,
+    "path": "Workspace_Styles/Jazzy PopFunk/Jazzy PopFunk_Intro1.mid"
+   },
+   {
+    "off": 106,
+    "on": 105,
+    "path": "Workspace_Styles/Jazzy PopFunk/Jazzy PopFunk_Intro2.mid"
+   },
+   {
+    "off": 1378,
+    "on": 1380,
+    "path": "Workspace_Styles/Karma/Karma_End1.mid"
+   },
+   {
+    "off": 278,
+    "on": 275,
+    "path": "Workspace_Styles/Karma/Karma_End2.mid"
+   },
+   {
+    "off": 758,
+    "on": 760,
+    "path": "Workspace_Styles/Karma/Karma_Intro1.mid"
+   },
+   {
+    "off": 75,
+    "on": 74,
+    "path": "Workspace_Styles/Karma/Karma_Intro2.mid"
+   },
+   {
+    "off": 280,
+    "on": 278,
+    "path": "Workspace_Styles/Kool Beat/Kool Beat_End1.mid"
+   },
+   {
+    "off": 751,
+    "on": 889,
+    "path": "Workspace_Styles/Kool Beat/Kool Beat_End2.mid"
+   },
+   {
+    "off": 2771,
+    "on": 2925,
+    "path": "Workspace_Styles/Kool Beat/Kool Beat_Intro1.mid"
+   },
+   {
+    "off": 11,
+    "on": 10,
+    "path": "Workspace_Styles/Kool Beat/Kool Beat_Intro3.mid"
+   },
+   {
+    "off": 62,
+    "on": 61,
+    "path": "Workspace_Styles/Kool Funk/Kool Funk_Break.mid"
+   },
+   {
+    "off": 993,
+    "on": 996,
+    "path": "Workspace_Styles/Kool Funk/Kool Funk_End1.mid"
+   },
+   {
+    "off": 357,
+    "on": 354,
+    "path": "Workspace_Styles/Kool Funk/Kool Funk_End2.mid"
+   },
+   {
+    "off": 212,
+    "on": 213,
+    "path": "Workspace_Styles/Kool Funk/Kool Funk_Fill2.mid"
+   },
+   {
+    "off": 177,
+    "on": 179,
+    "path": "Workspace_Styles/Kool Funk/Kool Funk_Intro2.mid"
+   },
+   {
+    "off": 36,
+    "on": 34,
+    "path": "Workspace_Styles/Kool Funk/Kool Funk_Intro3.mid"
+   },
+   {
+    "off": 2304,
+    "on": 2305,
+    "path": "Workspace_Styles/Kool Funk/Kool Funk_Var3.mid"
+   },
+   {
+    "off": 2594,
+    "on": 2593,
+    "path": "Workspace_Styles/Kool Funk/Kool Funk_Var4.mid"
+   },
+   {
+    "off": 52,
+    "on": 51,
+    "path": "Workspace_Styles/Little Boy/Little Boy_Break.mid"
+   },
+   {
+    "off": 1392,
+    "on": 1393,
+    "path": "Workspace_Styles/Little Boy/Little Boy_End1.mid"
+   },
+   {
+    "off": 232,
+    "on": 243,
+    "path": "Workspace_Styles/Little Boy/Little Boy_End2.mid"
+   },
+   {
+    "off": 167,
+    "on": 155,
+    "path": "Workspace_Styles/Little Boy/Little Boy_End3.mid"
+   },
+   {
+    "off": 68,
+    "on": 67,
+    "path": "Workspace_Styles/Little Boy/Little Boy_Fill1.mid"
+   },
+   {
+    "off": 873,
+    "on": 875,
+    "path": "Workspace_Styles/Little Boy/Little Boy_Intro1.mid"
+   },
+   {
+    "off": 1370,
+    "on": 1387,
+    "path": "Workspace_Styles/Little Shuffle/Little Shuffle_End1.mid"
+   },
+   {
+    "off": 206,
+    "on": 192,
+    "path": "Workspace_Styles/Little Shuffle/Little Shuffle_End2.mid"
+   },
+   {
+    "off": 212,
+    "on": 209,
+    "path": "Workspace_Styles/Little Shuffle/Little Shuffle_End3.mid"
+   },
+   {
+    "off": 1084,
+    "on": 1102,
+    "path": "Workspace_Styles/Love Disco/Love Disco_End1.mid"
+   },
+   {
+    "off": 263,
+    "on": 255,
+    "path": "Workspace_Styles/Love Disco/Love Disco_End2.mid"
+   },
+   {
+    "off": 164,
+    "on": 154,
+    "path": "Workspace_Styles/Love Disco/Love Disco_End3.mid"
+   },
+   {
+    "off": 328,
+    "on": 342,
+    "path": "Workspace_Styles/Meditando/Meditando_End1.mid"
+   },
+   {
+    "off": 116,
+    "on": 109,
+    "path": "Workspace_Styles/Meditando/Meditando_End2.mid"
+   },
+   {
+    "off": 44,
+    "on": 37,
+    "path": "Workspace_Styles/Meditando/Meditando_End3.mid"
+   },
+   {
+    "off": 507,
+    "on": 516,
+    "path": "Workspace_Styles/Medium 6/Medium 6_4_End1.mid"
+   },
+   {
+    "off": 109,
+    "on": 101,
+    "path": "Workspace_Styles/Medium 6/Medium 6_4_End2.mid"
+   },
+   {
+    "off": 167,
+    "on": 166,
+    "path": "Workspace_Styles/Medium 6/Medium 6_4_End3.mid"
+   },
+   {
+    "off": 292,
+    "on": 392,
+    "path": "Workspace_Styles/Medium Schlager/Medium Schlager_End2.mid"
+   },
+   {
+    "off": 341,
+    "on": 241,
+    "path": "Workspace_Styles/Medium Schlager/Medium Schlager_End3.mid"
+   },
+   {
+    "off": 759,
+    "on": 782,
+    "path": "Workspace_Styles/Miami Disco/Miami Disco_End1.mid"
+   },
+   {
+    "off": 31,
+    "on": 16,
+    "path": "Workspace_Styles/Miami Disco/Miami Disco_End2.mid"
+   },
+   {
+    "off": 76,
+    "on": 68,
+    "path": "Workspace_Styles/Miami Disco/Miami Disco_End3.mid"
+   },
+   {
+    "off": 954,
+    "on": 1084,
+    "path": "Workspace_Styles/Modern Ballad/Modern Ballad_End1.mid"
+   },
+   {
+    "off": 464,
+    "on": 336,
+    "path": "Workspace_Styles/Modern Ballad/Modern Ballad_End2.mid"
+   },
+   {
+    "off": 105,
+    "on": 102,
+    "path": "Workspace_Styles/Modern Ballad/Modern Ballad_End3.mid"
+   },
+   {
+    "off": 666,
+    "on": 668,
+    "path": "Workspace_Styles/Modern Ballad/Modern Ballad_Intro1.mid"
+   },
+   {
+    "off": 99,
+    "on": 98,
+    "path": "Workspace_Styles/Modern Ballad/Modern Ballad_Intro2.mid"
+   },
+   {
+    "off": 1164,
+    "on": 1322,
+    "path": "Workspace_Styles/Modern Beat/Modern Beat_End1.mid"
+   },
+   {
+    "off": 705,
+    "on": 546,
+    "path": "Workspace_Styles/Modern Beat/Modern Beat_End2.mid"
+   },
+   {
+    "off": 109,
+    "on": 110,
+    "path": "Workspace_Styles/Modern Beat/Modern Beat_Fill1.mid"
+   },
+   {
+    "off": 1712,
+    "on": 1713,
+    "path": "Workspace_Styles/Modern Beat/Modern Beat_Intro1.mid"
+   },
+   {
+    "off": 108,
+    "on": 107,
+    "path": "Workspace_Styles/Modern Beat/Modern Beat_Intro2.mid"
+   },
+   {
+    "off": 388,
+    "on": 400,
+    "path": "Workspace_Styles/Modern Country/Modern Country_End1.mid"
+   },
+   {
+    "off": 520,
+    "on": 518,
+    "path": "Workspace_Styles/Modern Country/Modern Country_End2.mid"
+   },
+   {
+    "off": 366,
+    "on": 356,
+    "path": "Workspace_Styles/Modern Country/Modern Country_End3.mid"
+   },
+   {
+    "off": 745,
+    "on": 761,
+    "path": "Workspace_Styles/Modern Gospel 1/Modern Gospel 1_End2.mid"
+   },
+   {
+    "off": 2628,
+    "on": 2631,
+    "path": "Workspace_Styles/Modern Latin/Modern Latin_End1.mid"
+   },
+   {
+    "off": 462,
+    "on": 459,
+    "path": "Workspace_Styles/Modern Latin/Modern Latin_End2.mid"
+   },
+   {
+    "off": 1452,
+    "on": 1453,
+    "path": "Workspace_Styles/Modern Latin/Modern Latin_Intro1.mid"
+   },
+   {
+    "off": 248,
+    "on": 247,
+    "path": "Workspace_Styles/Modern Latin/Modern Latin_Intro2.mid"
+   },
+   {
+    "off": 314,
+    "on": 330,
+    "path": "Workspace_Styles/Motown Shuffle 1/Motown Shuffle 1_End1.mid"
+   },
+   {
+    "off": 374,
+    "on": 358,
+    "path": "Workspace_Styles/Motown Shuffle 1/Motown Shuffle 1_End2.mid"
+   },
+   {
+    "off": 327,
+    "on": 420,
+    "path": "Workspace_Styles/Movie Ballad/Movie Ballad_End1.mid"
+   },
+   {
+    "off": 223,
+    "on": 139,
+    "path": "Workspace_Styles/Movie Ballad/Movie Ballad_End2.mid"
+   },
+   {
+    "off": 90,
+    "on": 81,
+    "path": "Workspace_Styles/Movie Ballad/Movie Ballad_End3.mid"
+   },
+   {
+    "off": 240,
+    "on": 420,
+    "path": "Workspace_Styles/Movie Swing/Movie Swing_End1.mid"
+   },
+   {
+    "off": 189,
+    "on": 82,
+    "path": "Workspace_Styles/Movie Swing/Movie Swing_End2.mid"
+   },
+   {
+    "off": 199,
+    "on": 124,
+    "path": "Workspace_Styles/Movie Swing/Movie Swing_End3.mid"
+   },
+   {
+    "off": 411,
+    "on": 431,
+    "path": "Workspace_Styles/Musette Waltz/Musette Waltz_End1.mid"
+   },
+   {
+    "off": 241,
+    "on": 221,
+    "path": "Workspace_Styles/Musette Waltz/Musette Waltz_End2.mid"
+   },
+   {
+    "off": 93,
+    "on": 101,
+    "path": "Workspace_Styles/Operetta/Operetta_End2.mid"
+   },
+   {
+    "off": 56,
+    "on": 48,
+    "path": "Workspace_Styles/Operetta/Operetta_End3.mid"
+   },
+   {
+    "off": 234,
+    "on": 253,
+    "path": "Workspace_Styles/Organ Waltz/Organ Waltz_End1.mid"
+   },
+   {
+    "off": 176,
+    "on": 157,
+    "path": "Workspace_Styles/Organ Waltz/Organ Waltz_End2.mid"
+   },
+   {
+    "off": 2204,
+    "on": 2289,
+    "path": "Workspace_Styles/Oriental Dance/Oriental Dance_End1.mid"
+   },
+   {
+    "off": 985,
+    "on": 900,
+    "path": "Workspace_Styles/Oriental Dance/Oriental Dance_End2.mid"
+   },
+   {
+    "off": 267,
+    "on": 359,
+    "path": "Workspace_Styles/Pasodoble/Pasodoble_Fill2.mid"
+   },
+   {
+    "off": 3264,
+    "on": 3755,
+    "path": "Workspace_Styles/Pasodoble/Pasodoble_Intro1.mid"
+   },
+   {
+    "off": 12,
+    "on": 21,
+    "path": "Workspace_Styles/Philly Disco/Philly Disco_End2.mid"
+   },
+   {
+    "off": 339,
+    "on": 330,
+    "path": "Workspace_Styles/Philly Disco/Philly Disco_End3.mid"
+   },
+   {
+    "off": 585,
+    "on": 609,
+    "path": "Workspace_Styles/Pop 12/Pop 12_8_End1.mid"
+   },
+   {
+    "off": 164,
+    "on": 167,
+    "path": "Workspace_Styles/Pop 12/Pop 12_8_End2.mid"
+   },
+   {
+    "off": 123,
+    "on": 96,
+    "path": "Workspace_Styles/Pop 12/Pop 12_8_End3.mid"
+   },
+   {
+    "off": 885,
+    "on": 903,
+    "path": "Workspace_Styles/Pop 16 Beat/Pop 16 Beat_End1.mid"
+   },
+   {
+    "off": 428,
+    "on": 425,
+    "path": "Workspace_Styles/Pop 16 Beat/Pop 16 Beat_End2.mid"
+   },
+   {
+    "off": 72,
+    "on": 57,
+    "path": "Workspace_Styles/Pop 16 Beat/Pop 16 Beat_End3.mid"
+   },
+   {
+    "off": 566,
+    "on": 590,
+    "path": "Workspace_Styles/Pop 6/Pop 6_8_End1.mid"
+   },
+   {
+    "off": 66,
+    "on": 62,
+    "path": "Workspace_Styles/Pop 6/Pop 6_8_End2.mid"
+   },
+   {
+    "off": 71,
+    "on": 51,
+    "path": "Workspace_Styles/Pop 6/Pop 6_8_End3.mid"
+   },
+   {
+    "off": 288,
+    "on": 306,
+    "path": "Workspace_Styles/Pop Ballad/Pop Ballad_End1.mid"
+   },
+   {
+    "off": 188,
+    "on": 196,
+    "path": "Workspace_Styles/Pop Ballad/Pop Ballad_End2.mid"
+   },
+   {
+    "off": 77,
+    "on": 51,
+    "path": "Workspace_Styles/Pop Ballad/Pop Ballad_End3.mid"
+   },
+   {
+    "off": 1951,
+    "on": 1950,
+    "path": "Workspace_Styles/Pop Funk/Pop Funk_End1.mid"
+   },
+   {
+    "off": 286,
+    "on": 299,
+    "path": "Workspace_Styles/Pop Funk/Pop Funk_End2.mid"
+   },
+   {
+    "off": 184,
+    "on": 171,
+    "path": "Workspace_Styles/Pop Funk/Pop Funk_End3.mid"
+   },
+   {
+    "off": 1110,
+    "on": 1112,
+    "path": "Workspace_Styles/Pop Funk/Pop Funk_Intro1.mid"
+   },
+   {
+    "off": 114,
+    "on": 113,
+    "path": "Workspace_Styles/Pop Funk/Pop Funk_Intro2.mid"
+   },
+   {
+    "off": 1778,
+    "on": 1784,
+    "path": "Workspace_Styles/Pop Groove/Pop Groove_End1.mid"
+   },
+   {
+    "off": 154,
+    "on": 146,
+    "path": "Workspace_Styles/Pop Groove/Pop Groove_End3.mid"
+   },
+   {
+    "off": 139,
+    "on": 140,
+    "path": "Workspace_Styles/Pop Groove/Pop Groove_Fill2.mid"
+   },
+   {
+    "off": 554,
+    "on": 556,
+    "path": "Workspace_Styles/Pop Groove/Pop Groove_Intro1.mid"
+   },
+   {
+    "off": 117,
+    "on": 116,
+    "path": "Workspace_Styles/Pop Groove/Pop Groove_Intro2.mid"
+   },
+   {
+    "off": 625,
+    "on": 636,
+    "path": "Workspace_Styles/Pop Jazz/Pop Jazz_End1.mid"
+   },
+   {
+    "off": 75,
+    "on": 69,
+    "path": "Workspace_Styles/Pop Jazz/Pop Jazz_End2.mid"
+   },
+   {
+    "off": 42,
+    "on": 37,
+    "path": "Workspace_Styles/Pop Jazz/Pop Jazz_End3.mid"
+   },
+   {
+    "off": 15,
+    "on": 14,
+    "path": "Workspace_Styles/Pop Shuffle 1/Pop Shuffle 1_Break.mid"
+   },
+   {
+    "off": 69,
+    "on": 70,
+    "path": "Workspace_Styles/Pop Shuffle 1/Pop Shuffle 1_Fill2.mid"
+   },
+   {
+    "off": 3380,
+    "on": 3384,
+    "path": "Workspace_Styles/Pop Shuffle 2/Pop Shuffle 2_End1.mid"
+   },
+   {
+    "off": 280,
+    "on": 276,
+    "path": "Workspace_Styles/Pop Shuffle 2/Pop Shuffle 2_End2.mid"
+   },
+   {
+    "off": 123,
+    "on": 149,
+    "path": "Workspace_Styles/Pop Shuffle 3/Pop Shuffle 3_Intro2.mid"
+   },
+   {
+    "off": 24902,
+    "on": 26495,
+    "path": "Workspace_Styles/Pop Shuffle 3/Pop Shuffle 3_Var1.mid"
+   },
+   {
+    "off": 567,
+    "on": 579,
+    "path": "Workspace_Styles/Real 16 Beat/Real 16 Beat_End1.mid"
+   },
+   {
+    "off": 75,
+    "on": 64,
+    "path": "Workspace_Styles/Real 16 Beat/Real 16 Beat_End2.mid"
+   },
+   {
+    "off": 62,
+    "on": 61,
+    "path": "Workspace_Styles/Real 16 Beat/Real 16 Beat_End3.mid"
+   },
+   {
+    "off": 567,
+    "on": 579,
+    "path": "Workspace_Styles/Real 8 Beat/Real 8 Beat_End1.mid"
+   },
+   {
+    "off": 75,
+    "on": 64,
+    "path": "Workspace_Styles/Real 8 Beat/Real 8 Beat_End2.mid"
+   },
+   {
+    "off": 62,
+    "on": 61,
+    "path": "Workspace_Styles/Real 8 Beat/Real 8 Beat_End3.mid"
+   },
+   {
+    "off": 411,
+    "on": 445,
+    "path": "Workspace_Styles/Rock Ballad 2/Rock Ballad 2_End2.mid"
+   },
+   {
+    "off": 241,
+    "on": 207,
+    "path": "Workspace_Styles/Rock Ballad 2/Rock Ballad 2_End3.mid"
+   },
+   {
+    "off": 135,
+    "on": 213,
+    "path": "Workspace_Styles/Schlager 1/Schlager 1_End1.mid"
+   },
+   {
+    "off": 654,
+    "on": 600,
+    "path": "Workspace_Styles/Schlager 1/Schlager 1_End2.mid"
+   },
+   {
+    "off": 132,
+    "on": 108,
+    "path": "Workspace_Styles/Schlager 1/Schlager 1_End3.mid"
+   },
+   {
+    "off": 70,
+    "on": 72,
+    "path": "Workspace_Styles/Schlager 2/Schlager 2_Fill1.mid"
+   },
+   {
+    "off": 171,
+    "on": 169,
+    "path": "Workspace_Styles/Schlager 2/Schlager 2_Fill2.mid"
+   },
+   {
+    "off": 5620,
+    "on": 6738,
+    "path": "Workspace_Styles/Schlager 3/Schlager 3_Var1.mid"
+   },
+   {
+    "off": 922,
+    "on": 950,
+    "path": "Workspace_Styles/Schlager 4/Schlager 4_End1.mid"
+   },
+   {
+    "off": 149,
+    "on": 135,
+    "path": "Workspace_Styles/Schlager 4/Schlager 4_End2.mid"
+   },
+   {
+    "off": 146,
+    "on": 132,
+    "path": "Workspace_Styles/Schlager 4/Schlager 4_End3.mid"
+   },
+   {
+    "off": 332,
+    "on": 339,
+    "path": "Workspace_Styles/Serenade Band/Serenade Band_End2.mid"
+   },
+   {
+    "off": 262,
+    "on": 255,
+    "path": "Workspace_Styles/Serenade Band/Serenade Band_End3.mid"
+   },
+   {
+    "off": 42,
+    "on": 368,
+    "path": "Workspace_Styles/Serenade/Serenade_End1.mid"
+   },
+   {
+    "off": 333,
+    "on": 43,
+    "path": "Workspace_Styles/Serenade/Serenade_End2.mid"
+   },
+   {
+    "off": 82,
+    "on": 44,
+    "path": "Workspace_Styles/Serenade/Serenade_End3.mid"
+   },
+   {
+    "off": 762,
+    "on": 777,
+    "path": "Workspace_Styles/Sister & Girl/Sister & Girl_End1.mid"
+   },
+   {
+    "off": 217,
+    "on": 210,
+    "path": "Workspace_Styles/Sister & Girl/Sister & Girl_End2.mid"
+   },
+   {
+    "off": 123,
+    "on": 115,
+    "path": "Workspace_Styles/Sister & Girl/Sister & Girl_End3.mid"
+   },
+   {
+    "off": 60,
+    "on": 59,
+    "path": "Workspace_Styles/Slow & Jazzy/Slow & Jazzy_Break.mid"
+   },
+   {
+    "off": 1326,
+    "on": 1431,
+    "path": "Workspace_Styles/Slow & Jazzy/Slow & Jazzy_End1.mid"
+   },
+   {
+    "off": 255,
+    "on": 217,
+    "path": "Workspace_Styles/Slow & Jazzy/Slow & Jazzy_End2.mid"
+   },
+   {
+    "off": 150,
+    "on": 81,
+    "path": "Workspace_Styles/Slow & Jazzy/Slow & Jazzy_End3.mid"
+   },
+   {
+    "off": 68,
+    "on": 67,
+    "path": "Workspace_Styles/Slow & Jazzy/Slow & Jazzy_Fill1.mid"
+   },
+   {
+    "off": 137,
+    "on": 138,
+    "path": "Workspace_Styles/Slow & Jazzy/Slow & Jazzy_Fill2.mid"
+   },
+   {
+    "off": 618,
+    "on": 619,
+    "path": "Workspace_Styles/Slow & Jazzy/Slow & Jazzy_Intro1.mid"
+   },
+   {
+    "off": 134,
+    "on": 133,
+    "path": "Workspace_Styles/Slow & Jazzy/Slow & Jazzy_Intro2.mid"
+   },
+   {
+    "off": 8,
+    "on": 9,
+    "path": "Workspace_Styles/Slow & Jazzy/Slow & Jazzy_Intro3.mid"
+   },
+   {
+    "off": 300,
+    "on": 314,
+    "path": "Workspace_Styles/Slow 6/Slow 6_8_End1.mid"
+   },
+   {
+    "off": 231,
+    "on": 217,
+    "path": "Workspace_Styles/Slow 6/Slow 6_8_End2.mid"
+   },
+   {
+    "off": 32,
+    "on": 31,
+    "path": "Workspace_Styles/Slow Band/Slow Band_Break.mid"
+   },
+   {
+    "off": 1410,
+    "on": 1413,
+    "path": "Workspace_Styles/Slow Band/Slow Band_End1.mid"
+   },
+   {
+    "off": 243,
+    "on": 240,
+    "path": "Workspace_Styles/Slow Band/Slow Band_End2.mid"
+   },
+   {
+    "off": 63,
+    "on": 64,
+    "path": "Workspace_Styles/Slow Band/Slow Band_Fill1.mid"
+   },
+   {
+    "off": 331,
+    "on": 332,
+    "path": "Workspace_Styles/Slow Band/Slow Band_Intro2.mid"
+   },
+   {
+    "off": 12,
+    "on": 11,
+    "path": "Workspace_Styles/Slow Band/Slow Band_Intro3.mid"
+   },
+   {
+    "off": 1138,
+    "on": 1140,
+    "path": "Workspace_Styles/Slow HipHop/Slow HipHop_End1.mid"
+   },
+   {
+    "off": 372,
+    "on": 376,
+    "path": "Workspace_Styles/Slow HipHop/Slow HipHop_End2.mid"
+   },
+   {
+    "off": 202,
+    "on": 196,
+    "path": "Workspace_Styles/Slow HipHop/Slow HipHop_End3.mid"
+   },
+   {
+    "off": 1452,
+    "on": 1454,
+    "path": "Workspace_Styles/Slow HipHop/Slow HipHop_Intro1.mid"
+   },
+   {
+    "off": 22,
+    "on": 20,
+    "path": "Workspace_Styles/Slow HipHop/Slow HipHop_Intro3.mid"
+   },
+   {
+    "off": 1246,
+    "on": 1253,
+    "path": "Workspace_Styles/Slow Latin Pop/Slow Latin Pop_End1.mid"
+   },
+   {
+    "off": 104,
+    "on": 102,
+    "path": "Workspace_Styles/Slow Latin Pop/Slow Latin Pop_End2.mid"
+   },
+   {
+    "off": 148,
+    "on": 143,
+    "path": "Workspace_Styles/Slow Latin Pop/Slow Latin Pop_End3.mid"
+   },
+   {
+    "off": 844,
+    "on": 909,
+    "path": "Workspace_Styles/Slow Pop 6/Slow Pop 6_8_End1.mid"
+   },
+   {
+    "off": 297,
+    "on": 261,
+    "path": "Workspace_Styles/Slow Pop 6/Slow Pop 6_8_End2.mid"
+   },
+   {
+    "off": 163,
+    "on": 134,
+    "path": "Workspace_Styles/Slow Pop 6/Slow Pop 6_8_End3.mid"
+   },
+   {
+    "off": 288,
+    "on": 403,
+    "path": "Workspace_Styles/Slow Waltz 1/Slow Waltz 1_End1.mid"
+   },
+   {
+    "off": 191,
+    "on": 83,
+    "path": "Workspace_Styles/Slow Waltz 1/Slow Waltz 1_End2.mid"
+   },
+   {
+    "off": 105,
+    "on": 98,
+    "path": "Workspace_Styles/Slow Waltz 1/Slow Waltz 1_End3.mid"
+   },
+   {
+    "off": 2259,
+    "on": 2273,
+    "path": "Workspace_Styles/Smooth Jazz/Smooth Jazz_End1.mid"
+   },
+   {
+    "off": 520,
+    "on": 506,
+    "path": "Workspace_Styles/Smooth Jazz/Smooth Jazz_End2.mid"
+   },
+   {
+    "off": 1339,
+    "on": 1360,
+    "path": "Workspace_Styles/Soca Dance/Soca Dance_End1.mid"
+   },
+   {
+    "off": 203,
+    "on": 190,
+    "path": "Workspace_Styles/Soca Dance/Soca Dance_End2.mid"
+   },
+   {
+    "off": 161,
+    "on": 153,
+    "path": "Workspace_Styles/Soca Dance/Soca Dance_End3.mid"
+   },
+   {
+    "off": 60,
+    "on": 63,
+    "path": "Workspace_Styles/Soft 16 Beat/Soft 16 Beat_End2.mid"
+   },
+   {
+    "off": 35,
+    "on": 32,
+    "path": "Workspace_Styles/Soft 16 Beat/Soft 16 Beat_End3.mid"
+   },
+   {
+    "off": 2291,
+    "on": 2407,
+    "path": "Workspace_Styles/Soft 16 Beat/Soft 16 Beat_Intro1.mid"
+   },
+   {
+    "off": 175,
+    "on": 185,
+    "path": "Workspace_Styles/Soft 8 Beat/Soft 8 Beat_End2.mid"
+   },
+   {
+    "off": 111,
+    "on": 101,
+    "path": "Workspace_Styles/Soft 8 Beat/Soft 8 Beat_End3.mid"
+   },
+   {
+    "off": 1566,
+    "on": 1608,
+    "path": "Workspace_Styles/Soft Ballad/Soft Ballad_End1.mid"
+   },
+   {
+    "off": 2143,
+    "on": 2101,
+    "path": "Workspace_Styles/Soft Ballad/Soft Ballad_End2.mid"
+   },
+   {
+    "off": 71,
+    "on": 73,
+    "path": "Workspace_Styles/Soft HipHop/Soft HipHop_Break.mid"
+   },
+   {
+    "off": 980,
+    "on": 979,
+    "path": "Workspace_Styles/Soft HipHop/Soft HipHop_End1.mid"
+   },
+   {
+    "off": 503,
+    "on": 502,
+    "path": "Workspace_Styles/Soft HipHop/Soft HipHop_End2.mid"
+   },
+   {
+    "off": 59,
+    "on": 58,
+    "path": "Workspace_Styles/Soft HipHop/Soft HipHop_Fill1.mid"
+   },
+   {
+    "off": 637,
+    "on": 639,
+    "path": "Workspace_Styles/Soft HipHop/Soft HipHop_Intro1.mid"
+   },
+   {
+    "off": 53,
+    "on": 52,
+    "path": "Workspace_Styles/Soft HipHop/Soft HipHop_Intro2.mid"
+   },
+   {
+    "off": 219,
+    "on": 220,
+    "path": "Workspace_Styles/Soft HipHop/Soft HipHop_Var2.mid"
+   },
+   {
+    "off": 270,
+    "on": 272,
+    "path": "Workspace_Styles/Soft HipHop/Soft HipHop_Var3.mid"
+   },
+   {
+    "off": 431,
+    "on": 428,
+    "path": "Workspace_Styles/Soft HipHop/Soft HipHop_Var4.mid"
+   },
+   {
+    "off": 519,
+    "on": 530,
+    "path": "Workspace_Styles/Standard 16 Beat/Standard 16 Beat_End1.mid"
+   },
+   {
+    "off": 434,
+    "on": 460,
+    "path": "Workspace_Styles/Standard 16 Beat/Standard 16 Beat_End2.mid"
+   },
+   {
+    "off": 1264,
+    "on": 1304,
+    "path": "Workspace_Styles/Standard 16 Beat/Standard 16 Beat_End3.mid"
+   },
+   {
+    "off": 22,
+    "on": 27,
+    "path": "Workspace_Styles/Standard 16 Beat/Standard 16 Beat_Fill1.mid"
+   },
+   {
+    "off": 102,
+    "on": 104,
+    "path": "Workspace_Styles/Standard 16 Beat/Standard 16 Beat_Intro1.mid"
+   },
+   {
+    "off": 14,
+    "on": 16,
+    "path": "Workspace_Styles/Standard 16 Beat/Standard 16 Beat_Intro3.mid"
+   },
+   {
+    "off": 945,
+    "on": 1010,
+    "path": "Workspace_Styles/Standard 16 Beat/Standard 16 Beat_Var1.mid"
+   },
+   {
+    "off": 1854,
+    "on": 1862,
+    "path": "Workspace_Styles/Standard 16 Beat/Standard 16 Beat_Var2.mid"
+   },
+   {
+    "off": 770,
+    "on": 842,
+    "path": "Workspace_Styles/Standard 16 Beat/Standard 16 Beat_Var3.mid"
+   },
+   {
+    "off": 279,
+    "on": 281,
+    "path": "Workspace_Styles/Standard 16 Beat/Standard 16 Beat_Var4.mid"
+   },
+   {
+    "off": 608,
+    "on": 842,
+    "path": "Workspace_Styles/Swing HipHop/Swing HipHop_End1.mid"
+   },
+   {
+    "off": 477,
+    "on": 242,
+    "path": "Workspace_Styles/Swing HipHop/Swing HipHop_End2.mid"
+   },
+   {
+    "off": 62,
+    "on": 63,
+    "path": "Workspace_Styles/Swing HipHop/Swing HipHop_Fill2.mid"
+   },
+   {
+    "off": 52,
+    "on": 51,
+    "path": "Workspace_Styles/Take Beat/Take Beat_Break.mid"
+   },
+   {
+    "off": 1132,
+    "on": 1195,
+    "path": "Workspace_Styles/Take Beat/Take Beat_End1.mid"
+   },
+   {
+    "off": 395,
+    "on": 332,
+    "path": "Workspace_Styles/Take Beat/Take Beat_End2.mid"
+   },
+   {
+    "off": 102,
+    "on": 103,
+    "path": "Workspace_Styles/Take Beat/Take Beat_Fill2.mid"
+   },
+   {
+    "off": 1421,
+    "on": 1434,
+    "path": "Workspace_Styles/Talkin' Jazz/Talkin' Jazz_End1.mid"
+   },
+   {
+    "off": 315,
+    "on": 306,
+    "path": "Workspace_Styles/Talkin' Jazz/Talkin' Jazz_End2.mid"
+   },
+   {
+    "off": 226,
+    "on": 221,
+    "path": "Workspace_Styles/Talkin' Jazz/Talkin' Jazz_End3.mid"
+   },
+   {
+    "off": 105,
+    "on": 106,
+    "path": "Workspace_Styles/Talkin' Jazz/Talkin' Jazz_Fill2.mid"
+   },
+   {
+    "off": 309,
+    "on": 311,
+    "path": "Workspace_Styles/Talkin' Jazz/Talkin' Jazz_Intro2.mid"
+   },
+   {
+    "off": 13,
+    "on": 11,
+    "path": "Workspace_Styles/Talkin' Jazz/Talkin' Jazz_Intro3.mid"
+   },
+   {
+    "off": 940,
+    "on": 1054,
+    "path": "Workspace_Styles/Tap Dance/Tap Dance_End1.mid"
+   },
+   {
+    "off": 314,
+    "on": 200,
+    "path": "Workspace_Styles/Tap Dance/Tap Dance_End2.mid"
+   },
+   {
+    "off": 830,
+    "on": 836,
+    "path": "Workspace_Styles/The Avalon/The Avalon_End1.mid"
+   },
+   {
+    "off": 706,
+    "on": 700,
+    "path": "Workspace_Styles/The Avalon/The Avalon_End2.mid"
+   },
+   {
+    "off": 1439,
+    "on": 1481,
+    "path": "Workspace_Styles/Twist/Twist_End1.mid"
+   },
+   {
+    "off": 388,
+    "on": 367,
+    "path": "Workspace_Styles/Twist/Twist_End2.mid"
+   },
+   {
+    "off": 176,
+    "on": 155,
+    "path": "Workspace_Styles/Twist/Twist_End3.mid"
+   },
+   {
+    "off": 115,
+    "on": 116,
+    "path": "Workspace_Styles/Twist/Twist_Intro2.mid"
+   },
+   {
+    "off": 21,
+    "on": 20,
+    "path": "Workspace_Styles/Twist/Twist_Intro3.mid"
+   },
+   {
+    "off": 2367,
+    "on": 2379,
+    "path": "Workspace_Styles/Unplugged 16 Bt/Unplugged 16 Bt_End1.mid"
+   },
+   {
+    "off": 340,
+    "on": 341,
+    "path": "Workspace_Styles/Unplugged 16 Bt/Unplugged 16 Bt_End2.mid"
+   },
+   {
+    "off": 149,
+    "on": 136,
+    "path": "Workspace_Styles/Unplugged 16 Bt/Unplugged 16 Bt_End3.mid"
+   },
+   {
+    "off": 411,
+    "on": 431,
+    "path": "Workspace_Styles/Unplugged 3/Unplugged 3_4_End1.mid"
+   },
+   {
+    "off": 152,
+    "on": 132,
+    "path": "Workspace_Styles/Unplugged 3/Unplugged 3_4_End2.mid"
+   },
+   {
+    "off": 54,
+    "on": 56,
+    "path": "Workspace_Styles/Unplugged 3/Unplugged 3_4_Fill1.mid"
+   },
+   {
+    "off": 72,
+    "on": 70,
+    "path": "Workspace_Styles/Unplugged 3/Unplugged 3_4_Fill2.mid"
+   },
+   {
+    "off": 94,
+    "on": 95,
+    "path": "Workspace_Styles/Unplugged 3/Unplugged 3_4_Intro2.mid"
+   },
+   {
+    "off": 8,
+    "on": 7,
+    "path": "Workspace_Styles/Unplugged 3/Unplugged 3_4_Intro3.mid"
+   },
+   {
+    "off": 2032,
+    "on": 2060,
+    "path": "Workspace_Styles/Unplugged 8 Bt/Unplugged 8 Bt_End1.mid"
+   },
+   {
+    "off": 330,
+    "on": 311,
+    "path": "Workspace_Styles/Unplugged 8 Bt/Unplugged 8 Bt_End2.mid"
+   },
+   {
+    "off": 175,
+    "on": 166,
+    "path": "Workspace_Styles/Unplugged 8 Bt/Unplugged 8 Bt_End3.mid"
+   },
+   {
+    "off": 545,
+    "on": 568,
+    "path": "Workspace_Styles/Unplugged Gtr 2/Unplugged Gtr 2_End1.mid"
+   },
+   {
+    "off": 292,
+    "on": 278,
+    "path": "Workspace_Styles/Unplugged Gtr 2/Unplugged Gtr 2_End2.mid"
+   },
+   {
+    "off": 176,
+    "on": 167,
+    "path": "Workspace_Styles/Unplugged Gtr 2/Unplugged Gtr 2_End3.mid"
+   },
+   {
+    "off": 23,
+    "on": 24,
+    "path": "Workspace_Styles/Unplugged Latin/Unplugged Latin_Break.mid"
+   },
+   {
+    "off": 1006,
+    "on": 1023,
+    "path": "Workspace_Styles/Unplugged Latin/Unplugged Latin_End1.mid"
+   },
+   {
+    "off": 271,
+    "on": 253,
+    "path": "Workspace_Styles/Unplugged Latin/Unplugged Latin_End2.mid"
+   },
+   {
+    "off": 1841,
+    "on": 1855,
+    "path": "Workspace_Styles/Unplugged Slow/Unplugged Slow_End1.mid"
+   },
+   {
+    "off": 233,
+    "on": 223,
+    "path": "Workspace_Styles/Unplugged Slow/Unplugged Slow_End2.mid"
+   },
+   {
+    "off": 251,
+    "on": 246,
+    "path": "Workspace_Styles/Unplugged Slow/Unplugged Slow_End3.mid"
+   },
+   {
+    "off": 133,
+    "on": 134,
+    "path": "Workspace_Styles/Unplugged Slow/Unplugged Slow_Fill2.mid"
+   },
+   {
+    "off": 1476,
+    "on": 1516,
+    "path": "Workspace_Styles/UnpluggedBallad1/UnpluggedBallad1_End1.mid"
+   },
+   {
+    "off": 284,
+    "on": 250,
+    "path": "Workspace_Styles/UnpluggedBallad1/UnpluggedBallad1_End2.mid"
+   },
+   {
+    "off": 142,
+    "on": 135,
+    "path": "Workspace_Styles/UnpluggedBallad1/UnpluggedBallad1_End3.mid"
+   },
+   {
+    "off": 1588,
+    "on": 1590,
+    "path": "Workspace_Styles/UnpluggedBallad1/UnpluggedBallad1_Intro1.mid"
+   },
+   {
+    "off": 115,
+    "on": 114,
+    "path": "Workspace_Styles/UnpluggedBallad1/UnpluggedBallad1_Intro2.mid"
+   },
+   {
+    "off": 358,
+    "on": 383,
+    "path": "Workspace_Styles/Waltz Ballad/Waltz Ballad_End1.mid"
+   },
+   {
+    "off": 119,
+    "on": 101,
+    "path": "Workspace_Styles/Waltz Ballad/Waltz Ballad_End2.mid"
+   },
+   {
+    "off": 62,
+    "on": 54,
+    "path": "Workspace_Styles/Waltz Ballad/Waltz Ballad_End3.mid"
+   },
+   {
+    "off": 35,
+    "on": 34,
+    "path": "Workspace_Styles/Waltz Ballad/Waltz Ballad_Fill1.mid"
+   },
+   {
+    "off": 47,
+    "on": 48,
+    "path": "Workspace_Styles/Waltz Ballad/Waltz Ballad_Fill2.mid"
+   },
+   {
+    "off": 85,
+    "on": 86,
+    "path": "Workspace_Styles/Waltz Ballad/Waltz Ballad_Intro2.mid"
+   },
+   {
+    "off": 13,
+    "on": 14,
+    "path": "Workspace_Styles/Wave Jazz/Wave Jazz_Break.mid"
+   },
+   {
+    "off": 673,
+    "on": 672,
+    "path": "Workspace_Styles/Wave Jazz/Wave Jazz_End1.mid"
+   },
+   {
+    "off": 890,
+    "on": 966,
+    "path": "Workspace_Styles/Western Movie/Western Movie_End2.mid"
+   },
+   {
+    "off": 187,
+    "on": 111,
+    "path": "Workspace_Styles/Western Movie/Western Movie_End3.mid"
+   }
+  ],
+  "velocity_127_only": [],
+  "zero_note_files": []
+ },
+ "anomaly_counts": {
+  "channel_overflow": 0,
+  "format2_files": 0,
+  "no_eot_tracks": 0,
+  "smpte_files": 0,
+  "trailing_bytes": 0,
+  "unbalanced_notes": 523,
+  "velocity_127_only": 0,
+  "zero_note_files": 0
+ },
+ "bank_program": {
+  "cc0_values": {
+   "0": 8,
+   "120": 3366,
+   "121": 3100,
+   "127": 45
+  },
+  "cc32_values": {
+   "0": 3368,
+   "1": 714,
+   "2": 906,
+   "3": 1229,
+   "4": 887,
+   "5": 707,
+   "6": 927,
+   "7": 570,
+   "8": 279,
+   "9": 402,
+   "10": 460,
+   "11": 584,
+   "12": 292,
+   "13": 693,
+   "14": 377,
+   "15": 405,
+   "16": 262,
+   "17": 261,
+   "18": 220,
+   "19": 468,
+   "20": 161,
+   "21": 134,
+   "22": 6,
+   "23": 90,
+   "24": 40,
+   "25": 197,
+   "26": 32,
+   "27": 50,
+   "28": 66,
+   "29": 120,
+   "30": 53,
+   "31": 19,
+   "32": 159,
+   "33": 21,
+   "34": 14,
+   "49": 2,
+   "50": 3,
+   "51": 6,
+   "64": 18,
+   "65": 16,
+   "66": 2,
+   "68": 2,
+   "69": 1,
+   "71": 8,
+   "77": 1,
+   "80": 7,
+   "83": 4
+  },
+  "distinct_programs": 113,
+  "program_histogram": {
+   "0": 953,
+   "1": 351,
+   "2": 376,
+   "3": 44,
+   "4": 764,
+   "5": 430,
+   "6": 49,
+   "7": 52,
+   "8": 26,
+   "9": 51,
+   "10": 15,
+   "11": 115,
+   "12": 78,
+   "13": 77,
+   "14": 2,
+   "15": 41,
+   "16": 279,
+   "17": 90,
+   "18": 70,
+   "19": 22,
+   "20": 8,
+   "21": 460,
+   "22": 31,
+   "23": 200,
+   "24": 520,
+   "25": 1074,
+   "26": 262,
+   "27": 777,
+   "28": 900,
+   "29": 12,
+   "30": 302,
+   "31": 89,
+   "32": 429,
+   "33": 1545,
+   "34": 745,
+   "35": 397,
+   "36": 215,
+   "37": 37,
+   "38": 73,
+   "39": 86,
+   "40": 32,
+   "41": 124,
+   "42": 234,
+   "43": 112,
+   "44": 2,
+   "45": 143,
+   "46": 32,
+   "47": 13,
+   "48": 758,
+   "49": 390,
+   "50": 393,
+   "51": 21,
+   "52": 124,
+   "53": 1,
+   "54": 10,
+   "55": 17,
+   "56": 323,
+   "57": 61,
+   "58": 78,
+   "59": 100,
+   "60": 64,
+   "61": 600,
+   "63": 5,
+   "64": 825,
+   "65": 390,
+   "66": 408,
+   "67": 83,
+   "68": 2,
+   "70": 2,
+   "71": 115,
+   "72": 27,
+   "73": 91,
+   "74": 18,
+   "75": 2,
+   "76": 11,
+   "77": 1,
+   "79": 1,
+   "80": 34,
+   "81": 102,
+   "84": 17,
+   "86": 3,
+   "87": 37,
+   "88": 13,
+   "89": 470,
+   "90": 358,
+   "91": 167,
+   "93": 16,
+   "94": 7,
+   "95": 5,
+   "96": 27,
+   "97": 36,
+   "98": 39,
+   "99": 2,
+   "100": 11,
+   "101": 12,
+   "102": 14,
+   "105": 32,
+   "106": 9,
+   "107": 20,
+   "108": 12,
+   "109": 2,
+   "110": 17,
+   "111": 7,
+   "112": 3,
+   "115": 18,
+   "116": 34,
+   "117": 45,
+   "118": 5,
+   "120": 84,
+   "122": 12,
+   "123": 151,
+   "125": 119,
+   "126": 170
+  }
+ },
+ "controllers": {
+  "0": 37141,
+  "1": 68640,
+  "2": 3164,
+  "4": 8,
+  "5": 16,
+  "6": 7506,
+  "7": 35232,
+  "8": 144,
+  "10": 3881,
+  "11": 73341,
+  "12": 111,
+  "19": 42,
+  "22": 23431,
+  "31": 3273,
+  "32": 37030,
+  "64": 6368,
+  "66": 67,
+  "67": 168,
+  "71": 2841,
+  "72": 2837,
+  "73": 2835,
+  "74": 2834,
+  "75": 2834,
+  "76": 2827,
+  "77": 2827,
+  "78": 2828,
+  "80": 9,
+  "91": 3797,
+  "93": 3813,
+  "97": 21,
+  "100": 7598,
+  "101": 7517,
+  "103": 65,
+  "110": 60,
+  "111": 10,
+  "114": 26,
+  "115": 56,
+  "116": 33,
+  "119": 565,
+  "121": 52
+ },
+ "duplicates": {
+  "0544bf0facdea011570be37a5a4e672dd869f9573bca467af7d761b2c75911d9": [
+   "Workspace_Styles/Half Beat/Half Beat_End2.mid",
+   "Workspace_Styles/Modern Beat/Modern Beat_End2.mid"
+  ],
+  "0b0952b3a8e082818a177da1c90fca6745f44c8efe52abbe39ccaf77c1a017cc": [
+   "Workspace_Styles/Half Beat/Half Beat_End3.mid",
+   "Workspace_Styles/Modern Beat/Modern Beat_End3.mid"
+  ],
+  "1c0e74d8978c3199cb235a5470ca0646f687332f90c0949e65f6274da141b7fc": [
+   "Workspace_Styles/Fast Big Band 2/Fast Big Band 2_End2.mid",
+   "Workspace_Styles/Serenade Band/Serenade Band_End2.mid"
+  ],
+  "22a59b82154f089f2fd141c5df30c40323b1eead3740947e6baf3f9d4f4ce206": [
+   "Workspace_Styles/Oberkr/Oberkr_ Waltz 1_End3.mid",
+   "Workspace_Styles/Oberkr/Oberkr_ Waltz 2_End3.mid"
+  ],
+  "2e83c8d9b7f9e46369762532624d84ebd125510a643f4440447cea46263c30e7": [
+   "Workspace_Styles/Jazz Funk/Jazz Funk_End3.mid",
+   "Workspace_Styles/Motown Shuffle 1/Motown Shuffle 1_End3.mid"
+  ],
+  "312d0b3dd6ea4a1aabc1fb7350da39d35d56de3b2e9a08a514f11d2908381ac6": [
+   "Workspace_Styles/Fast Big Band 2/Fast Big Band 2_End1.mid",
+   "Workspace_Styles/Serenade Band/Serenade Band_End1.mid"
+  ],
+  "3b953c9c33f2aa9e760253a461239a22a9b98008c2025090894ec657e41bf3d7": [
+   "Workspace_Styles/Real 16 Beat/Real 16 Beat_End2.mid",
+   "Workspace_Styles/Real 8 Beat/Real 8 Beat_End2.mid"
+  ],
+  "43c826a30c442e6b3f6ec9f14f5360b340688fcb3534238b0a08e6b1dd281825": [
+   "Workspace_Styles/Jazz Funk/Jazz Funk_Break.mid",
+   "Workspace_Styles/Motown Shuffle 1/Motown Shuffle 1_Break.mid"
+  ],
+  "460503b54f70b22e4fb205fd6822c9782f24fcc9c69f4b9970e7f9cae9bbc864": [
+   "Gold DNA/JOZA TUZNI-KNINDZA UZIVO (2).MID",
+   "Gold DNA/JOZA TUZNI-KNINDZA UZIVO.MID"
+  ],
+  "48c71d5b2027fac1e003bbb0ef1e94051857717a151f6b9a225f561cbe4c2fda": [
+   "Workspace_Styles/Slide Blues/Slide Blues_Fill2.mid",
+   "Workspace_Styles/Unplugged Rock/Unplugged Rock_Fill2.mid"
+  ],
+  "521b1a9fed6db1bebd6402f88bf3291e381c9840a90d86a3deba7203f53b1d21": [
+   "Workspace_Styles/Fast Big Band 2/Fast Big Band 2_Fill2.mid",
+   "Workspace_Styles/Serenade Band/Serenade Band_Fill2.mid"
+  ],
+  "5267fae13df96cc223a67395199508e13978987deec251cd39031752678ccfb2": [
+   "Workspace_Styles/Fast Big Band 2/Fast Big Band 2_End3.mid",
+   "Workspace_Styles/Serenade Band/Serenade Band_End3.mid"
+  ],
+  "5ef5f444cca1810841eecf53dd025953fe173df5d952bd26bbe60a8ab69c7ee0": [
+   "Workspace_Styles/Fast Big Band 2/Fast Big Band 2_Break.mid",
+   "Workspace_Styles/Serenade Band/Serenade Band_Break.mid"
+  ],
+  "6c8ffc75c4ac9f749829a1e99029f996826fdf3f6d6f8abf85bef0e52e2ac2d8": [
+   "Workspace_Styles/Slide Blues/Slide Blues_End3.mid",
+   "Workspace_Styles/Unplugged Rock/Unplugged Rock_End3.mid"
+  ],
+  "726e28c75ea522cef0c329a30b2a81012885bd93c0cb40dcac091355c080c9a2": [
+   "Workspace_Styles/Fast Big Band 2/Fast Big Band 2_Intro2.mid",
+   "Workspace_Styles/Serenade Band/Serenade Band_Intro2.mid"
+  ],
+  "80db5e23daa78e6591b4b6cf4c3c29062404ac8d43f8b011ed33d9d5a2c0b92e": [
+   "Workspace_Styles/Slide Blues/Slide Blues_Break.mid",
+   "Workspace_Styles/Unplugged Rock/Unplugged Rock_Break.mid"
+  ],
+  "88871442fcaef1a5df18c7033b66d1ca34b0251201c2b744f7bd889e63964ced": [
+   "Workspace_Styles/Jazz Funk/Jazz Funk_End1.mid",
+   "Workspace_Styles/Motown Shuffle 1/Motown Shuffle 1_End1.mid"
+  ],
+  "8ee4ab0968d7059ddcb2f49f3377cd3782caa6f6388d3eb4aad997d927286c82": [
+   "Workspace_Styles/Jazz Funk/Jazz Funk_End2.mid",
+   "Workspace_Styles/Motown Shuffle 1/Motown Shuffle 1_End2.mid"
+  ],
+  "ae030d8d170a3c2edaacf36327a5bad68152158305ff1c73a4ae7578464e44bd": [
+   "Workspace_Styles/Slide Blues/Slide Blues_End2.mid",
+   "Workspace_Styles/Unplugged Rock/Unplugged Rock_End2.mid"
+  ],
+  "bb3bcc85ae0880f5498f20bf2b942a4adda08681b0398b41071cee36c4543800": [
+   "Workspace_Styles/Fast Big Band 2/Fast Big Band 2_Intro3.mid",
+   "Workspace_Styles/Serenade Band/Serenade Band_Intro3.mid"
+  ],
+  "c054ea60a3caafb3261b593756708b364fba42fb86dde420b7bbea61b143a15d": [
+   "Workspace_Styles/Fast Big Band 2/Fast Big Band 2_Fill1.mid",
+   "Workspace_Styles/Serenade Band/Serenade Band_Fill1.mid"
+  ],
+  "cb8a7da4b829fcaa7af2ca2e6723661853051c95772823245222518accb8f0fa": [
+   "Workspace_Styles/Half Beat/Half Beat_Break.mid",
+   "Workspace_Styles/Modern Beat/Modern Beat_Break.mid"
+  ],
+  "cea688079889a56e7f794a55fc94040032cc2c862c396c98a4d2cbed7fd0e3a5": [
+   "Workspace_Styles/Slide Blues/Slide Blues_End1.mid",
+   "Workspace_Styles/Unplugged Rock/Unplugged Rock_End1.mid"
+  ],
+  "d0fd4a9d660492dde8889be67649e9f574c886f84009a7f05a888cdbcb44b511": [
+   "Workspace_Styles/Half Beat/Half Beat_End1.mid",
+   "Workspace_Styles/Modern Beat/Modern Beat_End1.mid"
+  ],
+  "ede09c2bc97ae92a484b470a5aac2be9d846d790f05636496dd0ca86e0f0d056": [
+   "Workspace_Styles/Real 16 Beat/Real 16 Beat_End3.mid",
+   "Workspace_Styles/Real 8 Beat/Real 8 Beat_End3.mid"
+  ]
+ },
+ "failures": [],
+ "formats": {
+  "0": 180,
+  "1": 3213
+ },
+ "meters": {
+  "1/4": 1,
+  "2/4": 326,
+  "3/4": 251,
+  "4/4": 3256,
+  "6/4": 31,
+  "6/8": 84,
+  "7/8": 12,
+  "8/8": 8,
+  "9/4": 6,
+  "9/8": 2
+ },
+ "per_corpus": {
+  "Gold DNA": {
+   "channels_used": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+   ],
+   "empty_files": 0,
+   "files": 182,
+   "files_with_warnings": 0,
+   "formats": {
+    "0": 180,
+    "1": 2
+   },
+   "notes_total": 2272811,
+   "pitch_bend_files": 171,
+   "ppq": {
+    "120": 2,
+    "192": 1,
+    "384": 178,
+    "480": 1
+   },
+   "sysex_files": 180,
+   "tracks_mean": 1.06,
+   "unique_sha256": 181,
+   "velocity_mean": 101.48,
+   "velocity_p10": 85.17,
+   "velocity_p90": 115.3
+  },
+  "Workspace_Styles": {
+   "channels_used": [
+    2,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+   ],
+   "empty_files": 0,
+   "files": 3211,
+   "files_with_warnings": 0,
+   "formats": {
+    "1": 3211
+   },
+   "notes_total": 1432867,
+   "pitch_bend_files": 661,
+   "ppq": {
+    "192": 3211
+   },
+   "sysex_files": 0,
+   "tracks_mean": 20.25,
+   "unique_sha256": 3187,
+   "velocity_mean": 86.09,
+   "velocity_p10": 68.58,
+   "velocity_p90": 102.64
+  }
+ },
+ "ppq": {
+  "120": 2,
+  "192": 3212,
+  "384": 178,
+  "480": 1
+ },
+ "tempo": {
+  "count": 3682,
+  "max_bpm": 215.0,
+  "mean_bpm": 112.67,
+  "min_bpm": 46.0
+ },
+ "totals": {
+  "duplicate_files": 50,
+  "duplicate_groups": 25,
+  "files_scanned": 3393,
+  "files_with_warnings": 0,
+  "notes_total": 3705678,
+  "parse_failures": 0,
+  "parsed_ok": 3393,
+  "unique_sha256": 3368
+ },
+ "track_count_histogram": {
+  "1": 180,
+  "2": 1,
+  "3": 1,
+  "4": 1,
+  "5": 14,
+  "6": 32,
+  "7": 35,
+  "8": 131,
+  "9": 106,
+  "10": 99,
+  "11": 102,
+  "12": 213,
+  "13": 264,
+  "14": 292,
+  "15": 240,
+  "16": 118,
+  "17": 54,
+  "18": 254,
+  "19": 35,
+  "20": 254,
+  "21": 41,
+  "22": 320,
+  "23": 62,
+  "24": 6,
+  "26": 34,
+  "28": 16,
+  "29": 48,
+  "30": 1,
+  "32": 9,
+  "33": 7,
+  "34": 1,
+  "36": 16,
+  "43": 2,
+  "44": 1,
+  "46": 2,
+  "47": 1,
+  "48": 4,
+  "49": 10,
+  "50": 386
+ },
+ "velocity_overall": {
+  "mean_of_file_means": 86.91
+ },
+ "warning_kinds": {}
+}

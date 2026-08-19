@@ -6,3 +6,7 @@ venv/
 build/
 .pytest_cache/
 .mypy_cache/
+
+# forenzicki sirovi zapisi (veliki, regenerisu se alatom)
+/tmp/fx/
+forensics/*-records.json
