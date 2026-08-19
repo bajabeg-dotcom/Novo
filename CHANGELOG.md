@@ -18,6 +18,14 @@ Faza A i pocetak faze B iz PLAN_REVIZIJE.md.
 - `tests/regression/test_rx_trigger_zones.py`: 15 testova RX trigger zona;
   fiksira granicu na "od 96 (C7) ukljucivo".
 - `NEDOVRSENO.md`: radni spisak nedovrsenog sa statusom svake stavke.
+- `profiles/rx.py`: RX oscillator profile schema, 12 profila iz
+  `evidence/oscilatori/Oscilatori.txt` (Finger/Picked/SlapFing/SlapPick Bass RX,
+  Clean Guitar RX1-RX6, Dist Guitar RX1/RX2, Power Chords). Svaki nosi
+  velocity/key zone, switch pragove, evidence status i izvor.
+- `optimize/rx_guard.py`: velocity izmjene se provjeravaju protiv
+  oscilatorskih zona. Apsolutni okidaci (C7-G9) se ne diraju; izmjena koja bi
+  promijenila artikulaciju se skrati na granicu zone ili odbaci; profil ispod
+  `documented` ne moze odobriti automatsku izmjenu.
 
 ## Popravljeno
 - CLI vise ne izbacuje Python traceback na ocekivane greske (nepostojeca
@@ -25,11 +33,15 @@ Faza A i pocetak faze B iz PLAN_REVIZIJE.md.
   `PA800_ENHANCER_TRACEBACK=1` vraca puni traceback za debugiranje.
 - Dokumentacija: guitar RX noise zona je "od 96 (C7)", ne "iznad 96".
 
+## Promijenjeno
+- `VelocityRangeModule` prima `rx_profile` i postuje oscilatorske zone.
+  Bez profila ponasanje je nepromijenjeno.
+- Ispravka praga: SlapFing/SlapPick Bass RX radni oscilator prelazi na 87,
+  ne 94. Ceka PCG/Sound Edit potvrdu na uredjaju.
+
 ## Poznate rupe (zabiljezene kao strict xfail)
 - Drum adresa 120.0.4 je hardkodirana u `optimize/conservative.py:45` i
   dodjeljuje se i bez ijednog dokaza iz kataloga.
-- Konzervativni i velocity optimizer ne citaju RX oscillator konfiguraciju
-  iz `config/performance-defaults.json`.
 
 # Changelog
 

@@ -101,26 +101,79 @@ class TestConfiguredOscillators:
             assert config[key]["status"] != "hardware_confirmed"
 
 
-class TestKnownGaps:
-    """Rupe iz spiska koje jos nisu zatvorene -- prijavljuju se same."""
+class TestOptimizerIsOscillatorAware:
+    """Rupa N2 je zatvorena: velocity optimizer sada postuje RX zone.
 
-    @pytest.mark.xfail(
-        strict=True,
-        reason=(
-            "Spisak 2.2: konzervativni/velocity optimizer jos ne cita "
-            "config/performance-defaults.json, pa nije oscillator-aware. "
-            "Test postaje zelen kada optimize/ ucita RX profile."
-        ),
-    )
-    def test_optimizer_reads_oscillator_config(self) -> None:
-        import pa800_enhancer.optimize.conservative as conservative
-        import pa800_enhancer.optimize.velocity as velocity
+    Testira se PONASANJE, ne prisustvo teksta u izvoru.
+    """
 
-        sources = (conservative.__file__, velocity.__file__)
-        text = "".join(Path(p).read_text(encoding="utf-8") for p in sources)
+    def _context(self, song):
+        from pa800_enhancer.optimize.base import OptimizationContext
+        from pa800_enhancer.profiles.models import DeviceProfile
 
-        assert (
-            "dist_guitar_rx" in text
-            or "performance-defaults" in text
-            or "oscillator" in text.lower()
-        ), "optimizer ne referencira RX oscillator konfiguraciju"
+        return OptimizationContext(song=song, device_profile=DeviceProfile("test"))
+
+    def test_velocity_module_respects_articulation_zones(self) -> None:
+        """Clamp na 127 ne smije preskociti iz Radni u Harm zonu."""
+        from pa800_enhancer.optimize.velocity import VelocityRangeModule
+        from pa800_enhancer.profiles.rx import builtin_rx_profiles
+        from pa800_enhancer.smf.reader import SmfReader
+
+        from tests.conftest import build_midi
+
+        # Nota na velocity 90 = Radni zona (53-113) na Finger Bass RX.
+        data = build_midi(
+            fmt=0,
+            ppq=192,
+            tracks=[[(0, bytes([0x90, 40, 90])), (192, bytes([0x80, 40, 0]))]],
+        )
+        song = SmfReader().parse(data)
+        bass = builtin_rx_profiles().by_id("finger-bass-rx")
+
+        module = VelocityRangeModule(minimum=120, maximum=127, rx_profile=bass)
+        changes = module.suggest(self._context(song))
+
+        assert len(changes.changes) == 1
+        # Bez RX svijesti bilo bi 120 (i preslo u Harm); sa njom staje na 113.
+        assert changes.changes[0].new_value == 113
+
+    def test_velocity_module_never_touches_trigger_notes(self) -> None:
+        from pa800_enhancer.optimize.velocity import VelocityRangeModule
+        from pa800_enhancer.profiles.rx import builtin_rx_profiles
+        from pa800_enhancer.smf.reader import SmfReader
+
+        from tests.conftest import build_midi
+
+        # Nota 100 = C7+, apsolutni okidac.
+        data = build_midi(
+            fmt=0,
+            ppq=192,
+            tracks=[[(0, bytes([0x90, 100, 20])), (192, bytes([0x80, 100, 0]))]],
+        )
+        song = SmfReader().parse(data)
+        bass = builtin_rx_profiles().by_id("finger-bass-rx")
+
+        module = VelocityRangeModule(minimum=64, maximum=127, rx_profile=bass)
+        changes = module.suggest(self._context(song))
+
+        assert changes.changes == [], "trigger nota se ne smije mijenjati"
+
+    def test_without_rx_profile_behaviour_is_unchanged(self) -> None:
+        """Regresija: stari put mora raditi tacno kao prije."""
+        from pa800_enhancer.optimize.velocity import VelocityRangeModule
+        from pa800_enhancer.smf.reader import SmfReader
+
+        from tests.conftest import build_midi
+
+        data = build_midi(
+            fmt=0,
+            ppq=192,
+            tracks=[[(0, bytes([0x90, 40, 90])), (192, bytes([0x80, 40, 0]))]],
+        )
+        song = SmfReader().parse(data)
+
+        module = VelocityRangeModule(minimum=120, maximum=127)
+        changes = module.suggest(self._context(song))
+
+        assert len(changes.changes) == 1
+        assert changes.changes[0].new_value == 120

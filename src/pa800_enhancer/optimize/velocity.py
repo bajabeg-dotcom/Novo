@@ -1,11 +1,16 @@
 import hashlib
 import math
 from dataclasses import dataclass
+from typing import TYPE_CHECKING
 
 from ..analysis.meter_map import MeterMap
 from ..analysis.notes import Note, pair_notes
 from ..domain.changes import Change, ChangeSet, RiskLevel
 from .base import OptimizationContext
+
+if TYPE_CHECKING:  # pragma: no cover
+    from .rx_guard import RxVelocityGuard
+    from ..profiles.rx import RxSoundProfile
 
 
 @dataclass(frozen=True, slots=True)
@@ -257,15 +262,43 @@ def shape_velocity_automatically(context: OptimizationContext, catalog) -> Autom
 
 
 class VelocityRangeModule:
+    """Ogranici velocity na odobreni opseg, uz postovanje RX oscilatora.
+
+    RX-aware ponasanje (stavka 2.2 iz spiska nedovrsenog): na Pa800 RX
+    zvuku velocity bira oscilator, tj. artikulaciju. Kada je poznat RX
+    profil, prijedlog prolazi kroz `RxVelocityGuard`, pa se izmjena koja bi
+    presla u drugi oscilator skrati na granicu zone ili odbaci. Note u
+    apsolutnoj trigger zoni (C7-G9) se nikada ne diraju.
+
+    Bez RX profila ponasanje je nepromijenjeno u odnosu na raniju verziju.
+    """
+
     name = "velocity"
 
-    def __init__(self, minimum: int = 1, maximum: int = 127) -> None:
+    def __init__(
+        self,
+        minimum: int = 1,
+        maximum: int = 127,
+        *,
+        rx_guard: "RxVelocityGuard | None" = None,
+        rx_profile: "RxSoundProfile | None" = None,
+        role_by_channel: dict[int, str] | None = None,
+    ) -> None:
         if not 1 <= minimum <= maximum <= 127:
             raise ValueError("invalid velocity range")
         self.minimum = minimum
         self.maximum = maximum
+        self.rx_guard = rx_guard
+        self.rx_profile = rx_profile
+        self.role_by_channel = role_by_channel or {}
 
     def suggest(self, context: OptimizationContext) -> ChangeSet:
+        from .rx_guard import RxVelocityGuard, VelocityProposal
+
+        guard = self.rx_guard
+        if guard is None and self.rx_profile is not None:
+            guard = RxVelocityGuard()
+
         changes: list[Change] = []
         for track in context.song.tracks:
             for event in track.events:
@@ -273,6 +306,37 @@ class VelocityRangeModule:
                     continue
                 velocity = event.data[1]
                 target = min(self.maximum, max(self.minimum, velocity))
-                if target != velocity:
-                    changes.append(Change(f"velocity:{event.event_id}", self.name, "clamp velocity to approved profile range", RiskLevel.MEDIUM, event.event_id, "velocity", velocity, target))
+                if target == velocity:
+                    continue
+
+                if guard is not None:
+                    decision = guard.review_one(
+                        VelocityProposal(
+                            event_id=event.event_id,
+                            note=event.data[0],
+                            old_velocity=velocity,
+                            new_velocity=target,
+                            channel=event.channel,
+                            role=self.role_by_channel.get(
+                                event.channel or -1, "unknown"
+                            ),
+                        ),
+                        self.rx_profile,
+                    )
+                    if not decision.is_change:
+                        continue
+                    target = decision.applied_velocity
+
+                changes.append(
+                    Change(
+                        f"velocity:{event.event_id}",
+                        self.name,
+                        "clamp velocity to approved profile range",
+                        RiskLevel.MEDIUM,
+                        event.event_id,
+                        "velocity",
+                        velocity,
+                        target,
+                    )
+                )
         return ChangeSet(changes)

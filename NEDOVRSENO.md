@@ -23,6 +23,7 @@ Legenda statusa:
 | **10** guitar RX zona `iznad 96` | **ispravljeno**: tačno je **od 96 (C7) uključivo** | `test_rx_trigger_zones.py::test_boundary_is_inclusive_not_exclusive` |
 | **10** CLI ispisuje traceback | **popravljeno**: kratka poruka + exit 2 | `test_cli_contract.py::TestErrorHandling` |
 | **10** nema unit testa za mapper | **gotovo**: 20 testova | `test_preservation_contract.py` |
+| **11.2** RX profile schema | **gotovo**: 12 profila + guard spojen na velocity | `test_rx_profiles.py` (35), `test_rx_trigger_zones.py` (19) |
 
 ### Incident „Nevera moja" je sada trajno zaključan
 
@@ -64,15 +65,17 @@ Zaključano kao `xfail(strict)` u
 `test_preservation_contract.py::test_drum_kit_requires_evidence` — test će sam
 postati zelen kad adresa počne dolaziti iz dokaza.
 
-### N2 — optimizer ne čita RX oscillator konfiguraciju 🔒
+### N2 — optimizer ne čita RX oscillator konfiguraciju ✅ ZATVORENO
 
-Potvrđuje §2.2. `absolute_trigger` logika postoji **samo** u
-`arranging/factory_source.py:69`; `optimize/conservative.py` i
-`optimize/velocity.py` ne referenciraju `dist_guitar_rx` ni
-`performance-defaults.json`.
+Bilo: `absolute_trigger` logika postojala je **samo** u
+`arranging/factory_source.py:69`, a optimizeri je nisu čitali.
 
-Zaključano kao `xfail(strict)` u
-`test_rx_trigger_zones.py::test_optimizer_reads_oscillator_config`.
+Sada: `profiles/rx.py` nosi 12 RX profila izvedenih iz `Oscilatori.txt`, a
+`optimize/rx_guard.py` provjerava svaki velocity prijedlog protiv
+oscilatorskih zona. `VelocityRangeModule` prima `rx_profile` i poštuje ga.
+
+Zaključano testovima ponašanja (ne grep-om izvora) u
+`test_rx_trigger_zones.py::TestOptimizerIsOscillatorAware`.
 
 ### N3 — 0,99 % nota tiho otpada pri uparivanju 🔒
 
@@ -94,14 +97,28 @@ Alat za ovo **već postoji i radi** (`hardware generate` / `record-cycle` /
 Nedostaje: probe MIDI po adresi, dva ciklusa na uređaju, zapis OS/resource
 verzije, blokiranje izvoza za nepotvrđenu adresu.
 
-### 2.2 Potpuna RX/oscillator baza 📋
+### 2.2 Potpuna RX/oscillator baza 🔒 djelimično
 
-Config već sadrži `dist_guitar_rx` (3 oscilatora, velocity split 1–87 / 88–127,
-noise zona C7–G9) i `power_chord` (oba sloja 1–127). **Zaključano testom** u
-`test_rx_trigger_zones.py::TestConfiguredOscillators`.
+**Urađeno:** `profiles/rx.py` — verzionirana schema sa 12 profila iz
+`evidence/oscilatori/Oscilatori.txt`:
 
-Nedostaje: bank/program veza za svaki RX naziv, potpuna lista soundova i
-kitova, spajanje na mapper/velocity/articulation/validator (vidi N2).
+| Porodica | Profili | Zona |
+|---|---|---|
+| bass | Finger, Picked, SlapFing, SlapPick RX | 5 (Gliss/Stop/Radni/Harm + Noise) |
+| guitar | Clean RX1–RX6 | 5 (Harm-Ghost/Dead-Mute/Radni/Slap-Slide + Noise) |
+| guitar | Dist Guitar RX1/RX2 | 3 (Mute 1–87 / Dist 88–127 + Noise) |
+| guitar | Power Chords | 1 (oba sloja 1–127, čista dinamika) |
+
+Svaki nosi `evidence_status` (svi `documented`), izvor i validaciju opsega.
+SlapFing/SlapPick prag je **87** — ispravka ranije zapisanog 94 — uz bilješku
+da čeka PCG/Sound Edit potvrdu.
+
+**Spojeno na velocity** kroz `RxVelocityGuard`: izmjena koja bi prešla u drugi
+oscilator se skrati na granicu zone ili odbaci; note u C7–G9 se ne diraju.
+
+**Nedostaje:** bank/program veza za većinu naziva (samo Power Chords ima
+adresu), potpuna lista svih RX soundova i kitova, spajanje na articulation i
+validator, Pop Std. Kit RX per-nota velocity slojevi.
 
 ### 2.3 Sigurno automatsko sound mapiranje 📋
 
@@ -128,10 +145,10 @@ Prioritet ostaje redoslijed iz §11.
 ## Stanje testova
 
 ```
-155 testova ukupno
-  144 prolaze
+194 testa ukupno
+  182 prolaze
    11 preskočeno (traže vanjsku bazu/korpus)
-    2 xfail(strict) — dokumentovane rupe N1 i N2
+    1 xfail(strict) — dokumentovana rupa N1
 ```
 
 Pokretanje:
@@ -147,8 +164,8 @@ PA800_TEST_DATABASE=... PA800_TEST_CORPUS=... pytest   # sve
 ## Sljedeći korak po §11
 
 1. ~~Regression test za očuvanje~~ **gotovo**
-2. **RX profile schema** → spojiti na mapper/velocity/articulation/validator
-   (zatvara N2, dio 2.2 i 2.3)
+2. ~~RX profile schema → velocity~~ **gotovo** (N2 zatvoren). Ostaje spojiti
+   na articulation i validator, te dodati bank/program adrese.
 3. Hardware probe paket za sve korištene Factory adrese (zatvara N1 i 2.1) 🔧
 4. Konzervativni output leveling uz zaštitu tihih layera (2.4)
 5. Gold mikro-dinamika samo na potvrđene adrese (3.1)
