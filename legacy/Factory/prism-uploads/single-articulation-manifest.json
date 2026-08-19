@@ -1,0 +1,201 @@
+{
+  "policy": "factory_gold_only_single_trigger",
+  "files": [
+    {
+      "probe_file_id": 1,
+      "output": "Finger_Bass_RX__Gliss__453b9e2487.mid",
+      "profile": "Finger Bass RX",
+      "articulation": "Gliss",
+      "address": [
+        121,
+        13,
+        33
+      ],
+      "trigger": {
+        "note": 57,
+        "velocity": 21,
+        "duration_quarters": 0.9947916666666666
+      },
+      "context": {
+        "previous": {
+          "note": 33,
+          "velocity": 113,
+          "duration_quarters": 0.4947916666666667
+        },
+        "next": {
+          "note": 38,
+          "velocity": 113,
+          "duration_quarters": 0.9947916666666666
+        }
+      },
+      "source": {
+        "source_class": "gold_raw",
+        "member": "Gold DNA/A JA VOLIM ONO T-KORIJENI UZIVO.MID",
+        "sha256": "4acb3ceaa6855ec72302ed28d3dcff10ef78ec6a5c9f2f7970af864c74479dfd",
+        "track": 0,
+        "channel": 8,
+        "tick": 13440
+      },
+      "occurrence_count": 25,
+      "file_count": 1,
+      "evidence_status": "OBSERVED_UNVERIFIED_TRIGGER"
+    },
+    {
+      "probe_file_id": 2,
+      "output": "Pop_Std._Kit_RX__B1_C2__395b2bc518.mid",
+      "profile": "Pop Std. Kit RX",
+      "articulation": "B1/C2",
+      "address": [
+        120,
+        0,
+        4
+      ],
+      "trigger": {
+        "note": 36,
+        "velocity": 127,
+        "duration_quarters": 0.71875
+      },
+      "context": {
+        "previous": null,
+        "next": null
+      },
+      "source": {
+        "source_class": "gold_raw",
+        "member": "Gold DNA/ALA-BASKA-USNE-MIX  PJESAMA UZIVO.MID",
+        "sha256": "aab0e46f9889747c5758ea726879d6daa40ce0f32be58bf0a86f091e1ca9d98e",
+        "track": 0,
+        "channel": 9,
+        "tick": 1536
+      },
+      "occurrence_count": 1239,
+      "file_count": 2,
+      "evidence_status": "OBSERVED_UNVERIFIED_TRIGGER"
+    },
+    {
+      "probe_file_id": 3,
+      "output": "Pop_Std._Kit_RX__D2_E2_layers__d77f63c504.mid",
+      "profile": "Pop Std. Kit RX",
+      "articulation": "D2/E2 layers",
+      "address": [
+        120,
+        0,
+        4
+      ],
+      "trigger": {
+        "note": 38,
+        "velocity": 127,
+        "duration_quarters": 0.18229166666666666
+      },
+      "context": {
+        "previous": null,
+        "next": null
+      },
+      "source": {
+        "source_class": "gold_raw",
+        "member": "Gold DNA/ALA-BASKA-USNE-MIX  PJESAMA UZIVO.MID",
+        "sha256": "aab0e46f9889747c5758ea726879d6daa40ce0f32be58bf0a86f091e1ca9d98e",
+        "track": 0,
+        "channel": 9,
+        "tick": 1920
+      },
+      "occurrence_count": 876,
+      "file_count": 2,
+      "evidence_status": "OBSERVED_UNVERIFIED_TRIGGER"
+    },
+    {
+      "probe_file_id": 4,
+      "output": "Pop_Std._Kit_RX__F_2_layers__d388f5884d.mid",
+      "profile": "Pop Std. Kit RX",
+      "articulation": "F#2 layers",
+      "address": [
+        120,
+        0,
+        4
+      ],
+      "trigger": {
+        "note": 42,
+        "velocity": 110,
+        "duration_quarters": 0.11197916666666667
+      },
+      "context": {
+        "previous": null,
+        "next": null
+      },
+      "source": {
+        "source_class": "gold_raw",
+        "member": "Gold DNA/ALA-BASKA-USNE-MIX  PJESAMA UZIVO.MID",
+        "sha256": "aab0e46f9889747c5758ea726879d6daa40ce0f32be58bf0a86f091e1ca9d98e",
+        "track": 0,
+        "channel": 9,
+        "tick": 1536
+      },
+      "occurrence_count": 1677,
+      "file_count": 2,
+      "evidence_status": "OBSERVED_UNVERIFIED_TRIGGER"
+    },
+    {
+      "probe_file_id": 5,
+      "output": "Pop_Std._Kit_RX__Single_layer__f253eff2b9.mid",
+      "profile": "Pop Std. Kit RX",
+      "articulation": "Single layer",
+      "address": [
+        120,
+        0,
+        4
+      ],
+      "trigger": {
+        "note": 42,
+        "velocity": 110,
+        "duration_quarters": 0.11197916666666667
+      },
+      "context": {
+        "previous": null,
+        "next": null
+      },
+      "source": {
+        "source_class": "gold_raw",
+        "member": "Gold DNA/ALA-BASKA-USNE-MIX  PJESAMA UZIVO.MID",
+        "sha256": "aab0e46f9889747c5758ea726879d6daa40ce0f32be58bf0a86f091e1ca9d98e",
+        "track": 0,
+        "channel": 9,
+        "tick": 1536
+      },
+      "occurrence_count": 1826,
+      "file_count": 2,
+      "evidence_status": "OBSERVED_UNVERIFIED_TRIGGER"
+    },
+    {
+      "probe_file_id": 6,
+      "output": "Pop_Std._Kit_RX__G_2_A_2__ba9fd3d63a.mid",
+      "profile": "Pop Std. Kit RX",
+      "articulation": "G#2/A#2",
+      "address": [
+        120,
+        0,
+        4
+      ],
+      "trigger": {
+        "note": 46,
+        "velocity": 127,
+        "duration_quarters": 0.1484375
+      },
+      "context": {
+        "previous": null,
+        "next": null
+      },
+      "source": {
+        "source_class": "gold_raw",
+        "member": "Gold DNA/ALA-BASKA-USNE-MIX  PJESAMA UZIVO.MID",
+        "sha256": "aab0e46f9889747c5758ea726879d6daa40ce0f32be58bf0a86f091e1ca9d98e",
+        "track": 0,
+        "channel": 9,
+        "tick": 12672
+      },
+      "occurrence_count": 121,
+      "file_count": 2,
+      "evidence_status": "OBSERVED_UNVERIFIED_TRIGGER"
+    }
+  ],
+  "candidates": 39,
+  "files_created": 6
+}

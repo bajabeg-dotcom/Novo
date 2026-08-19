@@ -1,0 +1,18 @@
+# KORG PA800 MIDI Optimizer - Test Suite Requirements
+
+# Core testing framework
+pytest>=7.0.0
+pytest-cov>=4.0.0
+
+# Optional but recommended
+pytest-mock>=3.10.0      # For mocking
+pytest-benchmark>=4.0.0  # For performance testing
+pytest-xdist>=3.0.0      # For parallel test execution
+
+# Code quality
+coverage>=6.0
+
+# Development tools (optional)
+black>=22.0.0            # Code formatting
+flake8>=4.0.0            # Linting
+mypy>=0.950              # Type checking

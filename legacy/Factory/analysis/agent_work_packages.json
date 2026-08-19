@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "governance_document": "X10_AGENT_OPERATING_MODEL.md",
+  "roles": {
+    "chatgpt_architect": "plan_priorities_contracts_acceptance",
+    "chatgpt_audit": "gaps_risks_contradictions_dependencies",
+    "codex_lead": "technical_breakdown_file_ownership_integration",
+    "codex_implementer": "code_and_targeted_tests",
+    "codex_qa": "independent_accept_return_block",
+    "human_owner": "goal_material_decisions_pa800_evidence_release"
+  },
+  "workflow": ["HUMAN_GOAL", "ARCHITECT_READY", "AUDIT_REVIEWED", "LEAD_READY", "IMPLEMENTING", "READY_FOR_QA", "ACCEPTED_TECHNICAL", "PENDING_HUMAN", "RELEASED"],
+  "completed_work_packages": [
+    {
+      "wp_id": "WP-X10-011",
+      "title": "Role, Program, CV and Tempo Context Join plus Negative Corpus",
+      "capability": "ANALYZE_ONLY",
+      "status": "PENDING_HUMAN",
+      "qa_verdict": "ACCEPT",
+      "qa_history": ["RETURN", "RETURN", "RETURN", "RETURN", "ACCEPT"],
+      "tests_passed": 143,
+      "evidence": ["WP-X10-011_ARCHITECT.md", "WP-X10-011_ARCHITECT_ADDENDUM.md", "WP-X10-011_AUDIT.md", "WP-X10-011_REAUDIT.md", "WP-X10-011_LEAD_PLAN.md", "WP-X10-011_QA_PASS5.md"]
+    }
+  ],
+  "active_work_package": {
+    "wp_id": "WP-X10-013C-S",
+    "version": 1,
+    "title": "Phase-independent Structural Slot Registry",
+    "capability": "ANALYZE_ONLY",
+    "mutation_capability": "NONE",
+    "status": "BLOCKED_PRODUCTION_AUTHORITY",
+    "architect": "ChatGPT Architect",
+    "audit": "ChatGPT Audit",
+    "lead": "Codex Lead",
+    "implementer": "Codex Implementer",
+    "qa": "Codex QA",
+    "human_owner": "User",
+    "dependencies": ["WP-X10-012C_QA_ACCEPT", "WP-X10-012D_QA_ACCEPT"],
+    "architect_evidence": ["WP-X10-013C_ARCHITECT.md", "WP-X10-013C_ARCHITECT_ADDENDUM.md"],
+    "audit_evidence": ["WP-X10-013C_AUDIT.md", "WP-X10-013C_REAUDIT.md", "WP-X10-013C_S_PROOF_REVIEW.md"],
+    "lead_evidence": "WP-X10-013C_LEAD_PLAN.md",
+    "qa_evidence": "WP-X10-013C_S_QA_PASS4.md",
+    "qa_verdict": "ACCEPT_TEST_ONLY",
+    "qa_history": ["RETURN", "RETURN", "RETURN", "ACCEPT_TEST_ONLY"],
+    "qa_findings_open": 0,
+    "test_only_structural_library": "PROVEN",
+    "production_authority_integration": "NOT_PROVABLE",
+    "production_materialization": "DISABLED",
+    "calibration_envelope": "BLOCKED",
+    "acceptance_label": "013C_S_TEST_ONLY_STRUCTURAL_LIBRARY_ACCEPTED",
+    "targeted_tests_passed": 51,
+    "current_tests_passed": 481,
+    "human_decisions_required": ["External signed or platform Factory authority root is required for production materialization", "Pa800 evidence remains Human Owner authority", "release remains NOT_PROVEN"]
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local.invalid/midi-enhancer/master-registry.schema.json",
+  "title": "MIDI Enhancer Master Registry v0",
+  "type": "object",
+  "required": ["registry_version", "as_of", "records"],
+  "additionalProperties": false,
+  "properties": {
+    "registry_version": {"type": "string", "pattern": "^0\\.[0-9]+\\.[0-9]+$"},
+    "as_of": {"type": "string", "format": "date"},
+    "records": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/record"}
+    }
+  },
+  "$defs": {
+    "axis": {
+      "type": "object",
+      "required": ["state", "detail"],
+      "additionalProperties": false,
+      "properties": {
+        "state": {
+          "enum": ["NOT_APPLICABLE", "NONE", "PROPOSED", "PARTIAL", "BLOCKED", "FAIL", "PASS", "CONFIRMED"]
+        },
+        "detail": {"type": "string", "minLength": 1}
+      }
+    },
+    "record": {
+      "type": "object",
+      "required": [
+        "id", "kind", "title", "summary", "lifecycle", "evidence",
+        "implementation", "validation", "certification", "refs"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "id": {"type": "string", "pattern": "^[A-Z][A-Z0-9_]*-[0-9]{3}$"},
+        "kind": {
+          "enum": ["RESOURCE", "MODULE", "TEST", "TEST_RUN", "CLAIM", "EVIDENCE", "ISSUE", "DECISION", "CERTIFICATION"]
+        },
+        "external_id": {"type": "string"},
+        "title": {"type": "string", "minLength": 1},
+        "summary": {"type": "string", "minLength": 1},
+        "lifecycle": {
+          "enum": ["ACTIVE", "PROPOSED", "BLOCKED", "FAILED", "SUPERSEDED", "IDEA_CATALOG", "HISTORICAL"]
+        },
+        "path": {"type": "string"},
+        "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "source_scope": {"type": "string"},
+        "command": {"type": "string"},
+        "observations": {"type": "integer", "minimum": 0},
+        "observation_unit": {"type": "string"},
+        "evidence": {"$ref": "#/$defs/axis"},
+        "implementation": {"$ref": "#/$defs/axis"},
+        "validation": {"$ref": "#/$defs/axis"},
+        "certification": {"$ref": "#/$defs/axis"},
+        "refs": {
+          "type": "array",
+          "items": {"type": "string", "pattern": "^[A-Z][A-Z0-9_]*-[0-9]{3}$"},
+          "uniqueItems": true
+        }
+      },
+      "allOf": [
+        {"if": {"properties": {"kind": {"const": "RESOURCE"}}}, "then": {"properties": {"id": {"pattern": "^DATA-[0-9]{3}$"}}}},
+        {"if": {"properties": {"kind": {"const": "MODULE"}}}, "then": {"properties": {"id": {"pattern": "^MOD-[0-9]{3}$"}}}},
+        {"if": {"properties": {"kind": {"const": "TEST"}}}, "then": {"properties": {"id": {"pattern": "^TEST-[0-9]{3}$"}}}},
+        {"if": {"properties": {"kind": {"const": "TEST_RUN"}}}, "then": {"properties": {"id": {"pattern": "^RUN-[0-9]{3}$"}}}},
+        {"if": {"properties": {"kind": {"const": "CLAIM"}}}, "then": {"properties": {"id": {"pattern": "^CLAIM-[0-9]{3}$"}}}},
+        {"if": {"properties": {"kind": {"const": "EVIDENCE"}}}, "then": {"properties": {"id": {"pattern": "^EVID-[0-9]{3}$"}}}},
+        {"if": {"properties": {"kind": {"const": "ISSUE"}}}, "then": {"properties": {"id": {"pattern": "^ISSUE-[0-9]{3}$"}}}},
+        {"if": {"properties": {"kind": {"const": "DECISION"}}}, "then": {"properties": {"id": {"pattern": "^DEC-[0-9]{3}$"}}}},
+        {"if": {"properties": {"kind": {"const": "CERTIFICATION"}}}, "then": {"properties": {"id": {"pattern": "^CERT-[0-9]{3}$"}}}},
+        {
+          "if": {"properties": {"lifecycle": {"const": "IDEA_CATALOG"}}},
+          "then": {
+            "properties": {
+              "kind": {"const": "RESOURCE"},
+              "implementation": {"properties": {"state": {"const": "NONE"}}},
+              "validation": {"properties": {"state": {"const": "NONE"}}},
+              "certification": {"properties": {"state": {"const": "NONE"}}}
+            }
+          }
+        }
+      ]
+    }
+  }
+}

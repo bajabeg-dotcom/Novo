@@ -1,0 +1,4347 @@
+{
+  "registry_version": "0.17.1",
+  "as_of": "2026-08-14",
+  "records": [
+    {
+      "id": "DATA-001",
+      "kind": "RESOURCE",
+      "title": "Korg Pa800 2.0 User's Manual (E12)",
+      "summary": "Normativni izvor za Pa800 korisničke funkcije te popise tvorničkih Soundova i Drum Kitova.",
+      "lifecycle": "ACTIVE",
+      "path": "prism-uploads/Pa800-201UM-ENG.pdf",
+      "sha256": "b7df16fb0113d998a6411ea1c28971707021da8bc0b728aff98eafcceb57c71b",
+      "source_scope": "Pa800-specifične tvrdnje; tiskane stranice moraju biti navedene u povezanim dokazima.",
+      "evidence": {
+        "state": "CONFIRMED",
+        "detail": "Lokalni službeni PDF postoji i SHA-256 je ponovno izračunljiv."
+      },
+      "implementation": {
+        "state": "NOT_APPLICABLE",
+        "detail": "Dokument nije programski modul."
+      },
+      "validation": {
+        "state": "PASS",
+        "detail": "Datoteka postoji; hash je registriran."
+      },
+      "certification": {
+        "state": "NOT_APPLICABLE",
+        "detail": "Izvor podupire certifikaciju drugih zapisa, ali sam nije funkcija."
+      },
+      "refs": []
+    },
+    {
+      "id": "DATA-002",
+      "kind": "RESOURCE",
+      "title": "Korg Pa800 2.0 Advanced Edit Manual (E5)",
+      "summary": "Normativni izvor za detalje uređivanja i ponašanja Pa800 zvuka.",
+      "lifecycle": "ACTIVE",
+      "path": "prism-uploads/Pa800_AE_E.pdf",
+      "sha256": "6bcda56658a89eda31e9fe62a2b744df5cecaaf478e050d3256ad6440c0d413e",
+      "evidence": {
+        "state": "CONFIRMED",
+        "detail": "Lokalni službeni PDF postoji i SHA-256 je ponovno izračunljiv."
+      },
+      "implementation": {
+        "state": "NOT_APPLICABLE",
+        "detail": "Dokument nije programski modul."
+      },
+      "validation": {
+        "state": "PASS",
+        "detail": "Datoteka postoji; hash je registriran."
+      },
+      "certification": {
+        "state": "NOT_APPLICABLE",
+        "detail": "Izvor podupire certifikaciju drugih zapisa, ali sam nije funkcija."
+      },
+      "refs": []
+    },
+    {
+      "id": "DATA-003",
+      "kind": "RESOURCE",
+      "title": "Split Factory Styles corpus",
+      "summary": "Read-only Factory Style Works ZIP korišten za M06 i M07 corpus provjere.",
+      "lifecycle": "ACTIVE",
+      "path": "prism-uploads/Split Factory Styles.zip",
+      "sha256": "ffb95cc191ba2bfc0c9b2b09494adaeb61c61bcda0fa4a9e4d83302e281d8f5e",
+      "observations": 3211,
+      "observation_unit": "MIDI datoteka",
+      "evidence": {
+        "state": "CONFIRMED",
+        "detail": "Arhiv je lokalno dostupan i loader ga obrađuje samo za čitanje."
+      },
+      "implementation": {
+        "state": "NOT_APPLICABLE",
+        "detail": "Corpus je podatkovni izvor."
+      },
+      "validation": {
+        "state": "PASS",
+        "detail": "M06 corpus test potvrđuje strukturu i očuvanje izvornog hasha."
+      },
+      "certification": {
+        "state": "NONE",
+        "detail": "Corpus nije certifikat za ponašanje fizičkog Pa800 uređaja."
+      },
+      "refs": [
+        "TEST-006",
+        "EVID-001"
+      ]
+    },
+    {
+      "id": "DATA-004",
+      "kind": "RESOURCE",
+      "title": "DNA premium MIDI corpus",
+      "summary": "DNA paket s Gold evaluacijskim arhivom i exact Factory container kopijom koja se deterministički isključuje kroz G02.",
+      "lifecycle": "ACTIVE",
+      "path": "prism-uploads/DNA.zip",
+      "sha256": "125f4486625db44f7cdd49bd670aff252a961c88ea14741ec970ec3ae5eec85a",
+      "evidence": {
+        "state": "CONFIRMED",
+        "detail": "Arhiv i njegov identitet postoje; glazbene generalizacije zahtijevaju zasebne reproducibilne metrike."
+      },
+      "implementation": {
+        "state": "NOT_APPLICABLE",
+        "detail": "DNA je podatkovni resurs; G02 guard je zaseban modul."
+      },
+      "validation": {
+        "state": "PASS",
+        "detail": "G02/TEST-061 validira 182 Gold MIDI-ja, deduplicira na 181 i potvrđuje nultu cross-source MIDI kontaminaciju."
+      },
+      "certification": {
+        "state": "PARTIAL",
+        "detail": "Certificirana je strukturalna evaluacijska neovisnost; premium kvaliteta i M07 accuracy nisu ground-truth certificirani."
+      },
+      "refs": [
+        "DEC-001",
+        "ISSUE-008",
+        "TEST-025",
+        "MOD-029",
+        "TEST-061",
+        "ISSUE-009"
+      ]
+    },
+    {
+      "id": "DATA-005",
+      "kind": "RESOURCE",
+      "title": "Valja MIDI corpus",
+      "summary": "Dodatni korisnički corpus dostavljen u RAR5 arhivu.",
+      "lifecycle": "BLOCKED",
+      "path": "prism-uploads/Valja.rar",
+      "sha256": "57b54dc69fa6aee21cf71e4324a2d1588c97a6016f2ae01514df29e9c1b63e32",
+      "evidence": {
+        "state": "CONFIRMED",
+        "detail": "Arhiv i hash postoje."
+      },
+      "implementation": {
+        "state": "BLOCKED",
+        "detail": "Workspace nema potvrđen RAR5 dekoder; sadržaj nije dio aktivnog pipelinea."
+      },
+      "validation": {
+        "state": "BLOCKED",
+        "detail": "MIDI sadržaj nije raspakiran ni parsiran."
+      },
+      "certification": {
+        "state": "NONE",
+        "detail": "Nema certifikacije neanaliziranog sadržaja."
+      },
+      "refs": [
+        "ISSUE-004"
+      ]
+    },
+    {
+      "id": "DATA-006",
+      "kind": "RESOURCE",
+      "title": "Oscilatori drum-kit bilješke",
+      "summary": "Korisnički izvor prijedloga za balkanski Drum Kit; nije službeni Pa800 dokaz.",
+      "lifecycle": "ACTIVE",
+      "path": "prism-uploads/Oscilatori.txt",
+      "sha256": "ee0aaf065231283fea55b69fca65c43ddab13e552389466c0c6848ea1c17434e",
+      "evidence": {
+        "state": "CONFIRMED",
+        "detail": "Tekstualni resurs postoji; tvrdnje iz njega ostaju prijedlozi dok ih ne potvrdi normativni ili empirijski dokaz."
+      },
+      "implementation": {
+        "state": "NONE",
+        "detail": "Drum Kit profil i GUI izbor nisu implementirani."
+      },
+      "validation": {
+        "state": "NONE",
+        "detail": "Nema automatskog testa za preporuku kita."
+      },
+      "certification": {
+        "state": "NONE",
+        "detail": "Nije certificiran kao univerzalni default."
+      },
+      "refs": [
+        "DEC-002"
+      ]
+    },
+    {
+      "id": "DATA-007",
+      "kind": "RESOURCE",
+      "title": "Napredni spisak mogućnosti",
+      "summary": "Katalog kandidata za buduće mogućnosti; nijedna stavka samim unosom ne postaje aktivna funkcija ili pravilo.",
+      "lifecycle": "IDEA_CATALOG",
+      "path": "prism-uploads/NAPREDNI SPISAK MOGUĆNOSTI — KORG PA800 FACTORY STYLE - MIDI - DNA ENGINE.md",
+      "sha256": "b4a91f65510bb2a3314c72d878c17ca38bddb4f2401b048189ea312049338e55",
+      "evidence": {
+        "state": "CONFIRMED",
+        "detail": "Dokument postoji samo kao provenance za ideje."
+      },
+      "implementation": {
+        "state": "NONE",
+        "detail": "Katalog nije specifikacija implementiranog stanja."
+      },
+      "validation": {
+        "state": "NONE",
+        "detail": "Stavke nisu pojedinačno testirane."
+      },
+      "certification": {
+        "state": "NONE",
+        "detail": "Nijedna stavka nije certificirana samim prisustvom u katalogu."
+      },
+      "refs": [
+        "DEC-004"
+      ]
+    },
+    {
+      "id": "DATA-008",
+      "kind": "RESOURCE",
+      "title": "Napredni registar pravila",
+      "summary": "Katalog kandidata za buduća pravila; nije aktivni rule set.",
+      "lifecycle": "IDEA_CATALOG",
+      "path": "prism-uploads/NAPREDNI REGISTAR PRAVILA — KORG PA800 FACTORY STYLE - MIDI INTELLIGENCE ENGINE.md",
+      "sha256": "01d03043b5285075e8152798443591d0ba30427498f2eef4907f45058b3a3432",
+      "evidence": {
+        "state": "CONFIRMED",
+        "detail": "Dokument postoji samo kao provenance za ideje."
+      },
+      "implementation": {
+        "state": "NONE",
+        "detail": "Katalog nije aktivni strojno izvršivi rule set."
+      },
+      "validation": {
+        "state": "NONE",
+        "detail": "Pravila nisu pojedinačno povezana s testovima."
+      },
+      "certification": {
+        "state": "NONE",
+        "detail": "Nijedno pravilo nije certificirano samim prisustvom u katalogu."
+      },
+      "refs": [
+        "DEC-004"
+      ]
+    },
+    {
+      "id": "MOD-001",
+      "kind": "MODULE",
+      "external_id": "M01",
+      "title": "Standard MIDI parser",
+      "summary": "Read-only SMF parser za formate 0/1/2; Format 2 čuva neovisne sekvence i ne izmišlja globalni tempo ili trajanje.",
+      "lifecycle": "ACTIVE",
+      "path": "midi_enhancer.py",
+      "evidence": {
+        "state": "CONFIRMED",
+        "detail": "Kod eksplicitno razlikuje Format 2 independent-sequence semantiku i zadržava globalni rezultat PARTIAL/read-only."
+      },
+      "implementation": {
+        "state": "PASS",
+        "detail": "Formati 0/1/2, trackovi, događaji, note i zasebne Format 2 vremenske linije implementirani su u ugrađenom parseru."
+      },
+      "validation": {
+        "state": "PASS",
+        "detail": "Format 0/1 regresije, četiri Format 2 testa i pet parser-parity testova prolaze; Factory parity pokriva svih 3.211 datoteka."
+      },
+      "certification": {
+        "state": "PARTIAL",
+        "detail": "Certificiran je ograničeni read-only SMF 0/1/2 i Factory core-parity scope; puni SMF standard, sve SMPTE glazbene operacije i writer nisu certificirani."
+      },
+      "refs": [
+        "TEST-001",
+        "TEST-047",
+        "ISSUE-005",
+        "ISSUE-006",
+        "TEST-048"
+      ]
+    },
+    {
+      "id": "MOD-002",
+      "kind": "MODULE",
+      "external_id": "M02",
+      "title": "Mapiranje 16 slotova",
+      "summary": "Mapira Format 0 kanale, Format 1 fizičke trackove i Format 2 neovisne sekvence na 16 prikaznih slotova bez međusobnog spajanja.",
+      "lifecycle": "ACTIVE",
+      "path": "midi_instruments.py",
+      "evidence": {
+        "state": "CONFIRMED",
+        "detail": "Opći MIDI model i implementacija su pregledljivi u kodu."
+      },
+      "implementation": {
+        "state": "PASS",
+        "detail": "build_display_tracks je implementiran."
+      },
+      "validation": {
+        "state": "PASS",
+        "detail": "Pokriveno testom formata 0 i 1."
+      },
+      "certification": {
+        "state": "NONE",
+        "detail": "Nije Pa800-specifično certificirano."
+      },
+      "refs": [
+        "TEST-001",
+        "MOD-001",
+        "TEST-047"
+      ]
+    },
+    {
+      "id": "MOD-003",
+      "kind": "MODULE",
+      "external_id": "M03",
+      "title": "Instrument i uloga",
+      "summary": "GM program, percussion, raspon i polifonija daju heurističku procjenu instrumenta i uloge.",
+      "lifecycle": "ACTIVE",
+      "path": "midi_instruments.py",
+      "evidence": {
+        "state": "PARTIAL",
+        "detail": "Heuristika je eksplicitna, ali nije činjenica o stvarnom zvuku."
+      },
+      "implementation": {
+        "state": "PASS",
+        "detail": "infer_instrument i infer_role su implementirani."
+      },
+      "validation": {
+        "state": "PASS",
+        "detail": "Relevantna guitar grananja imaju automatski test."
+      },
+      "certification": {
+        "state": "NONE",
+        "detail": "Heuristička klasifikacija nije certificirani identitet instrumenta."
+      },
+      "refs": [
+        "TEST-002"
+      ]
+    },
+    {
+      "id": "MOD-004",
+      "kind": "MODULE",
+      "external_id": "M04",
+      "title": "Guitar uloge",
+      "summary": "Razlikuje rhythm, solo i power-chord guitar heuristike.",
+      "lifecycle": "ACTIVE",
+      "path": "midi_instruments.py",
+      "evidence": {
+        "state": "PARTIAL",
+        "detail": "Pravila su heuristike i nisu Guitar Mode dekoder."
+      },
+      "implementation": {
+        "state": "PASS",
+        "detail": "Guitar role grane su implementirane."
+      },
+      "validation": {
+        "state": "PASS",
+        "detail": "test_guitar_roles prolazi."
+      },
+      "certification": {
+        "state": "NONE",
+        "detail": "Nema Pa800 Guitar Mode certifikacije."
+      },
+      "refs": [
+        "TEST-002",
+        "MOD-003"
+      ]
+    },
+    {
+      "id": "MOD-005",
+      "kind": "MODULE",
+      "external_id": "M05",
+      "title": "Desktop GUI",
+      "summary": "Tk desktop GUI za Analyze i bounded user-selected Factory replacement preview/approve/verify/save/rollback workflow.",
+      "lifecycle": "ACTIVE",
+      "path": "midi_gui.py",
+      "evidence": {
+        "state": "CONFIRMED",
+        "detail": "Tk 8.6 i puni MidiEnhancerApp prozor pokrenuti su na workspace-only Xvfb runtimeu iz službenih Debian paketa."
+      },
+      "implementation": {
+        "state": "PASS",
+        "detail": "GUI import, 16 kartica, Format 0/1/2, Factory dialog, exact diff/risk, USER approval, V01 status, W01 save i rollback su implementirani."
+      },
+      "validation": {
+        "state": "PASS",
+        "detail": "TEST-049 stvarno renderira Tk i prolazi Analyze, Format 2 te puni Factory preview→verify→save→rollback tok; TEST-058 provjerava backend bez Tk."
+      },
+      "certification": {
+        "state": "PARTIAL",
+        "detail": "Certificiran je automatizirani virtual-display bounded GUI scope; native Windows UX/accessibility još čeka korisnika."
+      },
+      "refs": [
+        "TEST-003",
+        "TEST-049",
+        "ISSUE-001",
+        "MOD-026",
+        "TEST-058"
+      ]
+    },
+    {
+      "id": "MOD-006",
+      "kind": "MODULE",
+      "external_id": "M06",
+      "title": "Style Works Loader",
+      "summary": "Read-only ZIP/MIDI model, Style/Element/CV/role, vremenski prozor i CC00.CC32.PC praćenje.",
+      "lifecycle": "ACTIVE",
+      "path": "style_loader.py",
+      "evidence": {
+        "state": "CONFIRMED",
+        "detail": "Pa800 stranice 114–116 i 134–135 te Factory corpus podupiru ograničeni scope."
+      },
+      "implementation": {
+        "state": "PASS",
+        "detail": "Loader i nepromjenjivi modeli su implementirani."
+      },
+      "validation": {
+        "state": "PASS",
+        "detail": "Pet loader testova i puni corpus test prolaze."
+      },
+      "certification": {
+        "state": "PASS",
+        "detail": "Certificiran samo read-only M06 scope na registriranom Factory arhivu."
+      },
+      "refs": [
+        "DATA-001",
+        "DATA-003",
+        "TEST-004",
+        "TEST-005",
+        "TEST-006",
+        "TEST-007",
+        "TEST-008",
+        "EVID-001",
+        "TEST-048"
+      ]
+    },
+    {
+      "id": "MOD-007",
+      "kind": "MODULE",
+      "external_id": "M07",
+      "title": "Context Classifier",
+      "summary": "Generički feature model i Style adapter za strukturalnu ulogu, funkciju, encoding kandidat i sigurnosnu politiku.",
+      "lifecycle": "ACTIVE",
+      "path": "context_classifier.py",
+      "evidence": {
+        "state": "CONFIRMED",
+        "detail": "Pa800 stranice 112, 116, 118–120 i 134–135 te corpus smoke test podupiru read-only scope."
+      },
+      "implementation": {
+        "state": "PASS",
+        "detail": "Classifier i Style adapter su implementirani."
+      },
+      "validation": {
+        "state": "PASS",
+        "detail": "Četrnaest unit testova i reproducibilni puni corpus test prolaze."
+      },
+      "certification": {
+        "state": "PASS",
+        "detail": "Certificiran samo read-only M07 scope; ne autorizira Enhance."
+      },
+      "refs": [
+        "DATA-001",
+        "DATA-003",
+        "TEST-009",
+        "TEST-010",
+        "TEST-011",
+        "TEST-012",
+        "TEST-013",
+        "TEST-014",
+        "TEST-015",
+        "TEST-016",
+        "TEST-017",
+        "TEST-018",
+        "TEST-019",
+        "TEST-020",
+        "TEST-021",
+        "TEST-022",
+        "TEST-024",
+        "EVID-002",
+        "ISSUE-007"
+      ]
+    },
+    {
+      "id": "MOD-008",
+      "kind": "MODULE",
+      "external_id": "M08",
+      "title": "Measure/Phrase Analyzer",
+      "summary": "Analyze-only tempo/metar timeline, položaj događaja u taktu, egzaktna ponavljanja mjera i konzervativni kandidati granica fraza.",
+      "lifecycle": "ACTIVE",
+      "path": "measure_phrase_analyzer.py",
+      "evidence": {
+        "state": "CONFIRMED",
+        "detail": "Timeline činjenice izvode se iz potvrđenih SMF meta događaja; frazne granice ostaju jasno označeni heuristički kandidati."
+      },
+      "implementation": {
+        "state": "PASS",
+        "detail": "Generička jezgra i Style adapter implementirani su nad nepromjenjivim M06 modelom bez writer funkcija."
+      },
+      "validation": {
+        "state": "PASS",
+        "detail": "Devet M08 testova pokriva tempo/metar, fazu prozora, potpuni note potpis ponavljanja, konflikte unutar/izvan prozora i Style adapter; puni Factory corpus test također prolazi."
+      },
+      "certification": {
+        "state": "PASS",
+        "detail": "Certificiran je samo read-only M08 scope; timing, Humanize i strumming izmjene nisu autorizirane."
+      },
+      "refs": [
+        "MOD-006",
+        "MOD-007",
+        "TEST-026",
+        "TEST-027",
+        "TEST-028",
+        "TEST-029",
+        "TEST-030",
+        "TEST-044",
+        "RUN-007",
+        "DEC-001"
+      ]
+    },
+    {
+      "id": "MOD-009",
+      "kind": "MODULE",
+      "external_id": "K01",
+      "title": "Pa800 K01 Factory Registry",
+      "summary": "Read-only puni Factory Sound/Drum Kit lookup po točnoj CC00.CC32.PC adresi.",
+      "lifecycle": "ACTIVE",
+      "evidence": {
+        "state": "CONFIRMED",
+        "detail": "Generator prihvaća samo službeni manual hash; Sound tablice su tiskane 275–283/PDF 279–287, Drum Kit tablica tiskana 295/PDF 299."
+      },
+      "implementation": {
+        "state": "PASS",
+        "detail": "Kanonski JSON, immutable lookup, remap evidence i User-range lokacijska provjera su implementirani bez MIDI izmjene."
+      },
+      "validation": {
+        "state": "PASS",
+        "detail": "Generator reproducira 1.006 Sound + 65 Drum Kit = 1.071 jedinstvenu adresu; sedam namjenskih testova prolazi."
+      },
+      "certification": {
+        "state": "PASS",
+        "detail": "Certificiran je samo K01 read-only Factory identity scope za točnu punu adresu i potvrđeni manual; K02 rezolucija nije uključena."
+      },
+      "refs": [
+        "DATA-001",
+        "DATA-009",
+        "MOD-017",
+        "TEST-050",
+        "ISSUE-002"
+      ],
+      "path": "pa800_registry.py"
+    },
+    {
+      "id": "MOD-010",
+      "kind": "MODULE",
+      "external_id": "G00",
+      "title": "Evidence Registry Foundation",
+      "summary": "Strojno provjerljiv master registry s determinističkim Markdown prikazom.",
+      "lifecycle": "ACTIVE",
+      "path": "registry/build_registry.py",
+      "evidence": {
+        "state": "CONFIRMED",
+        "detail": "Scope i četiri neovisne statusne osi potvrđeni su projektnom odlukom."
+      },
+      "implementation": {
+        "state": "PASS",
+        "detail": "JSON registry, schema, validator i generator su implementirani standardnom bibliotekom."
+      },
+      "validation": {
+        "state": "PASS",
+        "detail": "Suite provjerava ID namespace, IDEA izolaciju, lokalne putanje, hashove, test prisutnost, reference i aktualnost generiranog prikaza."
+      },
+      "certification": {
+        "state": "PASS",
+        "detail": "Certificiran je samo G00 format i referencijalni integritet, ne istinitost svake buduće domenske tvrdnje."
+      },
+      "refs": [
+        "TEST-023",
+        "TEST-025",
+        "DEC-004"
+      ]
+    },
+    {
+      "id": "MOD-011",
+      "kind": "MODULE",
+      "external_id": "K02",
+      "title": "Instrument Identity Resolver",
+      "summary": "Read-only K02 resolver koji povezuje stvarne M10 segmente s K01 exact/remap/User dokazima bez izmjene segmenta ili MIDI-ja.",
+      "lifecycle": "ACTIVE",
+      "evidence": {
+        "state": "CONFIRMED",
+        "detail": "Svaki rezultat navodi M10 adresu, K01 entry/remap dokaz, stabilni rule ID, traženu i ciljnu adresu kada postoji."
+      },
+      "implementation": {
+        "state": "PASS",
+        "detail": "Implementirani su svi ugovoreni statusi: FACTORY_CONFIRMED, USER_SLOT_CONFIRMED, UNKNOWN, CONFLICT, INCOMPLETE_ADDRESS i NO_PROGRAM."
+      },
+      "validation": {
+        "state": "PASS",
+        "detail": "Šest dedicated testova i puni Factory corpus od 82.917 stvarnih M10 segmenata prolaze s fiksnim raspodjelama i digestom."
+      },
+      "certification": {
+        "state": "PASS",
+        "detail": "Certificiran je ograničeni read-only K02 identity scope; K03 replacement i MIDI izmjene nisu autorizirani."
+      },
+      "refs": [
+        "MOD-009",
+        "MOD-014",
+        "TEST-044",
+        "TEST-051",
+        "DATA-003",
+        "DEC-003"
+      ],
+      "path": "instrument_identity_resolver.py"
+    },
+    {
+      "id": "MOD-012",
+      "kind": "MODULE",
+      "external_id": "K03",
+      "title": "K03 verified Factory Sound Replacement backend",
+      "summary": "Bounded user-selected exact-event K03 pipeline dostupan kroz programatski backend i automatizirani Tk GUI workflow.",
+      "lifecycle": "ACTIVE",
+      "evidence": {
+        "state": "CONFIRMED",
+        "detail": "Backend zahtijeva K01/K02 identitet, USER selection/approval/request, exact event diff, Verifier PASS i no-overwrite writer gate."
+      },
+      "implementation": {
+        "state": "PASS",
+        "detail": "Proposal, in-memory change, rollback, independent verification, atomic new-file MIDI/JSON save i filesystem rollback su implementirani."
+      },
+      "validation": {
+        "state": "PASS",
+        "detail": "TEST-057 filesystem backend, TEST-058 workflow i prošireni TEST-049 stvarni Tk end-to-end tok prolaze."
+      },
+      "certification": {
+        "state": "PASS",
+        "detail": "Certificiran je bounded user-selected existing-event K03 backend/virtual-GUI scope; automatski Enhance i native Windows UX nisu uključeni."
+      },
+      "refs": [
+        "MOD-009",
+        "MOD-011",
+        "MOD-018",
+        "MOD-019",
+        "MOD-020",
+        "MOD-023",
+        "MOD-024",
+        "MOD-025",
+        "TEST-057",
+        "DEC-003",
+        "MOD-026",
+        "TEST-058",
+        "TEST-049"
+      ],
+      "path": "verified_writer.py"
+    },
+    {
+      "id": "MOD-013",
+      "kind": "MODULE",
+      "external_id": "M09",
+      "title": "Instrument Measurement Engine",
+      "summary": "Read-only zajedničke statistike nota, velocityja, trajanja, gustoće, polifonije, kontrolera te profila mjera i fraza.",
+      "lifecycle": "ACTIVE",
+      "path": "instrument_measurement_engine.py",
+      "evidence": {
+        "state": "CONFIRMED",
+        "detail": "Brojčane metrike deterministički se izvode iz M06 događaja; M07 kontekst i M08 fraze zadržavaju vlastite statuse i zaštite."
+      },
+      "implementation": {
+        "state": "PASS",
+        "detail": "Generički engine i Style adapter implementirani su bez Suggest, Change ili writer putanje."
+      },
+      "validation": {
+        "state": "PASS",
+        "detail": "Devet M09 testova pokriva metrike, aftertouch, timeline provenance, višetrack zaštitu, potvrđeni density prozor i Style adapter; puni Factory corpus test također prolazi."
+      },
+      "certification": {
+        "state": "PASS",
+        "detail": "Certificiran je samo read-only M09 mjerni scope; statistike nisu preporuka niti dopuštenje za izmjenu."
+      },
+      "refs": [
+        "MOD-006",
+        "MOD-007",
+        "MOD-008",
+        "TEST-031",
+        "TEST-032",
+        "TEST-033",
+        "TEST-034",
+        "TEST-035",
+        "TEST-036",
+        "TEST-044",
+        "RUN-007",
+        "DEC-001"
+      ]
+    },
+    {
+      "id": "MOD-014",
+      "kind": "MODULE",
+      "external_id": "M10",
+      "title": "Instrument Segmenter",
+      "summary": "Read-only segmentacija po MIDI kanalu i Program Change granicama uz CC00/CC32 snapshot, M09 profil i zaštitu nota preko granice.",
+      "lifecycle": "ACTIVE",
+      "path": "instrument_segmenter.py",
+      "evidence": {
+        "state": "CONFIRMED",
+        "detail": "Granice i adrese deterministički se izvode iz redoslijeda Bank Select i Program Change događaja; identity ostaje UNRESOLVED."
+      },
+      "implementation": {
+        "state": "PASS",
+        "detail": "Generički segmenter i Style adapter implementirani su bez Factory/User klasifikacije i bez writer putanje."
+      },
+      "validation": {
+        "state": "PASS",
+        "detail": "Devet M10 testova pokriva adrese, staged bank promjene, zatvorene i otvorene note preko granice, globalne ordinale, cross-track neodređenost i Style adapter; puni Factory corpus test također prolazi."
+      },
+      "certification": {
+        "state": "PASS",
+        "detail": "Certificiran je samo read-only M10 segmentacijski scope; identitet instrumenta i zamjena nisu autorizirani."
+      },
+      "refs": [
+        "MOD-006",
+        "MOD-007",
+        "MOD-009",
+        "TEST-037",
+        "TEST-038",
+        "TEST-039",
+        "TEST-040",
+        "TEST-041",
+        "TEST-042",
+        "TEST-043",
+        "TEST-044",
+        "RUN-007",
+        "DEC-001"
+      ]
+    },
+    {
+      "id": "TEST-001",
+      "kind": "TEST",
+      "title": "test_format_zero_and_one",
+      "summary": "Provjerava parsing i prikazno mapiranje MIDI formata 0 i 1.",
+      "lifecycle": "ACTIVE",
+      "path": "tests/test_midi_modules.py",
+      "evidence": {
+        "state": "CONFIRMED",
+        "detail": "Test metoda postoji u repozitoriju."
+      },
+      "implementation": {
+        "state": "PASS",
+        "detail": "Test je implementiran."
+      },
+      "validation": {
+        "state": "PASS",
+        "detail": "Registrirani test run je prošao."
+      },
+      "certification": {
+        "state": "NONE",
+        "detail": "Ne pokriva Format 2 ni puni SMF standard."
+      },
+      "refs": [
+        "MOD-001",
+        "MOD-002",
+        "RUN-001"
+      ]
+    },
+    {
+      "id": "TEST-002",
+      "kind": "TEST",
+      "title": "test_guitar_roles",
+      "summary": "Provjerava rhythm, solo i power-chord guitar heuristike.",
+      "lifecycle": "ACTIVE",
+      "path": "tests/test_midi_modules.py",
+      "evidence": {
+        "state": "CONFIRMED",
+        "detail": "Test metoda postoji."
+      },
+      "implementation": {
+        "state": "PASS",
+        "detail": "Test je implementiran."
+      },
+      "validation": {
+        "state": "PASS",
+        "detail": "Registrirani test run je prošao."
+      },
+      "certification": {
+        "state": "NONE",
+        "detail": "Ne certificira Pa800 Guitar Mode."
+      },
+      "refs": [
+        "MOD-003",
+        "MOD-004",
+        "RUN-001"
+      ]
+    },
+    {
+      "id": "TEST-003",
+      "kind": "TEST",
+      "title": "test_gui_module_imports",
+      "summary": "Provjerava import desktop GUI modula kada je tkinter dostupan.",
+      "lifecycle": "ACTIVE",
+      "path": "tests/test_midi_modules.py",
+      "evidence": {
+        "state": "CONFIRMED",
+        "detail": "Test i uvjet preskakanja postoje."
+      },
+      "implementation": {
+        "state": "PASS",
+        "detail": "Test je implementiran."
+      },
+      "validation": {
+        "state": "PASS",
+        "detail": "test_gui_module_imports prolazi s dostupnim tkinterom 8.6."
+      },
+      "certification": {
+        "state": "PARTIAL",
+        "detail": "Test potvrđuje samo import i prisutnost MidiEnhancerApp, ne otvaranje prozora ni korisnički workflow."
+      },
+      "refs": [
+        "MOD-005",
+        "ISSUE-001",
+        "RUN-001"
+      ]
+    },
+    {
+      "id": "TEST-004",
+      "kind": "TEST",
+      "title": "test_rejects_truncated_track_without_mutating_source",
+      "summary": "Odbija skraćeni track i čuva ulaz.",
+      "lifecycle": "ACTIVE",
+      "path": "tests/test_style_loader.py",
+      "evidence": {
+        "state": "CONFIRMED",
+        "detail": "Test metoda postoji."
+      },
+      "implementation": {
+        "state": "PASS",
+        "detail": "Test je implementiran."
+      },
+      "validation": {
+        "state": "PASS",
+        "detail": "Test prolazi."
+      },
+      "certification": {
+        "state": "NONE",
+        "detail": "Unit test ograničenog slučaja."
+      },
+      "refs": [
+        "MOD-006",
+        "RUN-001"
+      ]
+    },
+    {
+      "id": "TEST-005",
+      "kind": "TEST",
+      "title": "test_preserves_running_status_and_raw_events",
+      "summary": "Provjerava running status i očuvanje sirovih događaja.",
+      "lifecycle": "ACTIVE",
+      "path": "tests/test_style_loader.py",
+      "evidence": {
+        "state": "CONFIRMED",
+        "detail": "Test metoda postoji."
+      },
+      "implementation": {
+        "state": "PASS",
+        "detail": "Test je implementiran."
+      },
+      "validation": {
+        "state": "PASS",
+        "detail": "Test prolazi."
+      },
+      "certification": {
+        "state": "NONE",
+        "detail": "Unit test ograničenog slučaja."
+      },
+      "refs": [
+        "MOD-006",
+        "RUN-001"
+      ]
+    },
+    {
+      "id": "TEST-006",
+      "kind": "TEST",
+      "title": "test_full_archive_structure_and_preservation",
+      "summary": "Provjerava puni Factory arhiv, strukturu i SHA-256 očuvanje.",
+      "lifecycle": "ACTIVE",
+      "path": "tests/test_style_loader.py",
+      "evidence": {
+        "state": "CONFIRMED",
+        "detail": "Corpus test metoda postoji."
+      },
+      "implementation": {
+        "state": "PASS",
+        "detail": "Test je implementiran."
+      },
+      "validation": {
+        "state": "PASS",
+        "detail": "Test prolazi na registriranom arhivu."
+      },
+      "certification": {
+        "state": "PARTIAL",
+        "detail": "Podupire samo M06 read-only corpus scope."
+      },
+      "refs": [
+        "MOD-006",
+        "DATA-003",
+        "RUN-001"
+      ]
+    },
+    {
+      "id": "TEST-007",
+      "kind": "TEST",
+      "title": "test_pilot_style_and_declared_window",
+      "summary": "Provjerava pilot Style i deklarirani vremenski prozor.",
+      "lifecycle": "ACTIVE",
+      "path": "tests/test_style_loader.py",
+      "evidence": {
+        "state": "CONFIRMED",
+        "detail": "Corpus test metoda postoji."
+      },
+      "implementation": {
+        "state": "PASS",
+        "detail": "Test je implementiran."
+      },
+      "validation": {
+        "state": "PASS",
+        "detail": "Test prolazi."
+      },
+      "certification": {
+        "state": "NONE",
+        "detail": "Pokriva pilot slučaj."
+      },
+      "refs": [
+        "MOD-006",
+        "DATA-003",
+        "RUN-001"
+      ]
+    },
+    {
+      "id": "TEST-008",
+      "kind": "TEST",
+      "title": "test_style_window_excludes_trailing_content",
+      "summary": "Provjerava odvajanje događaja izvan deklariranog Style prozora.",
+      "lifecycle": "ACTIVE",
+      "path": "tests/test_style_loader.py",
+      "evidence": {
+        "state": "CONFIRMED",
+        "detail": "Test metoda postoji."
+      },
+      "implementation": {
+        "state": "PASS",
+        "detail": "Test je implementiran."
+      },
+      "validation": {
+        "state": "PASS",
+        "detail": "Test prolazi."
+      },
+      "certification": {
+        "state": "NONE",
+        "detail": "Unit test ograničenog slučaja."
+      },
+      "refs": [
+        "MOD-006",
+        "RUN-001"
+      ]
+    },
+    {
+      "id": "TEST-009",
+      "kind": "TEST",
+      "title": "test_structural_roles_are_style_context_not_core_channel_rules",
+      "summary": "Strukturne uloge ostaju u Style adapteru, ne u generičkoj jezgri.",
+      "lifecycle": "ACTIVE",
+      "path": "tests/test_context_classifier.py",
+      "evidence": {
+        "state": "CONFIRMED",
+        "detail": "Test metoda postoji."
+      },
+      "implementation": {
+        "state": "PASS",
+        "detail": "Test je implementiran."
+      },
+      "validation": {
+        "state": "PASS",
+        "detail": "Test prolazi."
+      },
+      "certification": {
+        "state": "NONE",
+        "detail": "Unit test klasifikatora."
+      },
+      "refs": [
+        "MOD-007",
+        "RUN-002"
+      ]
+    },
+    {
+      "id": "TEST-010",
+      "kind": "TEST",
+      "title": "test_same_guitar_sound_has_chordal_and_solo_contexts",
+      "summary": "Isti guitar sound može imati chordal i solo kontekst.",
+      "lifecycle": "ACTIVE",
+      "path": "tests/test_context_classifier.py",
+      "evidence": {
+        "state": "CONFIRMED",
+        "detail": "Test metoda postoji."
+      },
+      "implementation": {
+        "state": "PASS",
+        "detail": "Test je implementiran."
+      },
+      "validation": {
+        "state": "PASS",
+        "detail": "Test prolazi."
+      },
+      "certification": {
+        "state": "NONE",
+        "detail": "Unit test klasifikatora."
+      },
+      "refs": [
+        "MOD-007",
+        "RUN-002"
+      ]
+    },
+    {
+      "id": "TEST-011",
+      "kind": "TEST",
+      "title": "test_low_guitar_riff_is_not_guitar_mode_without_source_evidence",
+      "summary": "Nizak guitar riff ne postaje Guitar Mode bez izvornog dokaza.",
+      "lifecycle": "ACTIVE",
+      "path": "tests/test_context_classifier.py",
+      "evidence": {
+        "state": "CONFIRMED",
+        "detail": "Test metoda postoji."
+      },
+      "implementation": {
+        "state": "PASS",
+        "detail": "Test je implementiran."
+      },
+      "validation": {
+        "state": "PASS",
+        "detail": "Test prolazi."
+      },
+      "certification": {
+        "state": "NONE",
+        "detail": "Negativna sigurnosna provjera."
+      },
+      "refs": [
+        "MOD-007",
+        "RUN-002"
+      ]
+    },
+    {
+      "id": "TEST-012",
+      "kind": "TEST",
+      "title": "test_source_guitar_mode_evidence_does_not_force_rhythm_function",
+      "summary": "Izvorni Guitar Mode dokaz ne prisiljava rhythm funkciju.",
+      "lifecycle": "ACTIVE",
+      "path": "tests/test_context_classifier.py",
+      "evidence": {
+        "state": "CONFIRMED",
+        "detail": "Test metoda postoji."
+      },
+      "implementation": {
+        "state": "PASS",
+        "detail": "Test je implementiran."
+      },
+      "validation": {
+        "state": "PASS",
+        "detail": "Test prolazi."
+      },
+      "certification": {
+        "state": "NONE",
+        "detail": "Unit test klasifikatora."
+      },
+      "refs": [
+        "MOD-007",
+        "RUN-002"
+      ]
+    },
+    {
+      "id": "TEST-013",
+      "kind": "TEST",
+      "title": "test_high_rx_notes_do_not_create_guitar_mode_false_positive",
+      "summary": "RX visoke note ne stvaraju lažni Guitar Mode zaključak.",
+      "lifecycle": "ACTIVE",
+      "path": "tests/test_context_classifier.py",
+      "evidence": {
+        "state": "CONFIRMED",
+        "detail": "Test metoda postoji."
+      },
+      "implementation": {
+        "state": "PASS",
+        "detail": "Test je implementiran."
+      },
+      "validation": {
+        "state": "PASS",
+        "detail": "Test prolazi."
+      },
+      "certification": {
+        "state": "NONE",
+        "detail": "Negativna sigurnosna provjera."
+      },
+      "refs": [
+        "MOD-007",
+        "RUN-002"
+      ]
+    },
+    {
+      "id": "TEST-014",
+      "kind": "TEST",
+      "title": "test_fixed_intro_flag_is_orthogonal_and_scoped",
+      "summary": "Fixed Intro/Ending kandidat je ortogonalan i ograničen kontekstom.",
+      "lifecycle": "ACTIVE",
+      "path": "tests/test_context_classifier.py",
+      "evidence": {
+        "state": "CONFIRMED",
+        "detail": "Test metoda postoji."
+      },
+      "implementation": {
+        "state": "PASS",
+        "detail": "Test je implementiran."
+      },
+      "validation": {
+        "state": "PASS",
+        "detail": "Test prolazi."
+      },
+      "certification": {
+        "state": "NONE",
+        "detail": "Unit test klasifikatora."
+      },
+      "refs": [
+        "MOD-007",
+        "RUN-002"
+      ]
+    },
+    {
+      "id": "TEST-015",
+      "kind": "TEST",
+      "title": "test_fixed_flag_excludes_rhythm_bass_and_empty_tracks",
+      "summary": "Fixed kandidat isključuje rhythm, bass i prazne trackove.",
+      "lifecycle": "ACTIVE",
+      "path": "tests/test_context_classifier.py",
+      "evidence": {
+        "state": "CONFIRMED",
+        "detail": "Test metoda postoji."
+      },
+      "implementation": {
+        "state": "PASS",
+        "detail": "Test je implementiran."
+      },
+      "validation": {
+        "state": "PASS",
+        "detail": "Test prolazi."
+      },
+      "certification": {
+        "state": "NONE",
+        "detail": "Unit test klasifikatora."
+      },
+      "refs": [
+        "MOD-007",
+        "RUN-002"
+      ]
+    },
+    {
+      "id": "TEST-016",
+      "kind": "TEST",
+      "title": "test_blocked_element_is_not_editable",
+      "summary": "Blokirani element nije kandidat za editiranje.",
+      "lifecycle": "ACTIVE",
+      "path": "tests/test_context_classifier.py",
+      "evidence": {
+        "state": "CONFIRMED",
+        "detail": "Test metoda postoji."
+      },
+      "implementation": {
+        "state": "PASS",
+        "detail": "Test je implementiran."
+      },
+      "validation": {
+        "state": "PASS",
+        "detail": "Test prolazi."
+      },
+      "certification": {
+        "state": "NONE",
+        "detail": "Sigurnosni unit test."
+      },
+      "refs": [
+        "MOD-007",
+        "RUN-002"
+      ]
+    },
+    {
+      "id": "TEST-017",
+      "kind": "TEST",
+      "title": "test_drum_perc_and_bass_precede_texture_heuristics",
+      "summary": "Drum, Perc i Bass imaju prioritet pred texture heuristikama.",
+      "lifecycle": "ACTIVE",
+      "path": "tests/test_context_classifier.py",
+      "evidence": {
+        "state": "CONFIRMED",
+        "detail": "Test metoda postoji."
+      },
+      "implementation": {
+        "state": "PASS",
+        "detail": "Test je implementiran."
+      },
+      "validation": {
+        "state": "PASS",
+        "detail": "Test prolazi."
+      },
+      "certification": {
+        "state": "NONE",
+        "detail": "Unit test prioriteta."
+      },
+      "refs": [
+        "MOD-007",
+        "RUN-002"
+      ]
+    },
+    {
+      "id": "TEST-018",
+      "kind": "TEST",
+      "title": "test_repeated_ostinato_is_riff_but_varied_line_is_solo",
+      "summary": "Razlikuje ponovljeni ostinato/riff od raznolike solo linije.",
+      "lifecycle": "ACTIVE",
+      "path": "tests/test_context_classifier.py",
+      "evidence": {
+        "state": "CONFIRMED",
+        "detail": "Test metoda postoji."
+      },
+      "implementation": {
+        "state": "PASS",
+        "detail": "Test je implementiran."
+      },
+      "validation": {
+        "state": "PASS",
+        "detail": "Test prolazi."
+      },
+      "certification": {
+        "state": "NONE",
+        "detail": "Heuristički unit test."
+      },
+      "refs": [
+        "MOD-007",
+        "RUN-002"
+      ]
+    },
+    {
+      "id": "TEST-019",
+      "kind": "TEST",
+      "title": "test_ppq_scaled_strum_cluster_is_not_slow_arpeggio",
+      "summary": "PPQ-proporcionalni strum cluster nije spor arpeggio.",
+      "lifecycle": "ACTIVE",
+      "path": "tests/test_context_classifier.py",
+      "evidence": {
+        "state": "CONFIRMED",
+        "detail": "Test metoda postoji."
+      },
+      "implementation": {
+        "state": "PASS",
+        "detail": "Test je implementiran."
+      },
+      "validation": {
+        "state": "PASS",
+        "detail": "Test prolazi."
+      },
+      "certification": {
+        "state": "NONE",
+        "detail": "Heuristički unit test."
+      },
+      "refs": [
+        "MOD-007",
+        "RUN-002"
+      ]
+    },
+    {
+      "id": "TEST-020",
+      "kind": "TEST",
+      "title": "test_rx_policy_cannot_relax_fixed_intro_protection",
+      "summary": "RX politika ne može ublažiti zaštitu fixed Intro konteksta.",
+      "lifecycle": "ACTIVE",
+      "path": "tests/test_context_classifier.py",
+      "evidence": {
+        "state": "CONFIRMED",
+        "detail": "Test metoda postoji."
+      },
+      "implementation": {
+        "state": "PASS",
+        "detail": "Test je implementiran."
+      },
+      "validation": {
+        "state": "PASS",
+        "detail": "Test prolazi."
+      },
+      "certification": {
+        "state": "NONE",
+        "detail": "Sigurnosni unit test."
+      },
+      "refs": [
+        "MOD-007",
+        "RUN-002"
+      ]
+    },
+    {
+      "id": "TEST-021",
+      "kind": "TEST",
+      "title": "test_rx_policy_cannot_relax_guitar_mode_protection",
+      "summary": "RX politika ne može ublažiti Guitar Mode zaštitu.",
+      "lifecycle": "ACTIVE",
+      "path": "tests/test_context_classifier.py",
+      "evidence": {
+        "state": "CONFIRMED",
+        "detail": "Test metoda postoji."
+      },
+      "implementation": {
+        "state": "PASS",
+        "detail": "Test je implementiran."
+      },
+      "validation": {
+        "state": "PASS",
+        "detail": "Test prolazi."
+      },
+      "certification": {
+        "state": "NONE",
+        "detail": "Sigurnosni unit test."
+      },
+      "refs": [
+        "MOD-007",
+        "RUN-002"
+      ]
+    },
+    {
+      "id": "TEST-022",
+      "kind": "TEST",
+      "title": "test_multiple_musical_channels_block_classification",
+      "summary": "Više glazbenih MIDI kanala u fizičkom partu blokira klasifikaciju.",
+      "lifecycle": "ACTIVE",
+      "path": "tests/test_context_classifier.py",
+      "evidence": {
+        "state": "CONFIRMED",
+        "detail": "Test metoda postoji."
+      },
+      "implementation": {
+        "state": "PASS",
+        "detail": "Test je implementiran."
+      },
+      "validation": {
+        "state": "PASS",
+        "detail": "Test prolazi."
+      },
+      "certification": {
+        "state": "NONE",
+        "detail": "Sigurnosni unit test."
+      },
+      "refs": [
+        "MOD-007",
+        "RUN-002"
+      ]
+    },
+    {
+      "id": "TEST-023",
+      "kind": "TEST",
+      "external_id": "MasterRegistryTests",
+      "title": "Master registry invariant suite",
+      "summary": "Provjerava ID namespace, reference, četiri osi, IDEA_CATALOG izolaciju, putanje, hashove, test-prisutnost i deterministički Markdown.",
+      "lifecycle": "ACTIVE",
+      "path": "tests/test_master_registry.py",
+      "evidence": {
+        "state": "CONFIRMED",
+        "detail": "Test suite je dio G00 implementacije."
+      },
+      "implementation": {
+        "state": "PASS",
+        "detail": "Test suite je implementiran standardnom bibliotekom."
+      },
+      "validation": {
+        "state": "PASS",
+        "detail": "Suite prolazi u registriranom G00 runu."
+      },
+      "certification": {
+        "state": "PARTIAL",
+        "detail": "Certificira format, lokalni integritet i veze registra, ne domensku istinitost svih tvrdnji."
+      },
+      "refs": [
+        "MOD-010",
+        "RUN-003"
+      ]
+    },
+    {
+      "id": "TEST-024",
+      "kind": "TEST",
+      "title": "test_full_factory_archive_reproduces_registered_m07_counts",
+      "summary": "Ponovno računa M07 puni Factory corpus rezultat i provjerava hash, 3.211 datoteka, 65.021 sliceova i statusne brojeve.",
+      "lifecycle": "ACTIVE",
+      "path": "tests/test_context_classifier_corpus.py",
+      "evidence": {
+        "state": "CONFIRMED",
+        "detail": "Corpus test metoda postoji i koristi registrirani DATA-003 hash."
+      },
+      "implementation": {
+        "state": "PASS",
+        "detail": "Test je implementiran postojećim loader/classifier modulima."
+      },
+      "validation": {
+        "state": "PASS",
+        "detail": "Test reproducibilno prolazi na DATA-003."
+      },
+      "certification": {
+        "state": "PARTIAL",
+        "detail": "Podupire samo registrirani read-only M07 corpus rezultat."
+      },
+      "refs": [
+        "MOD-007",
+        "DATA-003",
+        "RUN-002",
+        "CLAIM-002"
+      ]
+    },
+    {
+      "id": "TEST-025",
+      "kind": "TEST",
+      "title": "test_dna_bundle_factory_member_is_exact_registered_duplicate",
+      "summary": "Provjerava da unutarnji Factory ZIP u DNA paketu ima isti SHA-256 kao DATA-003.",
+      "lifecycle": "ACTIVE",
+      "path": "tests/test_master_registry.py",
+      "evidence": {
+        "state": "CONFIRMED",
+        "detail": "Test čita unutarnji ZIP bez ekstrakcije i ponovno računa hash."
+      },
+      "implementation": {
+        "state": "PASS",
+        "detail": "Contamination guard test je implementiran."
+      },
+      "validation": {
+        "state": "PASS",
+        "detail": "Test prolazi na registriranim DATA-003 i DATA-004 resursima."
+      },
+      "certification": {
+        "state": "PARTIAL",
+        "detail": "Dokazuje ovaj duplikat, ne cjelovitu čistoću budućeg golden skupa."
+      },
+      "refs": [
+        "DATA-003",
+        "DATA-004",
+        "ISSUE-008",
+        "RUN-003"
+      ]
+    },
+    {
+      "id": "TEST-026",
+      "kind": "TEST",
+      "title": "test_builds_tempo_meter_map_and_event_positions",
+      "summary": "Provjerava promjene tempa i metra te položaj Note On događaja po mjeri i beat-u.",
+      "lifecycle": "ACTIVE",
+      "path": "tests/test_measure_phrase_analyzer.py",
+      "evidence": {
+        "state": "CONFIRMED",
+        "detail": "Test metoda postoji i koristi sintetički SMF s dvije timeline promjene."
+      },
+      "implementation": {
+        "state": "PASS",
+        "detail": "Test je implementiran."
+      },
+      "validation": {
+        "state": "PASS",
+        "detail": "Test prolazi."
+      },
+      "certification": {
+        "state": "NONE",
+        "detail": "Unit test ograničenog općeg MIDI slučaja."
+      },
+      "refs": [
+        "MOD-008",
+        "RUN-004"
+      ]
+    },
+    {
+      "id": "TEST-027",
+      "kind": "TEST",
+      "title": "test_detects_exact_repeated_measures",
+      "summary": "Provjerava grupiranje dviju mjera s jednakim normaliziranim Note On potpisom.",
+      "lifecycle": "ACTIVE",
+      "path": "tests/test_measure_phrase_analyzer.py",
+      "evidence": {
+        "state": "CONFIRMED",
+        "detail": "Test metoda postoji."
+      },
+      "implementation": {
+        "state": "PASS",
+        "detail": "Test je implementiran."
+      },
+      "validation": {
+        "state": "PASS",
+        "detail": "Test prolazi."
+      },
+      "certification": {
+        "state": "NONE",
+        "detail": "Certificira samo egzaktno ponavljanje, ne perceptivnu sličnost motiva."
+      },
+      "refs": [
+        "MOD-008",
+        "RUN-004"
+      ]
+    },
+    {
+      "id": "TEST-028",
+      "kind": "TEST",
+      "title": "test_marks_long_gap_as_phrase_candidate_not_fact",
+      "summary": "Provjerava da duga stanka proizvodi kandidat granice fraze s eksplicitnom pouzdanošću, a ne potvrđenu činjenicu.",
+      "lifecycle": "ACTIVE",
+      "path": "tests/test_measure_phrase_analyzer.py",
+      "evidence": {
+        "state": "CONFIRMED",
+        "detail": "Test metoda postoji."
+      },
+      "implementation": {
+        "state": "PASS",
+        "detail": "Test je implementiran."
+      },
+      "validation": {
+        "state": "PASS",
+        "detail": "Test prolazi."
+      },
+      "certification": {
+        "state": "NONE",
+        "detail": "Heuristička granica nije certificirana kao glazbena fraza."
+      },
+      "refs": [
+        "MOD-008",
+        "RUN-004"
+      ]
+    },
+    {
+      "id": "TEST-029",
+      "kind": "TEST",
+      "title": "test_conflicting_meter_blocks_timeline",
+      "summary": "Provjerava blokiranje vremenskog tumačenja kada izvori na istom ticku daju različit metar.",
+      "lifecycle": "ACTIVE",
+      "path": "tests/test_measure_phrase_analyzer.py",
+      "evidence": {
+        "state": "CONFIRMED",
+        "detail": "Test metoda postoji."
+      },
+      "implementation": {
+        "state": "PASS",
+        "detail": "Test je implementiran."
+      },
+      "validation": {
+        "state": "PASS",
+        "detail": "Test prolazi."
+      },
+      "certification": {
+        "state": "PARTIAL",
+        "detail": "Certificira sigurnosno blokiranje testiranog konflikta."
+      },
+      "refs": [
+        "MOD-008",
+        "RUN-004"
+      ]
+    },
+    {
+      "id": "TEST-030",
+      "kind": "TEST",
+      "title": "test_style_adapter_respects_valid_window_and_preserves_source_hash",
+      "summary": "Provjerava da M08 Style adapter isključuje trailing događaj, prenosi izvorni hash i ostaje Analyze-only.",
+      "lifecycle": "ACTIVE",
+      "path": "tests/test_measure_phrase_analyzer.py",
+      "evidence": {
+        "state": "CONFIRMED",
+        "detail": "Test metoda postoji nad M06 Style modelom."
+      },
+      "implementation": {
+        "state": "PASS",
+        "detail": "Test je implementiran."
+      },
+      "validation": {
+        "state": "PASS",
+        "detail": "Test prolazi."
+      },
+      "certification": {
+        "state": "PARTIAL",
+        "detail": "Podupire ograničeni M08 Style adapter scope."
+      },
+      "refs": [
+        "MOD-006",
+        "MOD-008",
+        "RUN-004"
+      ]
+    },
+    {
+      "id": "TEST-031",
+      "kind": "TEST",
+      "title": "test_derives_velocity_duration_polyphony_and_controllers",
+      "summary": "Provjerava zajedničke velocity, duration, polifonija, CC i pitch-bend metrike.",
+      "lifecycle": "ACTIVE",
+      "path": "tests/test_instrument_measurement_engine.py",
+      "evidence": {
+        "state": "CONFIRMED",
+        "detail": "Test metoda postoji nad sintetičkim SMF događajima."
+      },
+      "implementation": {
+        "state": "PASS",
+        "detail": "Test je implementiran."
+      },
+      "validation": {
+        "state": "PASS",
+        "detail": "Test prolazi."
+      },
+      "certification": {
+        "state": "NONE",
+        "detail": "Unit test ograničenog općeg MIDI slučaja."
+      },
+      "refs": [
+        "MOD-013",
+        "RUN-005"
+      ]
+    },
+    {
+      "id": "TEST-032",
+      "kind": "TEST",
+      "title": "test_creates_measure_profiles_from_m08_timeline",
+      "summary": "Provjerava M09 statistike po mjeri dobivene iz M08 timelinea.",
+      "lifecycle": "ACTIVE",
+      "path": "tests/test_instrument_measurement_engine.py",
+      "evidence": {
+        "state": "CONFIRMED",
+        "detail": "Test metoda postoji."
+      },
+      "implementation": {
+        "state": "PASS",
+        "detail": "Test je implementiran."
+      },
+      "validation": {
+        "state": "PASS",
+        "detail": "Test prolazi."
+      },
+      "certification": {
+        "state": "NONE",
+        "detail": "Pokriva dvije sintetičke mjere."
+      },
+      "refs": [
+        "MOD-008",
+        "MOD-013",
+        "RUN-005"
+      ]
+    },
+    {
+      "id": "TEST-033",
+      "kind": "TEST",
+      "title": "test_creates_phrase_profiles_from_inferred_boundaries",
+      "summary": "Provjerava profile fraza i očuvanje razloga/pouzdanosti M08 granice.",
+      "lifecycle": "ACTIVE",
+      "path": "tests/test_instrument_measurement_engine.py",
+      "evidence": {
+        "state": "CONFIRMED",
+        "detail": "Test metoda postoji."
+      },
+      "implementation": {
+        "state": "PASS",
+        "detail": "Test je implementiran."
+      },
+      "validation": {
+        "state": "PASS",
+        "detail": "Test prolazi."
+      },
+      "certification": {
+        "state": "NONE",
+        "detail": "Frazna granica ostaje heuristički kandidat."
+      },
+      "refs": [
+        "MOD-008",
+        "MOD-013",
+        "RUN-005"
+      ]
+    },
+    {
+      "id": "TEST-034",
+      "kind": "TEST",
+      "title": "test_unmatched_notes_make_profile_partial",
+      "summary": "Provjerava PARTIAL status za nezatvoreni Note On i orphan Note Off.",
+      "lifecycle": "ACTIVE",
+      "path": "tests/test_instrument_measurement_engine.py",
+      "evidence": {
+        "state": "CONFIRMED",
+        "detail": "Test metoda postoji."
+      },
+      "implementation": {
+        "state": "PASS",
+        "detail": "Test je implementiran."
+      },
+      "validation": {
+        "state": "PASS",
+        "detail": "Test prolazi."
+      },
+      "certification": {
+        "state": "PARTIAL",
+        "detail": "Certificira sigurnosno označavanje testiranih strukturnih problema."
+      },
+      "refs": [
+        "MOD-013",
+        "RUN-005"
+      ]
+    },
+    {
+      "id": "TEST-035",
+      "kind": "TEST",
+      "title": "test_blocked_timeline_preserves_global_metrics_but_blocks_use",
+      "summary": "Provjerava da globalne činjenice ostaju vidljive, ali konfliktni M08 timeline daje BLOCKED status.",
+      "lifecycle": "ACTIVE",
+      "path": "tests/test_instrument_measurement_engine.py",
+      "evidence": {
+        "state": "CONFIRMED",
+        "detail": "Test metoda postoji."
+      },
+      "implementation": {
+        "state": "PASS",
+        "detail": "Test je implementiran."
+      },
+      "validation": {
+        "state": "PASS",
+        "detail": "Test prolazi."
+      },
+      "certification": {
+        "state": "PARTIAL",
+        "detail": "Certificira zaštitu testiranog konfliktnog slučaja."
+      },
+      "refs": [
+        "MOD-008",
+        "MOD-013",
+        "RUN-005"
+      ]
+    },
+    {
+      "id": "TEST-036",
+      "kind": "TEST",
+      "title": "test_style_adapter_inherits_context_protections_and_valid_window",
+      "summary": "Provjerava M06 prozor te nasljeđivanje M07 fixed/DO_NOT_TOUCH i M08 Analyze-only zaštita.",
+      "lifecycle": "ACTIVE",
+      "path": "tests/test_instrument_measurement_engine.py",
+      "evidence": {
+        "state": "CONFIRMED",
+        "detail": "Test metoda postoji nad Style adapterom."
+      },
+      "implementation": {
+        "state": "PASS",
+        "detail": "Test je implementiran."
+      },
+      "validation": {
+        "state": "PASS",
+        "detail": "Test prolazi."
+      },
+      "certification": {
+        "state": "PARTIAL",
+        "detail": "Podupire ograničeni M09 Style adapter scope."
+      },
+      "refs": [
+        "MOD-006",
+        "MOD-007",
+        "MOD-008",
+        "MOD-013",
+        "RUN-005"
+      ]
+    },
+    {
+      "id": "TEST-037",
+      "kind": "TEST",
+      "title": "test_splits_complete_addresses_and_profiles_each_segment",
+      "summary": "Provjerava dva potpuna CC00.CC32.PC segmenta i zaseban M09 profil svakoga.",
+      "lifecycle": "ACTIVE",
+      "path": "tests/test_instrument_segmenter.py",
+      "evidence": {
+        "state": "CONFIRMED",
+        "detail": "Test metoda postoji."
+      },
+      "implementation": {
+        "state": "PASS",
+        "detail": "Test je implementiran."
+      },
+      "validation": {
+        "state": "PASS",
+        "detail": "Test prolazi."
+      },
+      "certification": {
+        "state": "NONE",
+        "detail": "Ne dokazuje Factory/User identitet adrese."
+      },
+      "refs": [
+        "MOD-013",
+        "MOD-014",
+        "RUN-006"
+      ]
+    },
+    {
+      "id": "TEST-038",
+      "kind": "TEST",
+      "title": "test_bank_change_applies_only_at_next_program_change",
+      "summary": "Provjerava da Bank Select promjena mijenja snapshot tek na sljedećem Program Changeu.",
+      "lifecycle": "ACTIVE",
+      "path": "tests/test_instrument_segmenter.py",
+      "evidence": {
+        "state": "CONFIRMED",
+        "detail": "Test metoda postoji."
+      },
+      "implementation": {
+        "state": "PASS",
+        "detail": "Test je implementiran."
+      },
+      "validation": {
+        "state": "PASS",
+        "detail": "Test prolazi."
+      },
+      "certification": {
+        "state": "NONE",
+        "detail": "Unit test MIDI state pravila."
+      },
+      "refs": [
+        "MOD-014",
+        "RUN-006"
+      ]
+    },
+    {
+      "id": "TEST-039",
+      "kind": "TEST",
+      "title": "test_incomplete_address_is_partial_not_guessed",
+      "summary": "Provjerava da Program Change bez oba bank kontrolera ostaje INCOMPLETE i PARTIAL.",
+      "lifecycle": "ACTIVE",
+      "path": "tests/test_instrument_segmenter.py",
+      "evidence": {
+        "state": "CONFIRMED",
+        "detail": "Test metoda postoji."
+      },
+      "implementation": {
+        "state": "PASS",
+        "detail": "Test je implementiran."
+      },
+      "validation": {
+        "state": "PASS",
+        "detail": "Test prolazi."
+      },
+      "certification": {
+        "state": "PARTIAL",
+        "detail": "Certificira nenagađanje testirane nepotpune adrese."
+      },
+      "refs": [
+        "MOD-014",
+        "RUN-006"
+      ]
+    },
+    {
+      "id": "TEST-040",
+      "kind": "TEST",
+      "title": "test_note_crossing_program_boundary_is_flagged",
+      "summary": "Provjerava detekciju note čiji Note On i Note Off leže s različitih strana Program Change granice.",
+      "lifecycle": "ACTIVE",
+      "path": "tests/test_instrument_segmenter.py",
+      "evidence": {
+        "state": "CONFIRMED",
+        "detail": "Test metoda postoji."
+      },
+      "implementation": {
+        "state": "PASS",
+        "detail": "Test je implementiran."
+      },
+      "validation": {
+        "state": "PASS",
+        "detail": "Test prolazi."
+      },
+      "certification": {
+        "state": "PARTIAL",
+        "detail": "Certificira zaštitu testiranog boundary slučaja."
+      },
+      "refs": [
+        "MOD-014",
+        "RUN-006"
+      ]
+    },
+    {
+      "id": "TEST-041",
+      "kind": "TEST",
+      "title": "test_same_tick_event_order_defines_boundary",
+      "summary": "Provjerava da izvorni event order razdvaja događaje kada Note i Program Change dijele tick.",
+      "lifecycle": "ACTIVE",
+      "path": "tests/test_instrument_segmenter.py",
+      "evidence": {
+        "state": "CONFIRMED",
+        "detail": "Test metoda postoji."
+      },
+      "implementation": {
+        "state": "PASS",
+        "detail": "Test je implementiran."
+      },
+      "validation": {
+        "state": "PASS",
+        "detail": "Test prolazi."
+      },
+      "certification": {
+        "state": "NONE",
+        "detail": "Unit test očuvanja izvornog redoslijeda."
+      },
+      "refs": [
+        "MOD-006",
+        "MOD-014",
+        "RUN-006"
+      ]
+    },
+    {
+      "id": "TEST-042",
+      "kind": "TEST",
+      "title": "test_multiple_channels_are_partitioned_but_result_is_partial",
+      "summary": "Provjerava odvajanje segmenata po kanalu uz PARTIAL status višekanalnog fizičkog parta.",
+      "lifecycle": "ACTIVE",
+      "path": "tests/test_instrument_segmenter.py",
+      "evidence": {
+        "state": "CONFIRMED",
+        "detail": "Test metoda postoji."
+      },
+      "implementation": {
+        "state": "PASS",
+        "detail": "Test je implementiran."
+      },
+      "validation": {
+        "state": "PASS",
+        "detail": "Test prolazi."
+      },
+      "certification": {
+        "state": "PARTIAL",
+        "detail": "Certificira konzervativno ponašanje testiranog višekanalnog slučaja."
+      },
+      "refs": [
+        "MOD-007",
+        "MOD-014",
+        "RUN-006"
+      ]
+    },
+    {
+      "id": "TEST-043",
+      "kind": "TEST",
+      "title": "test_style_adapter_respects_valid_window_and_source_hash",
+      "summary": "Provjerava M10 Style adapter, M06 prozor, izvorni SHA-256 i puni adresni snapshot.",
+      "lifecycle": "ACTIVE",
+      "path": "tests/test_instrument_segmenter.py",
+      "evidence": {
+        "state": "CONFIRMED",
+        "detail": "Test metoda postoji."
+      },
+      "implementation": {
+        "state": "PASS",
+        "detail": "Test je implementiran."
+      },
+      "validation": {
+        "state": "PASS",
+        "detail": "Test prolazi."
+      },
+      "certification": {
+        "state": "PARTIAL",
+        "detail": "Podupire ograničeni M10 Style adapter scope."
+      },
+      "refs": [
+        "MOD-006",
+        "MOD-014",
+        "RUN-006"
+      ]
+    },
+    {
+      "id": "TEST-044",
+      "kind": "TEST",
+      "title": "test_m08_m09_m10_full_factory_corpus_is_deterministic_and_read_only",
+      "summary": "Obrađuje 3.211 Factory MIDI datoteka i 65.021 track-slice kroz M08–M10 i K02; provjerava 82.917 identiteta, statuse, digest i nepromijenjen ZIP hash.",
+      "lifecycle": "ACTIVE",
+      "path": "tests/test_analysis_pipeline_corpus.py",
+      "evidence": {
+        "state": "CONFIRMED",
+        "detail": "Izvršni corpus test i fiksna očekivanja postoje u repozitoriju."
+      },
+      "implementation": {
+        "state": "PASS",
+        "detail": "Test je implementiran nad DATA-003."
+      },
+      "validation": {
+        "state": "PASS",
+        "detail": "Puni test reproducira 82.917 M10/K02 segmenata, K02 raspodjelu i digest 5245ec7a… bez promjene izvornog arhiva; dio je RUN-014."
+      },
+      "certification": {
+        "state": "PARTIAL",
+        "detail": "Certificira samo read-only M08-M10 ponašanje za točno identificirani Factory corpus."
+      },
+      "refs": [
+        "DATA-003",
+        "MOD-008",
+        "MOD-013",
+        "MOD-014",
+        "RUN-007",
+        "MOD-011",
+        "TEST-051"
+      ]
+    },
+    {
+      "id": "RUN-001",
+      "kind": "TEST_RUN",
+      "title": "M06 i osnovni MIDI test run — 2026-08-13",
+      "summary": "Osam testova: sedam uspješnih i jedan opravdano preskočen GUI test.",
+      "lifecycle": "HISTORICAL",
+      "command": "python3 -m unittest -v tests/test_style_loader.py tests/test_midi_modules.py",
+      "evidence": {
+        "state": "CONFIRMED",
+        "detail": "Naredba i rezultat zapisani su u MODULE_LOG.md."
+      },
+      "implementation": {
+        "state": "NOT_APPLICABLE",
+        "detail": "Test run nije produkcijska implementacija."
+      },
+      "validation": {
+        "state": "PASS",
+        "detail": "7 PASS, 1 skipped zbog tkinter preduvjeta."
+      },
+      "certification": {
+        "state": "PARTIAL",
+        "detail": "Podupire M01–M06 samo u pokrivenom scopeu."
+      },
+      "refs": [
+        "TEST-001",
+        "TEST-002",
+        "TEST-003",
+        "TEST-004",
+        "TEST-005",
+        "TEST-006",
+        "TEST-007",
+        "TEST-008"
+      ]
+    },
+    {
+      "id": "RUN-002",
+      "kind": "TEST_RUN",
+      "title": "M07 kombinirani test run — 2026-08-13",
+      "summary": "Dvadeset tri testa: 22 uspješna i jedan opravdano preskočen GUI test, uključujući reproducibilni M07 corpus test.",
+      "lifecycle": "HISTORICAL",
+      "command": "python3 -m unittest -v tests/test_context_classifier_corpus.py tests/test_context_classifier.py tests/test_style_loader.py tests/test_midi_modules.py",
+      "evidence": {
+        "state": "CONFIRMED",
+        "detail": "Naredba i rezultat zapisani su u MODULE_LOG.md."
+      },
+      "implementation": {
+        "state": "NOT_APPLICABLE",
+        "detail": "Test run nije produkcijska implementacija."
+      },
+      "validation": {
+        "state": "PASS",
+        "detail": "22 PASS, 1 skipped; corpus brojke i izvorni hash ponovno su izračunati."
+      },
+      "certification": {
+        "state": "PARTIAL",
+        "detail": "Podupire read-only M07 scope na registriranom korpusu."
+      },
+      "refs": [
+        "MOD-007",
+        "DATA-003",
+        "TEST-024"
+      ]
+    },
+    {
+      "id": "RUN-003",
+      "kind": "TEST_RUN",
+      "title": "G00 registry test run — 2026-08-13",
+      "summary": "Validacija namespacea, IDEA izolacije, putanja, hashova, test-prisutnosti, referenci i generiranog Markdown prikaza.",
+      "lifecycle": "ACTIVE",
+      "command": "python3 -m unittest -v tests/test_master_registry.py",
+      "evidence": {
+        "state": "CONFIRMED",
+        "detail": "Naredba je reproducibilna u workspaceu."
+      },
+      "implementation": {
+        "state": "NOT_APPLICABLE",
+        "detail": "Test run nije produkcijska implementacija."
+      },
+      "validation": {
+        "state": "PASS",
+        "detail": "G00 suite prolazi s deset testova."
+      },
+      "certification": {
+        "state": "PARTIAL",
+        "detail": "Podupire samo G00 registry invariantne uvjete."
+      },
+      "refs": [
+        "TEST-023",
+        "TEST-025",
+        "MOD-010"
+      ]
+    },
+    {
+      "id": "RUN-004",
+      "kind": "TEST_RUN",
+      "title": "M08 kombinirani test run — 2026-08-13",
+      "summary": "Povijesni M08 run prije proširenog rubnog i corpus pokrića.",
+      "lifecycle": "SUPERSEDED",
+      "command": "python3 -m unittest -v tests/test_measure_phrase_analyzer.py tests/test_master_registry.py tests/test_context_classifier_corpus.py tests/test_context_classifier.py tests/test_style_loader.py tests/test_midi_modules.py",
+      "evidence": {
+        "state": "CONFIRMED",
+        "detail": "Naredba i rezultat zapisani su u MODULE_LOG.md."
+      },
+      "implementation": {
+        "state": "NOT_APPLICABLE",
+        "detail": "Test run nije produkcijska implementacija."
+      },
+      "validation": {
+        "state": "PARTIAL",
+        "detail": "Run je zamijenjen strožim RUN-007 nakon pronalaska nepokrivenih rubnih slučajeva."
+      },
+      "certification": {
+        "state": "NONE",
+        "detail": "Ne koristi se kao aktualni hard-gate dokaz."
+      },
+      "refs": [
+        "MOD-008",
+        "TEST-026",
+        "TEST-027",
+        "TEST-028",
+        "TEST-029",
+        "TEST-030"
+      ]
+    },
+    {
+      "id": "RUN-005",
+      "kind": "TEST_RUN",
+      "title": "M09 kombinirani test run — 2026-08-13",
+      "summary": "Povijesni M09 run prije timeline provenance, višetrack i corpus zaštita.",
+      "lifecycle": "SUPERSEDED",
+      "command": "python3 -m unittest -v tests/test_instrument_measurement_engine.py tests/test_measure_phrase_analyzer.py tests/test_master_registry.py tests/test_context_classifier_corpus.py tests/test_context_classifier.py tests/test_style_loader.py tests/test_midi_modules.py",
+      "evidence": {
+        "state": "CONFIRMED",
+        "detail": "Naredba i rezultat zapisani su u MODULE_LOG.md."
+      },
+      "implementation": {
+        "state": "NOT_APPLICABLE",
+        "detail": "Test run nije produkcijska implementacija."
+      },
+      "validation": {
+        "state": "PARTIAL",
+        "detail": "Run je zamijenjen strožim RUN-007 nakon pronalaska nepokrivenih rubnih slučajeva."
+      },
+      "certification": {
+        "state": "NONE",
+        "detail": "Ne koristi se kao aktualni hard-gate dokaz."
+      },
+      "refs": [
+        "MOD-013",
+        "TEST-031",
+        "TEST-032",
+        "TEST-033",
+        "TEST-034",
+        "TEST-035",
+        "TEST-036"
+      ]
+    },
+    {
+      "id": "RUN-006",
+      "kind": "TEST_RUN",
+      "title": "M10 kombinirani test run — 2026-08-13",
+      "summary": "Povijesni M10 run prije open-note, ordinal, cross-track i corpus zaštita.",
+      "lifecycle": "SUPERSEDED",
+      "command": "python3 -m unittest -v tests/test_instrument_segmenter.py tests/test_instrument_measurement_engine.py tests/test_measure_phrase_analyzer.py tests/test_master_registry.py tests/test_context_classifier_corpus.py tests/test_context_classifier.py tests/test_style_loader.py tests/test_midi_modules.py",
+      "evidence": {
+        "state": "CONFIRMED",
+        "detail": "Naredba i rezultat zapisani su u MODULE_LOG.md."
+      },
+      "implementation": {
+        "state": "NOT_APPLICABLE",
+        "detail": "Test run nije produkcijska implementacija."
+      },
+      "validation": {
+        "state": "PARTIAL",
+        "detail": "Run je zamijenjen strožim RUN-007 nakon pronalaska nepokrivenih rubnih slučajeva."
+      },
+      "certification": {
+        "state": "NONE",
+        "detail": "Ne koristi se kao aktualni hard-gate dokaz."
+      },
+      "refs": [
+        "MOD-014",
+        "TEST-037",
+        "TEST-038",
+        "TEST-039",
+        "TEST-040",
+        "TEST-041",
+        "TEST-042",
+        "TEST-043"
+      ]
+    },
+    {
+      "id": "RUN-007",
+      "kind": "TEST_RUN",
+      "title": "M08-M10 hard-gate i Factory corpus run — 2026-08-13 (historical)",
+      "summary": "Aktualni dedicated, puni regresijski i Factory corpus dokaz nakon neovisnog testnog audita.",
+      "lifecycle": "HISTORICAL",
+      "command": "python3 -m unittest -v tests/test_analysis_pipeline_corpus.py tests/test_instrument_segmenter.py tests/test_instrument_measurement_engine.py tests/test_measure_phrase_analyzer.py tests/test_master_registry.py tests/test_context_classifier_corpus.py tests/test_context_classifier.py tests/test_style_loader.py tests/test_midi_modules.py",
+      "evidence": {
+        "state": "CONFIRMED",
+        "detail": "Naredba je izravno izvršna; TEST-044 veže rezultat uz fiksni corpus hash, raspodjele i deterministički digest."
+      },
+      "implementation": {
+        "state": "NOT_APPLICABLE",
+        "detail": "Test run nije produkcijska implementacija."
+      },
+      "validation": {
+        "state": "PASS",
+        "detail": "Aktualni hard-gate suite: 61 test, 60 PASS, 1 GUI skip/BLOCKED zbog nedostupnog tkintera i 0 failurea."
+      },
+      "certification": {
+        "state": "PARTIAL",
+        "detail": "Podupire samo read-only M08-M10 scope i postojeće regresije; ne autorizira writer, identity ili hardware tvrdnje."
+      },
+      "refs": [
+        "DATA-003",
+        "MOD-008",
+        "MOD-013",
+        "MOD-014",
+        "TEST-044"
+      ]
+    },
+    {
+      "id": "CLAIM-001",
+      "kind": "CLAIM",
+      "title": "M06 Factory corpus rezultat",
+      "summary": "Loader je obradio 3.211/3.211 MIDI datoteka, 252 Style skupa (230 potpunih, 22 nepotpuna) uz nepromijenjen izvorni ZIP hash.",
+      "lifecycle": "ACTIVE",
+      "observations": 3211,
+      "observation_unit": "MIDI datoteka",
+      "evidence": {
+        "state": "CONFIRMED",
+        "detail": "Rezultat je vezan uz točno identificirani corpus, kod, test i zapisani run."
+      },
+      "implementation": {
+        "state": "PASS",
+        "detail": "Mjerenje proizvodi M06 loader/report pipeline."
+      },
+      "validation": {
+        "state": "PASS",
+        "detail": "Puni archive corpus test prolazi."
+      },
+      "certification": {
+        "state": "PASS",
+        "detail": "Tvrdnja je certificirana samo za DATA-003 hash i trenutačni M06 scope."
+      },
+      "refs": [
+        "MOD-006",
+        "DATA-003",
+        "TEST-006",
+        "RUN-001",
+        "EVID-001"
+      ]
+    },
+    {
+      "id": "CLAIM-002",
+      "kind": "CLAIM",
+      "title": "M07 Factory corpus smoke rezultat",
+      "summary": "Classifier je bez iznimke obradio 3.211 MIDI datoteka i proizveo 65.021 track-slice rezultat: 27.121 CLASSIFIED, 37.850 UNCERTAIN i 50 BLOCKED.",
+      "lifecycle": "ACTIVE",
+      "observations": 65021,
+      "observation_unit": "track-slice rezultat",
+      "evidence": {
+        "state": "CONFIRMED",
+        "detail": "Rezultat je vezan uz registrirani corpus, M07 kod i zapisani smoke test."
+      },
+      "implementation": {
+        "state": "PASS",
+        "detail": "Mjerenje proizvodi M07 classifier pipeline."
+      },
+      "validation": {
+        "state": "PASS",
+        "detail": "Unit suite i puni corpus smoke test prolaze."
+      },
+      "certification": {
+        "state": "PASS",
+        "detail": "Tvrdnja je certificirana samo za DATA-003 hash i read-only M07 scope."
+      },
+      "refs": [
+        "MOD-007",
+        "DATA-003",
+        "TEST-024",
+        "RUN-002",
+        "EVID-002"
+      ]
+    },
+    {
+      "id": "EVID-001",
+      "kind": "EVIDENCE",
+      "title": "M06 reproducibility bundle",
+      "summary": "Veza između Factory arhiva, službenih stranica, loader koda, pet testova i registriranog test runa.",
+      "lifecycle": "ACTIVE",
+      "source_scope": "M06 read-only Style Works Loader",
+      "evidence": {
+        "state": "CONFIRMED",
+        "detail": "Svi članovi bundlea imaju stabilne ID-jeve i lokalni provenance."
+      },
+      "implementation": {
+        "state": "PASS",
+        "detail": "Povezani M06 modul postoji."
+      },
+      "validation": {
+        "state": "PASS",
+        "detail": "Povezani testovi i corpus run prolaze."
+      },
+      "certification": {
+        "state": "PASS",
+        "detail": "Dovoljno za ograničeni M06 PASS, ne za druge optimizacijske funkcije."
+      },
+      "refs": [
+        "DATA-001",
+        "DATA-003",
+        "MOD-006",
+        "RUN-001"
+      ]
+    },
+    {
+      "id": "EVID-002",
+      "kind": "EVIDENCE",
+      "title": "M07 reproducibility bundle",
+      "summary": "Veza između Factory arhiva, službenih stranica, classifier koda, 14 unit testova i reproducibilnog corpus testa.",
+      "lifecycle": "ACTIVE",
+      "source_scope": "M07 read-only Context Classifier",
+      "evidence": {
+        "state": "CONFIRMED",
+        "detail": "Svi članovi bundlea imaju stabilne ID-jeve i lokalni provenance."
+      },
+      "implementation": {
+        "state": "PASS",
+        "detail": "Povezani M07 modul postoji."
+      },
+      "validation": {
+        "state": "PASS",
+        "detail": "Povezani unit testovi i corpus smoke test prolaze."
+      },
+      "certification": {
+        "state": "PASS",
+        "detail": "Dovoljno za ograničeni read-only M07 PASS; ne autorizira Enhance."
+      },
+      "refs": [
+        "DATA-001",
+        "DATA-003",
+        "MOD-007",
+        "TEST-024",
+        "RUN-002"
+      ]
+    },
+    {
+      "id": "ISSUE-001",
+      "kind": "ISSUE",
+      "title": "Headless GUI display blocker — solved with local Xvfb",
+      "summary": "Sistemski display ne postoji, ali workspace-only Xvfb iz službenih Debian paketa omogućuje stvarni Tk runtime test bez sistemske instalacije.",
+      "lifecycle": "SUPERSEDED",
+      "evidence": {
+        "state": "CONFIRMED",
+        "detail": "Tk root i MidiEnhancerApp 1360x900 s 16 kartica pokrenuti su na :102; paketni i patched-binary hashovi zapisani su u runtime manifestu i audit izvještaju."
+      },
+      "implementation": {
+        "state": "PASS",
+        "detail": "Lokalni virtual-display runtime postoji u ignoriranom loaded-data području; sistemski paketi nisu mijenjani."
+      },
+      "validation": {
+        "state": "PASS",
+        "detail": "TEST-049 prolazi pod DISPLAY=:102."
+      },
+      "certification": {
+        "state": "PARTIAL",
+        "detail": "Automatizirani GUI runtime blocker je zatvoren; native korisnički desktop test ostaje release zadatak."
+      },
+      "refs": [
+        "MOD-005",
+        "TEST-003",
+        "TEST-049"
+      ]
+    },
+    {
+      "id": "ISSUE-002",
+      "kind": "ISSUE",
+      "title": "K01 produkcijski modul i test — resolved",
+      "summary": "Raniji nedostatak K01 generatora, kanonskog JSON-a, lookup modula i testa potpunosti zatvoren je reproducibilnim artefaktima.",
+      "lifecycle": "SUPERSEDED",
+      "evidence": {
+        "state": "CONFIRMED",
+        "detail": "MOD-009, MOD-017, DATA-009 i TEST-050 postoje u aktualnom snapshotu."
+      },
+      "implementation": {
+        "state": "PASS",
+        "detail": "K01 read-only implementacija i generator su prisutni."
+      },
+      "validation": {
+        "state": "PASS",
+        "detail": "Dedicated K01 suite prolazi i generator --check potvrđuje kanonski JSON."
+      },
+      "certification": {
+        "state": "PASS",
+        "detail": "Zatvoren je konkretni missing-artifact issue; certifikacija ostaje ograničena K01 scopeom."
+      },
+      "refs": [
+        "MOD-009",
+        "MOD-017",
+        "DATA-001",
+        "DATA-009",
+        "TEST-050"
+      ]
+    },
+    {
+      "id": "ISSUE-003",
+      "kind": "ISSUE",
+      "title": "Fox Shuffle Break konflikt broja taktova",
+      "summary": "Fox Shuffle 1_Break.mid sadrži konfliktne oznake 1 Bar i 5 Bars te je blokiran za vremensku analizu.",
+      "lifecycle": "ACTIVE",
+      "evidence": {
+        "state": "CONFIRMED",
+        "detail": "Konflikt je reproducibilno detektiran u Factory arhivu."
+      },
+      "implementation": {
+        "state": "PASS",
+        "detail": "M06 ga čuva i blokira umjesto nagađanja."
+      },
+      "validation": {
+        "state": "PASS",
+        "detail": "Corpus provjera potvrđuje sigurno ponašanje."
+      },
+      "certification": {
+        "state": "PASS",
+        "detail": "Certificirano je blokiranje, ne izbor jedne konfliktne vrijednosti."
+      },
+      "refs": [
+        "DATA-003",
+        "MOD-006",
+        "TEST-007"
+      ]
+    },
+    {
+      "id": "ISSUE-004",
+      "kind": "ISSUE",
+      "title": "Valja RAR5 sadržaj nije analiziran",
+      "summary": "Arhiv je identificiran, ali njegov MIDI sadržaj nije dokazano raspakiran ili analiziran.",
+      "lifecycle": "BLOCKED",
+      "evidence": {
+        "state": "CONFIRMED",
+        "detail": "Postoji samo dokaz arhiva i hasha."
+      },
+      "implementation": {
+        "state": "BLOCKED",
+        "detail": "Nema podržanog RAR5 loadera."
+      },
+      "validation": {
+        "state": "BLOCKED",
+        "detail": "Nema corpus testova."
+      },
+      "certification": {
+        "state": "NONE",
+        "detail": "Tvrdnje o sadržaju nisu dopuštene."
+      },
+      "refs": [
+        "DATA-005"
+      ]
+    },
+    {
+      "id": "ISSUE-005",
+      "kind": "ISSUE",
+      "title": "M01 Format 2 test gap — resolved",
+      "summary": "Raniji nedostatak zasebnog SMF Format 2 testa zatvoren je neovisnim sequence-timeline, display, optional-analyzer i dual-parser strukturnim testovima.",
+      "lifecycle": "SUPERSEDED",
+      "evidence": {
+        "state": "CONFIRMED",
+        "detail": "tests/test_midi_format2.py sadrži četiri izravna testa i registriran je kao TEST-047."
+      },
+      "implementation": {
+        "state": "PASS",
+        "detail": "Format 2 više se ne prikazuje kao Format 1 niti spaja u lažnu globalnu tempo/trajanje vremensku liniju."
+      },
+      "validation": {
+        "state": "PASS",
+        "detail": "Namjenski Format 2 suite prolazi."
+      },
+      "certification": {
+        "state": "PARTIAL",
+        "detail": "Zatvoren je konkretni Format 2 gap; opći cross-parser parity ostaje zaseban ISSUE-006."
+      },
+      "refs": [
+        "MOD-001",
+        "MOD-002",
+        "TEST-047"
+      ]
+    },
+    {
+      "id": "ISSUE-006",
+      "kind": "ISSUE",
+      "title": "Dvostruka SMF parser logika — parity guard implemented",
+      "summary": "Parser putanje ostaju odvojene, ali sada imaju valid/malformed sintetički parity i izravni core-fingerprint test nad svih 3.211 Factory MIDI datoteka.",
+      "lifecycle": "SUPERSEDED",
+      "evidence": {
+        "state": "CONFIRMED",
+        "detail": "TEST-048 uspoređuje strukturu, događaje, note, tempo/metar/key, programe, kontrolere, pitch bend, hash i završne tickove."
+      },
+      "implementation": {
+        "state": "PASS",
+        "detail": "Implementiran je dopušteni alternativni parity pristup te jednake header/division/EOT strukturne kapije u oba parsera."
+      },
+      "validation": {
+        "state": "PASS",
+        "detail": "5 parity testova i 3.223 subtesta prolaze; 3.211/3.211 Factory datoteka ima isti core fingerprint."
+      },
+      "certification": {
+        "state": "PARTIAL",
+        "detail": "Certificiran je core parity na registriranom Factory korpusu i sintetičkim rubovima; parseri još nisu fizički objedinjeni."
+      },
+      "refs": [
+        "MOD-001",
+        "MOD-006",
+        "TEST-048",
+        "DATA-003"
+      ]
+    },
+    {
+      "id": "ISSUE-007",
+      "kind": "ISSUE",
+      "title": "M07 score nije kalibrirana pouzdanost",
+      "summary": "Brojčani rezultati M07 su heuristički bodovi pravila, a ne empirijski kalibrirane vjerojatnosti.",
+      "lifecycle": "ACTIVE",
+      "evidence": {
+        "state": "CONFIRMED",
+        "detail": "Classifier koristi fiksne pragove i bodove bez označenog calibration skupa."
+      },
+      "implementation": {
+        "state": "PASS",
+        "detail": "Heuristički score postoji i prikazuje se kao dio read-only rezultata."
+      },
+      "validation": {
+        "state": "PARTIAL",
+        "detail": "Grananja su testirana, ali score nije kalibriran prema labeliranom golden skupu."
+      },
+      "certification": {
+        "state": "NONE",
+        "detail": "Score se ne smije predstavljati kao statistička vjerojatnost."
+      },
+      "refs": [
+        "MOD-007"
+      ]
+    },
+    {
+      "id": "ISSUE-008",
+      "kind": "ISSUE",
+      "title": "DNA Factory container duplikat — resolved",
+      "summary": "Unutarnji Split Factory Styles.zip u DATA-004 ima isti SHA-256 kao DATA-003 i mora se isključiti iz Gold/DNA trening i evaluacijskih brojki.",
+      "lifecycle": "SUPERSEDED",
+      "evidence": {
+        "state": "CONFIRMED",
+        "detail": "Unutarnji hash ffb95c...d8f5e jednak je registriranom DATA-003 hashu."
+      },
+      "implementation": {
+        "state": "PASS",
+        "detail": "G02 automatski prepoznaje exact Factory container hash i isključuje ga iz Gold evaluacije."
+      },
+      "validation": {
+        "state": "PASS",
+        "detail": "TEST-061 potvrđuje jednu exclusion stavku i nula cross-source individual MIDI hashova."
+      },
+      "certification": {
+        "state": "PASS",
+        "detail": "Konkretni container contamination issue je zatvoren."
+      },
+      "refs": [
+        "DATA-003",
+        "DATA-004",
+        "MOD-029",
+        "TEST-061"
+      ]
+    },
+    {
+      "id": "DEC-001",
+      "kind": "DECISION",
+      "title": "Humanize mora biti kontekstualan i analyze-first",
+      "summary": "Performance Humanization neće koristiti slijepi slučajni pomak; prvo zahtijeva timeline, ulogu, geste i referentne profile.",
+      "lifecycle": "ACTIVE",
+      "evidence": {
+        "state": "PARTIAL",
+        "detail": "Odluka je utemeljena na sigurnosnim pravilima projekta i korisnički odobrenim referentnim corpusima."
+      },
+      "implementation": {
+        "state": "PARTIAL",
+        "detail": "M08 timeline, M09 mjerenje i M10 segmentacija implementirani su; transformation pipeline još ne postoji."
+      },
+      "validation": {
+        "state": "NONE",
+        "detail": "Nema transformation A/B testova jer writer nije implementiran."
+      },
+      "certification": {
+        "state": "NONE",
+        "detail": "Automatski Humanize nije autoriziran."
+      },
+      "refs": [
+        "DATA-003",
+        "DATA-004",
+        "MOD-008"
+      ]
+    },
+    {
+      "id": "DEC-002",
+      "kind": "DECISION",
+      "title": "Balkan Drum Kit profil nije globalni default",
+      "summary": "Pop Std. Kit RX može biti preporuka unutar Balkan Pa800 profila, dok generički default čuva izvorni kit i dopušta GUI izbor.",
+      "lifecycle": "PROPOSED",
+      "evidence": {
+        "state": "PARTIAL",
+        "detail": "Korisnička preferencija i resurs postoje, ali univerzalna prikladnost nije dokazana."
+      },
+      "implementation": {
+        "state": "NONE",
+        "detail": "Profil i GUI izbor nisu implementirani."
+      },
+      "validation": {
+        "state": "NONE",
+        "detail": "Nema map-consistency ni audio/hardware testa."
+      },
+      "certification": {
+        "state": "NONE",
+        "detail": "Nije certificiran kao globalni default."
+      },
+      "refs": [
+        "DATA-001",
+        "DATA-006"
+      ]
+    },
+    {
+      "id": "DEC-003",
+      "kind": "DECISION",
+      "title": "User/Unknown Sound zamjenjuje samo korisnik",
+      "summary": "GUI treba nuditi Factory Sound po vremenskom instrument-segmentu; primjena je eksplicitna, reverzibilna i mijenja samo CC00/CC32/PC.",
+      "lifecycle": "PROPOSED",
+      "evidence": {
+        "state": "PARTIAL",
+        "detail": "Workflow je korisnički zahtjev; K01 Factory identitet je dostupan, ali odluka o zamjeni ovisi o K02 i korisničkoj potvrdi."
+      },
+      "implementation": {
+        "state": "PARTIAL",
+        "detail": "Bounded K03 backend radi za potvrđeni Factory ili User Drum source i exact existing events; UNKNOWN/insertion/shared-bank i GUI workflow ostaju izvan scopea."
+      },
+      "validation": {
+        "state": "NONE",
+        "detail": "Nema writer/verifier testova."
+      },
+      "certification": {
+        "state": "NONE",
+        "detail": "Instrument replacement nije autoriziran."
+      },
+      "refs": [
+        "MOD-005",
+        "MOD-009",
+        "MOD-011",
+        "MOD-012",
+        "MOD-018",
+        "MOD-019",
+        "MOD-020",
+        "MOD-023",
+        "MOD-024",
+        "MOD-025"
+      ]
+    },
+    {
+      "id": "DEC-004",
+      "kind": "DECISION",
+      "title": "G00 ograničeni Evidence Register prije M08",
+      "summary": "Uvodi se kanonski JSON za G00 registry zapise i generirani Markdown prikaz; MODULE_LOG.md i main.tex ostaju narativna dokumentacija, a napredni dokumenti IDEA_CATALOG.",
+      "lifecycle": "ACTIVE",
+      "evidence": {
+        "state": "CONFIRMED",
+        "detail": "Opseg je eksplicitno potvrđen prije implementacije."
+      },
+      "implementation": {
+        "state": "PASS",
+        "detail": "G00 datoteke i validator su implementirani."
+      },
+      "validation": {
+        "state": "PASS",
+        "detail": "Registry invariant suite prolazi."
+      },
+      "certification": {
+        "state": "PASS",
+        "detail": "Odluka je izvršena za registry zapise; nije tvrdnja da je sva projektna dokumentacija generirana iz JSON-a."
+      },
+      "refs": [
+        "DATA-007",
+        "DATA-008",
+        "MOD-010",
+        "TEST-023"
+      ]
+    },
+    {
+      "id": "DEC-005",
+      "kind": "DECISION",
+      "title": "Moduli slijede dependency DAG, ne jedan linearni lanac",
+      "summary": "Novi modul smije krenuti kada su svi njegovi deklarirani preduvjeti PASS; nepovezani BLOCKED ili FAIL modul ne zaustavlja drugu neovisnu granu.",
+      "lifecycle": "ACTIVE",
+      "evidence": {
+        "state": "CONFIRMED",
+        "detail": "M05 i K01 su blokirani/neuspješni dok su neovisni M06 i M07 valjano završeni."
+      },
+      "implementation": {
+        "state": "PASS",
+        "detail": "Pravilo je uneseno u projektnu dokumentaciju i registry veze."
+      },
+      "validation": {
+        "state": "PARTIAL",
+        "detail": "Reference modula postoje, ali automatski topološki scheduler još nije implementiran."
+      },
+      "certification": {
+        "state": "PARTIAL",
+        "detail": "Certificirana je governance odluka, ne automatizirani dependency engine."
+      },
+      "refs": [
+        "MOD-005",
+        "MOD-006",
+        "MOD-007",
+        "MOD-009"
+      ]
+    },
+    {
+      "id": "MOD-015",
+      "kind": "MODULE",
+      "external_id": "A01",
+      "title": "Workspace Persistence Probe",
+      "summary": "Provjerava da checkpointirani lokalni Git commit te nova Python i testna datoteka ostaju prisutni i bajtovno jednaki u kasnijem workspace turnu.",
+      "lifecycle": "ACTIVE",
+      "path": "tools/workspace_persistence_probe.py",
+      "evidence": {
+        "state": "CONFIRMED",
+        "detail": "Checkpoint commit 70bc744 i četiri zabilježena artefakta ponovno su provjereni nakon sljedeće korisničke poruke; Git ancestry i svi SHA-256 zbrojevi odgovaraju."
+      },
+      "implementation": {
+        "state": "PASS",
+        "detail": "Probe, checkpoint i integracijski test trajno su prisutni u Git snapshotu."
+      },
+      "validation": {
+        "state": "PASS",
+        "detail": "Cross-turn izvršenje 2026-08-14 potvrđuje commit, Python datoteke i testove bez razlike."
+      },
+      "certification": {
+        "state": "PASS",
+        "detail": "Certificiran je samo workspace/Git persistence scope za checkpoint 16ebf358-7bbd-4810-9215-d8e2928ba6c7."
+      },
+      "refs": [
+        "TEST-046",
+        "RUN-009"
+      ]
+    },
+    {
+      "id": "MOD-016",
+      "kind": "MODULE",
+      "external_id": "A02",
+      "title": "Repository Inventory Auditor",
+      "summary": "Uspoređuje implementirane MODULE/TEST zapise i MODULE_LOG ID-jeve s radnim stablom i git ls-tree popisom odabranog commita.",
+      "lifecycle": "ACTIVE",
+      "path": "tools/repository_inventory.py",
+      "evidence": {
+        "state": "CONFIRMED",
+        "detail": "Nalazi se izvode deterministički iz master registra, MODULE_LOG tablice, worktreea i Git treea."
+      },
+      "implementation": {
+        "state": "PASS",
+        "detail": "CLI, JSON/Markdown izvještaj i testovi trajno su prisutni nakon A01 cross-turn provjere."
+      },
+      "validation": {
+        "state": "PASS",
+        "detail": "Namjenski testovi prolaze, a aktualni inventar ima 0 errora i 0 warninga za dokumentirane produkcijske/testne/generatorske artefakte."
+      },
+      "certification": {
+        "state": "PASS",
+        "detail": "Certificirana je samo prisutnost dokumentiranih artefakata u odabranom Git treeu/worktreeu; ne glazbena ispravnost."
+      },
+      "refs": [
+        "MOD-010",
+        "TEST-045",
+        "MOD-015",
+        "RUN-009"
+      ]
+    },
+    {
+      "id": "TEST-045",
+      "kind": "TEST",
+      "external_id": "RepositoryInventoryTests",
+      "title": "RepositoryInventoryTests",
+      "summary": "Testira uspješan Git inventar i detekciju dokumentirane datoteke izvan Git treea te MODULE_LOG ID-ja bez registry MODULE zapisa.",
+      "lifecycle": "ACTIVE",
+      "path": "tests/test_repository_inventory.py",
+      "evidence": {
+        "state": "CONFIRMED",
+        "detail": "Testni slučajevi grade izolirane privremene Git repozitorije."
+      },
+      "implementation": {
+        "state": "PASS",
+        "detail": "Tri namjenska unit testa su prisutna."
+      },
+      "validation": {
+        "state": "PASS",
+        "detail": "Testovi su izravno izvršivi standardnom bibliotekom i Gitom."
+      },
+      "certification": {
+        "state": "PARTIAL",
+        "detail": "Pokrivene su ključne inventory grane, ali ne glazbeni ili Pa800 scope."
+      },
+      "refs": [
+        "MOD-016"
+      ]
+    },
+    {
+      "id": "TEST-046",
+      "kind": "TEST",
+      "external_id": "WorkspacePersistenceTests",
+      "title": "WorkspacePersistenceTests",
+      "summary": "Provjerava checkpointirani commit i SHA-256 Python probea i vlastite testne datoteke.",
+      "lifecycle": "ACTIVE",
+      "path": "tests/test_workspace_persistence.py",
+      "evidence": {
+        "state": "CONFIRMED",
+        "detail": "Test poziva stvarni Git checkpoint verifier nad aktualnim repozitorijem."
+      },
+      "implementation": {
+        "state": "PASS",
+        "detail": "Integracijski test je prisutan."
+      },
+      "validation": {
+        "state": "PASS",
+        "detail": "Isti checkpoint test prošao je lokalno i ponovno nakon sljedeće korisničke poruke."
+      },
+      "certification": {
+        "state": "PASS",
+        "detail": "Test certificira samo zabilježeni cross-turn commit/file persistence ugovor."
+      },
+      "refs": [
+        "MOD-015"
+      ]
+    },
+    {
+      "id": "RUN-008",
+      "kind": "TEST_RUN",
+      "title": "Full imported-snapshot suite — 2026-08-14",
+      "summary": "Aktualni puni pytest run nakon popravka ZIP filename kodiranja, regeneracije G00 prikaza te dodavanja A01/A02 governance alata.",
+      "lifecycle": "ACTIVE",
+      "command": "python -m pytest -q",
+      "evidence": {
+        "state": "CONFIRMED",
+        "detail": "Naredba je izvršena u aktualnom Git workspaceu nakon stvaranja persistence checkpointa."
+      },
+      "implementation": {
+        "state": "NOT_APPLICABLE",
+        "detail": "Test run nije produkcijska implementacija."
+      },
+      "validation": {
+        "state": "PASS",
+        "detail": "65 testova i 6 subtestova prošlo je za 195,99 s; 0 failurea i 0 skipova."
+      },
+      "certification": {
+        "state": "PARTIAL",
+        "detail": "Run podupire postojeći softverski i read-only corpus scope; ne certificira K01/K02, writer, Enhance, hardware, zvuk ni interaktivni GUI."
+      },
+      "refs": [
+        "DATA-003",
+        "MOD-010",
+        "MOD-015",
+        "MOD-016",
+        "TEST-044",
+        "TEST-045",
+        "TEST-046"
+      ]
+    },
+    {
+      "id": "RUN-009",
+      "kind": "TEST_RUN",
+      "title": "A01 cross-turn persistence i A02 inventory — 2026-08-14",
+      "summary": "Ponovno izvršenje persistence checkpointa nakon nove korisničke poruke te aktualni Git inventory bez dokumentiranih nedostajućih artefakata.",
+      "lifecycle": "ACTIVE",
+      "command": "python tools/workspace_persistence_probe.py && python -m pytest -q tests/test_workspace_persistence.py && python tools/repository_inventory.py",
+      "evidence": {
+        "state": "CONFIRMED",
+        "detail": "Izvršeno u novom korisničkom turnu nad commitom c1244c2; checkpoint commit i četiri SHA-256 artefakta odgovaraju."
+      },
+      "implementation": {
+        "state": "NOT_APPLICABLE",
+        "detail": "Test run nije produkcijska implementacija."
+      },
+      "validation": {
+        "state": "PASS",
+        "detail": "Persistence test 1/1 PASS; A02 inventory PASS s 0 errora i 0 warninga."
+      },
+      "certification": {
+        "state": "PARTIAL",
+        "detail": "Podupire samo A01/A02 governance scope; ne certificira MIDI ponašanje, K01/K02 ni Enhance."
+      },
+      "refs": [
+        "MOD-015",
+        "MOD-016",
+        "TEST-045",
+        "TEST-046"
+      ]
+    },
+    {
+      "id": "TEST-047",
+      "kind": "TEST",
+      "external_id": "MidiFormatTwoTests",
+      "title": "MidiFormatTwoTests",
+      "summary": "Provjerava zasebne Format 2 vremenske linije, izostanak lažnog globalnog trajanja/tempa, 16-slot sequence prikaz, zabranu globalnih optional analizatora i strukturno slaganje oba parsera.",
+      "lifecycle": "ACTIVE",
+      "path": "tests/test_midi_format2.py",
+      "evidence": {
+        "state": "CONFIRMED",
+        "detail": "Četiri deterministička testa grade mali SMF Format 2 s dvije neovisne sekvence različitog tempa."
+      },
+      "implementation": {
+        "state": "PASS",
+        "detail": "Dedicated test datoteka je prisutna."
+      },
+      "validation": {
+        "state": "PASS",
+        "detail": "4/4 namjenska testa i puni suite od 69 testova + 6 subtestova prolaze bez failurea ili skippa."
+      },
+      "certification": {
+        "state": "PARTIAL",
+        "detail": "Test certificira ograničenu Format 2 read-only semantiku, ne puni SMF standard."
+      },
+      "refs": [
+        "MOD-001",
+        "MOD-002",
+        "ISSUE-005"
+      ]
+    },
+    {
+      "id": "RUN-010",
+      "kind": "TEST_RUN",
+      "title": "M01/M02 Format 2 full regression — 2026-08-14",
+      "summary": "Puni regression i Factory corpus run nakon uvođenja neovisnih Format 2 sequence timelineova i konzervativnog GUI/optional-library ponašanja.",
+      "lifecycle": "ACTIVE",
+      "command": "python -m pytest -q",
+      "evidence": {
+        "state": "CONFIRMED",
+        "detail": "Namjenski Format 2 testovi i puna naredba izvršeni su u aktualnom workspaceu."
+      },
+      "implementation": {
+        "state": "NOT_APPLICABLE",
+        "detail": "Test run nije produkcijska implementacija."
+      },
+      "validation": {
+        "state": "PASS",
+        "detail": "69 testova i 6 subtestova PASS za 196,33 s; 0 failurea i 0 skipova."
+      },
+      "certification": {
+        "state": "PARTIAL",
+        "detail": "Podupire ograničeni read-only SMF Format 2 i postojeći regression/corpus scope; ne certificira puni SMF standard, writer ili Enhance."
+      },
+      "refs": [
+        "MOD-001",
+        "MOD-002",
+        "TEST-047",
+        "DATA-003",
+        "ISSUE-006"
+      ]
+    },
+    {
+      "id": "TEST-048",
+      "kind": "TEST",
+      "external_id": "ParserParityTests",
+      "title": "ParserParityTests",
+      "summary": "Uspoređuje oba SMF parsera na event-rich, malformed, missing-EOT i SMPTE primjerima te core fingerprintu svih 3.211 Factory MIDI datoteka.",
+      "lifecycle": "ACTIVE",
+      "path": "tests/test_parser_parity.py",
+      "evidence": {
+        "state": "CONFIRMED",
+        "detail": "Test gradi determinističke sintetičke ulaze i ponovno čita registrirani DATA-003 bez izmjene."
+      },
+      "implementation": {
+        "state": "PASS",
+        "detail": "Pet test metoda i corpus subtestovi su prisutni."
+      },
+      "validation": {
+        "state": "PASS",
+        "detail": "5 parity testova, 3.223 parity subtesta i puni suite od 74 testa + 3.229 subtestova prolaze; Factory ZIP hash ostaje nepromijenjen."
+      },
+      "certification": {
+        "state": "PARTIAL",
+        "detail": "Pokriva core parser parity i odabrane strukturne rubove, ne puni SMF standard ili writer."
+      },
+      "refs": [
+        "MOD-001",
+        "MOD-006",
+        "ISSUE-006",
+        "DATA-003"
+      ]
+    },
+    {
+      "id": "RUN-011",
+      "kind": "TEST_RUN",
+      "title": "Dual-parser core parity full regression — 2026-08-14",
+      "summary": "Puni regression i corpus run nakon ujednačavanja SMF track-count, PPQ/SMPTE i End-of-Track kapija te Factory core-parity guarda.",
+      "lifecycle": "ACTIVE",
+      "command": "python -m pytest -q",
+      "evidence": {
+        "state": "CONFIRMED",
+        "detail": "Dedicated parity i puna naredba izvršeni su nad aktualnim kodom i registriranim Factory corpusom."
+      },
+      "implementation": {
+        "state": "NOT_APPLICABLE",
+        "detail": "Test run nije produkcijska implementacija."
+      },
+      "validation": {
+        "state": "PASS",
+        "detail": "74 testa i 3.229 subtestova PASS za 235,43 s; 0 failurea i 0 skipova."
+      },
+      "certification": {
+        "state": "PARTIAL",
+        "detail": "Podupire testirani core parser parity i postojeći read-only scope; ne certificira writer, puni SMF standard ili Enhance."
+      },
+      "refs": [
+        "MOD-001",
+        "MOD-006",
+        "TEST-048",
+        "DATA-003",
+        "ISSUE-006"
+      ]
+    },
+    {
+      "id": "TEST-049",
+      "kind": "TEST",
+      "external_id": "GuiRuntimeTests",
+      "title": "GuiRuntimeTests",
+      "summary": "Na stvarnom Tk/Xvfb displayu testira Analyze/Format2 te Factory dialog preview, USER approve, V01 PASS, W01 save i rollback.",
+      "lifecycle": "ACTIVE",
+      "path": "tests/test_gui_runtime.py",
+      "evidence": {
+        "state": "CONFIRMED",
+        "detail": "Test koristi stvarni tkinter.Tk i MidiEnhancerApp; nije samo import ili mock cijelog GUI-a."
+      },
+      "implementation": {
+        "state": "PASS",
+        "detail": "Dvije GUI runtime test metode su prisutne."
+      },
+      "validation": {
+        "state": "PASS",
+        "detail": "3/3 stvarna Tk GUI testa i puni DISPLAY=:109 suite od 128 testova + 3.242 subtesta prolaze."
+      },
+      "certification": {
+        "state": "PARTIAL",
+        "detail": "Pokriva automatizirani render/data/export scope, ne ljudski UX ili native packaging."
+      },
+      "refs": [
+        "MOD-005",
+        "ISSUE-001",
+        "TEST-003"
+      ]
+    },
+    {
+      "id": "RUN-012",
+      "kind": "TEST_RUN",
+      "title": "M05 virtual-display GUI full regression — 2026-08-14",
+      "summary": "Puni regression/corpus run s aktivnim lokalnim Xvfb displayem, tako da stvarni Tk GUI runtime testovi nisu preskočeni.",
+      "lifecycle": "ACTIVE",
+      "command": "DISPLAY=:102 python -m pytest -q",
+      "evidence": {
+        "state": "CONFIRMED",
+        "detail": "Tk/Xvfb runtime, dedicated GUI testovi i puna naredba izvršeni su u aktualnom workspaceu."
+      },
+      "implementation": {
+        "state": "NOT_APPLICABLE",
+        "detail": "Test run nije produkcijska implementacija."
+      },
+      "validation": {
+        "state": "PASS",
+        "detail": "76 testova i 3.229 subtestova PASS za 234,64 s; 0 failurea i 0 skipova."
+      },
+      "certification": {
+        "state": "PARTIAL",
+        "detail": "Podupire automatizirani virtual-display GUI i postojeći read-only scope; ne certificira native packaging, human UX, K01/K02 ili Enhance."
+      },
+      "refs": [
+        "MOD-005",
+        "TEST-003",
+        "TEST-049",
+        "ISSUE-001"
+      ]
+    },
+    {
+      "id": "DATA-009",
+      "kind": "RESOURCE",
+      "title": "K01 canonical Pa800 Factory registry",
+      "summary": "Deterministički generirani JSON s Factory Sound/Drum Kit adresama, izvorima, remap dokazima i sigurnosnom politikom.",
+      "lifecycle": "ACTIVE",
+      "path": "registry/pa800_factory_registry.json",
+      "sha256": "9176dd41720b72111bd17263b376a07bfb188c0390404614275ade0b11cb5a16",
+      "observations": 1071,
+      "observation_unit": "jedinstvena puna Factory adresa",
+      "evidence": {
+        "state": "CONFIRMED",
+        "detail": "Svaki zapis nastaje iz DATA-001 na unaprijed definiranim stranicama i s točnom adresom."
+      },
+      "implementation": {
+        "state": "NOT_APPLICABLE",
+        "detail": "Kanonski JSON je generirani podatkovni artefakt."
+      },
+      "validation": {
+        "state": "PASS",
+        "detail": "Generator --check i TEST-050 potvrđuju determinističnost, broj, jedinstvenost i izvore."
+      },
+      "certification": {
+        "state": "PASS",
+        "detail": "Certificiran je read-only K01 Factory adresni skup, ne K02 identitet nepotpunih adresa."
+      },
+      "refs": [
+        "DATA-001",
+        "DATA-010",
+        "MOD-009",
+        "MOD-017",
+        "TEST-050"
+      ]
+    },
+    {
+      "id": "DATA-010",
+      "kind": "RESOURCE",
+      "title": "Pinned pypdf 6.16.0 wheel",
+      "summary": "Vendored pure-Python extractor wheel s licencom, korišten isključivo za reproducibilnu K01 PDF ekstrakciju.",
+      "lifecycle": "ACTIVE",
+      "path": "vendor/pypdf-6.16.0-py3-none-any.whl",
+      "sha256": "8c47581faa1cba7006ac269da30075c929c251cc4ffbafb2bcbe260306631118",
+      "evidence": {
+        "state": "CONFIRMED",
+        "detail": "Wheel je preuzet iz službenog Python package indeksa pomoću pip-a i hashiran prije korištenja."
+      },
+      "implementation": {
+        "state": "NOT_APPLICABLE",
+        "detail": "Treća strana je pinned alatni resurs, ne domenska implementacija."
+      },
+      "validation": {
+        "state": "PASS",
+        "detail": "Generator provjerava wheel SHA-256 i točnu verziju prije uvoza."
+      },
+      "certification": {
+        "state": "PARTIAL",
+        "detail": "Pin potvrđuje identitet korištenog ekstraktora, ne neovisnu sigurnosnu reviziju cijele biblioteke."
+      },
+      "refs": [
+        "MOD-017",
+        "TEST-050"
+      ]
+    },
+    {
+      "id": "MOD-017",
+      "kind": "MODULE",
+      "external_id": "K01-GEN",
+      "title": "K01 reproducible generator",
+      "summary": "Iz potvrđenog Pa800 manuala generira kanonski Factory registry i odbija drugi hash, page count, extractor ili broj zapisa.",
+      "lifecycle": "ACTIVE",
+      "path": "registry/generate_pa800_factory.py",
+      "evidence": {
+        "state": "CONFIRMED",
+        "detail": "Izvorne stranice, manual hash, pypdf wheel hash i očekivani brojevi ugrađene su kao hard gate."
+      },
+      "implementation": {
+        "state": "PASS",
+        "detail": "Generator, --check način, parser Sound/Drum/remap/User redaka i deterministički renderer su implementirani."
+      },
+      "validation": {
+        "state": "PASS",
+        "detail": "TEST-050 reproducira kanonski JSON bajt-po-bajt i odbija izmijenjeni manual."
+      },
+      "certification": {
+        "state": "PASS",
+        "detail": "Certificiran je reproducibilni K01 generator za točno registrirani manual/extractor."
+      },
+      "refs": [
+        "DATA-001",
+        "DATA-009",
+        "DATA-010",
+        "MOD-009",
+        "TEST-050"
+      ]
+    },
+    {
+      "id": "TEST-050",
+      "kind": "TEST",
+      "external_id": "Pa800FactoryRegistryTests",
+      "title": "Pa800FactoryRegistryTests",
+      "summary": "Testira generator, potpunost, lookup, source pages, duplicate name, 57–58 konflikt, User range i odbijanje krivog manual hasha.",
+      "lifecycle": "ACTIVE",
+      "path": "tests/test_pa800_factory_registry.py",
+      "evidence": {
+        "state": "CONFIRMED",
+        "detail": "Sedam namjenskih testova koristi stvarni DATA-001 i kanonski DATA-009."
+      },
+      "implementation": {
+        "state": "PASS",
+        "detail": "Dedicated K01 test datoteka je prisutna."
+      },
+      "validation": {
+        "state": "PASS",
+        "detail": "7/7 K01 testova i puni DISPLAY=:103 suite od 83 testa + 3.229 subtestova prolaze bez failurea ili skippa."
+      },
+      "certification": {
+        "state": "PASS",
+        "detail": "Pokriven je ograničeni read-only K01 Factory registry/generator scope."
+      },
+      "refs": [
+        "DATA-001",
+        "DATA-009",
+        "DATA-010",
+        "MOD-009",
+        "MOD-017",
+        "ISSUE-002"
+      ]
+    },
+    {
+      "id": "RUN-013",
+      "kind": "TEST_RUN",
+      "title": "K01 Factory Registry full regression — 2026-08-14",
+      "summary": "Puni regression/corpus/GUI run nakon reproducibilnog K01 generatora, kanonskog registra i immutable lookup modula.",
+      "lifecycle": "ACTIVE",
+      "command": "DISPLAY=:103 python -m pytest -q",
+      "evidence": {
+        "state": "CONFIRMED",
+        "detail": "Generator --check, dedicated K01 suite i puna naredba izvršeni su nad potvrđenim manualom i pinned extractorom."
+      },
+      "implementation": {
+        "state": "NOT_APPLICABLE",
+        "detail": "Test run nije produkcijska implementacija."
+      },
+      "validation": {
+        "state": "PASS",
+        "detail": "83 testa i 3.229 subtestova PASS za 237,61 s; 0 failurea i 0 skipova."
+      },
+      "certification": {
+        "state": "PARTIAL",
+        "detail": "Podupire K01 read-only Factory identity/generator i postojeći scope; ne certificira K02/K03, writer ili Enhance."
+      },
+      "refs": [
+        "MOD-009",
+        "MOD-017",
+        "DATA-009",
+        "DATA-010",
+        "TEST-050",
+        "RUN-012"
+      ]
+    },
+    {
+      "id": "TEST-051",
+      "kind": "TEST",
+      "external_id": "InstrumentIdentityResolverTests",
+      "title": "InstrumentIdentityResolverTests",
+      "summary": "Na stvarnim sintetički generiranim M10 segmentima testira exact Factory Sound/Kit, User slot, Unknown, incomplete, no-program, remap i 57–58 konflikt te očuvanje ulaza.",
+      "lifecycle": "ACTIVE",
+      "path": "tests/test_instrument_identity_resolver.py",
+      "evidence": {
+        "state": "CONFIRMED",
+        "detail": "Šest testova prolazi kroz StandardMidiLoader i InstrumentSegmenter prije K02 rezolucije."
+      },
+      "implementation": {
+        "state": "PASS",
+        "detail": "Dedicated K02 test datoteka je prisutna."
+      },
+      "validation": {
+        "state": "PASS",
+        "detail": "6/6 dedicated K02 testova i puni DISPLAY=:104 suite od 89 testova + 3.233 subtesta prolaze."
+      },
+      "certification": {
+        "state": "PASS",
+        "detail": "Pokriva ograničeni read-only K02 statusni i immutability ugovor."
+      },
+      "refs": [
+        "MOD-009",
+        "MOD-011",
+        "MOD-014",
+        "TEST-044"
+      ]
+    },
+    {
+      "id": "RUN-014",
+      "kind": "TEST_RUN",
+      "title": "K02 M10 identity integration full regression — 2026-08-14",
+      "summary": "Puni regression/corpus/GUI run nakon produkcijskog K02 resolvera i integracije svih 82.917 Factory M10 segmenata.",
+      "lifecycle": "ACTIVE",
+      "command": "DISPLAY=:104 python -m pytest -q",
+      "evidence": {
+        "state": "CONFIRMED",
+        "detail": "Dedicated K02 testovi, M08–M10/K02 Factory corpus i puna naredba izvršeni su nad aktualnim snapshotom."
+      },
+      "implementation": {
+        "state": "NOT_APPLICABLE",
+        "detail": "Test run nije produkcijska implementacija."
+      },
+      "validation": {
+        "state": "PASS",
+        "detail": "89 testova i 3.233 subtesta PASS za 243,18 s; 0 failurea i 0 skipova."
+      },
+      "certification": {
+        "state": "PARTIAL",
+        "detail": "Podupire K02 read-only identity i postojeći scope; ne autorizira K03, Change, Writer ili Enhance."
+      },
+      "refs": [
+        "MOD-009",
+        "MOD-011",
+        "MOD-014",
+        "TEST-044",
+        "TEST-051",
+        "RUN-013"
+      ]
+    },
+    {
+      "id": "MOD-018",
+      "kind": "MODULE",
+      "external_id": "P01",
+      "title": "Immutable Change Plan Foundation",
+      "summary": "Deterministički Suggest-phase plan s exact event-field mutacijama, dokazima, mjerenjima, rizikom i eksplicitnim USER odlukama; nema Apply ni writer.",
+      "lifecycle": "ACTIVE",
+      "path": "change_plan.py",
+      "evidence": {
+        "state": "CONFIRMED",
+        "detail": "Plan model izravno provodi projektne kapije za stabilne ID-jeve, exact diff, evidence status, confidence i odluke."
+      },
+      "implementation": {
+        "state": "PASS",
+        "detail": "Immutable proposal/plan/decision modeli, deterministic JSON i strogi validator su implementirani."
+      },
+      "validation": {
+        "state": "PASS",
+        "detail": "Šest dedicated testova pokriva determinističnost, odluke, confidence, duplikate, no-op i apply zabranu."
+      },
+      "certification": {
+        "state": "PASS",
+        "detail": "Certificiran je samo P01 data/validation scope; nema MIDI primjene."
+      },
+      "refs": [
+        "TEST-052",
+        "MOD-019",
+        "DEC-003",
+        "MOD-028",
+        "TEST-060"
+      ]
+    },
+    {
+      "id": "MOD-019",
+      "kind": "MODULE",
+      "external_id": "P02",
+      "title": "Suggest Policy Engine",
+      "summary": "Provjerava named/versioned pravilo, rizik, evidence i exact source event snapshot prije uključivanja prijedloga u Suggest plan.",
+      "lifecycle": "ACTIVE",
+      "path": "policy_engine.py",
+      "evidence": {
+        "state": "CONFIRMED",
+        "detail": "Policy rezultat navodi verdict, razloge i provjerene mutation ID-jeve; apply_authorized je uvijek false."
+      },
+      "implementation": {
+        "state": "PASS",
+        "detail": "Rule registry, source-event verification, blocking evidence/risk kapije i plan builder su implementirani."
+      },
+      "validation": {
+        "state": "PASS",
+        "detail": "Šest dedicated testova pokriva allowed/blocked, tampered/missing event, inferred opt-in, version/risk i duplicate rule."
+      },
+      "certification": {
+        "state": "PASS",
+        "detail": "Certificiran je samo Suggest policy scope; user confirmation i budući Change Engine ostaju odvojeni."
+      },
+      "refs": [
+        "MOD-018",
+        "TEST-053",
+        "DEC-003",
+        "MOD-028",
+        "TEST-060"
+      ]
+    },
+    {
+      "id": "TEST-052",
+      "kind": "TEST",
+      "external_id": "ChangePlanTests",
+      "title": "ChangePlanTests",
+      "summary": "Testira deterministic plan/proposal ID, JSON, USER decision history, timezone, confidence, duplicate target, no-op/range i trajnu Apply zabranu.",
+      "lifecycle": "ACTIVE",
+      "path": "tests/test_change_plan.py",
+      "evidence": {
+        "state": "CONFIRMED",
+        "detail": "Šest testova koristi stvarni byte-preserving MidiEvent snapshot."
+      },
+      "implementation": {
+        "state": "PASS",
+        "detail": "Dedicated P01 test datoteka je prisutna."
+      },
+      "validation": {
+        "state": "PASS",
+        "detail": "6/6 P01 testova i puni DISPLAY=:105 suite od 101 testa + 3.236 subtestova prolaze."
+      },
+      "certification": {
+        "state": "PASS",
+        "detail": "Pokriva P01 immutable data/decision scope, ne writer."
+      },
+      "refs": [
+        "MOD-018"
+      ]
+    },
+    {
+      "id": "TEST-053",
+      "kind": "TEST",
+      "external_id": "PolicyEngineTests",
+      "title": "PolicyEngineTests",
+      "summary": "Testira Suggest allowed/blocked verdict, exact source snapshot, evidence/risk/version/rule kapije i plan creation bez Apply.",
+      "lifecycle": "ACTIVE",
+      "path": "tests/test_policy_engine.py",
+      "evidence": {
+        "state": "CONFIRMED",
+        "detail": "Šest testova koristi stvarne parsirane MIDI kontrolerske događaje."
+      },
+      "implementation": {
+        "state": "PASS",
+        "detail": "Dedicated P02 test datoteka je prisutna."
+      },
+      "validation": {
+        "state": "PASS",
+        "detail": "6/6 P02 testova, 3 subtesta i puni DISPLAY=:105 suite od 101 testa + 3.236 subtestova prolaze."
+      },
+      "certification": {
+        "state": "PASS",
+        "detail": "Pokriva P02 Suggest policy scope, ne Change/Writer."
+      },
+      "refs": [
+        "MOD-019",
+        "MOD-018"
+      ]
+    },
+    {
+      "id": "RUN-015",
+      "kind": "TEST_RUN",
+      "title": "P01/P02 Change Plan and Policy full regression — 2026-08-14",
+      "summary": "Puni regression/corpus/GUI run nakon immutable Change Plan temelja i Suggest Policy Enginea bez Apply/writer putanje.",
+      "lifecycle": "ACTIVE",
+      "command": "DISPLAY=:105 python -m pytest -q",
+      "evidence": {
+        "state": "CONFIRMED",
+        "detail": "Dedicated P01/P02 testovi i puna naredba izvršeni su nad aktualnim snapshotom."
+      },
+      "implementation": {
+        "state": "NOT_APPLICABLE",
+        "detail": "Test run nije produkcijska implementacija."
+      },
+      "validation": {
+        "state": "PASS",
+        "detail": "101 test i 3.236 subtestova PASS za 238,08 s; 0 failurea i 0 skipova."
+      },
+      "certification": {
+        "state": "PARTIAL",
+        "detail": "Podupire P01/P02 Suggest/data scope; K03, Change, Writer i Verifier ostaju necertificirani."
+      },
+      "refs": [
+        "MOD-018",
+        "MOD-019",
+        "TEST-052",
+        "TEST-053",
+        "RUN-014"
+      ]
+    },
+    {
+      "id": "MOD-020",
+      "kind": "MODULE",
+      "external_id": "K03-P",
+      "title": "K03 user-selected Factory replacement Proposal Builder",
+      "summary": "Gradi Suggest-only plan za user-selected exact K01 target preko postojećih ekskluzivnih CC00/CC32/PC događaja; nema writer.",
+      "lifecycle": "ACTIVE",
+      "path": "k03_sound_replacement.py",
+      "evidence": {
+        "state": "CONFIRMED",
+        "detail": "Prijedlog povezuje stvarni M10/K02 segment, K01 cilj, USER_SELECTION i exact source-event snapshot."
+      },
+      "implementation": {
+        "state": "PASS",
+        "detail": "Builder, compatibility/shared-bank/insertion kapije i K03 named policy pravilo su implementirani."
+      },
+      "validation": {
+        "state": "PASS",
+        "detail": "Sedam dedicated testova pokriva exact/same-bank, exclusive bank change, shared bank block, User Drum, status/type/target block i approval bez Apply."
+      },
+      "certification": {
+        "state": "PASS",
+        "detail": "Certificiran je samo K03-P Suggest proposal scope; MIDI replacement backend nije autoriziran."
+      },
+      "refs": [
+        "MOD-009",
+        "MOD-011",
+        "MOD-018",
+        "MOD-019",
+        "MOD-012",
+        "TEST-054",
+        "DEC-003"
+      ]
+    },
+    {
+      "id": "TEST-054",
+      "kind": "TEST",
+      "external_id": "K03SoundReplacementTests",
+      "title": "K03SoundReplacementTests",
+      "summary": "Testira user-selected K01 target plan, exact PC/bank mutations, shared/inherited bank zaštitu, kind/status/target blokiranje i trajnu Apply zabranu.",
+      "lifecycle": "ACTIVE",
+      "path": "tests/test_k03_sound_replacement.py",
+      "evidence": {
+        "state": "CONFIRMED",
+        "detail": "Sedam testova koristi stvarni StandardMidiLoader, M10, K02, K01, P01 i P02 lanac."
+      },
+      "implementation": {
+        "state": "PASS",
+        "detail": "Dedicated K03-P test datoteka je prisutna."
+      },
+      "validation": {
+        "state": "PASS",
+        "detail": "7/7 K03-P testova, 4 subtesta i puni DISPLAY=:105 suite od 108 testova + 3.240 subtestova prolaze."
+      },
+      "certification": {
+        "state": "PASS",
+        "detail": "Pokriva Suggest-only K03-P scope, ne writer ili Verifier."
+      },
+      "refs": [
+        "MOD-020",
+        "MOD-012",
+        "MOD-011",
+        "MOD-018",
+        "MOD-019"
+      ]
+    },
+    {
+      "id": "RUN-016",
+      "kind": "TEST_RUN",
+      "title": "K03-P user-selected proposal full regression — 2026-08-14",
+      "summary": "Puni regression/corpus/GUI run nakon Suggest-only K03-P buildera s exclusive existing CC/PC event kapijama.",
+      "lifecycle": "ACTIVE",
+      "command": "DISPLAY=:105 python -m pytest -q",
+      "evidence": {
+        "state": "CONFIRMED",
+        "detail": "Dedicated K03-P testovi i puna naredba izvršeni su nad aktualnim K01/K02/P01/P02 lancem."
+      },
+      "implementation": {
+        "state": "NOT_APPLICABLE",
+        "detail": "Test run nije produkcijska implementacija."
+      },
+      "validation": {
+        "state": "PASS",
+        "detail": "108 testova i 3.240 subtestova PASS za 239,67 s; 0 failurea i 0 skipova."
+      },
+      "certification": {
+        "state": "PARTIAL",
+        "detail": "Podupire K03-P Suggest proposal scope; Change backend, writer i Verifier ostaju necertificirani."
+      },
+      "refs": [
+        "MOD-020",
+        "MOD-012",
+        "TEST-054",
+        "RUN-015"
+      ]
+    },
+    {
+      "id": "MOD-021",
+      "kind": "MODULE",
+      "external_id": "D01",
+      "title": "Windows local installer",
+      "summary": "install.bat provjerava Python/Tk, kreira lokalni .venv, instalira pinned lokalni K01 wheel, nudi optional biblioteke i izvršava registry smoke checks.",
+      "lifecycle": "ACTIVE",
+      "path": "install.bat",
+      "evidence": {
+        "state": "CONFIRMED",
+        "detail": "Skripta i statički provjerljive sigurnosne naredbe prisutne su u Git snapshotu."
+      },
+      "implementation": {
+        "state": "PASS",
+        "detail": "Windows batch installer s minimal načinom, error gateovima i bez sistemske package instalacije je implementiran."
+      },
+      "validation": {
+        "state": "PASS",
+        "detail": "TEST-055 potvrđuje CRLF, venv izolaciju, local/hash-pinned K01 instalaciju i smoke naredbe."
+      },
+      "certification": {
+        "state": "PARTIAL",
+        "detail": "Statički scope je potvrđen; stvarno Windows izvršavanje čeka korisnički računar."
+      },
+      "refs": [
+        "DATA-010",
+        "TEST-055",
+        "MOD-022"
+      ]
+    },
+    {
+      "id": "MOD-022",
+      "kind": "MODULE",
+      "external_id": "D02",
+      "title": "Windows GUI launcher",
+      "summary": "run.bat pokreće GUI samo iz lokalnog .venv i pruža console/check dijagnostičke načine.",
+      "lifecycle": "ACTIVE",
+      "path": "run.bat",
+      "evidence": {
+        "state": "CONFIRMED",
+        "detail": "Launcher putanje, failure poruke i načini rada prisutni su u Git snapshotu."
+      },
+      "implementation": {
+        "state": "PASS",
+        "detail": "Default pythonw GUI, console i check načini su implementirani bez MIDI output naredbi."
+      },
+      "validation": {
+        "state": "PASS",
+        "detail": "TEST-055 potvrđuje venv-only launch i odsustvo destruktivnih/Enhance naredbi."
+      },
+      "certification": {
+        "state": "PARTIAL",
+        "detail": "Statički scope je potvrđen; stvarno Windows/Tk pokretanje čeka korisnički računar."
+      },
+      "refs": [
+        "MOD-021",
+        "TEST-055",
+        "MOD-005"
+      ]
+    },
+    {
+      "id": "TEST-055",
+      "kind": "TEST",
+      "external_id": "WindowsBatchScriptTests",
+      "title": "WindowsBatchScriptTests",
+      "summary": "Statički provjerava CRLF, Python/Tk/venv kapije, pinned local wheel, registry checks, launch načine i zabranu destruktivnih naredbi.",
+      "lifecycle": "ACTIVE",
+      "path": "tests/test_windows_batch_scripts.py",
+      "evidence": {
+        "state": "CONFIRMED",
+        "detail": "Tri testa čitaju stvarne install.bat/run.bat bajtove."
+      },
+      "implementation": {
+        "state": "PASS",
+        "detail": "Dedicated Windows batch static test je prisutan."
+      },
+      "validation": {
+        "state": "PASS",
+        "detail": "3/3 testa prolaze."
+      },
+      "certification": {
+        "state": "PARTIAL",
+        "detail": "Certificira statički script ugovor, ne izvršavanje pod Windows cmd.exe."
+      },
+      "refs": [
+        "MOD-021",
+        "MOD-022"
+      ]
+    },
+    {
+      "id": "MOD-023",
+      "kind": "MODULE",
+      "external_id": "C01",
+      "title": "In-memory byte-preserving Change Engine",
+      "summary": "Byte-preserving working-copy engine za CC/PC i specialized S01 Note On velocity uz explicit rule authorization i switch/RX risk acknowledgement.",
+      "lifecycle": "ACTIVE",
+      "path": "change_engine.py",
+      "evidence": {
+        "state": "CONFIRMED",
+        "detail": "Svaka primjena veže plan/request/source SHA, exact raw event snapshot i apsolutni byte offset."
+      },
+      "implementation": {
+        "state": "PASS",
+        "detail": "In-memory byte patch, source reparse, applied log, PENDING_VERIFICATION i exact rollback su implementirani; nema filesystem write."
+      },
+      "validation": {
+        "state": "PASS",
+        "detail": "TEST-056 pokriva approved/request gate, CC/PC patch, running status, tampered source i rollback."
+      },
+      "certification": {
+        "state": "PASS",
+        "detail": "Certificiran je samo C01 in-memory working-copy/rollback scope; save nije autoriziran."
+      },
+      "refs": [
+        "MOD-018",
+        "MOD-019",
+        "MOD-020",
+        "MOD-024",
+        "TEST-056",
+        "MOD-030",
+        "TEST-062"
+      ]
+    },
+    {
+      "id": "MOD-024",
+      "kind": "MODULE",
+      "external_id": "V01",
+      "title": "Independent Change Verifier",
+      "summary": "Independent verifier za exact byte/event diff, uključujući neovisnu V02 specialized authorization i 8-unit/1..127 kapiju.",
+      "lifecycle": "ACTIVE",
+      "path": "change_verifier.py",
+      "evidence": {
+        "state": "CONFIRMED",
+        "detail": "Verifier samostalno locira event data bajtove i ne koristi Change Engine offset helper."
+      },
+      "implementation": {
+        "state": "PASS",
+        "detail": "Struktura, event set, immutable polja, exact data diff, applied log, hash, reparse i unauthorized-byte kapije su implementirani."
+      },
+      "validation": {
+        "state": "PASS",
+        "detail": "TEST-056 potvrđuje PASS put i blokira extra byte, forged applied offset i truncated output."
+      },
+      "certification": {
+        "state": "PASS",
+        "detail": "Certificiran je V01 in-memory verification scope; filesystem writer nije uključen."
+      },
+      "refs": [
+        "MOD-018",
+        "MOD-023",
+        "TEST-056",
+        "MOD-030",
+        "TEST-062"
+      ]
+    },
+    {
+      "id": "TEST-056",
+      "kind": "TEST",
+      "external_id": "ChangeEngineVerifierTests",
+      "title": "ChangeEngineVerifierTests",
+      "summary": "Testira approved USER execution, working-copy CC/PC patch, running status, rollback, tampered source i Verifier blokiranje extra/forged/truncated outputa.",
+      "lifecycle": "ACTIVE",
+      "path": "tests/test_change_engine_verifier.py",
+      "evidence": {
+        "state": "CONFIRMED",
+        "detail": "Šest testova koristi stvarni K01/K02/K03-P/P01/P02/M10 lanac i byte-preserving parser."
+      },
+      "implementation": {
+        "state": "PASS",
+        "detail": "Dedicated C01/V01 test datoteka je prisutna."
+      },
+      "validation": {
+        "state": "PASS",
+        "detail": "6/6 C01/V01 testova i puni DISPLAY=:107 suite od 117 testova + 3.240 subtestova prolaze."
+      },
+      "certification": {
+        "state": "PASS",
+        "detail": "Pokriva in-memory Change/rollback/verifier scope, ne disk writer."
+      },
+      "refs": [
+        "MOD-023",
+        "MOD-024",
+        "MOD-020",
+        "MOD-018"
+      ]
+    },
+    {
+      "id": "RUN-017",
+      "kind": "TEST_RUN",
+      "title": "C01/V01 Change Engine and Verifier full regression — 2026-08-14",
+      "summary": "Puni regression/corpus/GUI run nakon in-memory byte-preserving Change Enginea, rollbacka i independent Verifiera.",
+      "lifecycle": "ACTIVE",
+      "command": "DISPLAY=:107 python -m pytest -q",
+      "evidence": {
+        "state": "CONFIRMED",
+        "detail": "Dedicated C01/V01 sigurnosni testovi i puna naredba izvršeni su nad aktualnim snapshotom."
+      },
+      "implementation": {
+        "state": "NOT_APPLICABLE",
+        "detail": "Test run nije produkcijska implementacija."
+      },
+      "validation": {
+        "state": "PASS",
+        "detail": "117 testova i 3.240 subtestova PASS za 241,59 s; 0 failurea i 0 skipova."
+      },
+      "certification": {
+        "state": "PARTIAL",
+        "detail": "Podupire in-memory Change/rollback/verifier scope; disk writer/save gate ostaje necertificiran."
+      },
+      "refs": [
+        "MOD-023",
+        "MOD-024",
+        "TEST-056",
+        "RUN-016"
+      ]
+    },
+    {
+      "id": "MOD-025",
+      "kind": "MODULE",
+      "external_id": "W01",
+      "title": "Atomic Verified MIDI Writer",
+      "summary": "Prihvaća samo V01 PASS verified bytes, ponovno provjerava source file, objavljuje novi _enhanced MIDI i JSON bez overwrite-a te podržava hash-guarded filesystem rollback.",
+      "lifecycle": "ACTIVE",
+      "path": "verified_writer.py",
+      "evidence": {
+        "state": "CONFIRMED",
+        "detail": "Writer veže source/plan/request/execution/verification hashove i statusne kapije u JSON report."
+      },
+      "implementation": {
+        "state": "PASS",
+        "detail": "Same-directory temp+fsync, atomic hard-link create-if-absent, two-file cleanup, source recheck i guarded rollback su implementirani."
+      },
+      "validation": {
+        "state": "PASS",
+        "detail": "TEST-057 pokriva save/report, no-overwrite, bad source/name/verifier, second-publish failure cleanup i rollback/tamper."
+      },
+      "certification": {
+        "state": "PASS",
+        "detail": "Certificiran je W01 lokalni filesystem scope na testiranom filesystemu; GUI/release packaging nije uključeno."
+      },
+      "refs": [
+        "MOD-012",
+        "MOD-023",
+        "MOD-024",
+        "TEST-057",
+        "MOD-030",
+        "TEST-062"
+      ]
+    },
+    {
+      "id": "TEST-057",
+      "kind": "TEST",
+      "external_id": "VerifiedWriterTests",
+      "title": "VerifiedWriterTests",
+      "summary": "End-to-end testira verified new-file MIDI/JSON save, source očuvanje, no-overwrite, bad verifier/source/name, atomic failure cleanup i guarded rollback.",
+      "lifecycle": "ACTIVE",
+      "path": "tests/test_verified_writer.py",
+      "evidence": {
+        "state": "CONFIRMED",
+        "detail": "Pet testova koristi stvarni M10/K01/K02/K03-P/P01/P02/C01/V01 lanac i privremeni filesystem."
+      },
+      "implementation": {
+        "state": "PASS",
+        "detail": "Dedicated W01 test datoteka je prisutna."
+      },
+      "validation": {
+        "state": "PASS",
+        "detail": "5/5 W01 testova, 2 subtesta i puni DISPLAY=:108 suite od 122 testa + 3.242 subtesta prolaze."
+      },
+      "certification": {
+        "state": "PASS",
+        "detail": "Pokriva bounded atomic writer/rollback scope na aktualnom filesystemu."
+      },
+      "refs": [
+        "MOD-012",
+        "MOD-025",
+        "MOD-023",
+        "MOD-024"
+      ]
+    },
+    {
+      "id": "RUN-018",
+      "kind": "TEST_RUN",
+      "title": "W01 Atomic Verified Writer full regression — 2026-08-14",
+      "summary": "Puni regression/corpus/GUI run nakon atomic no-overwrite verified MIDI/JSON writera i hash-guarded filesystem rollbacka.",
+      "lifecycle": "ACTIVE",
+      "command": "DISPLAY=:108 python -m pytest -q",
+      "evidence": {
+        "state": "CONFIRMED",
+        "detail": "Dedicated W01 filesystem testovi i puna naredba izvršeni su nad aktualnim snapshotom."
+      },
+      "implementation": {
+        "state": "NOT_APPLICABLE",
+        "detail": "Test run nije produkcijska implementacija."
+      },
+      "validation": {
+        "state": "PASS",
+        "detail": "122 testa i 3.242 subtesta PASS za 234,51 s; 0 failurea i 0 skipova."
+      },
+      "certification": {
+        "state": "PARTIAL",
+        "detail": "Podupire bounded W01/K03 programatski backend; GUI save workflow i automatski Enhance nisu certificirani."
+      },
+      "refs": [
+        "MOD-012",
+        "MOD-025",
+        "TEST-057",
+        "RUN-017"
+      ]
+    },
+    {
+      "id": "MOD-026",
+      "kind": "MODULE",
+      "external_id": "G01",
+      "title": "Bounded GUI Change Workflow Controller",
+      "summary": "Testabilni non-Tk servis koji orkestrira M10/K02 eligible segmente, K01 ciljeve, K03-P preview, USER approval, C01/V01, W01 save i rollback.",
+      "lifecycle": "ACTIVE",
+      "path": "gui_change_workflow.py",
+      "evidence": {
+        "state": "CONFIRMED",
+        "detail": "Controller izlaže samo explicit eligible segment/target opcije i provodi strogi redoslijed faza bez automatskog prijedloga."
+      },
+      "implementation": {
+        "state": "PASS",
+        "detail": "Load/options/preview/approve/verify/save/rollback state machine je implementiran izvan Tk koda."
+      },
+      "validation": {
+        "state": "PASS",
+        "detail": "TEST-058 pokriva full backend tok, stage/USER gates, Unknown exclusion i shared-bank blokiranje."
+      },
+      "certification": {
+        "state": "PASS",
+        "detail": "Certificiran je bounded G01 backend controller scope; automatski Suggest/Enhance nije uključen."
+      },
+      "refs": [
+        "MOD-005",
+        "MOD-012",
+        "MOD-020",
+        "MOD-023",
+        "MOD-024",
+        "MOD-025",
+        "TEST-058"
+      ]
+    },
+    {
+      "id": "TEST-058",
+      "kind": "TEST",
+      "external_id": "GuiChangeWorkflowTests",
+      "title": "GuiChangeWorkflowTests",
+      "summary": "Testira eligible segmente/targets, preview→approve→verify→save→rollback, stage/USER gate, Unknown exclusion i shared-bank zaštitu.",
+      "lifecycle": "ACTIVE",
+      "path": "tests/test_gui_change_workflow.py",
+      "evidence": {
+        "state": "CONFIRMED",
+        "detail": "Pet testova koristi stvarne privremene MIDI fajlove i cijeli backend lanac."
+      },
+      "implementation": {
+        "state": "PASS",
+        "detail": "Dedicated G01 backend test je prisutan."
+      },
+      "validation": {
+        "state": "PASS",
+        "detail": "5/5 G01 backend testova i puni DISPLAY=:109 suite od 128 testova + 3.242 subtesta prolaze."
+      },
+      "certification": {
+        "state": "PASS",
+        "detail": "Pokriva bounded GUI workflow backend, ne native human UX."
+      },
+      "refs": [
+        "MOD-026",
+        "MOD-005",
+        "MOD-012"
+      ]
+    },
+    {
+      "id": "RUN-019",
+      "kind": "TEST_RUN",
+      "title": "G01 bounded GUI Change workflow full regression — 2026-08-14",
+      "summary": "Puni regression/corpus/GUI run nakon segment/target preview, USER approval, V01, W01 save i rollback Tk integracije.",
+      "lifecycle": "ACTIVE",
+      "command": "DISPLAY=:109 python -m pytest -q",
+      "evidence": {
+        "state": "CONFIRMED",
+        "detail": "G01 backend, stvarni Tk end-to-end test i puna naredba izvršeni su nad aktualnim snapshotom."
+      },
+      "implementation": {
+        "state": "NOT_APPLICABLE",
+        "detail": "Test run nije produkcijska implementacija."
+      },
+      "validation": {
+        "state": "PASS",
+        "detail": "128 testova i 3.242 subtesta PASS za 236,29 s; 0 failurea i 0 skipova."
+      },
+      "certification": {
+        "state": "PARTIAL",
+        "detail": "Podupire bounded virtual-display GUI Change workflow; native Windows human UX i automatic Enhance nisu certificirani."
+      },
+      "refs": [
+        "MOD-005",
+        "MOD-012",
+        "MOD-026",
+        "TEST-049",
+        "TEST-058",
+        "RUN-018"
+      ]
+    },
+    {
+      "id": "MOD-027",
+      "kind": "MODULE",
+      "external_id": "R01",
+      "title": "Factory Contextual Profile Builder",
+      "summary": "Streamingom agregira empirijske Factory profile bez miješanja source kind, K01 adrese, M07 funkcije, Elementa, CV-a, strukturne uloge, encodinga ili fixed kandidata.",
+      "lifecycle": "ACTIVE",
+      "path": "contextual_profile_builder.py",
+      "evidence": {
+        "state": "CONFIRMED",
+        "detail": "Ulaz je registrirani Factory corpus; svaki profil čuva K01 identitet, source members i derived empirical status."
+      },
+      "implementation": {
+        "state": "PASS",
+        "detail": "Observation/provenance modeli, strogi contextual key, distribucije, deterministic renderer/digest i Factory archive builder su implementirani."
+      },
+      "validation": {
+        "state": "PASS",
+        "detail": "TEST-059 potvrđuje izolaciju i puni corpus: 29.603 observacije, 13.821 profil, digest 33a9b426… i nepromijenjen ZIP."
+      },
+      "certification": {
+        "state": "PASS",
+        "detail": "Certificiran je R01 read-only Factory empirical reference scope; profil ne autorizira Suggest ili Change."
+      },
+      "refs": [
+        "DATA-003",
+        "MOD-007",
+        "MOD-009",
+        "MOD-011",
+        "MOD-013",
+        "MOD-014",
+        "TEST-059",
+        "DEC-001",
+        "MOD-028",
+        "TEST-060"
+      ]
+    },
+    {
+      "id": "TEST-059",
+      "kind": "TEST",
+      "external_id": "ContextualProfileBuilderTests",
+      "title": "ContextualProfileBuilderTests",
+      "summary": "Testira agregaciju distribucija/provenance, isolation po function/element/CV/source, rejection konflikta, deterministic render i puni Factory katalog.",
+      "lifecycle": "ACTIVE",
+      "path": "tests/test_contextual_profile_builder.py",
+      "evidence": {
+        "state": "CONFIRMED",
+        "detail": "Pet testova uključuje stvarni DATA-003 build i fixed expected digest."
+      },
+      "implementation": {
+        "state": "PASS",
+        "detail": "Dedicated R01 test datoteka je prisutna."
+      },
+      "validation": {
+        "state": "PASS",
+        "detail": "5/5 R01 testova i puni DISPLAY=:110 suite od 133 testa + 3.242 subtesta prolaze."
+      },
+      "certification": {
+        "state": "PASS",
+        "detail": "Pokriva read-only Factory contextual profile scope, ne Suggest."
+      },
+      "refs": [
+        "MOD-027",
+        "DATA-003",
+        "DEC-001"
+      ]
+    },
+    {
+      "id": "RUN-020",
+      "kind": "TEST_RUN",
+      "title": "R01 Contextual Profile full regression — 2026-08-14",
+      "summary": "Puni regression/corpus/GUI run uključujući streaming build 29.603 Factory observacije i 13.821 izoliranog profila.",
+      "lifecycle": "ACTIVE",
+      "command": "DISPLAY=:110 python -m pytest -q",
+      "evidence": {
+        "state": "CONFIRMED",
+        "detail": "R01 unit/full-corpus test i cijeli suite izvršeni su nad aktualnim snapshotom."
+      },
+      "implementation": {
+        "state": "NOT_APPLICABLE",
+        "detail": "Test run nije produkcijska implementacija."
+      },
+      "validation": {
+        "state": "PASS",
+        "detail": "133 testa i 3.242 subtesta PASS za 308,25 s; 0 failurea i 0 skipova."
+      },
+      "certification": {
+        "state": "PARTIAL",
+        "detail": "Podupire R01 reference-only Factory profile scope; Suggest i automatic Enhance nisu certificirani."
+      },
+      "refs": [
+        "MOD-027",
+        "TEST-059",
+        "DATA-003",
+        "RUN-019"
+      ]
+    },
+    {
+      "id": "MOD-028",
+      "kind": "MODULE",
+      "external_id": "S01",
+      "title": "Exact Contextual Profile Velocity Suggestor",
+      "summary": "Exact R01 key matcher i Suggest-only bounded Note On velocity outlier pravilo bez fallbacka i bez C01 Apply podrške.",
+      "lifecycle": "ACTIVE",
+      "path": "profile_suggest_engine.py",
+      "evidence": {
+        "state": "CONFIRMED",
+        "detail": "Prijedlog zahtijeva exact source/address/function/element/CV/role/encoding/fixed key i minimalnu empirical potporu."
+      },
+      "implementation": {
+        "state": "PASS",
+        "detail": "Matcher statusi, named config, context/user gates, p10-p90 bounded-step outlier plan i P02 integracija su implementirani."
+      },
+      "validation": {
+        "state": "PASS",
+        "detail": "TEST-060 pokriva exact suggestion, sve key mismatch grane, support/context/user gate, no-outlier/too-many i invalid config."
+      },
+      "certification": {
+        "state": "PASS",
+        "detail": "Certificiran je S01 Suggest-only scope; Note On Apply je namjerno unsupported i automatic Enhance nije autoriziran."
+      },
+      "refs": [
+        "MOD-007",
+        "MOD-018",
+        "MOD-019",
+        "MOD-023",
+        "MOD-027",
+        "TEST-060",
+        "DEC-001",
+        "MOD-030",
+        "TEST-062"
+      ]
+    },
+    {
+      "id": "TEST-060",
+      "kind": "TEST",
+      "external_id": "ProfileSuggestEngineTests",
+      "title": "ProfileSuggestEngineTests",
+      "summary": "Testira exact profile plan, bounded velocity step, no fallback za function/element/CV/role/encoding/source, support/context/user gate i C01 Apply block.",
+      "lifecycle": "ACTIVE",
+      "path": "tests/test_profile_suggest_engine.py",
+      "evidence": {
+        "state": "CONFIRMED",
+        "detail": "Šest testova i deset subtestova koriste stvarne parsirane Note On događaje i R01 profile."
+      },
+      "implementation": {
+        "state": "PASS",
+        "detail": "Dedicated S01 test datoteka je prisutna."
+      },
+      "validation": {
+        "state": "PASS",
+        "detail": "6/6 S01 testova, 10 subtestova i puni DISPLAY=:111 suite od 139 testova + 3.252 subtesta prolaze."
+      },
+      "certification": {
+        "state": "PASS",
+        "detail": "Pokriva Suggest-only S01 matching/proposal scope, ne Apply."
+      },
+      "refs": [
+        "MOD-028",
+        "MOD-027",
+        "MOD-019"
+      ]
+    },
+    {
+      "id": "RUN-021",
+      "kind": "TEST_RUN",
+      "title": "S01 Exact Profile Suggest full regression — 2026-08-14",
+      "summary": "Puni regression/corpus/GUI run nakon exact contextual matcher i bounded Suggest-only Note On velocity outlier pravila.",
+      "lifecycle": "ACTIVE",
+      "command": "DISPLAY=:111 python -m pytest -q",
+      "evidence": {
+        "state": "CONFIRMED",
+        "detail": "S01 testovi, R01 full build i cijeli suite izvršeni su nad aktualnim snapshotom."
+      },
+      "implementation": {
+        "state": "NOT_APPLICABLE",
+        "detail": "Test run nije produkcijska implementacija."
+      },
+      "validation": {
+        "state": "PASS",
+        "detail": "139 testova i 3.252 subtesta PASS za 302,44 s; 0 failurea i 0 skipova."
+      },
+      "certification": {
+        "state": "PARTIAL",
+        "detail": "Podupire S01 Suggest-only scope; Note On Apply i automatic Enhance ostaju necertificirani."
+      },
+      "refs": [
+        "MOD-028",
+        "TEST-060",
+        "MOD-027",
+        "RUN-020"
+      ]
+    },
+    {
+      "id": "MOD-029",
+      "kind": "MODULE",
+      "external_id": "G02",
+      "title": "Gold Dataset Contamination Guard",
+      "summary": "Validira Factory/DNA hashove i ZIP putanje, isključuje exact Factory container, deduplicira Gold po sadržaju i stvara source-disjoint train/evaluation manifest.",
+      "lifecycle": "ACTIVE",
+      "path": "gold_dataset_guard.py",
+      "evidence": {
+        "state": "CONFIRMED",
+        "detail": "Guard koristi pune archive/member SHA-256 hashove i byte-preserving SMF validaciju bez ekstrakcije."
+      },
+      "implementation": {
+        "state": "PASS",
+        "detail": "Safe ZIP path, outer container classification, Gold validation/dedup, Factory overlap guard, manifest i calibration blocker su implementirani."
+      },
+      "validation": {
+        "state": "PASS",
+        "detail": "TEST-061 reproducira 3211/3187 Factory, 182/181 Gold, 1 excluded container, 0 cross overlap i digest 62a0ac2c…."
+      },
+      "certification": {
+        "state": "PASS",
+        "detail": "Certificiran je G02 structural contamination/split scope; M07 accuracy calibration nije uključena."
+      },
+      "refs": [
+        "DATA-003",
+        "DATA-004",
+        "ISSUE-008",
+        "ISSUE-009",
+        "TEST-061"
+      ]
+    },
+    {
+      "id": "TEST-061",
+      "kind": "TEST",
+      "external_id": "GoldDatasetGuardTests",
+      "title": "GoldDatasetGuardTests",
+      "summary": "Testira stvarni Factory/DNA split/dedup/hash/digest/read-only rezultat, determinističnost i unsafe ZIP path rejection.",
+      "lifecycle": "ACTIVE",
+      "path": "tests/test_gold_dataset_guard.py",
+      "evidence": {
+        "state": "CONFIRMED",
+        "detail": "Tri testa i tri subtesta koriste stvarne DATA-003/DATA-004 arhive i sintetičke unsafe ZIP putanje."
+      },
+      "implementation": {
+        "state": "PASS",
+        "detail": "Dedicated G02 test datoteka je prisutna."
+      },
+      "validation": {
+        "state": "PASS",
+        "detail": "3/3 G02 testova, 3 subtesta i puni DISPLAY=:112 suite od 142 testa + 3.255 subtestova prolaze."
+      },
+      "certification": {
+        "state": "PASS",
+        "detail": "Pokriva structural contamination/dedup/source split scope."
+      },
+      "refs": [
+        "MOD-029",
+        "DATA-003",
+        "DATA-004",
+        "ISSUE-008",
+        "ISSUE-009"
+      ]
+    },
+    {
+      "id": "ISSUE-009",
+      "kind": "ISSUE",
+      "title": "M07 statistical calibration lacks human ground truth",
+      "summary": "Deduplicirani Gold MIDI nema neovisne per-part role labele, pa M07 heuristic confidence ne smije biti prikazan kao statistička vjerojatnost.",
+      "lifecycle": "BLOCKED",
+      "evidence": {
+        "state": "CONFIRMED",
+        "detail": "G02 potvrđuje strukturalno neovisan evaluation source, ali u arhivu nema human-verified role annotation datoteke."
+      },
+      "implementation": {
+        "state": "BLOCKED",
+        "detail": "Calibration model/metrics su blokirani dok se ne doda zaseban ručno označen label manifest."
+      },
+      "validation": {
+        "state": "BLOCKED",
+        "detail": "Accuracy, precision, recall i probability calibration se ne mogu izračunati bez ground trutha."
+      },
+      "certification": {
+        "state": "NONE",
+        "detail": "M07 confidence ostaje heuristic score."
+      },
+      "refs": [
+        "MOD-007",
+        "MOD-029",
+        "DATA-004",
+        "TEST-061"
+      ]
+    },
+    {
+      "id": "RUN-022",
+      "kind": "TEST_RUN",
+      "title": "G02 Gold Dataset Guard full regression — 2026-08-14",
+      "summary": "Puni regression/corpus/GUI run uključujući R01 Factory build i G02 real/deterministic Gold contamination manifest testove.",
+      "lifecycle": "ACTIVE",
+      "command": "DISPLAY=:112 python -m pytest -q",
+      "evidence": {
+        "state": "CONFIRMED",
+        "detail": "G02 stvarni/deterministički/unsafe testovi i cijeli suite izvršeni su nad aktualnim snapshotom."
+      },
+      "implementation": {
+        "state": "NOT_APPLICABLE",
+        "detail": "Test run nije produkcijska implementacija."
+      },
+      "validation": {
+        "state": "PASS",
+        "detail": "142 testa i 3.255 subtestova PASS za 421,49 s; 0 failurea i 0 skipova."
+      },
+      "certification": {
+        "state": "PARTIAL",
+        "detail": "Podupire G02 structural contamination/split scope; M07 statistical calibration ostaje BLOCKED."
+      },
+      "refs": [
+        "MOD-029",
+        "TEST-061",
+        "DATA-003",
+        "DATA-004",
+        "ISSUE-009",
+        "RUN-021"
+      ]
+    },
+    {
+      "id": "MOD-030",
+      "kind": "MODULE",
+      "external_id": "V02",
+      "title": "Specialized S01 Note On Velocity Apply Scope",
+      "summary": "Stvara specialized USER execution request za odobreni S01 plan samo uz zaseban unknown velocity-switch/RX risk acknowledgement; C01/V01 neovisno provode 1..127, max 8 i max 32 kapije.",
+      "lifecycle": "ACTIVE",
+      "path": "velocity_change_scope.py",
+      "evidence": {
+        "state": "CONFIRMED",
+        "detail": "Request bilježi authorized S01 rule ID i eksplicitni UNKNOWN_VELOCITY_SWITCH_RX_THRESHOLDS acknowledgement u execution/report lancu."
+      },
+      "implementation": {
+        "state": "PASS",
+        "detail": "Specialized request validator i C01/V01 Note On safety grane su implementirane; generic request ostaje blokiran."
+      },
+      "validation": {
+        "state": "PASS",
+        "detail": "TEST-062 pokriva full apply/verify/save/rollback, missing ack/generic block, zero/large block i forged-ack verifier FAIL."
+      },
+      "certification": {
+        "state": "PASS",
+        "detail": "Certificiran je samo explicit USER-acknowledged bounded S01 velocity scope; automatic Apply/Enhance nije autoriziran."
+      },
+      "refs": [
+        "MOD-023",
+        "MOD-024",
+        "MOD-025",
+        "MOD-028",
+        "TEST-062"
+      ]
+    },
+    {
+      "id": "TEST-062",
+      "kind": "TEST",
+      "external_id": "VelocityChangeScopeTests",
+      "title": "VelocityChangeScopeTests",
+      "summary": "End-to-end testira S01 USER ack, Note On running-status patch, V01/W01/rollback, generic/missing ack block, zero/large delta block i forged ack detection.",
+      "lifecycle": "ACTIVE",
+      "path": "tests/test_velocity_change_scope.py",
+      "evidence": {
+        "state": "CONFIRMED",
+        "detail": "Četiri testa i dva subtesta koriste stvarne parsirane Note On događaje, R01/S01 plan i C01/V01/W01."
+      },
+      "implementation": {
+        "state": "PASS",
+        "detail": "Dedicated V02 test datoteka je prisutna."
+      },
+      "validation": {
+        "state": "PASS",
+        "detail": "4/4 V02 testova, 2 subtesta i puni DISPLAY=:113 suite od 146 testova + 3.257 subtestova prolaze."
+      },
+      "certification": {
+        "state": "PASS",
+        "detail": "Pokriva explicit acknowledged bounded velocity Apply scope."
+      },
+      "refs": [
+        "MOD-030",
+        "MOD-028",
+        "MOD-023",
+        "MOD-024",
+        "MOD-025"
+      ]
+    },
+    {
+      "id": "RUN-023",
+      "kind": "TEST_RUN",
+      "title": "V02 Specialized Velocity Apply full regression — 2026-08-14",
+      "summary": "Puni regression/corpus/GUI run nakon explicit USER-acknowledged S01 Note On velocity C01/V01/W01 scopea.",
+      "lifecycle": "ACTIVE",
+      "command": "DISPLAY=:113 python -m pytest -q",
+      "evidence": {
+        "state": "CONFIRMED",
+        "detail": "V02 dedicated testovi i cijeli R01/G02/regression suite izvršeni su nad aktualnim snapshotom."
+      },
+      "implementation": {
+        "state": "NOT_APPLICABLE",
+        "detail": "Test run nije produkcijska implementacija."
+      },
+      "validation": {
+        "state": "PASS",
+        "detail": "146 testova i 3.257 subtestova PASS za 391,22 s; 0 failurea i 0 skipova."
+      },
+      "certification": {
+        "state": "PARTIAL",
+        "detail": "Podupire bounded explicit V02 scope; automatic velocity Apply/Enhance i GUI risk-ack workflow nisu certificirani."
+      },
+      "refs": [
+        "MOD-030",
+        "TEST-062",
+        "MOD-028",
+        "RUN-022"
+      ]
+    }
+  ]
+}

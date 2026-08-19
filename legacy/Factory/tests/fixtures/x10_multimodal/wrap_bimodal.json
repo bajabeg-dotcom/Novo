@@ -1,0 +1,7 @@
+{
+  "description": "Four equally weighted Factory sources with modes straddling circular zero",
+  "sources": 4,
+  "phases": ["1/100", "99/100"],
+  "bars_per_phase_per_source": 5,
+  "half_tick_resolution": "1/384"
+}

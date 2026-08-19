@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "artifacts": [
+    {
+      "artifact_id": "dna-database",
+      "artifact_type": "database",
+      "relative_path": "data/pa800-enhancer.db",
+      "sha256": "da1e4acdda288762585fc268736b464446660b8e92e7f2fa0e529e5ef4079729",
+      "size": 37359616,
+      "schema_version": 5,
+      "status": "candidate"
+    },
+    {
+      "artifact_id": "performance-catalog",
+      "artifact_type": "reference-catalog",
+      "relative_path": "data/performance-reference-catalog.json",
+      "sha256": "a0f32f8886c4b51caa5022e4437daaf9794fba27ddfb9d02c12a76d186bf4cec",
+      "size": 1254773,
+      "schema_version": 1,
+      "status": "candidate"
+    },
+    {
+      "artifact_id": "gold-performance-catalog-v2",
+      "artifact_type": "reference-catalog",
+      "relative_path": "data/performance-reference-catalog-v2.json",
+      "sha256": "8df0350a097c8163f5d5eb1610c9e5c5b64493fbbc732902c9fd0c780e1160c0",
+      "size": 1500759,
+      "schema_version": 2,
+      "status": "candidate"
+    },
+    {
+      "artifact_id": "midi-standard",
+      "artifact_type": "model",
+      "relative_path": "data/models/midi-gru.pt",
+      "sha256": "0e71c13c2e81daf0cf69a0eb54cf74e44cfb8620d203311cdd5099c0a465480f",
+      "size": 5681393,
+      "schema_version": 2,
+      "status": "experimental"
+    },
+    {
+      "artifact_id": "factory-pattern-catalog",
+      "artifact_type": "reference-catalog",
+      "relative_path": "data/factory-pattern-catalog.json",
+      "sha256": "24421cb6dd87b730095f28dfa2138675bc3b17f98b6616fdc2c00b9b90ea9730",
+      "size": 18934795,
+      "schema_version": 1,
+      "status": "candidate"
+    }
+  ]
+}

@@ -4,9 +4,16 @@ __pycache__/
 venv/
 *.egg-info/
 build/
+dist/
 .pytest_cache/
 .mypy_cache/
+.coverage
+htmlcov/
 
-# forenzicki sirovi zapisi (veliki, regenerisu se alatom)
-/tmp/fx/
-forensics/*-records.json
+# veliki podaci - vanjski, provjereni preko data/artifact-manifest.json
+data/*.db
+data/*.json
+!data/artifact-manifest.json
+data/models/
+corpus/
+evidence/pa800-manual/
