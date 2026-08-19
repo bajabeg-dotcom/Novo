@@ -1,0 +1,22 @@
+{
+  "total_profiles": 670,
+  "families": {
+    "Ensemble": 54,
+    "Organ": 82,
+    "Piano": 83,
+    "Reed": 31,
+    "Bass": 62,
+    "Guitar": 124,
+    "Strings": 18,
+    "Pipe": 17,
+    "Brass": 72,
+    "Synth Pad": 32,
+    "Percussive": 6,
+    "Synth Lead": 28,
+    "Chromatic Perc": 21,
+    "Synth FX": 17,
+    "Drums": 11,
+    "Ethnic": 12
+  },
+  "files_analyzed": 3393
+}

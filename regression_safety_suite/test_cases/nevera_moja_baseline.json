@@ -1,0 +1,28 @@
+{
+  "filename": "Nevera_moja_original.mid",
+  "total_tracks": 16,
+  "total_notes": 8340,
+  "has_lyrics": true,
+  "has_pitch_bend": true,
+  "critical_tracks": [
+    {
+      "index": 0,
+      "name": "Lead Vocal",
+      "type": "melody",
+      "locked": true
+    },
+    {
+      "index": 1,
+      "name": "Backing Vocals",
+      "type": "harmony",
+      "locked": true
+    },
+    {
+      "index": 5,
+      "name": "Guitar Solo",
+      "type": "solo",
+      "locked": true
+    }
+  ],
+  "hash_sha256": "simulated_hash_of_original_file_to_prevent_tampering"
+}
