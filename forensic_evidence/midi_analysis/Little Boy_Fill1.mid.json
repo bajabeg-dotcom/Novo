@@ -1,0 +1,54 @@
+{
+  "file_path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/Little Boy/Little Boy_Fill1.mid",
+  "filename": "Little Boy_Fill1.mid",
+  "hash_sha256": "c86e2b5e0e78da8c075b6703dd7240f6cfe0ea0c6a606d4fe53588773d675872",
+  "hash_md5": "0eb737c48f4d8d3f32d2b1e47291ec9f",
+  "metadata": {
+    "size_bytes": 1427,
+    "created_time": "2026-08-19T18:01:35.318579",
+    "modified_time": "1980-01-02T00:00:00",
+    "access_time": "2026-08-19T18:04:33.067802",
+    "inode": 399596,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 1,
+    "num_tracks": 13,
+    "ppq": 192,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 1427
+  },
+  "duration_ticks": 1427,
+  "ppq": 192,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    },
+    {
+      "type": "STYLE_CATEGORY",
+      "style": "Little Boy",
+      "description": "Factory style: Little Boy"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:33.068799"
+}

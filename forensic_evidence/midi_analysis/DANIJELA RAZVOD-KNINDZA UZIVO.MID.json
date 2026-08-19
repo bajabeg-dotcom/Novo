@@ -1,0 +1,49 @@
+{
+  "file_path": "/workspace/dna_extracted/gold_dna/Gold DNA/DANIJELA RAZVOD-KNINDZA UZIVO.MID",
+  "filename": "DANIJELA RAZVOD-KNINDZA UZIVO.MID",
+  "hash_sha256": "b9550f5e38f57df316a7a6c0c3643e99de6b7402c08ef1fb3aa65ad6b2550fbd",
+  "hash_md5": "ef431e1b87c560c793c3d10e3759e20e",
+  "metadata": {
+    "size_bytes": 89338,
+    "created_time": "2026-08-19T18:01:34.973565",
+    "modified_time": "2010-08-31T18:47:40",
+    "access_time": "2026-08-19T18:04:32.803791",
+    "inode": 397639,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 0,
+    "num_tracks": 1,
+    "ppq": 384,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 89338
+  },
+  "duration_ticks": 89338,
+  "ppq": 384,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:32.804749"
+}

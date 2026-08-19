@@ -1,0 +1,54 @@
+{
+  "file_path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/Unplugged 16 Bt/Unplugged 16 Bt_End1.mid",
+  "filename": "Unplugged 16 Bt_End1.mid",
+  "hash_sha256": "84f579e7203895678d9f25040b55d687270344bdbeb0c42b7abd26f5d1c1aa3d",
+  "hash_md5": "2dbfa9ea13438839810e8e659797bf43",
+  "metadata": {
+    "size_bytes": 18612,
+    "created_time": "2026-08-19T18:01:35.440584",
+    "modified_time": "1980-01-02T00:00:00",
+    "access_time": "2026-08-19T18:04:33.917836",
+    "inode": 524830,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 1,
+    "num_tracks": 21,
+    "ppq": 192,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 18612
+  },
+  "duration_ticks": 18612,
+  "ppq": 192,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    },
+    {
+      "type": "STYLE_CATEGORY",
+      "style": "Unplugged 16 Bt",
+      "description": "Factory style: Unplugged 16 Bt"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:33.919078"
+}

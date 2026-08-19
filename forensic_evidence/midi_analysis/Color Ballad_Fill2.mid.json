@@ -1,0 +1,54 @@
+{
+  "file_path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/Color Ballad/Color Ballad_Fill2.mid",
+  "filename": "Color Ballad_Fill2.mid",
+  "hash_sha256": "d8accca6360791973aaa8f2398ae9310a261287fbd461391c618b9aa6d4c2a4a",
+  "hash_md5": "6a0f3400e220537fa343cbd0f8ecc098",
+  "metadata": {
+    "size_bytes": 2106,
+    "created_time": "2026-08-19T18:01:35.162572",
+    "modified_time": "1980-01-02T00:00:00",
+    "access_time": "2026-08-19T18:04:33.088803",
+    "inode": 398377,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 1,
+    "num_tracks": 18,
+    "ppq": 192,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 2106
+  },
+  "duration_ticks": 2106,
+  "ppq": 192,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    },
+    {
+      "type": "STYLE_CATEGORY",
+      "style": "Color Ballad",
+      "description": "Factory style: Color Ballad"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:33.089733"
+}

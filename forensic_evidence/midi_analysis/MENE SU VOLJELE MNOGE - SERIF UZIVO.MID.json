@@ -1,0 +1,49 @@
+{
+  "file_path": "/workspace/dna_extracted/gold_dna/Gold DNA/MENE SU VOLJELE MNOGE - SERIF UZIVO.MID",
+  "filename": "MENE SU VOLJELE MNOGE - SERIF UZIVO.MID",
+  "hash_sha256": "a0fcd1d02687b7ee0c6587886dae55ae808cb855d6154e950d4673337e266f8b",
+  "hash_md5": "1779fc80166496ae317759d945f3f1c1",
+  "metadata": {
+    "size_bytes": 123520,
+    "created_time": "2026-08-19T18:01:35.046568",
+    "modified_time": "2010-01-27T15:09:12",
+    "access_time": "2026-08-19T18:04:32.861794",
+    "inode": 397717,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 0,
+    "num_tracks": 1,
+    "ppq": 384,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 123520
+  },
+  "duration_ticks": 123520,
+  "ppq": 384,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:32.863414"
+}

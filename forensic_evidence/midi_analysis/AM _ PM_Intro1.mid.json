@@ -1,0 +1,54 @@
+{
+  "file_path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/AM /AM _ PM_Intro1.mid",
+  "filename": "AM _ PM_Intro1.mid",
+  "hash_sha256": "b4cb1b5792d8b1584811bb7e12c64efb0ca2a7bdaba8b53d6bf36e7034a86746",
+  "hash_md5": "b81dcbbc655f9d133135428637bac7bc",
+  "metadata": {
+    "size_bytes": 8535,
+    "created_time": "2026-08-19T18:01:35.128571",
+    "modified_time": "1980-01-02T00:00:00",
+    "access_time": "2026-08-19T18:04:33.189807",
+    "inode": 397894,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 1,
+    "num_tracks": 22,
+    "ppq": 192,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 8535
+  },
+  "duration_ticks": 8535,
+  "ppq": 192,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    },
+    {
+      "type": "STYLE_CATEGORY",
+      "style": "AM ",
+      "description": "Factory style: AM "
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:33.190323"
+}

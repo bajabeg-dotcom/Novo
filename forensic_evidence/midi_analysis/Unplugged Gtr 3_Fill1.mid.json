@@ -1,0 +1,54 @@
+{
+  "file_path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/Unplugged Gtr 3/Unplugged Gtr 3_Fill1.mid",
+  "filename": "Unplugged Gtr 3_Fill1.mid",
+  "hash_sha256": "9838cf3f38d1d6f0729501707fcf68a555d5f1721e00f6294ed623eb9d98183c",
+  "hash_md5": "48e0836b852833543176b95ee9e50ba3",
+  "metadata": {
+    "size_bytes": 2226,
+    "created_time": "2026-08-19T18:01:35.444584",
+    "modified_time": "1980-01-02T00:00:00",
+    "access_time": "2026-08-19T18:04:33.285811",
+    "inode": 524889,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 1,
+    "num_tracks": 16,
+    "ppq": 192,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 2226
+  },
+  "duration_ticks": 2226,
+  "ppq": 192,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    },
+    {
+      "type": "STYLE_CATEGORY",
+      "style": "Unplugged Gtr 3",
+      "description": "Factory style: Unplugged Gtr 3"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:33.286245"
+}

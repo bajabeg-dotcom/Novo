@@ -1,0 +1,87 @@
+{
+  "generated_at": "2026-08-19T18:17:42.998413",
+  "forensic_level": 5,
+  "total_files": 3223,
+  "hashes": [
+    {
+      "path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/Standard 16 Beat/Standard 16 Beat_Var4.mid",
+      "name": "Standard 16 Beat_Var4.mid",
+      "size_bytes": 2619,
+      "sha256": "ebb7c37e415636b87804a867b666ddc3840109ebfed0d4aa47febd245d676e4e",
+      "md5": "813d4fa443f0cef61fb59db64e6bae46",
+      "modified_time": "1980-01-02T00:00:00"
+    },
+    {
+      "path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/Standard 16 Beat/Standard 16 Beat_Var3.mid",
+      "name": "Standard 16 Beat_Var3.mid",
+      "size_bytes": 6117,
+      "sha256": "a66dc283d18db79b6250461847de6159d40272ad76946642205aaef7607e7b4f",
+      "md5": "92e44b5e1a530c494dabee3410d2b72f",
+      "modified_time": "1980-01-02T00:00:00"
+    },
+    {
+      "path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/Classic Beat/Classic Beat_Var4.mid",
+      "name": "Classic Beat_Var4.mid",
+      "size_bytes": 2423,
+      "sha256": "240baefe7a890bcce18ceb865a25be8150a64d46c06e4d0f320fbc68f9cc41a5",
+      "md5": "9e57292f5180654382f142e27d444239",
+      "modified_time": "1980-01-02T00:00:00"
+    },
+    {
+      "path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/Classic Beat/Classic Beat_Var3.mid",
+      "name": "Classic Beat_Var3.mid",
+      "size_bytes": 5128,
+      "sha256": "1ec554b5b1ddfee3c84e872511f487207e909c75213ab2102bb81dc84edf477a",
+      "md5": "ddd14d3ebaca73c092bdb791e5aaaaa2",
+      "modified_time": "1980-01-02T00:00:00"
+    },
+    {
+      "path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/Guitar Beat/Guitar Beat_Var3.mid",
+      "name": "Guitar Beat_Var3.mid",
+      "size_bytes": 3712,
+      "sha256": "bc88dd22e50bb4acb337ce5fe38edb9a31bb01bb60441d687475e640cb2a04cf",
+      "md5": "63f05cdf43d462ef331c79cdf2e84eff",
+      "modified_time": "1980-01-02T00:00:00"
+    },
+    {
+      "path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/Guitar Beat/Guitar Beat_Intro3.mid",
+      "name": "Guitar Beat_Intro3.mid",
+      "size_bytes": 832,
+      "sha256": "184275ce079d1438574ef9120aaa74bbcb2a7089b5afd741dc937661a09db3ab",
+      "md5": "c2f1c3c7ecfda84d99a582b09fd09cd8",
+      "modified_time": "1980-01-02T00:00:00"
+    },
+    {
+      "path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/Guitar Beat/Guitar Beat_Intro2.mid",
+      "name": "Guitar Beat_Intro2.mid",
+      "size_bytes": 2208,
+      "sha256": "ea49e4154f7b25b79fbbad0b6a834157ef59e35faa310f91e11df661398bfd58",
+      "md5": "8201605b994eb6390070ffa54fb1f859",
+      "modified_time": "1980-01-02T00:00:00"
+    },
+    {
+      "path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/Guitar Beat/Guitar Beat_Intro1.mid",
+      "name": "Guitar Beat_Intro1.mid",
+      "size_bytes": 2053,
+      "sha256": "4bcc15ba371ec8b6a5c45eacf3fd7c9a4344b8baef52b100ae283b6b5376aa6c",
+      "md5": "350e93c569b0afb88055eaf58cb7d82d",
+      "modified_time": "1980-01-02T00:00:00"
+    },
+    {
+      "path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/Fast Big Band 1/Fast Big Band 1_Intro2.mid",
+      "name": "Fast Big Band 1_Intro2.mid",
+      "size_bytes": 1809,
+      "sha256": "047ec39425b7e6d759ab4b8a124ef4f1e76cec5bfa6b34adef07b204b83874c2",
+      "md5": "61479a5a22c456641912ce2a91be2257",
+      "modified_time": "1980-01-02T00:00:00"
+    },
+    {
+      "path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/Gospel Swing/Gospel Swing_End3.mid",
+      "name": "Gospel Swing_End3.mid",
+      "size_bytes": 1364,
+      "sha256": "9fb2053029f7d944206dc5823d299c7b8160e1f9d80a9861c4b43d5cb4539c99",
+      "md5": "15b589a94fd502fac1bb77619868fa7a",
+      "modified_time": "1980-01-02T00:00:00"
+    }
+  ]
+}

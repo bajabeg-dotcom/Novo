@@ -1,0 +1,54 @@
+{
+  "file_path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/Miami Disco/Miami Disco_Fill2.mid",
+  "filename": "Miami Disco_Fill2.mid",
+  "hash_sha256": "67cfc419cd32ad0399e34ea68e5da7dc4f5e248780a6ab77124231b74ef5c925",
+  "hash_md5": "3e8421a10c9864acacdb1dd05b1420f1",
+  "metadata": {
+    "size_bytes": 1324,
+    "created_time": "2026-08-19T18:01:35.325579",
+    "modified_time": "1980-01-02T00:00:00",
+    "access_time": "2026-08-19T18:04:33.558822",
+    "inode": 399709,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 1,
+    "num_tracks": 12,
+    "ppq": 192,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 1324
+  },
+  "duration_ticks": 1324,
+  "ppq": 192,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    },
+    {
+      "type": "STYLE_CATEGORY",
+      "style": "Miami Disco",
+      "description": "Factory style: Miami Disco"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:33.559059"
+}

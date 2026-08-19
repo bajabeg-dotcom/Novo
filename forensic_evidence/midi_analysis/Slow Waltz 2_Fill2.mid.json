@@ -1,0 +1,54 @@
+{
+  "file_path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/Slow Waltz 2/Slow Waltz 2_Fill2.mid",
+  "filename": "Slow Waltz 2_Fill2.mid",
+  "hash_sha256": "d299c74aedd063acaf85cbe22e4bf85ce69c05ca1eb6884d62faf129177688a5",
+  "hash_md5": "e913a0cbae96e63d53940413cfa9baf1",
+  "metadata": {
+    "size_bytes": 1367,
+    "created_time": "2026-08-19T18:01:35.425583",
+    "modified_time": "1980-01-02T00:00:00",
+    "access_time": "2026-08-19T18:04:33.596823",
+    "inode": 524597,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 1,
+    "num_tracks": 14,
+    "ppq": 192,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 1367
+  },
+  "duration_ticks": 1367,
+  "ppq": 192,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    },
+    {
+      "type": "STYLE_CATEGORY",
+      "style": "Slow Waltz 2",
+      "description": "Factory style: Slow Waltz 2"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:33.598005"
+}

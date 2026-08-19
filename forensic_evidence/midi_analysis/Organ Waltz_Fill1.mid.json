@@ -1,0 +1,54 @@
+{
+  "file_path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/Organ Waltz/Organ Waltz_Fill1.mid",
+  "filename": "Organ Waltz_Fill1.mid",
+  "hash_sha256": "23fbc64eb3be71dcd46d1a21e2a439132bac4e9420fea40570956fee85d5ff3c",
+  "hash_md5": "a8e1b45926a5de3ba79841e9e055c7fd",
+  "metadata": {
+    "size_bytes": 1992,
+    "created_time": "2026-08-19T18:01:35.344580",
+    "modified_time": "1980-01-02T00:00:00",
+    "access_time": "2026-08-19T18:04:33.709828",
+    "inode": 400011,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 1,
+    "num_tracks": 16,
+    "ppq": 192,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 1992
+  },
+  "duration_ticks": 1992,
+  "ppq": 192,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    },
+    {
+      "type": "STYLE_CATEGORY",
+      "style": "Organ Waltz",
+      "description": "Factory style: Organ Waltz"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:33.710715"
+}

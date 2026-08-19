@@ -1,0 +1,54 @@
+{
+  "file_path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/Black Funk/Black Funk_End2.mid",
+  "filename": "Black Funk_End2.mid",
+  "hash_sha256": "f6a569f84b77436c1f4f8f26332f56fe0e6838a78ef2fd638ea759d00003c28e",
+  "hash_md5": "aca89761c76b768d1d3a98396c44e8b3",
+  "metadata": {
+    "size_bytes": 3017,
+    "created_time": "2026-08-19T18:01:35.149572",
+    "modified_time": "1980-01-02T00:00:00",
+    "access_time": "2026-08-19T18:04:33.230808",
+    "inode": 398180,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 1,
+    "num_tracks": 14,
+    "ppq": 192,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 3017
+  },
+  "duration_ticks": 3017,
+  "ppq": 192,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    },
+    {
+      "type": "STYLE_CATEGORY",
+      "style": "Black Funk",
+      "description": "Factory style: Black Funk"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:33.231673"
+}

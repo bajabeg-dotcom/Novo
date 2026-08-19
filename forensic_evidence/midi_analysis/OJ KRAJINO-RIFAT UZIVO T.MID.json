@@ -1,0 +1,49 @@
+{
+  "file_path": "/workspace/dna_extracted/gold_dna/Gold DNA/OJ KRAJINO-RIFAT UZIVO T.MID",
+  "filename": "OJ KRAJINO-RIFAT UZIVO T.MID",
+  "hash_sha256": "d31219b5226bf8f9e9ece5c21860f3d7967bf4ccd9159db35cb1e2d12821c67c",
+  "hash_md5": "9fb1613e1f46d554889ae37409ce8c3d",
+  "metadata": {
+    "size_bytes": 82872,
+    "created_time": "2026-08-19T18:01:35.069569",
+    "modified_time": "2010-10-19T19:55:32",
+    "access_time": "2026-08-19T18:04:32.846793",
+    "inode": 397740,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 0,
+    "num_tracks": 1,
+    "ppq": 384,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 82872
+  },
+  "duration_ticks": 82872,
+  "ppq": 384,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:32.847912"
+}

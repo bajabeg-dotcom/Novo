@@ -1,0 +1,49 @@
+{
+  "file_path": "/workspace/dna_extracted/gold_dna/Gold DNA/GENI-SEKI T UZIVO.MID",
+  "filename": "GENI-SEKI T UZIVO.MID",
+  "hash_sha256": "a9755c03d8659dedc7603fdd8274d5984dcee02861ab80d7c3efc25adb773ab0",
+  "hash_md5": "21793d6fdf7c099d8117036fb92302f3",
+  "metadata": {
+    "size_bytes": 76747,
+    "created_time": "2026-08-19T18:01:34.986565",
+    "modified_time": "2010-06-09T14:49:18",
+    "access_time": "2026-08-19T18:04:32.811791",
+    "inode": 397654,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 0,
+    "num_tracks": 1,
+    "ppq": 384,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 76747
+  },
+  "duration_ticks": 76747,
+  "ppq": 384,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:32.812714"
+}

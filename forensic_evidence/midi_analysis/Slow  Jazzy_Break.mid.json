@@ -1,0 +1,54 @@
+{
+  "file_path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/Slow & Jazzy/Slow & Jazzy_Break.mid",
+  "filename": "Slow & Jazzy_Break.mid",
+  "hash_sha256": "0d9bd09f6342eacacbe97dee70da22fe1f70715fcaec80663f99d3645bb171a3",
+  "hash_md5": "8f0f41408858c6966ebc7df2b3878037",
+  "metadata": {
+    "size_bytes": 1276,
+    "created_time": "2026-08-19T18:01:35.418583",
+    "modified_time": "1980-01-02T00:00:00",
+    "access_time": "2026-08-19T18:04:33.791831",
+    "inode": 524480,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 1,
+    "num_tracks": 12,
+    "ppq": 192,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 1276
+  },
+  "duration_ticks": 1276,
+  "ppq": 192,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    },
+    {
+      "type": "STYLE_CATEGORY",
+      "style": "Slow & Jazzy",
+      "description": "Factory style: Slow & Jazzy"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:33.792456"
+}

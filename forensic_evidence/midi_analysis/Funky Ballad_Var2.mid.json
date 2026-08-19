@@ -1,0 +1,54 @@
+{
+  "file_path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/Funky Ballad/Funky Ballad_Var2.mid",
+  "filename": "Funky Ballad_Var2.mid",
+  "hash_sha256": "2c8bce73f2c54a0e20a8cd577de61dd17ec2d0d6d429459aec1699ccfca10b69",
+  "hash_md5": "97f38e35bc9fe748ff85b81b327c7e42",
+  "metadata": {
+    "size_bytes": 5718,
+    "created_time": "2026-08-19T18:01:35.238575",
+    "modified_time": "1980-01-02T00:00:00",
+    "access_time": "2026-08-19T18:04:33.346813",
+    "inode": 398994,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 1,
+    "num_tracks": 18,
+    "ppq": 192,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 5718
+  },
+  "duration_ticks": 5718,
+  "ppq": 192,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    },
+    {
+      "type": "STYLE_CATEGORY",
+      "style": "Funky Ballad",
+      "description": "Factory style: Funky Ballad"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:33.347911"
+}

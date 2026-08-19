@@ -1,0 +1,54 @@
+{
+  "file_path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/Disco Schlager/Disco Schlager_Intro1.mid",
+  "filename": "Disco Schlager_Intro1.mid",
+  "hash_sha256": "cd0d53343ca2f6f7c4d19bc06f0d3d93a7beaf8eb452477bec38cbdd8c4890a5",
+  "hash_md5": "93f57d5e58ae5e570a320cac1a1139a9",
+  "metadata": {
+    "size_bytes": 1873,
+    "created_time": "2026-08-19T18:01:35.207574",
+    "modified_time": "1980-01-02T00:00:00",
+    "access_time": "2026-08-19T18:04:33.696827",
+    "inode": 398650,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 1,
+    "num_tracks": 50,
+    "ppq": 192,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 1873
+  },
+  "duration_ticks": 1873,
+  "ppq": 192,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    },
+    {
+      "type": "STYLE_CATEGORY",
+      "style": "Disco Schlager",
+      "description": "Factory style: Disco Schlager"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:33.697427"
+}

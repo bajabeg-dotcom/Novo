@@ -1,0 +1,54 @@
+{
+  "file_path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/Movie Ballad/Movie Ballad_Break.mid",
+  "filename": "Movie Ballad_Break.mid",
+  "hash_sha256": "dd07acece6812bd188f3e08b693f1c2de2c3a4ed0a4a2fd3363046c81757cf97",
+  "hash_md5": "5278bd163dcd27a0bae08eab78722e99",
+  "metadata": {
+    "size_bytes": 1679,
+    "created_time": "2026-08-19T18:01:35.334579",
+    "modified_time": "1980-01-02T00:00:00",
+    "access_time": "2026-08-19T18:04:32.960798",
+    "inode": 399843,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 1,
+    "num_tracks": 15,
+    "ppq": 192,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 1679
+  },
+  "duration_ticks": 1679,
+  "ppq": 192,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    },
+    {
+      "type": "STYLE_CATEGORY",
+      "style": "Movie Ballad",
+      "description": "Factory style: Movie Ballad"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:32.961579"
+}

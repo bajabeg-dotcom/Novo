@@ -1,0 +1,54 @@
+{
+  "file_path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/Soft HipHop/Soft HipHop_Var1.mid",
+  "filename": "Soft HipHop_Var1.mid",
+  "hash_sha256": "0ce159994ca781e2ecfe67746c2c269054b1400a59fc02b99ba5770a6822e367",
+  "hash_md5": "40b981fe818e146ba616231d560a359f",
+  "metadata": {
+    "size_bytes": 1891,
+    "created_time": "2026-08-19T18:01:35.430583",
+    "modified_time": "1980-01-02T00:00:00",
+    "access_time": "2026-08-19T18:04:33.938837",
+    "inode": 524684,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 1,
+    "num_tracks": 6,
+    "ppq": 192,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 1891
+  },
+  "duration_ticks": 1891,
+  "ppq": 192,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    },
+    {
+      "type": "STYLE_CATEGORY",
+      "style": "Soft HipHop",
+      "description": "Factory style: Soft HipHop"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:33.939775"
+}

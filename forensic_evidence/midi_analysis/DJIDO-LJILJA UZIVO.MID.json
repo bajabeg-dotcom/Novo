@@ -1,0 +1,49 @@
+{
+  "file_path": "/workspace/dna_extracted/gold_dna/Gold DNA/DJIDO-LJILJA UZIVO.MID",
+  "filename": "DJIDO-LJILJA UZIVO.MID",
+  "hash_sha256": "21e17f29a27ef9c6b62a391490bdf69b50dae316e5f61b72d37c5cb3715c99c2",
+  "hash_md5": "e4ab8a5b1192380de45490ff296d8c11",
+  "metadata": {
+    "size_bytes": 78443,
+    "created_time": "2026-08-19T18:01:34.975565",
+    "modified_time": "2010-01-02T20:23:44",
+    "access_time": "2026-08-19T18:04:32.882794",
+    "inode": 397641,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 0,
+    "num_tracks": 1,
+    "ppq": 384,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 78443
+  },
+  "duration_ticks": 78443,
+  "ppq": 384,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:32.883833"
+}

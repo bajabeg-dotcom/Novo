@@ -1,0 +1,54 @@
+{
+  "file_path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/Jazzy PopFunk/Jazzy PopFunk_Break.mid",
+  "filename": "Jazzy PopFunk_Break.mid",
+  "hash_sha256": "9aa0da90a53b78d3d6b02d70c41d70c8a10ba747550c6fbf24e176e6a774d676",
+  "hash_md5": "5713e55dafdc7099bba61b033f3c8228",
+  "metadata": {
+    "size_bytes": 1285,
+    "created_time": "2026-08-19T18:01:35.313578",
+    "modified_time": "1980-01-02T00:00:00",
+    "access_time": "2026-08-19T18:04:33.075802",
+    "inode": 399524,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 1,
+    "num_tracks": 13,
+    "ppq": 192,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 1285
+  },
+  "duration_ticks": 1285,
+  "ppq": 192,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    },
+    {
+      "type": "STYLE_CATEGORY",
+      "style": "Jazzy PopFunk",
+      "description": "Factory style: Jazzy PopFunk"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:33.076837"
+}

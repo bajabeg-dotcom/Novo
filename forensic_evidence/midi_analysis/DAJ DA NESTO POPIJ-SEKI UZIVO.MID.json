@@ -1,0 +1,49 @@
+{
+  "file_path": "/workspace/dna_extracted/gold_dna/Gold DNA/DAJ DA NESTO POPIJ-SEKI UZIVO.MID",
+  "filename": "DAJ DA NESTO POPIJ-SEKI UZIVO.MID",
+  "hash_sha256": "06c903c1f14cf8e5936356d84f7e7b9f02b59f7cc6bab1b298dbbeb5f3ba824a",
+  "hash_md5": "e99954e40db1f1c7cbef9b262405bf5f",
+  "metadata": {
+    "size_bytes": 62637,
+    "created_time": "2026-08-19T18:01:34.970565",
+    "modified_time": "2010-09-23T17:17:10",
+    "access_time": "2026-08-19T18:04:32.878794",
+    "inode": 397635,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 0,
+    "num_tracks": 1,
+    "ppq": 384,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 62637
+  },
+  "duration_ticks": 62637,
+  "ppq": 384,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:32.880212"
+}

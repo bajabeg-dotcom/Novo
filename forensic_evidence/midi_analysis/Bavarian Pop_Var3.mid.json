@@ -1,0 +1,54 @@
+{
+  "file_path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/Bavarian Pop/Bavarian Pop_Var3.mid",
+  "filename": "Bavarian Pop_Var3.mid",
+  "hash_sha256": "7d9c5bebd279f4b9a55ef2cd0a1364ae67adb34a390bb5cd00ad440725823058",
+  "hash_md5": "ad96241fb0db0e26f2715bb63e907028",
+  "metadata": {
+    "size_bytes": 7179,
+    "created_time": "2026-08-19T18:01:35.145572",
+    "modified_time": "1980-01-02T00:00:00",
+    "access_time": "2026-08-19T18:04:33.575822",
+    "inode": 398119,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 1,
+    "num_tracks": 29,
+    "ppq": 192,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 7179
+  },
+  "duration_ticks": 7179,
+  "ppq": 192,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    },
+    {
+      "type": "STYLE_CATEGORY",
+      "style": "Bavarian Pop",
+      "description": "Factory style: Bavarian Pop"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:33.577053"
+}

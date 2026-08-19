@@ -1,0 +1,54 @@
+{
+  "file_path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/Unplugged Slow/Unplugged Slow_Fill1.mid",
+  "filename": "Unplugged Slow_Fill1.mid",
+  "hash_sha256": "4c11282c6e3511d83d46102982e0a881e52e5cab227914c9e8333ae72cc7d49a",
+  "hash_md5": "a35b9eb442ea5f3a1ad55456b4233428",
+  "metadata": {
+    "size_bytes": 1088,
+    "created_time": "2026-08-19T18:01:35.446584",
+    "modified_time": "1980-01-02T00:00:00",
+    "access_time": "2026-08-19T18:04:33.065802",
+    "inode": 524945,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 1,
+    "num_tracks": 11,
+    "ppq": 192,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 1088
+  },
+  "duration_ticks": 1088,
+  "ppq": 192,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    },
+    {
+      "type": "STYLE_CATEGORY",
+      "style": "Unplugged Slow",
+      "description": "Factory style: Unplugged Slow"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:33.067125"
+}

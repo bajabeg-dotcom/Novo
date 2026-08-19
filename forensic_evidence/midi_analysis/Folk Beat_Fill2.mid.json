@@ -1,0 +1,54 @@
+{
+  "file_path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/Folk Beat/Folk Beat_Fill2.mid",
+  "filename": "Folk Beat_Fill2.mid",
+  "hash_sha256": "c2baba44e40c078cb23023178a0e4e2fdc65f83243e980b679a14b0c3964cd7f",
+  "hash_md5": "cfb240417f0ffe9c38e1223d391f0fc5",
+  "metadata": {
+    "size_bytes": 1515,
+    "created_time": "2026-08-19T18:01:35.228575",
+    "modified_time": "1980-01-02T00:00:00",
+    "access_time": "2026-08-19T18:04:33.162806",
+    "inode": 398880,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 1,
+    "num_tracks": 13,
+    "ppq": 192,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 1515
+  },
+  "duration_ticks": 1515,
+  "ppq": 192,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    },
+    {
+      "type": "STYLE_CATEGORY",
+      "style": "Folk Beat",
+      "description": "Factory style: Folk Beat"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:33.163929"
+}

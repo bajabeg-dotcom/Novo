@@ -1,0 +1,54 @@
+{
+  "file_path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/The Avalon/The Avalon_Break.mid",
+  "filename": "The Avalon_Break.mid",
+  "hash_sha256": "5276f3d7641382d40bb7f2ee0847f585a44dae8d467a6920f7fec8e3a1221a34",
+  "hash_md5": "437b01a7428b067bfed4c02ddb6f5755",
+  "metadata": {
+    "size_bytes": 826,
+    "created_time": "2026-08-19T18:01:35.438584",
+    "modified_time": "1980-01-02T00:00:00",
+    "access_time": "2026-08-19T18:04:33.757830",
+    "inode": 524801,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 1,
+    "num_tracks": 10,
+    "ppq": 192,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 826
+  },
+  "duration_ticks": 826,
+  "ppq": 192,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    },
+    {
+      "type": "STYLE_CATEGORY",
+      "style": "The Avalon",
+      "description": "Factory style: The Avalon"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:33.758208"
+}

@@ -1,0 +1,49 @@
+{
+  "file_path": "/workspace/dna_extracted/gold_dna/Gold DNA/ZBOG TEBE SAM V-SERIF K UZIVO.MID",
+  "filename": "ZBOG TEBE SAM V-SERIF K UZIVO.MID",
+  "hash_sha256": "7212734559074ae0779a75525de73b365758ffda1d792edf784760291467f6f6",
+  "hash_md5": "892a92b1fbc82addc3129a9ecb8044fb",
+  "metadata": {
+    "size_bytes": 130628,
+    "created_time": "2026-08-19T18:01:35.112570",
+    "modified_time": "2010-09-23T17:45:28",
+    "access_time": "2026-08-19T18:04:32.902795",
+    "inode": 397782,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 0,
+    "num_tracks": 1,
+    "ppq": 384,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 130628
+  },
+  "duration_ticks": 130628,
+  "ppq": 384,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:32.904078"
+}

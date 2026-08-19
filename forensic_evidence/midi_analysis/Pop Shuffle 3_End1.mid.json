@@ -1,0 +1,54 @@
+{
+  "file_path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/Pop Shuffle 3/Pop Shuffle 3_End1.mid",
+  "filename": "Pop Shuffle 3_End1.mid",
+  "hash_sha256": "57dfbecbd258dd29bb6a666a3511f60c7f8eb1711d159065e21d39a457342690",
+  "hash_md5": "64dba05e774b3ec856aeacb2e5a87901",
+  "metadata": {
+    "size_bytes": 3708,
+    "created_time": "2026-08-19T18:01:35.398582",
+    "modified_time": "1980-01-02T00:00:00",
+    "access_time": "2026-08-19T18:04:33.767830",
+    "inode": 400309,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 1,
+    "num_tracks": 50,
+    "ppq": 192,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 3708
+  },
+  "duration_ticks": 3708,
+  "ppq": 192,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    },
+    {
+      "type": "STYLE_CATEGORY",
+      "style": "Pop Shuffle 3",
+      "description": "Factory style: Pop Shuffle 3"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:33.768078"
+}

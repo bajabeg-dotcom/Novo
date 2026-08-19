@@ -1,0 +1,54 @@
+{
+  "file_path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/Gospel/Gospel_Intro3.mid",
+  "filename": "Gospel_Intro3.mid",
+  "hash_sha256": "b84b0b671f2c4171ee2a97ef488b9633b58b617c491e30f761652baddc509f41",
+  "hash_md5": "54527262b5df711e6381bc3ca6dea90d",
+  "metadata": {
+    "size_bytes": 688,
+    "created_time": "2026-08-19T18:01:35.251576",
+    "modified_time": "1980-01-02T00:00:00",
+    "access_time": "2026-08-19T18:04:33.433817",
+    "inode": 399132,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 1,
+    "num_tracks": 9,
+    "ppq": 192,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 688
+  },
+  "duration_ticks": 688,
+  "ppq": 192,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    },
+    {
+      "type": "STYLE_CATEGORY",
+      "style": "Gospel",
+      "description": "Factory style: Gospel"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:33.434287"
+}

@@ -1,0 +1,54 @@
+{
+  "file_path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/Hollywood 2/Hollywood 2_Fill2.mid",
+  "filename": "Hollywood 2_Fill2.mid",
+  "hash_sha256": "3f87d1c8562245856c50e9f93d11453625320fb488c3a5f6f92d3892e3f5bb50",
+  "hash_md5": "afc022a0cf371186e375c40e01ea0c2c",
+  "metadata": {
+    "size_bytes": 3032,
+    "created_time": "2026-08-19T18:01:35.302578",
+    "modified_time": "1980-01-02T00:00:00",
+    "access_time": "2026-08-19T18:04:33.444817",
+    "inode": 399311,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 1,
+    "num_tracks": 18,
+    "ppq": 192,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 3032
+  },
+  "duration_ticks": 3032,
+  "ppq": 192,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    },
+    {
+      "type": "STYLE_CATEGORY",
+      "style": "Hollywood 2",
+      "description": "Factory style: Hollywood 2"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:33.445100"
+}

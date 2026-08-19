@@ -1,0 +1,54 @@
+{
+  "file_path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/Soft 16 Beat/Soft 16 Beat_Fill2.mid",
+  "filename": "Soft 16 Beat_Fill2.mid",
+  "hash_sha256": "73dece5c31c63d81a505a17c5de9963a97561c83dbc1a019f325b73e751661fe",
+  "hash_md5": "4d684904540da27770a81ab66d0ac096",
+  "metadata": {
+    "size_bytes": 1143,
+    "created_time": "2026-08-19T18:01:35.428583",
+    "modified_time": "1980-01-02T00:00:00",
+    "access_time": "2026-08-19T18:04:33.783831",
+    "inode": 524639,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 1,
+    "num_tracks": 50,
+    "ppq": 192,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 1143
+  },
+  "duration_ticks": 1143,
+  "ppq": 192,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    },
+    {
+      "type": "STYLE_CATEGORY",
+      "style": "Soft 16 Beat",
+      "description": "Factory style: Soft 16 Beat"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:33.784669"
+}

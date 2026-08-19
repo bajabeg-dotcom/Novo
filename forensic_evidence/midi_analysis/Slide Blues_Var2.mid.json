@@ -1,0 +1,54 @@
+{
+  "file_path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/Slide Blues/Slide Blues_Var2.mid",
+  "filename": "Slide Blues_Var2.mid",
+  "hash_sha256": "4fadd7078dd044ff30d55e9065977a00472d83ff50c735acfd5d3991745dad77",
+  "hash_md5": "3930096194b4e5bc59978f3e5735f6db",
+  "metadata": {
+    "size_bytes": 16549,
+    "created_time": "2026-08-19T18:01:35.418583",
+    "modified_time": "1980-01-02T00:00:00",
+    "access_time": "2026-08-19T18:04:33.249809",
+    "inode": 524476,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 1,
+    "num_tracks": 17,
+    "ppq": 192,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 16549
+  },
+  "duration_ticks": 16549,
+  "ppq": 192,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    },
+    {
+      "type": "STYLE_CATEGORY",
+      "style": "Slide Blues",
+      "description": "Factory style: Slide Blues"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:33.251017"
+}

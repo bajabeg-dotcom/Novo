@@ -1,0 +1,54 @@
+{
+  "file_path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/Bluegrass/Bluegrass_Var2.mid",
+  "filename": "Bluegrass_Var2.mid",
+  "hash_sha256": "cc14fc90ce94dab1ce1268d04e9e4cf1103f7646094c34bbfa2ed3078fe373c3",
+  "hash_md5": "db78b05ecad5ef06a485aaeaf03ec806",
+  "metadata": {
+    "size_bytes": 12420,
+    "created_time": "2026-08-19T18:01:35.151572",
+    "modified_time": "1980-01-02T00:00:00",
+    "access_time": "2026-08-19T18:04:33.825833",
+    "inode": 398216,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 1,
+    "num_tracks": 22,
+    "ppq": 192,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 12420
+  },
+  "duration_ticks": 12420,
+  "ppq": 192,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    },
+    {
+      "type": "STYLE_CATEGORY",
+      "style": "Bluegrass",
+      "description": "Factory style: Bluegrass"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:33.826903"
+}

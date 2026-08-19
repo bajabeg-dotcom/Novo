@@ -1,0 +1,49 @@
+{
+  "file_path": "/workspace/dna_extracted/gold_dna/Gold DNA/KRUZI PRICA-IBRO SELIMANO-UZIVO.MID",
+  "filename": "KRUZI PRICA-IBRO SELIMANO-UZIVO.MID",
+  "hash_sha256": "25e9f29ddbd9af9c021a4100997068df9d1d6ab6fc27a020f469a1f4feb399bb",
+  "hash_md5": "f7b325c792b4fa5c5314869c14b390f3",
+  "metadata": {
+    "size_bytes": 164511,
+    "created_time": "2026-08-19T18:01:35.034567",
+    "modified_time": "2010-08-12T15:31:04",
+    "access_time": "2026-08-19T18:04:32.896795",
+    "inode": 397705,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 0,
+    "num_tracks": 1,
+    "ppq": 384,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 164511
+  },
+  "duration_ticks": 164511,
+  "ppq": 384,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:32.898155"
+}

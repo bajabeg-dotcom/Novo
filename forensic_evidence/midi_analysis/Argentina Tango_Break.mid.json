@@ -1,0 +1,54 @@
+{
+  "file_path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/Argentina Tango/Argentina Tango_Break.mid",
+  "filename": "Argentina Tango_Break.mid",
+  "hash_sha256": "cda85733e789ae2d7c98c3d00cc5b231fbf4feda2179e91ff80a3231cd6460a1",
+  "hash_md5": "6d1b7962d5945cbfb02ccf1e1efbce63",
+  "metadata": {
+    "size_bytes": 1291,
+    "created_time": "2026-08-19T18:01:35.139571",
+    "modified_time": "1980-01-02T00:00:00",
+    "access_time": "2026-08-19T18:04:32.978798",
+    "inode": 398026,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 1,
+    "num_tracks": 14,
+    "ppq": 192,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 1291
+  },
+  "duration_ticks": 1291,
+  "ppq": 192,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    },
+    {
+      "type": "STYLE_CATEGORY",
+      "style": "Argentina Tango",
+      "description": "Factory style: Argentina Tango"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:32.979939"
+}

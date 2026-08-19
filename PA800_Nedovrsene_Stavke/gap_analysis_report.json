@@ -1,0 +1,188 @@
+{
+  "generated_at": "2026-08-19T18:17:43.005232",
+  "version": "0.27.0",
+  "review_date": "2026-08-19",
+  "forensic_level": 5,
+  "categories": {
+    "P0": {
+      "description": "Mora se završiti prije ozbiljne upotrebe",
+      "items": [
+        {
+          "id": "2.1",
+          "title": "Hardware potvrda Factory sound adresa",
+          "status": "candidate",
+          "confidence": 0.65,
+          "priority": "Visoka",
+          "current_state": "Adrese se rangiraju prema učestalosti u Factory MIDI referencama",
+          "missing": [
+            "Automatski probe MIDI za svaku adresu",
+            "Dva ponovljena testa na fizičkom Pa800",
+            "Zapis stvarnog naziva sounda, OS-a i resource verzije",
+            "Blokiranje izvoza kada adresa nije potvrđena"
+          ],
+          "completion_criteria": "Svaka automatski odabrana adresa ima dvostruki hardware test"
+        },
+        {
+          "id": "2.2",
+          "title": "Potpuna RX/oscillator baza",
+          "status": "partial",
+          "confidence": 0.7,
+          "priority": "Visoka",
+          "current_state": "Poznati samo djelomični podaci za neke RX soundove",
+          "missing": [
+            "Precizna bank/program veza za svaki RX naziv",
+            "Potpuna lista svih RX soundova i drum kitova",
+            "Velocity zone, switch pragovi, key zone i noise triggeri po soundu",
+            "Validacija spornih oznaka oktava na Pa800"
+          ],
+          "completion_criteria": "Svaki RX sound ima verzionirani profil"
+        },
+        {
+          "id": "2.3",
+          "title": "Sigurno automatsko sound mapiranje",
+          "status": "candidate",
+          "confidence": 0.75,
+          "priority": "Visoka",
+          "current_state": "Konzervativni mapper koristi MIDI kanal i GM program",
+          "missing": [
+            "Segmentna detekcija uloge iz registra i ritma",
+            "Prepoznavanje solo/melodijskog tracka",
+            "Provjera semantičke jednakosti Factory i GM programa",
+            "Podrška za program promjene usred pjesme"
+          ],
+          "completion_criteria": "Mapper ne mijenja sound bez dokaza"
+        },
+        {
+          "id": "2.4",
+          "title": "Automatski balans za originalne trackove",
+          "status": "missing",
+          "confidence": 0.4,
+          "priority": "Visoka",
+          "current_state": "Density-aware CC7/CC11 radi samo za nove Factory aranžmane",
+          "missing": [
+            "Per-track loudness proxy iz velocityja i gustoće",
+            "Očuvanje namjernih tihih layera",
+            "Bass/kick masking pravila",
+            "Section-aware CC11 envelope"
+          ],
+          "completion_criteria": "Balans prolazi corpus metrike i slijepi A/B test"
+        },
+        {
+          "id": "2.5",
+          "title": "Listening i regresijski skup",
+          "status": "missing",
+          "confidence": 0.3,
+          "priority": "Visoka",
+          "current_state": "Nema reprezentativnog curated skupa",
+          "missing": [
+            "Curated skup balada, folk, pop, rock i dance MIDI-ja",
+            "Original/optimized A/B export sa slijepim ocjenjivanjem",
+            "Snimke sa stvarnog Pa800",
+            "Incident test za 'Nevera moja'"
+          ],
+          "completion_criteria": "100% očuvanje zaključanih nota/trackova"
+        }
+      ]
+    },
+    "P1": {
+      "description": "Ključne funkcionalne nadogradnje",
+      "items": [
+        {
+          "id": "3.1",
+          "title": "Gold dinamika za konzervativni način",
+          "status": "partial",
+          "confidence": 0.6,
+          "priority": "Visoka"
+        },
+        {
+          "id": "3.2",
+          "title": "Artikulacije, trileri i ornamenti",
+          "status": "partial",
+          "confidence": 0.55,
+          "priority": "Visoka"
+        },
+        {
+          "id": "3.3",
+          "title": "Drum intelligence",
+          "status": "missing",
+          "confidence": 0.35,
+          "priority": "Visoka"
+        },
+        {
+          "id": "3.4",
+          "title": "Guitar intelligence",
+          "status": "missing",
+          "confidence": 0.3,
+          "priority": "Visoka"
+        },
+        {
+          "id": "3.5",
+          "title": "Bass intelligence",
+          "status": "partial",
+          "confidence": 0.5,
+          "priority": "Visoka"
+        }
+      ]
+    },
+    "P2": {
+      "description": "Napredne funkcionalnosti i tehnički dug",
+      "items": [
+        {
+          "id": "6.x",
+          "title": "Generator i ML modeli",
+          "status": "experimental",
+          "confidence": 0.2,
+          "timeline": "Dugoročno"
+        },
+        {
+          "id": "7.x",
+          "title": "GUI i korisnički tok",
+          "status": "partial",
+          "confidence": 0.6,
+          "timeline": "Srednje"
+        },
+        {
+          "id": "8.x",
+          "title": "Podaci, baza i provenance",
+          "status": "partial",
+          "confidence": 0.65,
+          "timeline": "Srednje"
+        },
+        {
+          "id": "9.x",
+          "title": "Distribucija i instalacija",
+          "status": "partial",
+          "confidence": 0.55,
+          "timeline": "Kratkoročno"
+        },
+        {
+          "id": "10.x",
+          "title": "Tehnički dug",
+          "status": "documented",
+          "confidence": 0.8,
+          "timeline": "Kontinuirano"
+        }
+      ]
+    }
+  },
+  "recommended_order": [
+    "1. Napraviti permanentni regression test",
+    "2. Uvesti potpuni RX profile schema",
+    "3. Napraviti hardware probe paket",
+    "4. Dodati konzervativni output leveling",
+    "5. Spojiti Gold mikro-dinamiku",
+    "6. Dodati GUI evidence/track mixer",
+    "7. Izraditi Pa800 A/B listening corpus",
+    "8. Tek nakon toga nastaviti ML generator"
+  ],
+  "definition_of_done": [
+    "Nikada ne gubi zaključane originalne trackove ili note",
+    "Svaka sound adresa odgovara stvarnom Pa800 nazivu",
+    "Svi RX velocity/key switch profili su primijenjeni i testirani",
+    "Balans i dinamika prolaze slijepi A/B na fizičkom uređaju",
+    "Nepoznata odluka ostaje nepromijenjena",
+    "GUI prikazuje što se mijenja i zašto",
+    "Release radi na čistom Windows računaru",
+    "Svi artefakti imaju reproducibilan hash i rollback"
+  ]
+}

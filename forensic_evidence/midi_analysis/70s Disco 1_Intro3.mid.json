@@ -1,0 +1,54 @@
+{
+  "file_path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/70's Disco 1/70's Disco 1_Intro3.mid",
+  "filename": "70's Disco 1_Intro3.mid",
+  "hash_sha256": "09bdcfd100497f51dfad9f408606de5edb7a2b17f6e85cc4a357c9d11ac6049a",
+  "hash_md5": "6770227432b880bf34c58b5d57f28a43",
+  "metadata": {
+    "size_bytes": 841,
+    "created_time": "2026-08-19T18:01:35.123571",
+    "modified_time": "1980-01-02T00:00:00",
+    "access_time": "2026-08-19T18:04:32.976798",
+    "inode": 397826,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 1,
+    "num_tracks": 9,
+    "ppq": 192,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 841
+  },
+  "duration_ticks": 841,
+  "ppq": 192,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    },
+    {
+      "type": "STYLE_CATEGORY",
+      "style": "70's Disco 1",
+      "description": "Factory style: 70's Disco 1"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:32.977233"
+}

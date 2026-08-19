@@ -1,0 +1,49 @@
+{
+  "file_path": "/workspace/dna_extracted/gold_dna/Gold DNA/BRATUNACKE DIMIJE-MERAKLIJE UZIVO.mid",
+  "filename": "BRATUNACKE DIMIJE-MERAKLIJE UZIVO.mid",
+  "hash_sha256": "d6a46c6098c30611f9e746e8895f8709a98db4e1b15ec7370eb3b7b1aecc6418",
+  "hash_md5": "0fab21944c2aa46f37238d82f014a975",
+  "metadata": {
+    "size_bytes": 115353,
+    "created_time": "2026-08-19T18:01:34.962564",
+    "modified_time": "2010-01-21T16:22:50",
+    "access_time": "2026-08-19T18:04:32.897795",
+    "inode": 397624,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 0,
+    "num_tracks": 1,
+    "ppq": 480,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 115353
+  },
+  "duration_ticks": 115353,
+  "ppq": 480,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:32.899027"
+}

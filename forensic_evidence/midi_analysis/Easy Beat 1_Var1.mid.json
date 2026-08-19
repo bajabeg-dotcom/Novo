@@ -1,0 +1,54 @@
+{
+  "file_path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/Easy Beat 1/Easy Beat 1_Var1.mid",
+  "filename": "Easy Beat 1_Var1.mid",
+  "hash_sha256": "33f5501acad60a20b2d4f6972c964190e6b52e85a89b6a12ab64f9cea6c60e4d",
+  "hash_md5": "b162bd718b1bbb97897dd0476b3c2137",
+  "metadata": {
+    "size_bytes": 1676,
+    "created_time": "2026-08-19T18:01:35.210574",
+    "modified_time": "1980-01-02T00:00:00",
+    "access_time": "2026-08-19T18:04:33.879835",
+    "inode": 398679,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 1,
+    "num_tracks": 6,
+    "ppq": 192,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 1676
+  },
+  "duration_ticks": 1676,
+  "ppq": 192,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    },
+    {
+      "type": "STYLE_CATEGORY",
+      "style": "Easy Beat 1",
+      "description": "Factory style: Easy Beat 1"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:33.880347"
+}

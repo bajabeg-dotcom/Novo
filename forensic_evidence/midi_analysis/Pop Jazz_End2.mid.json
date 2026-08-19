@@ -1,0 +1,54 @@
+{
+  "file_path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/Pop Jazz/Pop Jazz_End2.mid",
+  "filename": "Pop Jazz_End2.mid",
+  "hash_sha256": "48506a8388716fb01023e2dfbfab59e2c868059c19210e3825134f49a644d166",
+  "hash_md5": "fbc0f3c6f641d2f87a76c019448f4a01",
+  "metadata": {
+    "size_bytes": 1462,
+    "created_time": "2026-08-19T18:01:35.394582",
+    "modified_time": "1980-01-02T00:00:00",
+    "access_time": "2026-08-19T18:04:33.741829",
+    "inode": 400254,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 1,
+    "num_tracks": 13,
+    "ppq": 192,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 1462
+  },
+  "duration_ticks": 1462,
+  "ppq": 192,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    },
+    {
+      "type": "STYLE_CATEGORY",
+      "style": "Pop Jazz",
+      "description": "Factory style: Pop Jazz"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:33.742777"
+}

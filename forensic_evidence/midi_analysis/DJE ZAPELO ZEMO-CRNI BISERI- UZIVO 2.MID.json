@@ -1,0 +1,49 @@
+{
+  "file_path": "/workspace/dna_extracted/gold_dna/Gold DNA/DJE ZAPELO ZEMO-CRNI BISERI- UZIVO (2).MID",
+  "filename": "DJE ZAPELO ZEMO-CRNI BISERI- UZIVO (2).MID",
+  "hash_sha256": "5cfe13b4bca118ddf7942e57fc3784aac01f1cab939d0027e6573a88abb1a4aa",
+  "hash_md5": "e14abba270112300c70c1f711d58089b",
+  "metadata": {
+    "size_bytes": 84249,
+    "created_time": "2026-08-19T18:01:34.974565",
+    "modified_time": "2010-06-02T18:49:20",
+    "access_time": "2026-08-19T18:04:32.787790",
+    "inode": 397640,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 0,
+    "num_tracks": 1,
+    "ppq": 384,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 84249
+  },
+  "duration_ticks": 84249,
+  "ppq": 384,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:32.789113"
+}

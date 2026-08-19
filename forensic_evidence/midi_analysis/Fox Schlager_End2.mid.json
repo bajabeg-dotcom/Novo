@@ -1,0 +1,54 @@
+{
+  "file_path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/Fox Schlager/Fox Schlager_End2.mid",
+  "filename": "Fox Schlager_End2.mid",
+  "hash_sha256": "4921acde714d96fcd5a5d6c5cd5e3d1754d49da864bed439afa6943350f04597",
+  "hash_md5": "d6e6d3f8116f0470364fb517ec2f4c57",
+  "metadata": {
+    "size_bytes": 3615,
+    "created_time": "2026-08-19T18:01:35.229575",
+    "modified_time": "1980-01-02T00:00:00",
+    "access_time": "2026-08-19T18:04:33.754830",
+    "inode": 398891,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 1,
+    "num_tracks": 22,
+    "ppq": 192,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 3615
+  },
+  "duration_ticks": 3615,
+  "ppq": 192,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    },
+    {
+      "type": "STYLE_CATEGORY",
+      "style": "Fox Schlager",
+      "description": "Factory style: Fox Schlager"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:33.755607"
+}

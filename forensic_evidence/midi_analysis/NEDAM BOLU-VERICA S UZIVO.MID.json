@@ -1,0 +1,49 @@
+{
+  "file_path": "/workspace/dna_extracted/gold_dna/Gold DNA/NEDAM BOLU-VERICA S UZIVO.MID",
+  "filename": "NEDAM BOLU-VERICA S UZIVO.MID",
+  "hash_sha256": "5b2e517a0dabe9cd7818f552480ad5d2b6c35e5353a9793636d40dfda5d39d42",
+  "hash_md5": "3322e52272a82aaf80da3319365808f6",
+  "metadata": {
+    "size_bytes": 113787,
+    "created_time": "2026-08-19T18:01:35.060568",
+    "modified_time": "2010-10-04T16:53:32",
+    "access_time": "2026-08-19T18:04:32.906795",
+    "inode": 397729,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 0,
+    "num_tracks": 1,
+    "ppq": 384,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 113787
+  },
+  "duration_ticks": 113787,
+  "ppq": 384,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:32.908297"
+}

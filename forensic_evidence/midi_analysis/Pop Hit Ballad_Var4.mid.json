@@ -1,0 +1,54 @@
+{
+  "file_path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/Pop Hit Ballad/Pop Hit Ballad_Var4.mid",
+  "filename": "Pop Hit Ballad_Var4.mid",
+  "hash_sha256": "da3c4cf79479faacee96048f724aa1905433972e23849c940e6ec7b12a9161ad",
+  "hash_md5": "84f3e1c1b8237b11dd48319557023a6a",
+  "metadata": {
+    "size_bytes": 7846,
+    "created_time": "2026-08-19T18:01:35.394582",
+    "modified_time": "1980-01-02T00:00:00",
+    "access_time": "2026-08-19T18:04:33.547821",
+    "inode": 400250,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 1,
+    "num_tracks": 13,
+    "ppq": 192,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 7846
+  },
+  "duration_ticks": 7846,
+  "ppq": 192,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    },
+    {
+      "type": "STYLE_CATEGORY",
+      "style": "Pop Hit Ballad",
+      "description": "Factory style: Pop Hit Ballad"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:33.549049"
+}

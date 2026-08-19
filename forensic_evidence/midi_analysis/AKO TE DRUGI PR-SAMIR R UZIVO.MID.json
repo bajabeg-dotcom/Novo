@@ -1,0 +1,49 @@
+{
+  "file_path": "/workspace/dna_extracted/gold_dna/Gold DNA/AKO TE DRUGI PR-SAMIR R UZIVO.MID",
+  "filename": "AKO TE DRUGI PR-SAMIR R UZIVO.MID",
+  "hash_sha256": "82407bad8e612c4285a90e3b1c9972f8e08fe601f8e61411b16f3ce1af002b57",
+  "hash_md5": "501293623e6188e9917e395a2cdc6c26",
+  "metadata": {
+    "size_bytes": 119415,
+    "created_time": "2026-08-19T18:01:34.943563",
+    "modified_time": "2010-09-04T22:52:22",
+    "access_time": "2026-08-19T18:04:32.744789",
+    "inode": 397606,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 0,
+    "num_tracks": 1,
+    "ppq": 384,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 119415
+  },
+  "duration_ticks": 119415,
+  "ppq": 384,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:32.746031"
+}

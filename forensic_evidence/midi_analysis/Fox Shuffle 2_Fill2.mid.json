@@ -1,0 +1,54 @@
+{
+  "file_path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/Fox Shuffle 2/Fox Shuffle 2_Fill2.mid",
+  "filename": "Fox Shuffle 2_Fill2.mid",
+  "hash_sha256": "28a5ec7e01d68c7f78f549e7c427b47fc898600d1600227dad00510ed9d7389d",
+  "hash_md5": "19a90c436d9a040bd71231e98d89084c",
+  "metadata": {
+    "size_bytes": 1025,
+    "created_time": "2026-08-19T18:01:35.232575",
+    "modified_time": "1980-01-02T00:00:00",
+    "access_time": "2026-08-19T18:04:33.786831",
+    "inode": 398921,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 1,
+    "num_tracks": 50,
+    "ppq": 192,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 1025
+  },
+  "duration_ticks": 1025,
+  "ppq": 192,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    },
+    {
+      "type": "STYLE_CATEGORY",
+      "style": "Fox Shuffle 2",
+      "description": "Factory style: Fox Shuffle 2"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:33.787447"
+}

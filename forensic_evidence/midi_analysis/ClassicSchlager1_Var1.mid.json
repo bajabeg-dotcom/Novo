@@ -1,0 +1,54 @@
+{
+  "file_path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/ClassicSchlager1/ClassicSchlager1_Var1.mid",
+  "filename": "ClassicSchlager1_Var1.mid",
+  "hash_sha256": "bae7c814b2d436580a091a890a1b19a25d39caf8d3978c113274b5f9bd69c6db",
+  "hash_md5": "30c2ef1d2e92ab3185608d1614e86666",
+  "metadata": {
+    "size_bytes": 6193,
+    "created_time": "2026-08-19T18:01:35.159572",
+    "modified_time": "1980-01-02T00:00:00",
+    "access_time": "2026-08-19T18:04:33.777831",
+    "inode": 398325,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 1,
+    "num_tracks": 17,
+    "ppq": 192,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 6193
+  },
+  "duration_ticks": 6193,
+  "ppq": 192,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    },
+    {
+      "type": "STYLE_CATEGORY",
+      "style": "ClassicSchlager1",
+      "description": "Factory style: ClassicSchlager1"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:33.778511"
+}

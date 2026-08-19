@@ -1,0 +1,49 @@
+{
+  "file_path": "/workspace/dna_extracted/gold_dna/Gold DNA/EH DA IMAM KRILA-ZIKA ANT UZIVO.MID",
+  "filename": "EH DA IMAM KRILA-ZIKA ANT UZIVO.MID",
+  "hash_sha256": "69cebfbe7aba7e40c59811e06d5bc59047151044b00131aa59d7513c6be37ad0",
+  "hash_md5": "5e34df755e59b9a71e55f3c152dcaa34",
+  "metadata": {
+    "size_bytes": 146872,
+    "created_time": "2026-08-19T18:01:34.980565",
+    "modified_time": "2010-10-24T16:14:52",
+    "access_time": "2026-08-19T18:04:32.871794",
+    "inode": 397646,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 0,
+    "num_tracks": 1,
+    "ppq": 384,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 146872
+  },
+  "duration_ticks": 146872,
+  "ppq": 384,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:32.873163"
+}

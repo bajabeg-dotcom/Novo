@@ -1,0 +1,54 @@
+{
+  "file_path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/Rhythm & Blues/Rhythm & Blues_End2.mid",
+  "filename": "Rhythm & Blues_End2.mid",
+  "hash_sha256": "2a8bfc580c7e0dabca2a5b85192d6074e4c8fdf7e2eab1da7d21d0e14834b3a9",
+  "hash_md5": "4221190e28a51c20c7aeb5b73e8eb191",
+  "metadata": {
+    "size_bytes": 6063,
+    "created_time": "2026-08-19T18:01:35.404582",
+    "modified_time": "1980-01-02T00:00:00",
+    "access_time": "2026-08-19T18:04:33.255809",
+    "inode": 400390,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 1,
+    "num_tracks": 14,
+    "ppq": 192,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 6063
+  },
+  "duration_ticks": 6063,
+  "ppq": 192,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    },
+    {
+      "type": "STYLE_CATEGORY",
+      "style": "Rhythm & Blues",
+      "description": "Factory style: Rhythm & Blues"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:33.256523"
+}

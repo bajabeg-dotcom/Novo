@@ -1,0 +1,49 @@
+{
+  "file_path": "/workspace/dna_extracted/gold_dna/Gold DNA/JOS TE SANJAM-DJANI UZIVO.MID",
+  "filename": "JOS TE SANJAM-DJANI UZIVO.MID",
+  "hash_sha256": "7f362bbd57b05d9dd463cde3cf877f1f885c00f1486c1b6e626d70be0a3909b7",
+  "hash_md5": "fd4b748888cd19039755c6231cafcaea",
+  "metadata": {
+    "size_bytes": 140492,
+    "created_time": "2026-08-19T18:01:35.019567",
+    "modified_time": "2010-10-04T16:52:36",
+    "access_time": "2026-08-19T18:04:32.856793",
+    "inode": 397690,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 0,
+    "num_tracks": 1,
+    "ppq": 384,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 140492
+  },
+  "duration_ticks": 140492,
+  "ppq": 384,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:32.857889"
+}

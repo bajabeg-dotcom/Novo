@@ -1,0 +1,54 @@
+{
+  "file_path": "/workspace/dna_extracted/gold_dna/Gold DNA/ALA-BASKA-USNE-MIX  PJESAMA UZIVO.MID",
+  "filename": "ALA-BASKA-USNE-MIX  PJESAMA UZIVO.MID",
+  "hash_sha256": "aab0e46f9889747c5758ea726879d6daa40ce0f32be58bf0a86f091e1ca9d98e",
+  "hash_md5": "ed1f50de305b98218065a1129357c26a",
+  "metadata": {
+    "size_bytes": 286628,
+    "created_time": "2026-08-19T18:01:34.946563",
+    "modified_time": "2010-08-26T16:42:30",
+    "access_time": "2026-08-19T18:04:32.812791",
+    "inode": 397608,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 0,
+    "num_tracks": 1,
+    "ppq": 384,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [
+    {
+      "type": "BASS",
+      "confidence": 0.7
+    }
+  ],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 286628
+  },
+  "duration_ticks": 286628,
+  "ppq": 384,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:32.815286"
+}

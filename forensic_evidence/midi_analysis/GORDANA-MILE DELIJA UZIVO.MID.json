@@ -1,0 +1,49 @@
+{
+  "file_path": "/workspace/dna_extracted/gold_dna/Gold DNA/GORDANA-MILE DELIJA UZIVO.MID",
+  "filename": "GORDANA-MILE DELIJA UZIVO.MID",
+  "hash_sha256": "b765c32132ad00ba35e301df094e6f9962d4e65ec242f14d64dbaa87fa84341a",
+  "hash_md5": "6381613f667fb4c83144151d5be96858",
+  "metadata": {
+    "size_bytes": 95985,
+    "created_time": "2026-08-19T18:01:34.989565",
+    "modified_time": "2010-09-23T17:23:38",
+    "access_time": "2026-08-19T18:04:32.836792",
+    "inode": 397658,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 0,
+    "num_tracks": 1,
+    "ppq": 384,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 95985
+  },
+  "duration_ticks": 95985,
+  "ppq": 384,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:32.838060"
+}

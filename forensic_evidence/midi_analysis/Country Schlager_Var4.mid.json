@@ -1,0 +1,54 @@
+{
+  "file_path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/Country Schlager/Country Schlager_Var4.mid",
+  "filename": "Country Schlager_Var4.mid",
+  "hash_sha256": "611b04826d63d5efb64ff9ce35367be90fc40f5a7fcb58daa6757dea84fe0d33",
+  "hash_md5": "fd3c3bb8200925a8ca101f475731d376",
+  "metadata": {
+    "size_bytes": 2137,
+    "created_time": "2026-08-19T18:01:35.196574",
+    "modified_time": "1980-01-02T00:00:00",
+    "access_time": "2026-08-19T18:04:33.652826",
+    "inode": 398521,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 1,
+    "num_tracks": 15,
+    "ppq": 192,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 2137
+  },
+  "duration_ticks": 2137,
+  "ppq": 192,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    },
+    {
+      "type": "STYLE_CATEGORY",
+      "style": "Country Schlager",
+      "description": "Factory style: Country Schlager"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:33.653669"
+}

@@ -1,0 +1,49 @@
+{
+  "file_path": "/workspace/dna_extracted/gold_dna/Gold DNA/MAJKO KAKO DA JE-RIFAT UZIVO.MID",
+  "filename": "MAJKO KAKO DA JE-RIFAT UZIVO.MID",
+  "hash_sha256": "7b9d81540cd7a4128e7b9f12a41b6ab3c0d5af5e6ca80f7274f9d8be8e4783d2",
+  "hash_md5": "95b9f2fe5d021e567448876a99f3290c",
+  "metadata": {
+    "size_bytes": 170689,
+    "created_time": "2026-08-19T18:01:35.044568",
+    "modified_time": "2010-06-29T21:00:56",
+    "access_time": "2026-08-19T18:04:32.791790",
+    "inode": 397714,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 0,
+    "num_tracks": 1,
+    "ppq": 384,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 170689
+  },
+  "duration_ticks": 170689,
+  "ppq": 384,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:32.793835"
+}

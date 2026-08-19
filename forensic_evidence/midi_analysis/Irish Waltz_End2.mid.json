@@ -1,0 +1,54 @@
+{
+  "file_path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/Irish Waltz/Irish Waltz_End2.mid",
+  "filename": "Irish Waltz_End2.mid",
+  "hash_sha256": "b511cdc5d10c7feb2c736bd9ea850902caf5cfd8662d2f0ae60e8ca8c507bf80",
+  "hash_md5": "719d413d4691d6d194f78ad2d6b99073",
+  "metadata": {
+    "size_bytes": 1942,
+    "created_time": "2026-08-19T18:01:35.305578",
+    "modified_time": "1980-01-02T00:00:00",
+    "access_time": "2026-08-19T18:04:33.677827",
+    "inode": 399364,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 1,
+    "num_tracks": 17,
+    "ppq": 192,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 1942
+  },
+  "duration_ticks": 1942,
+  "ppq": 192,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    },
+    {
+      "type": "STYLE_CATEGORY",
+      "style": "Irish Waltz",
+      "description": "Factory style: Irish Waltz"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:33.678334"
+}

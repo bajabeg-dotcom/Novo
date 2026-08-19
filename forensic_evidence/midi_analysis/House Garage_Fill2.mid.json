@@ -1,0 +1,54 @@
+{
+  "file_path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/House Garage/House Garage_Fill2.mid",
+  "filename": "House Garage_Fill2.mid",
+  "hash_sha256": "0ac924d35ce93a2ac82265778f3fc711ea9e4be648e5cd4edd64a4d97b625a68",
+  "hash_md5": "bdd6ce63caa00ee74777082b5a934697",
+  "metadata": {
+    "size_bytes": 1764,
+    "created_time": "2026-08-19T18:01:35.303578",
+    "modified_time": "1980-01-02T00:00:00",
+    "access_time": "2026-08-19T18:04:33.315812",
+    "inode": 399325,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 1,
+    "num_tracks": 14,
+    "ppq": 192,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 1764
+  },
+  "duration_ticks": 1764,
+  "ppq": 192,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    },
+    {
+      "type": "STYLE_CATEGORY",
+      "style": "House Garage",
+      "description": "Factory style: House Garage"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:33.316908"
+}

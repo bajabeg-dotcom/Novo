@@ -1,0 +1,54 @@
+{
+  "file_path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/Soft Ballad/Soft Ballad_End3.mid",
+  "filename": "Soft Ballad_End3.mid",
+  "hash_sha256": "0145619d9c86ba077e7d79c39b4b98c60ac449f42883768f98b10f4cf9e53594",
+  "hash_md5": "8b2995198619d438089b90c9361f439f",
+  "metadata": {
+    "size_bytes": 3179,
+    "created_time": "2026-08-19T18:01:35.429583",
+    "modified_time": "1980-01-02T00:00:00",
+    "access_time": "2026-08-19T18:04:33.184807",
+    "inode": 524664,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 1,
+    "num_tracks": 47,
+    "ppq": 192,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 3179
+  },
+  "duration_ticks": 3179,
+  "ppq": 192,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    },
+    {
+      "type": "STYLE_CATEGORY",
+      "style": "Soft Ballad",
+      "description": "Factory style: Soft Ballad"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:33.185688"
+}

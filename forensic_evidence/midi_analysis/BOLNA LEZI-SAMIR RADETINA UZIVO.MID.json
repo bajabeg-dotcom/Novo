@@ -1,0 +1,49 @@
+{
+  "file_path": "/workspace/dna_extracted/gold_dna/Gold DNA/BOLNA LEZI-SAMIR RADETINA UZIVO.MID",
+  "filename": "BOLNA LEZI-SAMIR RADETINA UZIVO.MID",
+  "hash_sha256": "62f3fdaa02c8c3e81bff96f530744eae5ec2d27f98497d0c64ddea046ebfeeb3",
+  "hash_md5": "e5f5c5ad168c7d6945fba744ced8ce2b",
+  "metadata": {
+    "size_bytes": 137214,
+    "created_time": "2026-08-19T18:01:34.960564",
+    "modified_time": "2010-09-04T22:52:46",
+    "access_time": "2026-08-19T18:04:32.860793",
+    "inode": 397622,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 0,
+    "num_tracks": 1,
+    "ppq": 384,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 137214
+  },
+  "duration_ticks": 137214,
+  "ppq": 384,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:32.862507"
+}

@@ -1,0 +1,54 @@
+{
+  "file_path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/Easy Pop 2/Easy Pop 2_Break.mid",
+  "filename": "Easy Pop 2_Break.mid",
+  "hash_sha256": "927952c5e4e038aa3059d66c9dd726160df1e9f48bf75401328d62731dc9fabe",
+  "hash_md5": "a276cba4210efece5411021faef1bece",
+  "metadata": {
+    "size_bytes": 870,
+    "created_time": "2026-08-19T18:01:35.214574",
+    "modified_time": "1980-01-02T00:00:00",
+    "access_time": "2026-08-19T18:04:33.019800",
+    "inode": 398723,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 1,
+    "num_tracks": 50,
+    "ppq": 192,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 870
+  },
+  "duration_ticks": 870,
+  "ppq": 192,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    },
+    {
+      "type": "STYLE_CATEGORY",
+      "style": "Easy Pop 2",
+      "description": "Factory style: Easy Pop 2"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:33.020778"
+}

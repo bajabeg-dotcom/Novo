@@ -1,0 +1,54 @@
+{
+  "file_path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/Oriental Dance/Oriental Dance_End3.mid",
+  "filename": "Oriental Dance_End3.mid",
+  "hash_sha256": "6feb3c3630430e15a1dac4dc0d3c2596f31fec1b74ce9388361910e3ba3fd386",
+  "hash_md5": "efea5bfe7468fd05c2efb12e0b46b81c",
+  "metadata": {
+    "size_bytes": 4719,
+    "created_time": "2026-08-19T18:01:35.346580",
+    "modified_time": "1980-01-02T00:00:00",
+    "access_time": "2026-08-19T18:04:33.209808",
+    "inode": 400038,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 1,
+    "num_tracks": 50,
+    "ppq": 192,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 4719
+  },
+  "duration_ticks": 4719,
+  "ppq": 192,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    },
+    {
+      "type": "STYLE_CATEGORY",
+      "style": "Oriental Dance",
+      "description": "Factory style: Oriental Dance"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:33.210279"
+}

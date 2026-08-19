@@ -1,0 +1,54 @@
+{
+  "file_path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/Blue Ballad/Blue Ballad_Break.mid",
+  "filename": "Blue Ballad_Break.mid",
+  "hash_sha256": "b1d99641ff1524c5333cd95e112a3982482561787a8ae4822c66019e28bd6342",
+  "hash_md5": "41b9b74ae7287742447060aaec0b3f73",
+  "metadata": {
+    "size_bytes": 1334,
+    "created_time": "2026-08-19T18:01:35.150572",
+    "modified_time": "1980-01-02T00:00:00",
+    "access_time": "2026-08-19T18:04:33.308812",
+    "inode": 398192,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 1,
+    "num_tracks": 13,
+    "ppq": 192,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 1334
+  },
+  "duration_ticks": 1334,
+  "ppq": 192,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    },
+    {
+      "type": "STYLE_CATEGORY",
+      "style": "Blue Ballad",
+      "description": "Factory style: Blue Ballad"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:33.309366"
+}

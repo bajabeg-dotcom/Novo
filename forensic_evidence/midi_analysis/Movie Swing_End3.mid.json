@@ -1,0 +1,54 @@
+{
+  "file_path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/Movie Swing/Movie Swing_End3.mid",
+  "filename": "Movie Swing_End3.mid",
+  "hash_sha256": "b5471ff0e3a71dfe07ac840f41417bfe2bf6b3e58896fa5de9cad773a0023372",
+  "hash_md5": "b7ad3855912f6ea8d08e098a142ba4a2",
+  "metadata": {
+    "size_bytes": 3631,
+    "created_time": "2026-08-19T18:01:35.335579",
+    "modified_time": "1980-01-02T00:00:00",
+    "access_time": "2026-08-19T18:04:33.022800",
+    "inode": 399859,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 1,
+    "num_tracks": 50,
+    "ppq": 192,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 3631
+  },
+  "duration_ticks": 3631,
+  "ppq": 192,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    },
+    {
+      "type": "STYLE_CATEGORY",
+      "style": "Movie Swing",
+      "description": "Factory style: Movie Swing"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:33.023974"
+}

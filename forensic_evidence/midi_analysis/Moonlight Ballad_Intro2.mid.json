@@ -1,0 +1,54 @@
+{
+  "file_path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/Moonlight Ballad/Moonlight Ballad_Intro2.mid",
+  "filename": "Moonlight Ballad_Intro2.mid",
+  "hash_sha256": "f94f9f92b045f4cbf9ac54cb97dfb099dd90355655338543f3bbdf256db45059",
+  "hash_md5": "5e9154600dc80ba1d220fe490e0d3d0d",
+  "metadata": {
+    "size_bytes": 1436,
+    "created_time": "2026-08-19T18:01:35.331579",
+    "modified_time": "1980-01-02T00:00:00",
+    "access_time": "2026-08-19T18:04:32.990799",
+    "inode": 399808,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 1,
+    "num_tracks": 11,
+    "ppq": 192,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 1436
+  },
+  "duration_ticks": 1436,
+  "ppq": 192,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    },
+    {
+      "type": "STYLE_CATEGORY",
+      "style": "Moonlight Ballad",
+      "description": "Factory style: Moonlight Ballad"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:32.992007"
+}

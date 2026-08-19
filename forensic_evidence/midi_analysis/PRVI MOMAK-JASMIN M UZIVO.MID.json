@@ -1,0 +1,49 @@
+{
+  "file_path": "/workspace/dna_extracted/gold_dna/Gold DNA/PRVI MOMAK-JASMIN M UZIVO.MID",
+  "filename": "PRVI MOMAK-JASMIN M UZIVO.MID",
+  "hash_sha256": "4e4f7ebadcbc73483e3ea77e0c0940c1efc5afb686010629845ea406336585a8",
+  "hash_md5": "d218c619ab789f7aac1fa8a5132a9115",
+  "metadata": {
+    "size_bytes": 122542,
+    "created_time": "2026-08-19T18:01:35.080569",
+    "modified_time": "2010-09-23T17:41:30",
+    "access_time": "2026-08-19T18:04:32.879794",
+    "inode": 397750,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 0,
+    "num_tracks": 1,
+    "ppq": 384,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 122542
+  },
+  "duration_ticks": 122542,
+  "ppq": 384,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:32.881127"
+}

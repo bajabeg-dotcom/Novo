@@ -1,0 +1,54 @@
+{
+  "file_path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/Dance Motown/Dance Motown_End1.mid",
+  "filename": "Dance Motown_End1.mid",
+  "hash_sha256": "380148381f32667d5aff605b8c59c02be4cdbb7094a3fd2ad6863c005a462f00",
+  "hash_md5": "0cd4c24cd948d09d3f0a84893d4c17d1",
+  "metadata": {
+    "size_bytes": 2534,
+    "created_time": "2026-08-19T18:01:35.201574",
+    "modified_time": "1980-01-02T00:00:00",
+    "access_time": "2026-08-19T18:04:33.687827",
+    "inode": 398580,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 1,
+    "num_tracks": 50,
+    "ppq": 192,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 2534
+  },
+  "duration_ticks": 2534,
+  "ppq": 192,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    },
+    {
+      "type": "STYLE_CATEGORY",
+      "style": "Dance Motown",
+      "description": "Factory style: Dance Motown"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:33.688934"
+}

@@ -1,0 +1,54 @@
+{
+  "file_path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/Funky R&B/Funky R&B_Fill2.mid",
+  "filename": "Funky R&B_Fill2.mid",
+  "hash_sha256": "bb0b9b69b1f63c8fc63fec79480b20fabd92b986171f6c015e2959fee6acb1bf",
+  "hash_md5": "5d7b570dd12b400292ac3f70c43af7f5",
+  "metadata": {
+    "size_bytes": 1968,
+    "created_time": "2026-08-19T18:01:35.240576",
+    "modified_time": "1980-01-02T00:00:00",
+    "access_time": "2026-08-19T18:04:33.470818",
+    "inode": 399017,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 1,
+    "num_tracks": 15,
+    "ppq": 192,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 1968
+  },
+  "duration_ticks": 1968,
+  "ppq": 192,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    },
+    {
+      "type": "STYLE_CATEGORY",
+      "style": "Funky R&B",
+      "description": "Factory style: Funky R&B"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:33.471358"
+}

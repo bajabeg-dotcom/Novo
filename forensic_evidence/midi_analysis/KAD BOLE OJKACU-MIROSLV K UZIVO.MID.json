@@ -1,0 +1,49 @@
+{
+  "file_path": "/workspace/dna_extracted/gold_dna/Gold DNA/KAD BOLE OJKACU-MIROSLV K UZIVO.MID",
+  "filename": "KAD BOLE OJKACU-MIROSLV K UZIVO.MID",
+  "hash_sha256": "51d2d882c6a9eaae82f0244f712c8a7e84d89c9bf9f110350152c7fa8b182be7",
+  "hash_md5": "acc7779da42196179022a7529f821a6f",
+  "metadata": {
+    "size_bytes": 128769,
+    "created_time": "2026-08-19T18:01:35.023567",
+    "modified_time": "2010-10-24T16:15:26",
+    "access_time": "2026-08-19T18:04:32.824792",
+    "inode": 397694,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 0,
+    "num_tracks": 1,
+    "ppq": 384,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 128769
+  },
+  "duration_ticks": 128769,
+  "ppq": 384,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:32.825892"
+}

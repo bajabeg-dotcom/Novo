@@ -1,0 +1,54 @@
+{
+  "file_path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/Slow & Jazzy/Slow & Jazzy_Intro1.mid",
+  "filename": "Slow & Jazzy_Intro1.mid",
+  "hash_sha256": "75ab0ee67ebd1a043df750c30be9a5837e7b3c0346808fde69c43640fa747c8b",
+  "hash_md5": "5d6e9cb03c5076a0dbca0b98cf43a9a4",
+  "metadata": {
+    "size_bytes": 6341,
+    "created_time": "2026-08-19T18:01:35.419583",
+    "modified_time": "1980-01-02T00:00:00",
+    "access_time": "2026-08-19T18:04:33.789831",
+    "inode": 524486,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 1,
+    "num_tracks": 22,
+    "ppq": 192,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 6341
+  },
+  "duration_ticks": 6341,
+  "ppq": 192,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    },
+    {
+      "type": "STYLE_CATEGORY",
+      "style": "Slow & Jazzy",
+      "description": "Factory style: Slow & Jazzy"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:33.790687"
+}

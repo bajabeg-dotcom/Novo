@@ -1,0 +1,54 @@
+{
+  "file_path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/Unplugged 8 Bt/Unplugged 8 Bt_Intro2.mid",
+  "filename": "Unplugged 8 Bt_Intro2.mid",
+  "hash_sha256": "56f8fbf3877af856b83a7b8180b63fda38d98e9cb16fc8475fdb9a7d64b9ea02",
+  "hash_md5": "cceb1070df01c33e05d5e664571b1012",
+  "metadata": {
+    "size_bytes": 2053,
+    "created_time": "2026-08-19T18:01:35.442584",
+    "modified_time": "1980-01-02T00:00:00",
+    "access_time": "2026-08-19T18:04:33.904836",
+    "inode": 524864,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 1,
+    "num_tracks": 12,
+    "ppq": 192,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 2053
+  },
+  "duration_ticks": 2053,
+  "ppq": 192,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    },
+    {
+      "type": "STYLE_CATEGORY",
+      "style": "Unplugged 8 Bt",
+      "description": "Factory style: Unplugged 8 Bt"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:33.905854"
+}

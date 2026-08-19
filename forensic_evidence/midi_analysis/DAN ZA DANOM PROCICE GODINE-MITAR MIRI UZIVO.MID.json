@@ -1,0 +1,49 @@
+{
+  "file_path": "/workspace/dna_extracted/gold_dna/Gold DNA/DAN ZA DANOM PROCICE GODINE-MITAR MIRI UZIVO.MID",
+  "filename": "DAN ZA DANOM PROCICE GODINE-MITAR MIRI UZIVO.MID",
+  "hash_sha256": "e32303a517052a941fe2ff20d5074c3c3d25a3d1df6eef0a8bf898d24d2ed202",
+  "hash_md5": "c9359ca53bfb56fb8c2618da6e09684d",
+  "metadata": {
+    "size_bytes": 117627,
+    "created_time": "2026-08-19T18:01:34.973565",
+    "modified_time": "2010-10-24T16:19:06",
+    "access_time": "2026-08-19T18:04:32.877794",
+    "inode": 397638,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 0,
+    "num_tracks": 1,
+    "ppq": 384,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 117627
+  },
+  "duration_ticks": 117627,
+  "ppq": 384,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:32.879628"
+}

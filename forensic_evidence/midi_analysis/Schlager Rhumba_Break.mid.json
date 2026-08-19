@@ -1,0 +1,54 @@
+{
+  "file_path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/Schlager Rhumba/Schlager Rhumba_Break.mid",
+  "filename": "Schlager Rhumba_Break.mid",
+  "hash_sha256": "05850e92dde8130550e4e8f1fcd9cf578b31950fff53105d3e39fc69f79a68b0",
+  "hash_md5": "093bf1b9f894df4b81b926cae792982d",
+  "metadata": {
+    "size_bytes": 1473,
+    "created_time": "2026-08-19T18:01:35.412582",
+    "modified_time": "1980-01-02T00:00:00",
+    "access_time": "2026-08-19T18:04:33.671826",
+    "inode": 524368,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 1,
+    "num_tracks": 15,
+    "ppq": 192,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 1473
+  },
+  "duration_ticks": 1473,
+  "ppq": 192,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    },
+    {
+      "type": "STYLE_CATEGORY",
+      "style": "Schlager Rhumba",
+      "description": "Factory style: Schlager Rhumba"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:33.672972"
+}

@@ -1,0 +1,54 @@
+{
+  "file_path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/8 Beat Analog 1/8 Beat Analog 1_End1.mid",
+  "filename": "8 Beat Analog 1_End1.mid",
+  "hash_sha256": "b0b708a9e8d83631c811a05bdec7db5c9e5de57459a896213cddb25b3b986b40",
+  "hash_md5": "acf37f6f2c36f0f02835aba4d6ed9440",
+  "metadata": {
+    "size_bytes": 7204,
+    "created_time": "2026-08-19T18:01:35.125571",
+    "modified_time": "1980-01-02T00:00:00",
+    "access_time": "2026-08-19T18:04:33.130804",
+    "inode": 397847,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 1,
+    "num_tracks": 20,
+    "ppq": 192,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 7204
+  },
+  "duration_ticks": 7204,
+  "ppq": 192,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    },
+    {
+      "type": "STYLE_CATEGORY",
+      "style": "8 Beat Analog 1",
+      "description": "Factory style: 8 Beat Analog 1"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:33.131651"
+}

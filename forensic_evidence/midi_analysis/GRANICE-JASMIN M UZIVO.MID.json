@@ -1,0 +1,49 @@
+{
+  "file_path": "/workspace/dna_extracted/gold_dna/Gold DNA/GRANICE-JASMIN M UZIVO.MID",
+  "filename": "GRANICE-JASMIN M UZIVO.MID",
+  "hash_sha256": "88df3d654a205fb511600d61b6ec710c425ec1737231550601cf637f7ed4d18c",
+  "hash_md5": "66a8f11e9ec6eaec63a77c67d3b9ea82",
+  "metadata": {
+    "size_bytes": 109423,
+    "created_time": "2026-08-19T18:01:34.990565",
+    "modified_time": "2010-09-23T17:25:08",
+    "access_time": "2026-08-19T18:04:32.803791",
+    "inode": 397660,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 0,
+    "num_tracks": 1,
+    "ppq": 384,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 109423
+  },
+  "duration_ticks": 109423,
+  "ppq": 384,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:32.805571"
+}

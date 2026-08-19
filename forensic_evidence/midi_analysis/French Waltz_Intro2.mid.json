@@ -1,0 +1,54 @@
+{
+  "file_path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/French Waltz/French Waltz_Intro2.mid",
+  "filename": "French Waltz_Intro2.mid",
+  "hash_sha256": "aab3f99444851c6d238a3caed4cfa09b4148d7ff1db657ce31f7bcd83982e9d5",
+  "hash_md5": "8998e090072150a5f34a09e2e8c1ae70",
+  "metadata": {
+    "size_bytes": 867,
+    "created_time": "2026-08-19T18:01:35.235575",
+    "modified_time": "1980-01-02T00:00:00",
+    "access_time": "2026-08-19T18:04:33.665826",
+    "inode": 398963,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 1,
+    "num_tracks": 10,
+    "ppq": 192,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 867
+  },
+  "duration_ticks": 867,
+  "ppq": 192,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    },
+    {
+      "type": "STYLE_CATEGORY",
+      "style": "French Waltz",
+      "description": "Factory style: French Waltz"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:33.666493"
+}

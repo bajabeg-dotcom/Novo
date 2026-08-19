@@ -1,0 +1,54 @@
+{
+  "file_path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/Karma/Karma_Intro3.mid",
+  "filename": "Karma_Intro3.mid",
+  "hash_sha256": "63032a16fcc538074c7796d3d3de620da722cbd51ea8a332018d97c00233db6a",
+  "hash_md5": "c928110fca98727f3d0592bf62ee4768",
+  "metadata": {
+    "size_bytes": 957,
+    "created_time": "2026-08-19T18:01:35.316579",
+    "modified_time": "1980-01-02T00:00:00",
+    "access_time": "2026-08-19T18:04:33.241809",
+    "inode": 399560,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 1,
+    "num_tracks": 10,
+    "ppq": 192,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 957
+  },
+  "duration_ticks": 957,
+  "ppq": 192,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    },
+    {
+      "type": "STYLE_CATEGORY",
+      "style": "Karma",
+      "description": "Factory style: Karma"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:33.242186"
+}

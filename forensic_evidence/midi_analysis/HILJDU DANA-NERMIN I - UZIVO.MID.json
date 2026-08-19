@@ -1,0 +1,49 @@
+{
+  "file_path": "/workspace/dna_extracted/gold_dna/Gold DNA/HILJDU DANA-NERMIN I - UZIVO.MID",
+  "filename": "HILJDU DANA-NERMIN I - UZIVO.MID",
+  "hash_sha256": "b0e878f7861fdef75298600290c8281f19517bafd24487fac2fc0f6b464e7b75",
+  "hash_md5": "99292914c434032af49cc3ed7373250c",
+  "metadata": {
+    "size_bytes": 88513,
+    "created_time": "2026-08-19T18:01:34.997566",
+    "modified_time": "2010-03-12T15:07:30",
+    "access_time": "2026-08-19T18:04:32.800791",
+    "inode": 397667,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 0,
+    "num_tracks": 1,
+    "ppq": 384,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 88513
+  },
+  "duration_ticks": 88513,
+  "ppq": 384,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:32.801587"
+}

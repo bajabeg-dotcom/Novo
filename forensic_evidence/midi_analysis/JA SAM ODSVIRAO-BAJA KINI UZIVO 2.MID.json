@@ -1,0 +1,49 @@
+{
+  "file_path": "/workspace/dna_extracted/gold_dna/Gold DNA/JA SAM ODSVIRAO-BAJA KINI UZIVO (2).MID",
+  "filename": "JA SAM ODSVIRAO-BAJA KINI UZIVO (2).MID",
+  "hash_sha256": "c9b9c8363de2b1e8c5f6fd2736e335f98aaab5e83be7a8e4eb0e134979862330",
+  "hash_md5": "58abd76091d6d839a1d2f797eadfa8f3",
+  "metadata": {
+    "size_bytes": 78244,
+    "created_time": "2026-08-19T18:01:35.009566",
+    "modified_time": "2010-08-06T17:49:30",
+    "access_time": "2026-08-19T18:04:32.794791",
+    "inode": 397680,
+    "permissions": "444"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 0,
+    "num_tracks": 1,
+    "ppq": 384,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 78244
+  },
+  "duration_ticks": 78244,
+  "ppq": 384,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:32.795789"
+}

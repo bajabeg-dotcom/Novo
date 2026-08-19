@@ -1,0 +1,54 @@
+{
+  "file_path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/Alpen Ballade/Alpen Ballade_Fill2.mid",
+  "filename": "Alpen Ballade_Fill2.mid",
+  "hash_sha256": "5c30e0eefabc366fa6d8bc723e7edd614279fb3f5bc3df2a96bd7153debe48dc",
+  "hash_md5": "f32e0c6cdcea203ef846149a2322e3d1",
+  "metadata": {
+    "size_bytes": 2629,
+    "created_time": "2026-08-19T18:01:35.133571",
+    "modified_time": "1980-01-02T00:00:00",
+    "access_time": "2026-08-19T18:04:33.418816",
+    "inode": 397949,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 1,
+    "num_tracks": 15,
+    "ppq": 192,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 2629
+  },
+  "duration_ticks": 2629,
+  "ppq": 192,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    },
+    {
+      "type": "STYLE_CATEGORY",
+      "style": "Alpen Ballade",
+      "description": "Factory style: Alpen Ballade"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:33.420016"
+}

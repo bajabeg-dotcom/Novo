@@ -1,0 +1,54 @@
+{
+  "file_path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/Oriental Ballad/Oriental Ballad_Var1.mid",
+  "filename": "Oriental Ballad_Var1.mid",
+  "hash_sha256": "8029bb05c2fd774069c0a5a773c3864bfbb4936d95dfd9dea652760ecd4d4af9",
+  "hash_md5": "eb34b96b29793cd3f99dae3745a5d318",
+  "metadata": {
+    "size_bytes": 4711,
+    "created_time": "2026-08-19T18:01:35.345580",
+    "modified_time": "1980-01-02T00:00:00",
+    "access_time": "2026-08-19T18:04:32.948797",
+    "inode": 400030,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 1,
+    "num_tracks": 14,
+    "ppq": 192,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 4711
+  },
+  "duration_ticks": 4711,
+  "ppq": 192,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    },
+    {
+      "type": "STYLE_CATEGORY",
+      "style": "Oriental Ballad",
+      "description": "Factory style: Oriental Ballad"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:32.949481"
+}

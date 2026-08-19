@@ -1,0 +1,54 @@
+{
+  "file_path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/Guitar Ballad/Guitar Ballad_Fill1.mid",
+  "filename": "Guitar Ballad_Fill1.mid",
+  "hash_sha256": "965c5ef0e93067ee8e80dc1f423e50b1228997cce07b9e96a0b91d721033d7be",
+  "hash_md5": "65aa797e5a15bb40c4e5ab5cf60a6e95",
+  "metadata": {
+    "size_bytes": 1499,
+    "created_time": "2026-08-19T18:01:35.256576",
+    "modified_time": "1980-01-02T00:00:00",
+    "access_time": "2026-08-19T18:04:33.032800",
+    "inode": 399198,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 1,
+    "num_tracks": 13,
+    "ppq": 192,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 1499
+  },
+  "duration_ticks": 1499,
+  "ppq": 192,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    },
+    {
+      "type": "STYLE_CATEGORY",
+      "style": "Guitar Ballad",
+      "description": "Factory style: Guitar Ballad"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:33.033135"
+}

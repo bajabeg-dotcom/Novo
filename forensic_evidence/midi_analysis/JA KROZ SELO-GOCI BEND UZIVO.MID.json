@@ -1,0 +1,49 @@
+{
+  "file_path": "/workspace/dna_extracted/gold_dna/Gold DNA/JA KROZ SELO-GOCI BEND UZIVO.MID",
+  "filename": "JA KROZ SELO-GOCI BEND UZIVO.MID",
+  "hash_sha256": "31294632dfdb93a20af1383906f42b495e565b40ce97d022615f38fa110401c1",
+  "hash_md5": "29b15325fb037bd0c09c7b553b551c9b",
+  "metadata": {
+    "size_bytes": 182427,
+    "created_time": "2026-08-19T18:01:35.009566",
+    "modified_time": "2010-08-23T17:53:40",
+    "access_time": "2026-08-19T18:04:32.817792",
+    "inode": 397679,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 0,
+    "num_tracks": 1,
+    "ppq": 384,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 182427
+  },
+  "duration_ticks": 182427,
+  "ppq": 384,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:32.820249"
+}

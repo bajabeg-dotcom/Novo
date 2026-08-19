@@ -1,0 +1,49 @@
+{
+  "file_path": "/workspace/dna_extracted/gold_dna/Gold DNA/SMIJES LOLO GLEDATI U MENE-SPRECANSKI TALASI UZIVO.mid",
+  "filename": "SMIJES LOLO GLEDATI U MENE-SPRECANSKI TALASI UZIVO.mid",
+  "hash_sha256": "e6a01f499211ecb6c01242762f4ced123bb0f366949fd7a65a05130e87f91e50",
+  "hash_md5": "9b160e16220fd429aa512a21d03e0041",
+  "metadata": {
+    "size_bytes": 183594,
+    "created_time": "2026-08-19T18:01:35.088569",
+    "modified_time": "2010-05-08T14:23:00",
+    "access_time": "2026-08-19T18:04:32.848793",
+    "inode": 397760,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 0,
+    "num_tracks": 1,
+    "ppq": 384,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 183594
+  },
+  "duration_ticks": 183594,
+  "ppq": 384,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:32.850565"
+}

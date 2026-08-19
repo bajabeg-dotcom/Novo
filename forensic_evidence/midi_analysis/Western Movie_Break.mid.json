@@ -1,0 +1,54 @@
+{
+  "file_path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/Western Movie/Western Movie_Break.mid",
+  "filename": "Western Movie_Break.mid",
+  "hash_sha256": "5c8bbae3d8309f4bdc366d34859422fd7a131b3ac020f6e18c2ca545eb7717d8",
+  "hash_md5": "fb741b0a812f105102e6a9c715760d12",
+  "metadata": {
+    "size_bytes": 1782,
+    "created_time": "2026-08-19T18:01:35.497586",
+    "modified_time": "1980-01-02T00:00:00",
+    "access_time": "2026-08-19T18:04:33.712828",
+    "inode": 525081,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 1,
+    "num_tracks": 15,
+    "ppq": 192,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 1782
+  },
+  "duration_ticks": 1782,
+  "ppq": 192,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    },
+    {
+      "type": "STYLE_CATEGORY",
+      "style": "Western Movie",
+      "description": "Factory style: Western Movie"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:33.714031"
+}

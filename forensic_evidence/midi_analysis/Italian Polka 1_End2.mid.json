@@ -1,0 +1,54 @@
+{
+  "file_path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/Italian Polka 1/Italian Polka 1_End2.mid",
+  "filename": "Italian Polka 1_End2.mid",
+  "hash_sha256": "2efc4678dadaaae5d18093857caee4930299621f36585451d67b22692bb17e7c",
+  "hash_md5": "95d0b7b342e7f1266234f1d8cbea6610",
+  "metadata": {
+    "size_bytes": 1641,
+    "created_time": "2026-08-19T18:01:35.308578",
+    "modified_time": "1980-01-02T00:00:00",
+    "access_time": "2026-08-19T18:04:33.563822",
+    "inode": 399420,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 1,
+    "num_tracks": 14,
+    "ppq": 192,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 1641
+  },
+  "duration_ticks": 1641,
+  "ppq": 192,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    },
+    {
+      "type": "STYLE_CATEGORY",
+      "style": "Italian Polka 1",
+      "description": "Factory style: Italian Polka 1"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:33.564500"
+}

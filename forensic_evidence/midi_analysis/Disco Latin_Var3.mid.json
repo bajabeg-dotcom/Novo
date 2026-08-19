@@ -1,0 +1,54 @@
+{
+  "file_path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/Disco Latin/Disco Latin_Var3.mid",
+  "filename": "Disco Latin_Var3.mid",
+  "hash_sha256": "4492569e7c39cbacbc5f37cd404e0ab802da79e91f344243b1da0520b82a07d5",
+  "hash_md5": "6f64aaebd867d190054cd967bc85425c",
+  "metadata": {
+    "size_bytes": 6831,
+    "created_time": "2026-08-19T18:01:35.207574",
+    "modified_time": "1980-01-02T00:00:00",
+    "access_time": "2026-08-19T18:04:33.082802",
+    "inode": 398641,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 1,
+    "num_tracks": 26,
+    "ppq": 192,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 6831
+  },
+  "duration_ticks": 6831,
+  "ppq": 192,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    },
+    {
+      "type": "STYLE_CATEGORY",
+      "style": "Disco Latin",
+      "description": "Factory style: Disco Latin"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:33.083789"
+}

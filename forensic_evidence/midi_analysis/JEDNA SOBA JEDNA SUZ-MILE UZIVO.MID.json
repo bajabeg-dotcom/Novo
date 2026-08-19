@@ -1,0 +1,49 @@
+{
+  "file_path": "/workspace/dna_extracted/gold_dna/Gold DNA/JEDNA SOBA JEDNA SUZ-MILE UZIVO.MID",
+  "filename": "JEDNA SOBA JEDNA SUZ-MILE UZIVO.MID",
+  "hash_sha256": "f5d1d95d34acadee853c4d32cbecd4eb4bb04911412611e78e1111b366c4aa71",
+  "hash_md5": "2c9600711bff8af0711467c640bf7beb",
+  "metadata": {
+    "size_bytes": 100594,
+    "created_time": "2026-08-19T18:01:35.016567",
+    "modified_time": "2010-04-28T15:05:04",
+    "access_time": "2026-08-19T18:04:32.762789",
+    "inode": 397687,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 0,
+    "num_tracks": 1,
+    "ppq": 384,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 100594
+  },
+  "duration_ticks": 100594,
+  "ppq": 384,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:32.763894"
+}

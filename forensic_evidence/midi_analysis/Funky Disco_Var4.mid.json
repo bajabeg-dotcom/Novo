@@ -1,0 +1,54 @@
+{
+  "file_path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/Funky Disco/Funky Disco_Var4.mid",
+  "filename": "Funky Disco_Var4.mid",
+  "hash_sha256": "900f53e7db79e2cc419ad309810fb9378078087c1b65cb11b7a251138b8ea6f8",
+  "hash_md5": "7b34a69b65f048b97a378b5c0bea63e0",
+  "metadata": {
+    "size_bytes": 15030,
+    "created_time": "2026-08-19T18:01:35.239575",
+    "modified_time": "1980-01-02T00:00:00",
+    "access_time": "2026-08-19T18:04:33.440817",
+    "inode": 399010,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 1,
+    "num_tracks": 22,
+    "ppq": 192,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 15030
+  },
+  "duration_ticks": 15030,
+  "ppq": 192,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    },
+    {
+      "type": "STYLE_CATEGORY",
+      "style": "Funky Disco",
+      "description": "Factory style: Funky Disco"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:33.441800"
+}

@@ -1,0 +1,49 @@
+{
+  "file_path": "/workspace/dna_extracted/gold_dna/Gold DNA/MAN I GOCA-KRAJISNICI UZIVO.MID",
+  "filename": "MAN I GOCA-KRAJISNICI UZIVO.MID",
+  "hash_sha256": "1898461cd225d277092e6973a1c10a924356c5b651d1ca169f45186658b39a81",
+  "hash_md5": "b1e31e88fceaa1af9be1f0799d6b4a96",
+  "metadata": {
+    "size_bytes": 96154,
+    "created_time": "2026-08-19T18:01:35.044568",
+    "modified_time": "2010-07-28T17:21:56",
+    "access_time": "2026-08-19T18:04:32.877794",
+    "inode": 397715,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 0,
+    "num_tracks": 1,
+    "ppq": 384,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 96154
+  },
+  "duration_ticks": 96154,
+  "ppq": 384,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:32.878753"
+}

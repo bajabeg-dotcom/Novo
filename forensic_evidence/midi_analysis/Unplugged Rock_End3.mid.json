@@ -1,0 +1,54 @@
+{
+  "file_path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/Unplugged Rock/Unplugged Rock_End3.mid",
+  "filename": "Unplugged Rock_End3.mid",
+  "hash_sha256": "6c8ffc75c4ac9f749829a1e99029f996826fdf3f6d6f8abf85bef0e52e2ac2d8",
+  "hash_md5": "716f064fc31f915f33be26366ae2edef",
+  "metadata": {
+    "size_bytes": 3532,
+    "created_time": "2026-08-19T18:01:35.446584",
+    "modified_time": "1980-01-02T00:00:00",
+    "access_time": "2026-08-19T18:04:33.804832",
+    "inode": 524930,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 1,
+    "num_tracks": 50,
+    "ppq": 192,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 3532
+  },
+  "duration_ticks": 3532,
+  "ppq": 192,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    },
+    {
+      "type": "STYLE_CATEGORY",
+      "style": "Unplugged Rock",
+      "description": "Factory style: Unplugged Rock"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:33.805442"
+}

@@ -1,0 +1,49 @@
+{
+  "file_path": "/workspace/dna_extracted/gold_dna/Gold DNA/BUZUKO-SAMIR RADETINAC UZIVO.MID",
+  "filename": "BUZUKO-SAMIR RADETINAC UZIVO.MID",
+  "hash_sha256": "1691712ddfdf4f2e936571c16227a2864508760268a2d20dfb078c97045ba580",
+  "hash_md5": "3d72c45c450502e363681a9a02765006",
+  "metadata": {
+    "size_bytes": 138247,
+    "created_time": "2026-08-19T18:01:34.964564",
+    "modified_time": "2010-09-04T22:53:00",
+    "access_time": "2026-08-19T18:04:32.768790",
+    "inode": 397626,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 0,
+    "num_tracks": 1,
+    "ppq": 384,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 138247
+  },
+  "duration_ticks": 138247,
+  "ppq": 384,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:32.770453"
+}

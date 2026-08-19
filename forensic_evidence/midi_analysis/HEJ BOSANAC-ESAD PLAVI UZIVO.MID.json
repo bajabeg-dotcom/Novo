@@ -1,0 +1,49 @@
+{
+  "file_path": "/workspace/dna_extracted/gold_dna/Gold DNA/HEJ BOSANAC-ESAD PLAVI UZIVO.MID",
+  "filename": "HEJ BOSANAC-ESAD PLAVI UZIVO.MID",
+  "hash_sha256": "ac81cd751b0790b18cbedd314e5daf1246bc576c09f7a4a2a06e6f3bce010363",
+  "hash_md5": "2db808efe6851693b2599081150af4db",
+  "metadata": {
+    "size_bytes": 114604,
+    "created_time": "2026-08-19T18:01:34.994565",
+    "modified_time": "2010-09-23T17:25:36",
+    "access_time": "2026-08-19T18:04:32.756789",
+    "inode": 397664,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 0,
+    "num_tracks": 1,
+    "ppq": 384,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 114604
+  },
+  "duration_ticks": 114604,
+  "ppq": 384,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:32.757827"
+}

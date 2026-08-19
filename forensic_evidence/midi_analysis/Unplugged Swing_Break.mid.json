@@ -1,0 +1,54 @@
+{
+  "file_path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/Unplugged Swing/Unplugged Swing_Break.mid",
+  "filename": "Unplugged Swing_Break.mid",
+  "hash_sha256": "86237fca9cac6c5275437a823b32720e6a4c6e06a7b3a80825f82b98825ded96",
+  "hash_md5": "4d39a93c3a2df9a406c111ba4ffe1115",
+  "metadata": {
+    "size_bytes": 1300,
+    "created_time": "2026-08-19T18:01:35.447584",
+    "modified_time": "1980-01-02T00:00:00",
+    "access_time": "2026-08-19T18:04:33.875835",
+    "inode": 524955,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 1,
+    "num_tracks": 13,
+    "ppq": 192,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 1300
+  },
+  "duration_ticks": 1300,
+  "ppq": 192,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    },
+    {
+      "type": "STYLE_CATEGORY",
+      "style": "Unplugged Swing",
+      "description": "Factory style: Unplugged Swing"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:33.876484"
+}

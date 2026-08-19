@@ -1,0 +1,49 @@
+{
+  "file_path": "/workspace/dna_extracted/gold_dna/Gold DNA/HEJ JASMINA-MENSUR UZIVO.MID",
+  "filename": "HEJ JASMINA-MENSUR UZIVO.MID",
+  "hash_sha256": "a0ca2b0f57bbe598c39af3e6e6a78b694abbfb45c8dbf94e9a0bb6a3b04cdaf9",
+  "hash_md5": "80e1c087b9f50ccab2c42477f50b1391",
+  "metadata": {
+    "size_bytes": 67369,
+    "created_time": "2026-08-19T18:01:34.995566",
+    "modified_time": "2010-05-06T14:17:48",
+    "access_time": "2026-08-19T18:04:32.811791",
+    "inode": 397665,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 0,
+    "num_tracks": 1,
+    "ppq": 384,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 67369
+  },
+  "duration_ticks": 67369,
+  "ppq": 384,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:32.813306"
+}

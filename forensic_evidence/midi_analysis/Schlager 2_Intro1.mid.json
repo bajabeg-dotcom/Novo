@@ -1,0 +1,54 @@
+{
+  "file_path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/Schlager 2/Schlager 2_Intro1.mid",
+  "filename": "Schlager 2_Intro1.mid",
+  "hash_sha256": "77d39a204a698c536f4eb6fb951525424b2f5d96d6cd38c07cda0f29b029e3d0",
+  "hash_md5": "463f84340673f3c9d89b16b8a0e7a817",
+  "metadata": {
+    "size_bytes": 5776,
+    "created_time": "2026-08-19T18:01:35.409582",
+    "modified_time": "1980-01-02T00:00:00",
+    "access_time": "2026-08-19T18:04:33.144805",
+    "inode": 524324,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 1,
+    "num_tracks": 22,
+    "ppq": 192,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 5776
+  },
+  "duration_ticks": 5776,
+  "ppq": 192,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    },
+    {
+      "type": "STYLE_CATEGORY",
+      "style": "Schlager 2",
+      "description": "Factory style: Schlager 2"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:33.145760"
+}

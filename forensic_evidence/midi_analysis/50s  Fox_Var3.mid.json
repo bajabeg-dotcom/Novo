@@ -1,0 +1,54 @@
+{
+  "file_path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/50's  Fox/50's  Fox_Var3.mid",
+  "filename": "50's  Fox_Var3.mid",
+  "hash_sha256": "3cfa1f9b6c5abe37e75489d33a8e777b1ecb5d8b4879e5ba92e877dd9bf5efca",
+  "hash_md5": "58300c7c36952ff0eb404880fbcb62b2",
+  "metadata": {
+    "size_bytes": 2196,
+    "created_time": "2026-08-19T18:01:35.120571",
+    "modified_time": "1980-01-02T00:00:00",
+    "access_time": "2026-08-19T18:04:33.140805",
+    "inode": 397801,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 1,
+    "num_tracks": 16,
+    "ppq": 192,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 2196
+  },
+  "duration_ticks": 2196,
+  "ppq": 192,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    },
+    {
+      "type": "STYLE_CATEGORY",
+      "style": "50's  Fox",
+      "description": "Factory style: 50's  Fox"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:33.141391"
+}

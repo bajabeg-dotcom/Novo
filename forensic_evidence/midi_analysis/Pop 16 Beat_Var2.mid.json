@@ -1,0 +1,54 @@
+{
+  "file_path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/Pop 16 Beat/Pop 16 Beat_Var2.mid",
+  "filename": "Pop 16 Beat_Var2.mid",
+  "hash_sha256": "fa5674b8732106fa10cdbe6002869eeeb00d4125d2c79742a0d3bfeb3e0bff27",
+  "hash_md5": "48325503da7f1f5af57be48e9713ec15",
+  "metadata": {
+    "size_bytes": 2937,
+    "created_time": "2026-08-19T18:01:35.352580",
+    "modified_time": "1980-01-02T00:00:00",
+    "access_time": "2026-08-19T18:04:33.607824",
+    "inode": 400136,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 1,
+    "num_tracks": 13,
+    "ppq": 192,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 2937
+  },
+  "duration_ticks": 2937,
+  "ppq": 192,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    },
+    {
+      "type": "STYLE_CATEGORY",
+      "style": "Pop 16 Beat",
+      "description": "Factory style: Pop 16 Beat"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:33.608832"
+}

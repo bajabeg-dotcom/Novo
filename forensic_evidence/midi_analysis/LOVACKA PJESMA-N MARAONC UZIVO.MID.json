@@ -1,0 +1,49 @@
+{
+  "file_path": "/workspace/dna_extracted/gold_dna/Gold DNA/LOVACKA PJESMA-N, MARAONC UZIVO.MID",
+  "filename": "LOVACKA PJESMA-N, MARAONC UZIVO.MID",
+  "hash_sha256": "5e13bebd15b07acf14b4eeab9f782fd614631c6b31f9bac902341ea17e322252",
+  "hash_md5": "65200e1c7de13fd8cf194462dbf10525",
+  "metadata": {
+    "size_bytes": 96173,
+    "created_time": "2026-08-19T18:01:35.041567",
+    "modified_time": "2010-07-30T18:44:08",
+    "access_time": "2026-08-19T18:04:32.850793",
+    "inode": 397712,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 0,
+    "num_tracks": 1,
+    "ppq": 384,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 96173
+  },
+  "duration_ticks": 96173,
+  "ppq": 384,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:32.851901"
+}

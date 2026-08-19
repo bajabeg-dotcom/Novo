@@ -1,0 +1,54 @@
+{
+  "file_path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/Modern Gospel 2/Modern Gospel 2_Var2.mid",
+  "filename": "Modern Gospel 2_Var2.mid",
+  "hash_sha256": "5abaf4c6da8c677cd0b0670ac03fa69b4d99b9ce6c2a51f948f604f46d90b241",
+  "hash_md5": "7af4582cb4aa33767815853a18021a4b",
+  "metadata": {
+    "size_bytes": 13411,
+    "created_time": "2026-08-19T18:01:35.330579",
+    "modified_time": "1980-01-02T00:00:00",
+    "access_time": "2026-08-19T18:04:33.050801",
+    "inode": 399783,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 1,
+    "num_tracks": 23,
+    "ppq": 192,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 13411
+  },
+  "duration_ticks": 13411,
+  "ppq": 192,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    },
+    {
+      "type": "STYLE_CATEGORY",
+      "style": "Modern Gospel 2",
+      "description": "Factory style: Modern Gospel 2"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:33.051803"
+}

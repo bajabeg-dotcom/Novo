@@ -1,0 +1,54 @@
+{
+  "file_path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/Bar Country/Bar Country_Var4.mid",
+  "filename": "Bar Country_Var4.mid",
+  "hash_sha256": "890980f87bb7d625cd60c2c451a42295070b1d949c59a16a674a1132adf3523a",
+  "hash_md5": "06492d74665f42968a3d6b4fe197eaf7",
+  "metadata": {
+    "size_bytes": 29697,
+    "created_time": "2026-08-19T18:01:35.143572",
+    "modified_time": "1980-01-02T00:00:00",
+    "access_time": "2026-08-19T18:04:33.403816",
+    "inode": 398092,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 1,
+    "num_tracks": 29,
+    "ppq": 192,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 29697
+  },
+  "duration_ticks": 29697,
+  "ppq": 192,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    },
+    {
+      "type": "STYLE_CATEGORY",
+      "style": "Bar Country",
+      "description": "Factory style: Bar Country"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:33.404781"
+}

@@ -1,0 +1,252 @@
+{
+  "Pop_Std_Kit_RX": {
+    "bank_msb": 128,
+    "bank_lsb": 0,
+    "program": 0,
+    "channel": 9,
+    "instruments": {
+      "kick": {
+        "notes": [
+          35,
+          36
+        ],
+        "velocity_layers": [
+          {
+            "min": 1,
+            "max": 60,
+            "sample": "soft_kick"
+          },
+          {
+            "min": 61,
+            "max": 100,
+            "sample": "medium_kick"
+          },
+          {
+            "min": 101,
+            "max": 127,
+            "sample": "hard_kick"
+          }
+        ],
+        "rx_triggers": [
+          "RX1",
+          "RX2"
+        ]
+      },
+      "snare": {
+        "notes": [
+          38,
+          40
+        ],
+        "velocity_layers": [
+          {
+            "min": 1,
+            "max": 50,
+            "sample": "soft_snare"
+          },
+          {
+            "min": 51,
+            "max": 90,
+            "sample": "medium_snare"
+          },
+          {
+            "min": 91,
+            "max": 127,
+            "sample": "hard_snare"
+          }
+        ],
+        "rx_triggers": [
+          "RX1",
+          "RX2",
+          "RX3"
+        ]
+      },
+      "hihat_closed": {
+        "notes": [
+          42,
+          44
+        ],
+        "velocity_layers": [
+          {
+            "min": 1,
+            "max": 70,
+            "sample": "soft_hh"
+          },
+          {
+            "min": 71,
+            "max": 127,
+            "sample": "hard_hh"
+          }
+        ],
+        "rx_triggers": [
+          "RX1"
+        ]
+      },
+      "hihat_open": {
+        "notes": [
+          46
+        ],
+        "velocity_layers": [
+          {
+            "min": 1,
+            "max": 80,
+            "sample": "soft_open"
+          },
+          {
+            "min": 81,
+            "max": 127,
+            "sample": "hard_open"
+          }
+        ],
+        "rx_triggers": [
+          "RX1",
+          "RX2"
+        ]
+      },
+      "tom_low": {
+        "notes": [
+          45,
+          47
+        ],
+        "velocity_layers": [
+          {
+            "min": 1,
+            "max": 60,
+            "sample": "soft_tom"
+          },
+          {
+            "min": 61,
+            "max": 127,
+            "sample": "hard_tom"
+          }
+        ],
+        "rx_triggers": [
+          "RX1"
+        ]
+      },
+      "tom_mid": {
+        "notes": [
+          48,
+          50
+        ],
+        "velocity_layers": [
+          {
+            "min": 1,
+            "max": 60,
+            "sample": "soft_tom"
+          },
+          {
+            "min": 61,
+            "max": 127,
+            "sample": "hard_tom"
+          }
+        ],
+        "rx_triggers": [
+          "RX1"
+        ]
+      },
+      "tom_high": {
+        "notes": [
+          50,
+          52
+        ],
+        "velocity_layers": [
+          {
+            "min": 1,
+            "max": 60,
+            "sample": "soft_tom"
+          },
+          {
+            "min": 61,
+            "max": 127,
+            "sample": "hard_tom"
+          }
+        ],
+        "rx_triggers": [
+          "RX1"
+        ]
+      },
+      "crash": {
+        "notes": [
+          49,
+          57
+        ],
+        "velocity_layers": [
+          {
+            "min": 1,
+            "max": 90,
+            "sample": "soft_crash"
+          },
+          {
+            "min": 91,
+            "max": 127,
+            "sample": "hard_crash"
+          }
+        ],
+        "rx_triggers": [
+          "RX1",
+          "RX2"
+        ]
+      },
+      "ride": {
+        "notes": [
+          51,
+          59
+        ],
+        "velocity_layers": [
+          {
+            "min": 1,
+            "max": 70,
+            "sample": "soft_ride"
+          },
+          {
+            "min": 71,
+            "max": 127,
+            "sample": "hard_ride"
+          }
+        ],
+        "rx_triggers": [
+          "RX1",
+          "RX2",
+          "RX3"
+        ]
+      },
+      "cymbal": {
+        "notes": [
+          52,
+          55
+        ],
+        "velocity_layers": [
+          {
+            "min": 1,
+            "max": 80,
+            "sample": "soft_cym"
+          },
+          {
+            "min": 81,
+            "max": 127,
+            "sample": "hard_cym"
+          }
+        ],
+        "rx_triggers": [
+          "RX1"
+        ]
+      }
+    },
+    "limb_plausibility": {
+      "max_simultaneous_hits": 4,
+      "impossible_combinations": [
+        [
+          "hihat_closed",
+          "hihat_open"
+        ],
+        [
+          "ride_bell",
+          "ride_edge"
+        ]
+      ]
+    },
+    "confirmed": false,
+    "confidence": 0.68,
+    "source": "Factory_MIDI_analysis"
+  }
+}

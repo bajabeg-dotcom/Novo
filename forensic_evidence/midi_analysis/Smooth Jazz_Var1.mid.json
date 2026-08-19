@@ -1,0 +1,54 @@
+{
+  "file_path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/Smooth Jazz/Smooth Jazz_Var1.mid",
+  "filename": "Smooth Jazz_Var1.mid",
+  "hash_sha256": "be0220a89f1e98420cad9e8f3fdc33105f0714951cd3b7277df05f24549fb517",
+  "hash_md5": "b108c9d7ca9edfc7cd0f2ad94893090e",
+  "metadata": {
+    "size_bytes": 1758,
+    "created_time": "2026-08-19T18:01:35.426583",
+    "modified_time": "1980-01-02T00:00:00",
+    "access_time": "2026-08-19T18:04:33.172806",
+    "inode": 524615,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 1,
+    "num_tracks": 8,
+    "ppq": 192,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 1758
+  },
+  "duration_ticks": 1758,
+  "ppq": 192,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    },
+    {
+      "type": "STYLE_CATEGORY",
+      "style": "Smooth Jazz",
+      "description": "Factory style: Smooth Jazz"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:33.173232"
+}

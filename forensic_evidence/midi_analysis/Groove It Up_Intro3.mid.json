@@ -1,0 +1,54 @@
+{
+  "file_path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/Groove It Up/Groove It Up_Intro3.mid",
+  "filename": "Groove It Up_Intro3.mid",
+  "hash_sha256": "23759d3bc767fe7c544dced7e71784b7d95ab5f121656d95630c98ca57ef6b2f",
+  "hash_md5": "e377398f7421c448b0af4ab6cc60bcaa",
+  "metadata": {
+    "size_bytes": 773,
+    "created_time": "2026-08-19T18:01:35.254576",
+    "modified_time": "1980-01-02T00:00:00",
+    "access_time": "2026-08-19T18:04:33.382815",
+    "inode": 399174,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 1,
+    "num_tracks": 8,
+    "ppq": 192,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 773
+  },
+  "duration_ticks": 773,
+  "ppq": 192,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    },
+    {
+      "type": "STYLE_CATEGORY",
+      "style": "Groove It Up",
+      "description": "Factory style: Groove It Up"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:33.383800"
+}

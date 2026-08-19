@@ -1,0 +1,54 @@
+{
+  "file_path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/Guitar Pop/Guitar Pop_Var3.mid",
+  "filename": "Guitar Pop_Var3.mid",
+  "hash_sha256": "5f8709cfc7c80794de5d7e639f6c7fdd8dd4d1c8fce01ac65c2d326e92c630d0",
+  "hash_md5": "2fa00318b19eed0cf04da25d3ce9e255",
+  "metadata": {
+    "size_bytes": 2547,
+    "created_time": "2026-08-19T18:01:35.296578",
+    "modified_time": "1980-01-02T00:00:00",
+    "access_time": "2026-08-19T18:04:33.182806",
+    "inode": 399233,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 1,
+    "num_tracks": 15,
+    "ppq": 192,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 2547
+  },
+  "duration_ticks": 2547,
+  "ppq": 192,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    },
+    {
+      "type": "STYLE_CATEGORY",
+      "style": "Guitar Pop",
+      "description": "Factory style: Guitar Pop"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:33.183939"
+}

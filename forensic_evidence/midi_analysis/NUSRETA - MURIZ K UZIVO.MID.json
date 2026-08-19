@@ -1,0 +1,49 @@
+{
+  "file_path": "/workspace/dna_extracted/gold_dna/Gold DNA/NUSRETA - MURIZ K UZIVO.MID",
+  "filename": "NUSRETA - MURIZ K UZIVO.MID",
+  "hash_sha256": "c57c55fc242941313eeae9c4941e6f50b9325078d7990f889e60c31cea8765b8",
+  "hash_md5": "ded1f02c1d0d12bce5b99f1cf35c7832",
+  "metadata": {
+    "size_bytes": 80309,
+    "created_time": "2026-08-19T18:01:35.067569",
+    "modified_time": "2010-01-27T13:19:50",
+    "access_time": "2026-08-19T18:04:32.754789",
+    "inode": 397738,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 0,
+    "num_tracks": 1,
+    "ppq": 384,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 80309
+  },
+  "duration_ticks": 80309,
+  "ppq": 384,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:32.755825"
+}

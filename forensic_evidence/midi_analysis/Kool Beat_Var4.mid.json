@@ -1,0 +1,54 @@
+{
+  "file_path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/Kool Beat/Kool Beat_Var4.mid",
+  "filename": "Kool Beat_Var4.mid",
+  "hash_sha256": "d3f121035b1a504ba5d8d14f0bc856f72746332941ceda4a6911b0bef64dd68b",
+  "hash_md5": "e4f122886bd77ee3ebab3224f4d0da21",
+  "metadata": {
+    "size_bytes": 3634,
+    "created_time": "2026-08-19T18:01:35.317579",
+    "modified_time": "1980-01-02T00:00:00",
+    "access_time": "2026-08-19T18:04:33.585823",
+    "inode": 399576,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 1,
+    "num_tracks": 15,
+    "ppq": 192,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 3634
+  },
+  "duration_ticks": 3634,
+  "ppq": 192,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    },
+    {
+      "type": "STYLE_CATEGORY",
+      "style": "Kool Beat",
+      "description": "Factory style: Kool Beat"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:33.586135"
+}

@@ -1,0 +1,54 @@
+{
+  "file_path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/Pop Funk/Pop Funk_Intro2.mid",
+  "filename": "Pop Funk_Intro2.mid",
+  "hash_sha256": "992ce874297530f600df5d1112aa1f00ade80ef9becd5a1ff7205a8aedef1c27",
+  "hash_md5": "03cc69aa8e798affce84fac8ae40bb61",
+  "metadata": {
+    "size_bytes": 1578,
+    "created_time": "2026-08-19T18:01:35.356580",
+    "modified_time": "1980-01-02T00:00:00",
+    "access_time": "2026-08-19T18:04:33.045801",
+    "inode": 400217,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 1,
+    "num_tracks": 11,
+    "ppq": 192,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 1578
+  },
+  "duration_ticks": 1578,
+  "ppq": 192,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    },
+    {
+      "type": "STYLE_CATEGORY",
+      "style": "Pop Funk",
+      "description": "Factory style: Pop Funk"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:33.046695"
+}

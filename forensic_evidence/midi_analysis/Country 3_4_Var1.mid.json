@@ -1,0 +1,54 @@
+{
+  "file_path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/Country 3/Country 3_4_Var1.mid",
+  "filename": "Country 3_4_Var1.mid",
+  "hash_sha256": "9832aa0f7ef563aea8463d8457d624eb35aaefad867a625d6c3f7151b230d2e8",
+  "hash_md5": "53af065b742ee736f270b5104b28429b",
+  "metadata": {
+    "size_bytes": 6187,
+    "created_time": "2026-08-19T18:01:35.164572",
+    "modified_time": "1980-01-02T00:00:00",
+    "access_time": "2026-08-19T18:04:32.921796",
+    "inode": 398408,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 1,
+    "num_tracks": 17,
+    "ppq": 192,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 6187
+  },
+  "duration_ticks": 6187,
+  "ppq": 192,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    },
+    {
+      "type": "STYLE_CATEGORY",
+      "style": "Country 3",
+      "description": "Factory style: Country 3"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:32.922806"
+}

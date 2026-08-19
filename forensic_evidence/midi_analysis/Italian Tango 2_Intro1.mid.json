@@ -1,0 +1,54 @@
+{
+  "file_path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/Italian Tango 2/Italian Tango 2_Intro1.mid",
+  "filename": "Italian Tango 2_Intro1.mid",
+  "hash_sha256": "6722a615dfca8cf1db460f7cb4969086ba18d4c6feae9aa22988c3bd253992b4",
+  "hash_md5": "42f2b54fbb1d3ed0c30268ba2441137f",
+  "metadata": {
+    "size_bytes": 3358,
+    "created_time": "2026-08-19T18:01:35.310578",
+    "modified_time": "1980-01-02T00:00:00",
+    "access_time": "2026-08-19T18:04:32.917796",
+    "inode": 399479,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 1,
+    "num_tracks": 16,
+    "ppq": 192,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 3358
+  },
+  "duration_ticks": 3358,
+  "ppq": 192,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    },
+    {
+      "type": "STYLE_CATEGORY",
+      "style": "Italian Tango 2",
+      "description": "Factory style: Italian Tango 2"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:32.918625"
+}

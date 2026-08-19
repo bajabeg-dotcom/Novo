@@ -1,0 +1,54 @@
+{
+  "file_path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/80's Dance/80's Dance_End2.mid",
+  "filename": "80's Dance_End2.mid",
+  "hash_sha256": "894481b31fb15228fadc17cbc7b28a203f674ca6c26af9304484e59ba6092272",
+  "hash_md5": "f0d6cc61db435f7abb00f07400b0c2f3",
+  "metadata": {
+    "size_bytes": 960,
+    "created_time": "2026-08-19T18:01:35.127571",
+    "modified_time": "1980-01-02T00:00:00",
+    "access_time": "2026-08-19T18:04:33.386815",
+    "inode": 397876,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 1,
+    "num_tracks": 12,
+    "ppq": 192,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 960
+  },
+  "duration_ticks": 960,
+  "ppq": 192,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    },
+    {
+      "type": "STYLE_CATEGORY",
+      "style": "80's Dance",
+      "description": "Factory style: 80's Dance"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:33.387327"
+}

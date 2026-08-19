@@ -1,0 +1,49 @@
+{
+  "file_path": "/workspace/dna_extracted/gold_dna/Gold DNA/NA KRAJU SVETA-SEKA UZIVO.MID",
+  "filename": "NA KRAJU SVETA-SEKA UZIVO.MID",
+  "hash_sha256": "0d22f98eb83ae67296eeb79e5139d0d6634156c4363f420c0d2147853060e3f9",
+  "hash_md5": "094f9bebd39d4f62d11232c86672ed03",
+  "metadata": {
+    "size_bytes": 89364,
+    "created_time": "2026-08-19T18:01:35.058568",
+    "modified_time": "2010-10-04T16:53:18",
+    "access_time": "2026-08-19T18:04:32.830792",
+    "inode": 397728,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 0,
+    "num_tracks": 1,
+    "ppq": 384,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 89364
+  },
+  "duration_ticks": 89364,
+  "ppq": 384,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:32.831940"
+}

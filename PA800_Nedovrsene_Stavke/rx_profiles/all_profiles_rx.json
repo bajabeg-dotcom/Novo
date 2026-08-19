@@ -1,0 +1,615 @@
+{
+  "Finger_Bass_RX": {
+    "bank_msb": 127,
+    "bank_lsb": 0,
+    "program": 32,
+    "velocity_zones": [
+      {
+        "min": 1,
+        "max": 60,
+        "sample": "soft",
+        "description": "Tihi udarac"
+      },
+      {
+        "min": 61,
+        "max": 100,
+        "sample": "medium",
+        "description": "Srednji udarac"
+      },
+      {
+        "min": 101,
+        "max": 127,
+        "sample": "hard",
+        "description": "Jaki udarac"
+      }
+    ],
+    "key_zones": {
+      "low": 24,
+      "high": 72
+    },
+    "noise_triggers": {
+      "fret_squeak": {
+        "velocity_min": 80,
+        "key_range": [
+          36,
+          60
+        ]
+      },
+      "slide_noise": {
+        "velocity_min": 60,
+        "key_range": [
+          24,
+          72
+        ]
+      }
+    },
+    "multisample_switches": {
+      "low_sample": {
+        "key_threshold": 48
+      },
+      "high_sample": {
+        "key_threshold": 60
+      }
+    },
+    "confirmed": false,
+    "confidence": 0.7,
+    "source": "Factory_MIDI_analysis"
+  },
+  "Picked_Bass_RX": {
+    "bank_msb": 127,
+    "bank_lsb": 0,
+    "program": 33,
+    "velocity_zones": [
+      {
+        "min": 1,
+        "max": 50,
+        "sample": "soft_pick",
+        "description": "Meki trzaj"
+      },
+      {
+        "min": 51,
+        "max": 90,
+        "sample": "medium_pick",
+        "description": "Srednji trzaj"
+      },
+      {
+        "min": 91,
+        "max": 127,
+        "sample": "hard_pick",
+        "description": "Jaki trzaj"
+      }
+    ],
+    "key_zones": {
+      "low": 24,
+      "high": 72
+    },
+    "noise_triggers": {
+      "pick_attack": {
+        "velocity_min": 70,
+        "key_range": [
+          30,
+          65
+        ]
+      },
+      "string_noise": {
+        "velocity_min": 50,
+        "key_range": [
+          24,
+          72
+        ]
+      }
+    },
+    "multisample_switches": {
+      "low_sample": {
+        "key_threshold": 44
+      },
+      "high_sample": {
+        "key_threshold": 58
+      }
+    },
+    "confirmed": false,
+    "confidence": 0.68,
+    "source": "Factory_MIDI_analysis"
+  },
+  "Slap_Bass_RX": {
+    "bank_msb": 127,
+    "bank_lsb": 0,
+    "program": 34,
+    "velocity_zones": [
+      {
+        "min": 1,
+        "max": 70,
+        "sample": "soft_slap",
+        "description": "Meki slap"
+      },
+      {
+        "min": 71,
+        "max": 110,
+        "sample": "medium_slap",
+        "description": "Srednji slap"
+      },
+      {
+        "min": 111,
+        "max": 127,
+        "sample": "hard_slap",
+        "description": "Jaki slap"
+      }
+    ],
+    "key_zones": {
+      "low": 28,
+      "high": 76
+    },
+    "noise_triggers": {
+      "slap_pop": {
+        "velocity_min": 90,
+        "key_range": [
+          40,
+          70
+        ]
+      },
+      "thumb_noise": {
+        "velocity_min": 60,
+        "key_range": [
+          28,
+          76
+        ]
+      }
+    },
+    "multisample_switches": {
+      "low_sample": {
+        "key_threshold": 46
+      },
+      "high_sample": {
+        "key_threshold": 62
+      }
+    },
+    "confirmed": false,
+    "confidence": 0.65,
+    "source": "Factory_MIDI_analysis"
+  },
+  "Clean_Guitar_RX1": {
+    "bank_msb": 127,
+    "bank_lsb": 0,
+    "program": 25,
+    "velocity_zones": [
+      {
+        "min": 1,
+        "max": 50,
+        "technique": "soft_pluck",
+        "description": "Meko trzanje"
+      },
+      {
+        "min": 51,
+        "max": 85,
+        "technique": "medium_pluck",
+        "description": "Srednje trzanje"
+      },
+      {
+        "min": 86,
+        "max": 127,
+        "technique": "hard_pluck",
+        "description": "Jako trzanje"
+      }
+    ],
+    "key_zones": {
+      "low": 40,
+      "high": 96
+    },
+    "protected_range": {
+      "start": 96,
+      "end": 108,
+      "reason": "C7+ visoke note za solo"
+    },
+    "noise_triggers": {
+      "fret_slide": {
+        "velocity_min": 60,
+        "key_range": [
+          40,
+          88
+        ]
+      },
+      "string_release": {
+        "velocity_min": 40,
+        "key_range": [
+          40,
+          96
+        ]
+      }
+    },
+    "rx_switches": {
+      "RX1": {
+        "velocity_range": [
+          1,
+          60
+        ],
+        "key_range": [
+          40,
+          84
+        ]
+      },
+      "RX2": {
+        "velocity_range": [
+          61,
+          90
+        ],
+        "key_range": [
+          40,
+          88
+        ]
+      },
+      "RX3": {
+        "velocity_range": [
+          91,
+          110
+        ],
+        "key_range": [
+          40,
+          92
+        ]
+      },
+      "RX4": {
+        "velocity_range": [
+          111,
+          127
+        ],
+        "key_range": [
+          40,
+          96
+        ]
+      }
+    },
+    "confirmed": false,
+    "confidence": 0.72,
+    "source": "Factory_MIDI_analysis"
+  },
+  "Dist_Guitar_RX1": {
+    "bank_msb": 127,
+    "bank_lsb": 0,
+    "program": 29,
+    "velocity_zones": [
+      {
+        "min": 1,
+        "max": 60,
+        "technique": "light_distortion",
+        "description": "Laga distorzija"
+      },
+      {
+        "min": 61,
+        "max": 100,
+        "technique": "medium_distortion",
+        "description": "Srednja distorzija"
+      },
+      {
+        "min": 101,
+        "max": 127,
+        "technique": "heavy_distortion",
+        "description": "Jaka distorzija"
+      }
+    ],
+    "key_zones": {
+      "low": 40,
+      "high": 96
+    },
+    "protected_range": {
+      "start": 96,
+      "end": 108,
+      "reason": "C7+ visoke note zabranjene za transpoziciju"
+    },
+    "noise_triggers": {
+      "power_chord_mute": {
+        "velocity_min": 80,
+        "key_range": [
+          40,
+          72
+        ]
+      },
+      "palm_mute": {
+        "velocity_min": 70,
+        "key_range": [
+          40,
+          84
+        ]
+      }
+    },
+    "rx_switches": {
+      "RX1": {
+        "velocity_range": [
+          1,
+          70
+        ],
+        "key_range": [
+          40,
+          80
+        ]
+      },
+      "RX2": {
+        "velocity_range": [
+          71,
+          127
+        ],
+        "key_range": [
+          40,
+          96
+        ]
+      }
+    },
+    "confirmed": false,
+    "confidence": 0.75,
+    "source": "Factory_MIDI_analysis"
+  },
+  "PowerChord_Guitar": {
+    "bank_msb": 127,
+    "bank_lsb": 0,
+    "program": 30,
+    "velocity_zones": [
+      {
+        "min": 1,
+        "max": 127,
+        "technique": "power_chord",
+        "description": "Power chord 1-127"
+      }
+    ],
+    "key_zones": {
+      "low": 36,
+      "high": 84
+    },
+    "voicing_rules": {
+      "root_fifth_octave": true,
+      "no_third": true,
+      "doubled_layers": true
+    },
+    "confirmed": false,
+    "confidence": 0.78,
+    "source": "Factory_MIDI_analysis"
+  },
+  "Pop_Std_Kit_RX": {
+    "bank_msb": 128,
+    "bank_lsb": 0,
+    "program": 0,
+    "channel": 9,
+    "instruments": {
+      "kick": {
+        "notes": [
+          35,
+          36
+        ],
+        "velocity_layers": [
+          {
+            "min": 1,
+            "max": 60,
+            "sample": "soft_kick"
+          },
+          {
+            "min": 61,
+            "max": 100,
+            "sample": "medium_kick"
+          },
+          {
+            "min": 101,
+            "max": 127,
+            "sample": "hard_kick"
+          }
+        ],
+        "rx_triggers": [
+          "RX1",
+          "RX2"
+        ]
+      },
+      "snare": {
+        "notes": [
+          38,
+          40
+        ],
+        "velocity_layers": [
+          {
+            "min": 1,
+            "max": 50,
+            "sample": "soft_snare"
+          },
+          {
+            "min": 51,
+            "max": 90,
+            "sample": "medium_snare"
+          },
+          {
+            "min": 91,
+            "max": 127,
+            "sample": "hard_snare"
+          }
+        ],
+        "rx_triggers": [
+          "RX1",
+          "RX2",
+          "RX3"
+        ]
+      },
+      "hihat_closed": {
+        "notes": [
+          42,
+          44
+        ],
+        "velocity_layers": [
+          {
+            "min": 1,
+            "max": 70,
+            "sample": "soft_hh"
+          },
+          {
+            "min": 71,
+            "max": 127,
+            "sample": "hard_hh"
+          }
+        ],
+        "rx_triggers": [
+          "RX1"
+        ]
+      },
+      "hihat_open": {
+        "notes": [
+          46
+        ],
+        "velocity_layers": [
+          {
+            "min": 1,
+            "max": 80,
+            "sample": "soft_open"
+          },
+          {
+            "min": 81,
+            "max": 127,
+            "sample": "hard_open"
+          }
+        ],
+        "rx_triggers": [
+          "RX1",
+          "RX2"
+        ]
+      },
+      "tom_low": {
+        "notes": [
+          45,
+          47
+        ],
+        "velocity_layers": [
+          {
+            "min": 1,
+            "max": 60,
+            "sample": "soft_tom"
+          },
+          {
+            "min": 61,
+            "max": 127,
+            "sample": "hard_tom"
+          }
+        ],
+        "rx_triggers": [
+          "RX1"
+        ]
+      },
+      "tom_mid": {
+        "notes": [
+          48,
+          50
+        ],
+        "velocity_layers": [
+          {
+            "min": 1,
+            "max": 60,
+            "sample": "soft_tom"
+          },
+          {
+            "min": 61,
+            "max": 127,
+            "sample": "hard_tom"
+          }
+        ],
+        "rx_triggers": [
+          "RX1"
+        ]
+      },
+      "tom_high": {
+        "notes": [
+          50,
+          52
+        ],
+        "velocity_layers": [
+          {
+            "min": 1,
+            "max": 60,
+            "sample": "soft_tom"
+          },
+          {
+            "min": 61,
+            "max": 127,
+            "sample": "hard_tom"
+          }
+        ],
+        "rx_triggers": [
+          "RX1"
+        ]
+      },
+      "crash": {
+        "notes": [
+          49,
+          57
+        ],
+        "velocity_layers": [
+          {
+            "min": 1,
+            "max": 90,
+            "sample": "soft_crash"
+          },
+          {
+            "min": 91,
+            "max": 127,
+            "sample": "hard_crash"
+          }
+        ],
+        "rx_triggers": [
+          "RX1",
+          "RX2"
+        ]
+      },
+      "ride": {
+        "notes": [
+          51,
+          59
+        ],
+        "velocity_layers": [
+          {
+            "min": 1,
+            "max": 70,
+            "sample": "soft_ride"
+          },
+          {
+            "min": 71,
+            "max": 127,
+            "sample": "hard_ride"
+          }
+        ],
+        "rx_triggers": [
+          "RX1",
+          "RX2",
+          "RX3"
+        ]
+      },
+      "cymbal": {
+        "notes": [
+          52,
+          55
+        ],
+        "velocity_layers": [
+          {
+            "min": 1,
+            "max": 80,
+            "sample": "soft_cym"
+          },
+          {
+            "min": 81,
+            "max": 127,
+            "sample": "hard_cym"
+          }
+        ],
+        "rx_triggers": [
+          "RX1"
+        ]
+      }
+    },
+    "limb_plausibility": {
+      "max_simultaneous_hits": 4,
+      "impossible_combinations": [
+        [
+          "hihat_closed",
+          "hihat_open"
+        ],
+        [
+          "ride_bell",
+          "ride_edge"
+        ]
+      ]
+    },
+    "confirmed": false,
+    "confidence": 0.68,
+    "source": "Factory_MIDI_analysis"
+  }
+}

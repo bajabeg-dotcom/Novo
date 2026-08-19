@@ -1,0 +1,54 @@
+{
+  "file_path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/Al Swing/Al Swing_End2.mid",
+  "filename": "Al Swing_End2.mid",
+  "hash_sha256": "bc50590e42f4e2e690a37d1c648f600d28cdc4039dbdddfc82eada7a1e83dcc2",
+  "hash_md5": "fd7b0ffc9f86121132038541757d34f6",
+  "metadata": {
+    "size_bytes": 2418,
+    "created_time": "2026-08-19T18:01:35.132571",
+    "modified_time": "1980-01-02T00:00:00",
+    "access_time": "2026-08-19T18:04:33.447817",
+    "inode": 397932,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 1,
+    "num_tracks": 18,
+    "ppq": 192,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 2418
+  },
+  "duration_ticks": 2418,
+  "ppq": 192,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    },
+    {
+      "type": "STYLE_CATEGORY",
+      "style": "Al Swing",
+      "description": "Factory style: Al Swing"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:33.448137"
+}

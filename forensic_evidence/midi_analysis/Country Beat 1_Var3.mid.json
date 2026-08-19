@@ -1,0 +1,54 @@
+{
+  "file_path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/Country Beat 1/Country Beat 1_Var3.mid",
+  "filename": "Country Beat 1_Var3.mid",
+  "hash_sha256": "7c56b3d35eae73ba9cc714264d1473e1741c07236f752baec87c14770e52c2f5",
+  "hash_md5": "a43089e77023bd0d22fc24b1ddd0d058",
+  "metadata": {
+    "size_bytes": 7116,
+    "created_time": "2026-08-19T18:01:35.167572",
+    "modified_time": "1980-01-02T00:00:00",
+    "access_time": "2026-08-19T18:04:33.808832",
+    "inode": 398459,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 1,
+    "num_tracks": 18,
+    "ppq": 192,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 7116
+  },
+  "duration_ticks": 7116,
+  "ppq": 192,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    },
+    {
+      "type": "STYLE_CATEGORY",
+      "style": "Country Beat 1",
+      "description": "Factory style: Country Beat 1"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:33.809125"
+}

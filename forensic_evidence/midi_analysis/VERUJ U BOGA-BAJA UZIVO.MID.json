@@ -1,0 +1,49 @@
+{
+  "file_path": "/workspace/dna_extracted/gold_dna/Gold DNA/VERUJ U BOGA-BAJA UZIVO.MID",
+  "filename": "VERUJ U BOGA-BAJA UZIVO.MID",
+  "hash_sha256": "3d7d6ff9f69953bb20d93432eb9780abd38f959b44378572a82888033312456a",
+  "hash_md5": "3c939c092a8cf61a9ac9c47344aa8dcc",
+  "metadata": {
+    "size_bytes": 246103,
+    "created_time": "2026-08-19T18:01:35.107570",
+    "modified_time": "2010-09-23T15:58:44",
+    "access_time": "2026-08-19T18:04:32.820792",
+    "inode": 397775,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 0,
+    "num_tracks": 1,
+    "ppq": 384,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 246103
+  },
+  "duration_ticks": 246103,
+  "ppq": 384,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:32.822693"
+}

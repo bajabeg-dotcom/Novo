@@ -1,0 +1,49 @@
+{
+  "file_path": "/workspace/dna_extracted/gold_dna/Gold DNA/STARI VUK-ZV,TROMEDJE UZIVO.MID",
+  "filename": "STARI VUK-ZV,TROMEDJE UZIVO.MID",
+  "hash_sha256": "044d4908f90b20f1b290d00dd89d9063eabe876ac9739dec8c6e725da2e3beee",
+  "hash_md5": "071732c659029d8a9490cd2566855e1f",
+  "metadata": {
+    "size_bytes": 124548,
+    "created_time": "2026-08-19T18:01:35.095570",
+    "modified_time": "2010-07-16T16:18:44",
+    "access_time": "2026-08-19T18:04:32.748789",
+    "inode": 397764,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 0,
+    "num_tracks": 1,
+    "ppq": 384,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 124548
+  },
+  "duration_ticks": 124548,
+  "ppq": 384,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:32.750607"
+}

@@ -1,0 +1,54 @@
+{
+  "file_path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/Country Boogie/Country Boogie_End3.mid",
+  "filename": "Country Boogie_End3.mid",
+  "hash_sha256": "dbc57b6065704c89370d26ce6b0d62a13a3757c348bf455c348da8a474483b37",
+  "hash_md5": "10b2f1c2adc0d70734ee1d8195a0cf58",
+  "metadata": {
+    "size_bytes": 2929,
+    "created_time": "2026-08-19T18:01:35.169573",
+    "modified_time": "1980-01-02T00:00:00",
+    "access_time": "2026-08-19T18:04:33.571822",
+    "inode": 398479,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 1,
+    "num_tracks": 50,
+    "ppq": 192,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 2929
+  },
+  "duration_ticks": 2929,
+  "ppq": 192,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    },
+    {
+      "type": "STYLE_CATEGORY",
+      "style": "Country Boogie",
+      "description": "Factory style: Country Boogie"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:33.572763"
+}

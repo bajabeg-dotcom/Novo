@@ -1,0 +1,54 @@
+{
+  "file_path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/Analog Beat 1/Analog Beat 1_Var4.mid",
+  "filename": "Analog Beat 1_Var4.mid",
+  "hash_sha256": "d6e99b98d039e48724dd16e8a120a357bea5a9bbf5846c81a6446e567369acac",
+  "hash_md5": "39bd5c5e75e2b9c05be1654a631f7872",
+  "metadata": {
+    "size_bytes": 5102,
+    "created_time": "2026-08-19T18:01:35.138571",
+    "modified_time": "1980-01-02T00:00:00",
+    "access_time": "2026-08-19T18:04:33.337813",
+    "inode": 398010,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 1,
+    "num_tracks": 15,
+    "ppq": 192,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 5102
+  },
+  "duration_ticks": 5102,
+  "ppq": 192,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    },
+    {
+      "type": "STYLE_CATEGORY",
+      "style": "Analog Beat 1",
+      "description": "Factory style: Analog Beat 1"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:33.338749"
+}

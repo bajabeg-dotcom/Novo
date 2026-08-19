@@ -1,0 +1,54 @@
+{
+  "file_path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/Half Beat/Half Beat_Var4.mid",
+  "filename": "Half Beat_Var4.mid",
+  "hash_sha256": "727a9a43f4a4432ef02aef5989f4daa3a7def5ed773af0271e7008ef28029ead",
+  "hash_md5": "f032f6390a795c385615a9ce6da51a6d",
+  "metadata": {
+    "size_bytes": 3125,
+    "created_time": "2026-08-19T18:01:35.297578",
+    "modified_time": "1980-01-02T00:00:00",
+    "access_time": "2026-08-19T18:04:33.870834",
+    "inode": 399248,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 1,
+    "num_tracks": 13,
+    "ppq": 192,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 3125
+  },
+  "duration_ticks": 3125,
+  "ppq": 192,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    },
+    {
+      "type": "STYLE_CATEGORY",
+      "style": "Half Beat",
+      "description": "Factory style: Half Beat"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:33.871124"
+}

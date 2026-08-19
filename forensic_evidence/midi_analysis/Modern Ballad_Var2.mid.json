@@ -1,0 +1,54 @@
+{
+  "file_path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/Modern Ballad/Modern Ballad_Var2.mid",
+  "filename": "Modern Ballad_Var2.mid",
+  "hash_sha256": "e1cea3318542474177384aca40915c6f35bf29e6d21413786051cf44941a9995",
+  "hash_md5": "978d75cff746489a3b1e86ae192f5ace",
+  "metadata": {
+    "size_bytes": 2300,
+    "created_time": "2026-08-19T18:01:35.326579",
+    "modified_time": "1980-01-02T00:00:00",
+    "access_time": "2026-08-19T18:04:33.660826",
+    "inode": 399728,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 1,
+    "num_tracks": 14,
+    "ppq": 192,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 2300
+  },
+  "duration_ticks": 2300,
+  "ppq": 192,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    },
+    {
+      "type": "STYLE_CATEGORY",
+      "style": "Modern Ballad",
+      "description": "Factory style: Modern Ballad"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:33.661479"
+}

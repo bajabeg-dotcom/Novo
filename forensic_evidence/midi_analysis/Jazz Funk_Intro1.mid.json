@@ -1,0 +1,54 @@
+{
+  "file_path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/Jazz Funk/Jazz Funk_Intro1.mid",
+  "filename": "Jazz Funk_Intro1.mid",
+  "hash_sha256": "8acc31ecf9ce3c9b448f207f9eba8a7a2373f2b8cd460d96262c0fb7c30f4685",
+  "hash_md5": "3ad4d2824e984b5b3d7977bd654ddb34",
+  "metadata": {
+    "size_bytes": 4327,
+    "created_time": "2026-08-19T18:01:35.312578",
+    "modified_time": "1980-01-02T00:00:00",
+    "access_time": "2026-08-19T18:04:33.865834",
+    "inode": 399516,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 1,
+    "num_tracks": 17,
+    "ppq": 192,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 4327
+  },
+  "duration_ticks": 4327,
+  "ppq": 192,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    },
+    {
+      "type": "STYLE_CATEGORY",
+      "style": "Jazz Funk",
+      "description": "Factory style: Jazz Funk"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:33.866933"
+}

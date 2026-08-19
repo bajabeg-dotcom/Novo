@@ -1,0 +1,49 @@
+{
+  "file_path": "/workspace/dna_extracted/gold_dna/Gold DNA/KO SE SETA PO KORDU-RATKO UZIVO.MID",
+  "filename": "KO SE SETA PO KORDU-RATKO UZIVO.MID",
+  "hash_sha256": "66d915e75f16367e4de81dd393442a79d2c301ab9bb5965ec4c596ce5729478f",
+  "hash_md5": "9d808ce076bee5642010187cc4c3d753",
+  "metadata": {
+    "size_bytes": 89085,
+    "created_time": "2026-08-19T18:01:35.029567",
+    "modified_time": "2010-09-23T17:31:52",
+    "access_time": "2026-08-19T18:04:32.789790",
+    "inode": 397701,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 0,
+    "num_tracks": 1,
+    "ppq": 384,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 89085
+  },
+  "duration_ticks": 89085,
+  "ppq": 384,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:32.790980"
+}

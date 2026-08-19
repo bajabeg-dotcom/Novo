@@ -1,0 +1,49 @@
+{
+  "file_path": "/workspace/dna_extracted/gold_dna/Gold DNA/MOJ ZIVOTE DRUG-SABAN S UZIVO.MID",
+  "filename": "MOJ ZIVOTE DRUG-SABAN S UZIVO.MID",
+  "hash_sha256": "5414db1e3a8d9a47ba1fd78e24cdc64d0b4267c105af269c3de026238a4041bc",
+  "hash_md5": "12a7f13fb2ee952ba8e3edcd4ab4b028",
+  "metadata": {
+    "size_bytes": 138634,
+    "created_time": "2026-08-19T18:01:35.052568",
+    "modified_time": "2010-10-24T16:16:08",
+    "access_time": "2026-08-19T18:04:32.775790",
+    "inode": 397722,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 0,
+    "num_tracks": 1,
+    "ppq": 384,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 138634
+  },
+  "duration_ticks": 138634,
+  "ppq": 384,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:32.777412"
+}

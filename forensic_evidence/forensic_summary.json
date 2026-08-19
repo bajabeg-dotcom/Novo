@@ -1,0 +1,26 @@
+{
+  "forensic_level": 5,
+  "generated_at": "2026-08-19T18:04:34.108506",
+  "sources": {
+    "final_zip": "/workspace/final_extracted",
+    "dna_zip": "/workspace/dna_extracted"
+  },
+  "statistics": {
+    "total_midi_files": 3393,
+    "gold_dna_files": 182,
+    "factory_style_files": 3211,
+    "total_size_mb": 33.11,
+    "unique_styles": 249
+  },
+  "evidence_outputs": {
+    "hashes_file": "/workspace/forensic_evidence/hashes/all_hashes.json",
+    "sql_file": "/workspace/forensic_evidence/sql_evidence/forensic_evidence.sql",
+    "analysis_directory": "/workspace/forensic_evidence/midi_analysis",
+    "reversed_project_dir": "/workspace/forensic_evidence/reversed_project"
+  },
+  "integrity": {
+    "all_files_hashed": true,
+    "chain_of_custody_documented": true,
+    "metadata_preserved": true
+  }
+}

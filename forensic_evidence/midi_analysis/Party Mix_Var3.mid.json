@@ -1,0 +1,54 @@
+{
+  "file_path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/Party Mix/Party Mix_Var3.mid",
+  "filename": "Party Mix_Var3.mid",
+  "hash_sha256": "8b205e20ce1d78bf9a02eedbe04d9ea55f423d1944e411f0e8c19935ffad2033",
+  "hash_md5": "74e14772e38c0f3b873ca13ddc2ab0d5",
+  "metadata": {
+    "size_bytes": 2183,
+    "created_time": "2026-08-19T18:01:35.347580",
+    "modified_time": "1980-01-02T00:00:00",
+    "access_time": "2026-08-19T18:04:33.770830",
+    "inode": 400060,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 1,
+    "num_tracks": 14,
+    "ppq": 192,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 2183
+  },
+  "duration_ticks": 2183,
+  "ppq": 192,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    },
+    {
+      "type": "STYLE_CATEGORY",
+      "style": "Party Mix",
+      "description": "Factory style: Party Mix"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:33.771658"
+}

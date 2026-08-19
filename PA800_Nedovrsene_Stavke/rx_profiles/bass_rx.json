@@ -1,0 +1,170 @@
+{
+  "Finger_Bass_RX": {
+    "bank_msb": 127,
+    "bank_lsb": 0,
+    "program": 32,
+    "velocity_zones": [
+      {
+        "min": 1,
+        "max": 60,
+        "sample": "soft",
+        "description": "Tihi udarac"
+      },
+      {
+        "min": 61,
+        "max": 100,
+        "sample": "medium",
+        "description": "Srednji udarac"
+      },
+      {
+        "min": 101,
+        "max": 127,
+        "sample": "hard",
+        "description": "Jaki udarac"
+      }
+    ],
+    "key_zones": {
+      "low": 24,
+      "high": 72
+    },
+    "noise_triggers": {
+      "fret_squeak": {
+        "velocity_min": 80,
+        "key_range": [
+          36,
+          60
+        ]
+      },
+      "slide_noise": {
+        "velocity_min": 60,
+        "key_range": [
+          24,
+          72
+        ]
+      }
+    },
+    "multisample_switches": {
+      "low_sample": {
+        "key_threshold": 48
+      },
+      "high_sample": {
+        "key_threshold": 60
+      }
+    },
+    "confirmed": false,
+    "confidence": 0.7,
+    "source": "Factory_MIDI_analysis"
+  },
+  "Picked_Bass_RX": {
+    "bank_msb": 127,
+    "bank_lsb": 0,
+    "program": 33,
+    "velocity_zones": [
+      {
+        "min": 1,
+        "max": 50,
+        "sample": "soft_pick",
+        "description": "Meki trzaj"
+      },
+      {
+        "min": 51,
+        "max": 90,
+        "sample": "medium_pick",
+        "description": "Srednji trzaj"
+      },
+      {
+        "min": 91,
+        "max": 127,
+        "sample": "hard_pick",
+        "description": "Jaki trzaj"
+      }
+    ],
+    "key_zones": {
+      "low": 24,
+      "high": 72
+    },
+    "noise_triggers": {
+      "pick_attack": {
+        "velocity_min": 70,
+        "key_range": [
+          30,
+          65
+        ]
+      },
+      "string_noise": {
+        "velocity_min": 50,
+        "key_range": [
+          24,
+          72
+        ]
+      }
+    },
+    "multisample_switches": {
+      "low_sample": {
+        "key_threshold": 44
+      },
+      "high_sample": {
+        "key_threshold": 58
+      }
+    },
+    "confirmed": false,
+    "confidence": 0.68,
+    "source": "Factory_MIDI_analysis"
+  },
+  "Slap_Bass_RX": {
+    "bank_msb": 127,
+    "bank_lsb": 0,
+    "program": 34,
+    "velocity_zones": [
+      {
+        "min": 1,
+        "max": 70,
+        "sample": "soft_slap",
+        "description": "Meki slap"
+      },
+      {
+        "min": 71,
+        "max": 110,
+        "sample": "medium_slap",
+        "description": "Srednji slap"
+      },
+      {
+        "min": 111,
+        "max": 127,
+        "sample": "hard_slap",
+        "description": "Jaki slap"
+      }
+    ],
+    "key_zones": {
+      "low": 28,
+      "high": 76
+    },
+    "noise_triggers": {
+      "slap_pop": {
+        "velocity_min": 90,
+        "key_range": [
+          40,
+          70
+        ]
+      },
+      "thumb_noise": {
+        "velocity_min": 60,
+        "key_range": [
+          28,
+          76
+        ]
+      }
+    },
+    "multisample_switches": {
+      "low_sample": {
+        "key_threshold": 46
+      },
+      "high_sample": {
+        "key_threshold": 62
+      }
+    },
+    "confirmed": false,
+    "confidence": 0.65,
+    "source": "Factory_MIDI_analysis"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "file_path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/Swing HipHop/Swing HipHop_End2.mid",
+  "filename": "Swing HipHop_End2.mid",
+  "hash_sha256": "ebea82d907d34082ba059a76f014613a45bd0c43c298ba4321313635f18c6324",
+  "hash_md5": "ef08b5f693e9a215ecde34025f660e95",
+  "metadata": {
+    "size_bytes": 4278,
+    "created_time": "2026-08-19T18:01:35.433583",
+    "modified_time": "1980-01-02T00:00:00",
+    "access_time": "2026-08-19T18:04:33.729829",
+    "inode": 524733,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 1,
+    "num_tracks": 21,
+    "ppq": 192,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 4278
+  },
+  "duration_ticks": 4278,
+  "ppq": 192,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    },
+    {
+      "type": "STYLE_CATEGORY",
+      "style": "Swing HipHop",
+      "description": "Factory style: Swing HipHop"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:33.730360"
+}

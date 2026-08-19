@@ -1,0 +1,49 @@
+{
+  "file_path": "/workspace/dna_extracted/gold_dna/Gold DNA/SUDJENO NAM-ESAD PLAVI UZIVO.MID",
+  "filename": "SUDJENO NAM-ESAD PLAVI UZIVO.MID",
+  "hash_sha256": "416ae62f3aaa488a85384e828144246c521b33a0d3ad69b91f068f2384b56e01",
+  "hash_md5": "36ae29f46163d02b6a7957e6e95be527",
+  "metadata": {
+    "size_bytes": 162314,
+    "created_time": "2026-08-19T18:01:35.099570",
+    "modified_time": "2010-10-04T16:55:18",
+    "access_time": "2026-08-19T18:04:32.788790",
+    "inode": 397768,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 0,
+    "num_tracks": 1,
+    "ppq": 384,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 162314
+  },
+  "duration_ticks": 162314,
+  "ppq": 384,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:32.790221"
+}

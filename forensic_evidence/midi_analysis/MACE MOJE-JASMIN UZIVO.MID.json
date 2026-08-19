@@ -1,0 +1,49 @@
+{
+  "file_path": "/workspace/dna_extracted/gold_dna/Gold DNA/MACE MOJE-JASMIN UZIVO.MID",
+  "filename": "MACE MOJE-JASMIN UZIVO.MID",
+  "hash_sha256": "3be59b0390b2bc1c316493da100694f381b4663eb23ba03200083f0c7b1d0333",
+  "hash_md5": "815d406a3fb581fc7206316176dd5173",
+  "metadata": {
+    "size_bytes": 66332,
+    "created_time": "2026-08-19T18:01:35.042567",
+    "modified_time": "2010-02-22T18:07:34",
+    "access_time": "2026-08-19T18:04:32.785790",
+    "inode": 397713,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 0,
+    "num_tracks": 1,
+    "ppq": 384,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 66332
+  },
+  "duration_ticks": 66332,
+  "ppq": 384,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:32.786873"
+}

@@ -1,0 +1,54 @@
+{
+  "file_path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/Country Strum/Country Strum_Var4.mid",
+  "filename": "Country Strum_Var4.mid",
+  "hash_sha256": "f6147c93f36ae37f5aab974110750c2157c9b05e03a0251e173141107109790e",
+  "hash_md5": "461ef19da9a8f6ce3f1b9bf62acdb9a8",
+  "metadata": {
+    "size_bytes": 12222,
+    "created_time": "2026-08-19T18:01:35.197574",
+    "modified_time": "1980-01-02T00:00:00",
+    "access_time": "2026-08-19T18:04:33.155805",
+    "inode": 398535,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 1,
+    "num_tracks": 23,
+    "ppq": 192,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 12222
+  },
+  "duration_ticks": 12222,
+  "ppq": 192,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    },
+    {
+      "type": "STYLE_CATEGORY",
+      "style": "Country Strum",
+      "description": "Factory style: Country Strum"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:33.156238"
+}

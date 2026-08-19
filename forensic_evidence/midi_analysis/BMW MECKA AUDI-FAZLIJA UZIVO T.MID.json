@@ -1,0 +1,49 @@
+{
+  "file_path": "/workspace/dna_extracted/gold_dna/Gold DNA/BMW MECKA AUDI-FAZLIJA UZIVO T.MID",
+  "filename": "BMW MECKA AUDI-FAZLIJA UZIVO T.MID",
+  "hash_sha256": "027196c3e68526b55247474c49a17b7bfce2208c8dc0414ee467ede2df256383",
+  "hash_md5": "a342bdf9f2e9fe75b251e52c6d692fda",
+  "metadata": {
+    "size_bytes": 131165,
+    "created_time": "2026-08-19T18:01:34.956564",
+    "modified_time": "2010-10-19T19:44:30",
+    "access_time": "2026-08-19T18:04:32.796791",
+    "inode": 397619,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 0,
+    "num_tracks": 1,
+    "ppq": 384,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 131165
+  },
+  "duration_ticks": 131165,
+  "ppq": 384,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:32.797911"
+}

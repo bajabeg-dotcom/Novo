@@ -1,0 +1,54 @@
+{
+  "file_path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/Big Band 40's/Big Band 40's_End3.mid",
+  "filename": "Big Band 40's_End3.mid",
+  "hash_sha256": "e3676b6f82da5803e75e3e6ae7081c981dd34c5ca13dee83dc4c79581fabf3ec",
+  "hash_md5": "907f9e239c04ad2fdf481cdf5af0891f",
+  "metadata": {
+    "size_bytes": 3965,
+    "created_time": "2026-08-19T18:01:35.145572",
+    "modified_time": "1980-01-02T00:00:00",
+    "access_time": "2026-08-19T18:04:33.812832",
+    "inode": 398125,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 1,
+    "num_tracks": 50,
+    "ppq": 192,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 3965
+  },
+  "duration_ticks": 3965,
+  "ppq": 192,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    },
+    {
+      "type": "STYLE_CATEGORY",
+      "style": "Big Band 40's",
+      "description": "Factory style: Big Band 40's"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:33.813361"
+}

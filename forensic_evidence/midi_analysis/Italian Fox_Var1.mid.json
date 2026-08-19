@@ -1,0 +1,54 @@
+{
+  "file_path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/Italian Fox/Italian Fox_Var1.mid",
+  "filename": "Italian Fox_Var1.mid",
+  "hash_sha256": "cf5eb8a30994c308f208cc556c54fd6e6b10d465d30de4ca6ab8ee96dbe24cd1",
+  "hash_md5": "540e78a2daf2b8ee8b9519f5b39d348e",
+  "metadata": {
+    "size_bytes": 1209,
+    "created_time": "2026-08-19T18:01:35.306578",
+    "modified_time": "1980-01-02T00:00:00",
+    "access_time": "2026-08-19T18:04:33.425816",
+    "inode": 399399,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 1,
+    "num_tracks": 6,
+    "ppq": 192,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 1209
+  },
+  "duration_ticks": 1209,
+  "ppq": 192,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    },
+    {
+      "type": "STYLE_CATEGORY",
+      "style": "Italian Fox",
+      "description": "Factory style: Italian Fox"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:33.426564"
+}

@@ -1,0 +1,54 @@
+{
+  "file_path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/Slow Band/Slow Band_Break.mid",
+  "filename": "Slow Band_Break.mid",
+  "hash_sha256": "444d6629cc5f386f90657359d5aa07d1761c6b42aa8e55f409f5034dc010c5bd",
+  "hash_md5": "43087a0cce1dd8f7770829ae2f36f3e8",
+  "metadata": {
+    "size_bytes": 1032,
+    "created_time": "2026-08-19T18:01:35.420583",
+    "modified_time": "1980-01-02T00:00:00",
+    "access_time": "2026-08-19T18:04:32.956797",
+    "inode": 524508,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 1,
+    "num_tracks": 12,
+    "ppq": 192,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 1032
+  },
+  "duration_ticks": 1032,
+  "ppq": 192,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    },
+    {
+      "type": "STYLE_CATEGORY",
+      "style": "Slow Band",
+      "description": "Factory style: Slow Band"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:32.957315"
+}

@@ -1,0 +1,54 @@
+{
+  "file_path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/Groove Funk/Groove Funk_End1.mid",
+  "filename": "Groove Funk_End1.mid",
+  "hash_sha256": "9a4f445fd99f2ba9dc5d7679cec38e381f8e7fb8ab7ce95ee1c583f707f688e7",
+  "hash_md5": "74e13677fa469f040a9dac459daa0a85",
+  "metadata": {
+    "size_bytes": 10226,
+    "created_time": "2026-08-19T18:01:35.253576",
+    "modified_time": "1980-01-02T00:00:00",
+    "access_time": "2026-08-19T18:04:33.854834",
+    "inode": 399153,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 1,
+    "num_tracks": 20,
+    "ppq": 192,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 10226
+  },
+  "duration_ticks": 10226,
+  "ppq": 192,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    },
+    {
+      "type": "STYLE_CATEGORY",
+      "style": "Groove Funk",
+      "description": "Factory style: Groove Funk"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:33.855191"
+}

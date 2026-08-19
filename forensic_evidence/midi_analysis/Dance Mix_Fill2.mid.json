@@ -1,0 +1,54 @@
+{
+  "file_path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/Dance Mix/Dance Mix_Fill2.mid",
+  "filename": "Dance Mix_Fill2.mid",
+  "hash_sha256": "d59f6b8209fc84401a4c40a7ae63f5f3a0c2ac28aa24840dd7333100a4d1508c",
+  "hash_md5": "7541e49ec62b9e9f9302582a44fcf1e9",
+  "metadata": {
+    "size_bytes": 3168,
+    "created_time": "2026-08-19T18:01:35.200574",
+    "modified_time": "1980-01-02T00:00:00",
+    "access_time": "2026-08-19T18:04:32.946797",
+    "inode": 398570,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 1,
+    "num_tracks": 18,
+    "ppq": 192,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 3168
+  },
+  "duration_ticks": 3168,
+  "ppq": 192,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    },
+    {
+      "type": "STYLE_CATEGORY",
+      "style": "Dance Mix",
+      "description": "Factory style: Dance Mix"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:32.947173"
+}

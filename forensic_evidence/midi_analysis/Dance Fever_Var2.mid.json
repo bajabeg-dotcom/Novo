@@ -1,0 +1,54 @@
+{
+  "file_path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/Dance Fever/Dance Fever_Var2.mid",
+  "filename": "Dance Fever_Var2.mid",
+  "hash_sha256": "7dd41d34b2908cc815171851593d97a9179bb3ddd3a512efae805f0c11c4141d",
+  "hash_md5": "1028af845d867c762bb3ff9f3821d101",
+  "metadata": {
+    "size_bytes": 9267,
+    "created_time": "2026-08-19T18:01:35.199574",
+    "modified_time": "1980-01-02T00:00:00",
+    "access_time": "2026-08-19T18:04:33.009799",
+    "inode": 398561,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 1,
+    "num_tracks": 20,
+    "ppq": 192,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 9267
+  },
+  "duration_ticks": 9267,
+  "ppq": 192,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    },
+    {
+      "type": "STYLE_CATEGORY",
+      "style": "Dance Fever",
+      "description": "Factory style: Dance Fever"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:33.010487"
+}

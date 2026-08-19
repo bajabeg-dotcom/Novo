@@ -1,0 +1,54 @@
+{
+  "file_path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/Foxtrot 2/Foxtrot 2_Fill2.mid",
+  "filename": "Foxtrot 2_Fill2.mid",
+  "hash_sha256": "a9cbfca890bc219e6b2c01ed4a1f1b4d620d082262b2be60eec43bf512b84015",
+  "hash_md5": "d4d185a7b5b2604791ec59f74c584b46",
+  "metadata": {
+    "size_bytes": 1304,
+    "created_time": "2026-08-19T18:01:35.233575",
+    "modified_time": "1980-01-02T00:00:00",
+    "access_time": "2026-08-19T18:04:33.557822",
+    "inode": 398947,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 1,
+    "num_tracks": 13,
+    "ppq": 192,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 1304
+  },
+  "duration_ticks": 1304,
+  "ppq": 192,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    },
+    {
+      "type": "STYLE_CATEGORY",
+      "style": "Foxtrot 2",
+      "description": "Factory style: Foxtrot 2"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:33.558228"
+}

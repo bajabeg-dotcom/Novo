@@ -1,0 +1,54 @@
+{
+  "file_path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/Easy Ballad/Easy Ballad_Var1.mid",
+  "filename": "Easy Ballad_Var1.mid",
+  "hash_sha256": "0325180e45993e33096a56f64c1bf4f3a0595633247e8686699cf27ea95edf53",
+  "hash_md5": "4ea6dbe312508e4aaa91cb4e8c1058d5",
+  "metadata": {
+    "size_bytes": 3023,
+    "created_time": "2026-08-19T18:01:35.209574",
+    "modified_time": "1980-01-02T00:00:00",
+    "access_time": "2026-08-19T18:04:33.270810",
+    "inode": 398667,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 1,
+    "num_tracks": 10,
+    "ppq": 192,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 3023
+  },
+  "duration_ticks": 3023,
+  "ppq": 192,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    },
+    {
+      "type": "STYLE_CATEGORY",
+      "style": "Easy Ballad",
+      "description": "Factory style: Easy Ballad"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:33.271498"
+}

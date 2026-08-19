@@ -1,0 +1,54 @@
+{
+  "file_path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/Al Funk/Al Funk_Var2.mid",
+  "filename": "Al Funk_Var2.mid",
+  "hash_sha256": "8c515b9d18e3aa8ccdd058ea3a826a35f5bed7c697fc67116a0303498b93f277",
+  "hash_md5": "697b697586ae8fa0b162782be661f67a",
+  "metadata": {
+    "size_bytes": 6748,
+    "created_time": "2026-08-19T18:01:35.131571",
+    "modified_time": "1980-01-02T00:00:00",
+    "access_time": "2026-08-19T18:04:33.863834",
+    "inode": 397926,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 1,
+    "num_tracks": 20,
+    "ppq": 192,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 6748
+  },
+  "duration_ticks": 6748,
+  "ppq": 192,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    },
+    {
+      "type": "STYLE_CATEGORY",
+      "style": "Al Funk",
+      "description": "Factory style: Al Funk"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:33.865051"
+}

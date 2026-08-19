@@ -1,0 +1,54 @@
+{
+  "file_path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/Analog Ballad 1/Analog Ballad 1_Var3.mid",
+  "filename": "Analog Ballad 1_Var3.mid",
+  "hash_sha256": "4cb3d2a809e4c539ef085ab87705c5def30aa4f2c67d965bf1c28843cf29a03b",
+  "hash_md5": "9c936d18c1e6c6e7cb5146530eb40672",
+  "metadata": {
+    "size_bytes": 3723,
+    "created_time": "2026-08-19T18:01:35.136571",
+    "modified_time": "1980-01-02T00:00:00",
+    "access_time": "2026-08-19T18:04:32.968798",
+    "inode": 397983,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 1,
+    "num_tracks": 22,
+    "ppq": 192,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 3723
+  },
+  "duration_ticks": 3723,
+  "ppq": 192,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    },
+    {
+      "type": "STYLE_CATEGORY",
+      "style": "Analog Ballad 1",
+      "description": "Factory style: Analog Ballad 1"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:32.969994"
+}

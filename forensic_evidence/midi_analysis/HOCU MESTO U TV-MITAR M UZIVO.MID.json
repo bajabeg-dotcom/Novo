@@ -1,0 +1,49 @@
+{
+  "file_path": "/workspace/dna_extracted/gold_dna/Gold DNA/HOCU MESTO U TV-MITAR M UZIVO.MID",
+  "filename": "HOCU MESTO U TV-MITAR M UZIVO.MID",
+  "hash_sha256": "5ae9c0494dbf834c2b5ab7b68ce89074192ae3a159d1dc0fab9b0bff0acd1225",
+  "hash_md5": "a71107539073f20b61d9ebd485af4b4f",
+  "metadata": {
+    "size_bytes": 92944,
+    "created_time": "2026-08-19T18:01:34.999566",
+    "modified_time": "2010-09-23T17:28:12",
+    "access_time": "2026-08-19T18:04:32.798791",
+    "inode": 397669,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 0,
+    "num_tracks": 1,
+    "ppq": 384,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 92944
+  },
+  "duration_ticks": 92944,
+  "ppq": 384,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:32.800072"
+}

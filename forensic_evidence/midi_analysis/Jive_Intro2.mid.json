@@ -1,0 +1,54 @@
+{
+  "file_path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/Jive/Jive_Intro2.mid",
+  "filename": "Jive_Intro2.mid",
+  "hash_sha256": "224a7ecb4d435c4983ac8e3c544bebf7b78086c2a8191896ab5a4ca9ee3857b1",
+  "hash_md5": "4931ce609ea952349e6f07ed099be4c9",
+  "metadata": {
+    "size_bytes": 5583,
+    "created_time": "2026-08-19T18:01:35.315578",
+    "modified_time": "1980-01-02T00:00:00",
+    "access_time": "2026-08-19T18:04:33.527821",
+    "inode": 399545,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 1,
+    "num_tracks": 20,
+    "ppq": 192,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 5583
+  },
+  "duration_ticks": 5583,
+  "ppq": 192,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    },
+    {
+      "type": "STYLE_CATEGORY",
+      "style": "Jive",
+      "description": "Factory style: Jive"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:33.528519"
+}

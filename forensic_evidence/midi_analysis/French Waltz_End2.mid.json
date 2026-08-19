@@ -1,0 +1,54 @@
+{
+  "file_path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/French Waltz/French Waltz_End2.mid",
+  "filename": "French Waltz_End2.mid",
+  "hash_sha256": "268bdb3a960b415ed43f88d79b2765b5909705270c5366016e11eb0c4d5d9616",
+  "hash_md5": "08711e3d04e749e2f27987c03772e7d3",
+  "metadata": {
+    "size_bytes": 2424,
+    "created_time": "2026-08-19T18:01:35.234575",
+    "modified_time": "1980-01-02T00:00:00",
+    "access_time": "2026-08-19T18:04:33.662826",
+    "inode": 398958,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 1,
+    "num_tracks": 19,
+    "ppq": 192,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 2424
+  },
+  "duration_ticks": 2424,
+  "ppq": 192,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    },
+    {
+      "type": "STYLE_CATEGORY",
+      "style": "French Waltz",
+      "description": "Factory style: French Waltz"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:33.663629"
+}

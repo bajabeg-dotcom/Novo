@@ -1,0 +1,54 @@
+{
+  "file_path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/Big Band Jump/Big Band Jump_End1.mid",
+  "filename": "Big Band Jump_End1.mid",
+  "hash_sha256": "7387f7fb5810be28c2465e074eaa9a44a3d48967e000305024ea321aa03e09b4",
+  "hash_md5": "a51a1452fbe52da8798046fad396bb1f",
+  "metadata": {
+    "size_bytes": 12488,
+    "created_time": "2026-08-19T18:01:35.147572",
+    "modified_time": "1980-01-02T00:00:00",
+    "access_time": "2026-08-19T18:04:33.135805",
+    "inode": 398151,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 1,
+    "num_tracks": 22,
+    "ppq": 192,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 12488
+  },
+  "duration_ticks": 12488,
+  "ppq": 192,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    },
+    {
+      "type": "STYLE_CATEGORY",
+      "style": "Big Band Jump",
+      "description": "Factory style: Big Band Jump"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:33.136904"
+}

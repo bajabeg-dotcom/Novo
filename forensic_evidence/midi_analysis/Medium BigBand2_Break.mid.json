@@ -1,0 +1,54 @@
+{
+  "file_path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/Medium BigBand2/Medium BigBand2_Break.mid",
+  "filename": "Medium BigBand2_Break.mid",
+  "hash_sha256": "ab4956d5260258c264bac0544cfaa1965d09dc9a845163332bbc67f062dc55d2",
+  "hash_md5": "0a7cb2aea904c88d1621ef73f507a7a1",
+  "metadata": {
+    "size_bytes": 839,
+    "created_time": "2026-08-19T18:01:35.323579",
+    "modified_time": "1980-01-02T00:00:00",
+    "access_time": "2026-08-19T18:04:33.009799",
+    "inode": 399676,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 1,
+    "num_tracks": 10,
+    "ppq": 192,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 839
+  },
+  "duration_ticks": 839,
+  "ppq": 192,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    },
+    {
+      "type": "STYLE_CATEGORY",
+      "style": "Medium BigBand2",
+      "description": "Factory style: Medium BigBand2"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:33.011054"
+}

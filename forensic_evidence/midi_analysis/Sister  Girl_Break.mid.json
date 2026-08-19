@@ -1,0 +1,54 @@
+{
+  "file_path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/Sister & Girl/Sister & Girl_Break.mid",
+  "filename": "Sister & Girl_Break.mid",
+  "hash_sha256": "b4f39b09c105d6b351f51be824bf4aea22e112e9e00dea200149234d8e7f0335",
+  "hash_md5": "3a950de0218a9b8a20706bd25f2d68f3",
+  "metadata": {
+    "size_bytes": 1118,
+    "created_time": "2026-08-19T18:01:35.416583",
+    "modified_time": "1980-01-02T00:00:00",
+    "access_time": "2026-08-19T18:04:33.108804",
+    "inode": 524452,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 1,
+    "num_tracks": 12,
+    "ppq": 192,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 1118
+  },
+  "duration_ticks": 1118,
+  "ppq": 192,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    },
+    {
+      "type": "STYLE_CATEGORY",
+      "style": "Sister & Girl",
+      "description": "Factory style: Sister & Girl"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:33.109843"
+}

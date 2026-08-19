@@ -1,0 +1,54 @@
+{
+  "file_path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/Quick Step 1/Quick Step 1_Intro2.mid",
+  "filename": "Quick Step 1_Intro2.mid",
+  "hash_sha256": "dfb0734709bc139504a7cdca3b49cd3c369ce0018bf0d4f2c56b3e661adf0377",
+  "hash_md5": "0a93c2f89ed7e32dd53feee4d1c77006",
+  "metadata": {
+    "size_bytes": 4974,
+    "created_time": "2026-08-19T18:01:35.400582",
+    "modified_time": "1980-01-02T00:00:00",
+    "access_time": "2026-08-19T18:04:33.320812",
+    "inode": 400325,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 1,
+    "num_tracks": 16,
+    "ppq": 192,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 4974
+  },
+  "duration_ticks": 4974,
+  "ppq": 192,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    },
+    {
+      "type": "STYLE_CATEGORY",
+      "style": "Quick Step 1",
+      "description": "Factory style: Quick Step 1"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:33.321692"
+}

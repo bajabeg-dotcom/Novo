@@ -1,8 +1,144 @@
-__pycache__/
-*.py[cod]
-.venv/
-venv/
-*.egg-info/
+```
+# Compressed archives
+*.zip
+*.gz
+*.tar
+*.tgz
+*.bz2
+*.xz
+*.7z
+*.rar
+*.zst
+*.lz4
+*.lzh
+*.cab
+*.arj
+*.rpm
+*.deb
+*.Z
+*.lz
+*.lzo
+*.tar.gz
+*.tar.bz2
+*.tar.xz
+*.tar.zst
+
+# Temporary directories
+temp_dna/
+temp_final/
+
+# DNA related directories (from path patterns)
+dna_extracted/
+
+# MIDI files (if considered generated/output)
+**/*.mid
+
+# Build/dist directories (general)
+dist/
 build/
-.pytest_cache/
+target/
+out/
+
+# Virtual environments
+venv/
+.venv/
+env/
+.env/
+
+# Python specific
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+
+# Logs
+*.log
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# IDE specific
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Coverage reports
+coverage/
+htmlcov/
+.coverage
+
+# Package manager caches
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+
+# Environment variable files
+.env
+.env.local
+*.env.*
+
+# Backup files
+*~
+*.bak
+*.tmp
+
+# Compiled binaries
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Java/Gradle
+.gradle/
+build/
+*.class
+*.jar
+*.war
+*.ear
+
+# C/C++
+*.o
+*.a
+*.obj
+*.out
+
+# Ruby
+*.gem
+.bundle/
+Gemfile.lock
+
+# Go
+*.exe
+*.dll
+*.so
+*.test
+*.prof
+
+# Rust
+Cargo.lock
+target/
+
+# Julia
+.julia/
+
+# Zig
+zig-cache/
+zig-out/
+
+# MyPy
 .mypy_cache/
+
+# PyTest
+.pytest_cache/
+
+```

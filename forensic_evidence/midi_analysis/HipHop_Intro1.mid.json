@@ -1,0 +1,54 @@
+{
+  "file_path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/HipHop/HipHop_Intro1.mid",
+  "filename": "HipHop_Intro1.mid",
+  "hash_sha256": "fe4bdcb37b83665e51f4f2a0804d56eb56df81e4b68d69686496758404a44095",
+  "hash_md5": "4088acddf9be41eadda1b1877a3e9856",
+  "metadata": {
+    "size_bytes": 6859,
+    "created_time": "2026-08-19T18:01:35.300578",
+    "modified_time": "1980-01-02T00:00:00",
+    "access_time": "2026-08-19T18:04:33.280810",
+    "inode": 399284,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 1,
+    "num_tracks": 20,
+    "ppq": 192,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 6859
+  },
+  "duration_ticks": 6859,
+  "ppq": 192,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    },
+    {
+      "type": "STYLE_CATEGORY",
+      "style": "HipHop",
+      "description": "Factory style: HipHop"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:33.281437"
+}

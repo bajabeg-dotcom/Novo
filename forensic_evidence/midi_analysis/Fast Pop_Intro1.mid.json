@@ -1,0 +1,54 @@
+{
+  "file_path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/Fast Pop/Fast Pop_Intro1.mid",
+  "filename": "Fast Pop_Intro1.mid",
+  "hash_sha256": "006b4c0c127f0dd10deafdb265cbd6dc455ff337708e536bd00baee68d843142",
+  "hash_md5": "aae05711d5ee0e164ef09e3e003dcc78",
+  "metadata": {
+    "size_bytes": 6493,
+    "created_time": "2026-08-19T18:01:35.224575",
+    "modified_time": "1980-01-02T00:00:00",
+    "access_time": "2026-08-19T18:04:33.263810",
+    "inode": 398839,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 1,
+    "num_tracks": 18,
+    "ppq": 192,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 6493
+  },
+  "duration_ticks": 6493,
+  "ppq": 192,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    },
+    {
+      "type": "STYLE_CATEGORY",
+      "style": "Fast Pop",
+      "description": "Factory style: Fast Pop"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:33.264397"
+}

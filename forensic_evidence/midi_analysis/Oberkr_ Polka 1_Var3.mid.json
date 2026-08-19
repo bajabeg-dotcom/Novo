@@ -1,0 +1,54 @@
+{
+  "file_path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/Oberkr/Oberkr_ Polka 1_Var3.mid",
+  "filename": "Oberkr_ Polka 1_Var3.mid",
+  "hash_sha256": "cd5e5c4bf751d4d9570b985db3d1ebee120ab57ac23af4c0ab1292821469cd22",
+  "hash_md5": "fc8b74263e0786f37b1d15baf5c192c7",
+  "metadata": {
+    "size_bytes": 4896,
+    "created_time": "2026-08-19T18:01:35.337579",
+    "modified_time": "1980-01-02T00:00:00",
+    "access_time": "2026-08-19T18:04:33.475818",
+    "inode": 399895,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 1,
+    "num_tracks": 15,
+    "ppq": 192,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 4896
+  },
+  "duration_ticks": 4896,
+  "ppq": 192,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    },
+    {
+      "type": "STYLE_CATEGORY",
+      "style": "Oberkr",
+      "description": "Factory style: Oberkr"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:33.476941"
+}

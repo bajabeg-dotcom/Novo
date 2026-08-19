@@ -1,0 +1,54 @@
+{
+  "file_path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/Oberkr/Oberkr_ Waltz 1_Var3.mid",
+  "filename": "Oberkr_ Waltz 1_Var3.mid",
+  "hash_sha256": "48101a14074ff8c65015142d4231430bf364088b04260828761a16e76ac1115c",
+  "hash_md5": "514f74c52c33f03e9a4430390af7f939",
+  "metadata": {
+    "size_bytes": 16906,
+    "created_time": "2026-08-19T18:01:35.339580",
+    "modified_time": "1980-01-02T00:00:00",
+    "access_time": "2026-08-19T18:04:33.479819",
+    "inode": 399921,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 1,
+    "num_tracks": 36,
+    "ppq": 192,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 16906
+  },
+  "duration_ticks": 16906,
+  "ppq": 192,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    },
+    {
+      "type": "STYLE_CATEGORY",
+      "style": "Oberkr",
+      "description": "Factory style: Oberkr"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:33.480350"
+}

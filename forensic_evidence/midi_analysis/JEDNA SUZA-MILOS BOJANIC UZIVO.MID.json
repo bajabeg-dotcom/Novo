@@ -1,0 +1,49 @@
+{
+  "file_path": "/workspace/dna_extracted/gold_dna/Gold DNA/JEDNA SUZA-MILOS BOJANIC UZIVO.MID",
+  "filename": "JEDNA SUZA-MILOS BOJANIC UZIVO.MID",
+  "hash_sha256": "3be8db042b18d56f80e4339c469f76281a30a6c758605e1f5d356a40b9d9b8b7",
+  "hash_md5": "4c38c402bc62986b401ca13f886b9084",
+  "metadata": {
+    "size_bytes": 98028,
+    "created_time": "2026-08-19T18:01:35.017566",
+    "modified_time": "2010-08-15T13:03:22",
+    "access_time": "2026-08-19T18:04:32.864794",
+    "inode": 397688,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 0,
+    "num_tracks": 1,
+    "ppq": 384,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 98028
+  },
+  "duration_ticks": 98028,
+  "ppq": 384,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:32.865745"
+}

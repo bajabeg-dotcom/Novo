@@ -1,0 +1,54 @@
+{
+  "file_path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/60's Dance/60's Dance_Break.mid",
+  "filename": "60's Dance_Break.mid",
+  "hash_sha256": "4b0da564af734e8dc128dd4c2cd44e34e7f3d3a8faa51406b950c1419d945ba1",
+  "hash_md5": "c255a82a8d12a99169993c323136aac1",
+  "metadata": {
+    "size_bytes": 774,
+    "created_time": "2026-08-19T18:01:35.121571",
+    "modified_time": "1980-01-02T00:00:00",
+    "access_time": "2026-08-19T18:04:33.928837",
+    "inode": 397804,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 1,
+    "num_tracks": 10,
+    "ppq": 192,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 774
+  },
+  "duration_ticks": 774,
+  "ppq": 192,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    },
+    {
+      "type": "STYLE_CATEGORY",
+      "style": "60's Dance",
+      "description": "Factory style: 60's Dance"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:33.929866"
+}

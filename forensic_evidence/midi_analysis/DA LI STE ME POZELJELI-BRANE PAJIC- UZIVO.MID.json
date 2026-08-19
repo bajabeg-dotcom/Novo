@@ -1,0 +1,49 @@
+{
+  "file_path": "/workspace/dna_extracted/gold_dna/Gold DNA/DA LI STE ME POZELJELI-BRANE PAJIC- UZIVO.MID",
+  "filename": "DA LI STE ME POZELJELI-BRANE PAJIC- UZIVO.MID",
+  "hash_sha256": "fc758ef6c255a301f458137320e33fd33c1212f2402615a88e948943d021ed77",
+  "hash_md5": "768fd3873173ec95b2d324f46fc6cebd",
+  "metadata": {
+    "size_bytes": 77430,
+    "created_time": "2026-08-19T18:01:34.969564",
+    "modified_time": "2010-06-02T18:49:04",
+    "access_time": "2026-08-19T18:04:32.800791",
+    "inode": 397633,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 0,
+    "num_tracks": 1,
+    "ppq": 384,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 77430
+  },
+  "duration_ticks": 77430,
+  "ppq": 384,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:32.802246"
+}

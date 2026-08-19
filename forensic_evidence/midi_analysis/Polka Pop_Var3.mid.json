@@ -1,0 +1,54 @@
+{
+  "file_path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/Polka Pop/Polka Pop_Var3.mid",
+  "filename": "Polka Pop_Var3.mid",
+  "hash_sha256": "b2783f358e5f69eb2a933e6dca3bd8695f8e5409fe5dfeaa129ac4ec2e91ab31",
+  "hash_md5": "5040bd9c5c3a5fe4b8345cebc8481667",
+  "metadata": {
+    "size_bytes": 7080,
+    "created_time": "2026-08-19T18:01:35.351580",
+    "modified_time": "1980-01-02T00:00:00",
+    "access_time": "2026-08-19T18:04:33.245809",
+    "inode": 400109,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 1,
+    "num_tracks": 22,
+    "ppq": 192,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 7080
+  },
+  "duration_ticks": 7080,
+  "ppq": 192,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    },
+    {
+      "type": "STYLE_CATEGORY",
+      "style": "Polka Pop",
+      "description": "Factory style: Polka Pop"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:33.246884"
+}

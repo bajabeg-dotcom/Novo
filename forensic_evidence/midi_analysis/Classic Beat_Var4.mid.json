@@ -1,0 +1,54 @@
+{
+  "file_path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/Classic Beat/Classic Beat_Var4.mid",
+  "filename": "Classic Beat_Var4.mid",
+  "hash_sha256": "240baefe7a890bcce18ceb865a25be8150a64d46c06e4d0f320fbc68f9cc41a5",
+  "hash_md5": "9e57292f5180654382f142e27d444239",
+  "metadata": {
+    "size_bytes": 2423,
+    "created_time": "2026-08-19T18:01:35.157572",
+    "modified_time": "1980-01-02T00:00:00",
+    "access_time": "2026-08-19T18:04:33.091803",
+    "inode": 398302,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 1,
+    "num_tracks": 50,
+    "ppq": 192,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 2423
+  },
+  "duration_ticks": 2423,
+  "ppq": 192,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    },
+    {
+      "type": "STYLE_CATEGORY",
+      "style": "Classic Beat",
+      "description": "Factory style: Classic Beat"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:33.092264"
+}

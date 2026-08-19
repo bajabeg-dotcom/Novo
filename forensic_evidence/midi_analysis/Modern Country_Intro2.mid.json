@@ -1,0 +1,54 @@
+{
+  "file_path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/Modern Country/Modern Country_Intro2.mid",
+  "filename": "Modern Country_Intro2.mid",
+  "hash_sha256": "20b128c2e3b22f2e5347a0ec33bf80895e9a4cd73b10ad1ea9981802159339a6",
+  "hash_md5": "45924c7aef1ad92147ba332d7ebcfb68",
+  "metadata": {
+    "size_bytes": 5854,
+    "created_time": "2026-08-19T18:01:35.327579",
+    "modified_time": "1980-01-02T00:00:00",
+    "access_time": "2026-08-19T18:04:33.520820",
+    "inode": 399753,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 1,
+    "num_tracks": 18,
+    "ppq": 192,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 5854
+  },
+  "duration_ticks": 5854,
+  "ppq": 192,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    },
+    {
+      "type": "STYLE_CATEGORY",
+      "style": "Modern Country",
+      "description": "Factory style: Modern Country"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:33.521575"
+}

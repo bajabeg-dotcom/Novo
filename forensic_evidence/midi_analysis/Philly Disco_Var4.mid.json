@@ -1,0 +1,54 @@
+{
+  "file_path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/Philly Disco/Philly Disco_Var4.mid",
+  "filename": "Philly Disco_Var4.mid",
+  "hash_sha256": "f897effbc1ac6b7011fa859d58a547e2521d4d79b105e5c46fa41c4abb92d78a",
+  "hash_md5": "6ae15da9c2fd61fe6a4e8632b2c2d160",
+  "metadata": {
+    "size_bytes": 12806,
+    "created_time": "2026-08-19T18:01:35.350580",
+    "modified_time": "1980-01-02T00:00:00",
+    "access_time": "2026-08-19T18:04:33.726829",
+    "inode": 400096,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 1,
+    "num_tracks": 22,
+    "ppq": 192,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 12806
+  },
+  "duration_ticks": 12806,
+  "ppq": 192,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    },
+    {
+      "type": "STYLE_CATEGORY",
+      "style": "Philly Disco",
+      "description": "Factory style: Philly Disco"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:33.727342"
+}

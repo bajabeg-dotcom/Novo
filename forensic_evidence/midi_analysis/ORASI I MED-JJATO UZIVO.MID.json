@@ -1,0 +1,49 @@
+{
+  "file_path": "/workspace/dna_extracted/gold_dna/Gold DNA/ORASI I MED-J,JATO UZIVO.MID",
+  "filename": "ORASI I MED-J,JATO UZIVO.MID",
+  "hash_sha256": "094596403bd3af7fa41e43739113d6f432f36ac66c0bb6366f3c0a90e4b409b5",
+  "hash_md5": "b63229a10be92701f467e1f7425d2b3a",
+  "metadata": {
+    "size_bytes": 122564,
+    "created_time": "2026-08-19T18:01:35.072569",
+    "modified_time": "2010-07-16T16:16:36",
+    "access_time": "2026-08-19T18:04:32.870794",
+    "inode": 397743,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 0,
+    "num_tracks": 1,
+    "ppq": 384,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 122564
+  },
+  "duration_ticks": 122564,
+  "ppq": 384,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:32.872142"
+}

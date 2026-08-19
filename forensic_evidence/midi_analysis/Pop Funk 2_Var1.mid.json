@@ -1,0 +1,54 @@
+{
+  "file_path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/Pop Funk 2/Pop Funk 2_Var1.mid",
+  "filename": "Pop Funk 2_Var1.mid",
+  "hash_sha256": "5f68a18a1826e1be6b45db5da9e0133e59ff61038f1afb67a40285f96baa00ad",
+  "hash_md5": "372e951ddd2e1b218ac45f463a21a1ac",
+  "metadata": {
+    "size_bytes": 2517,
+    "created_time": "2026-08-19T18:01:35.355580",
+    "modified_time": "1980-01-02T00:00:00",
+    "access_time": "2026-08-19T18:04:33.037801",
+    "inode": 400205,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 1,
+    "num_tracks": 8,
+    "ppq": 192,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 2517
+  },
+  "duration_ticks": 2517,
+  "ppq": 192,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    },
+    {
+      "type": "STYLE_CATEGORY",
+      "style": "Pop Funk 2",
+      "description": "Factory style: Pop Funk 2"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:33.038497"
+}

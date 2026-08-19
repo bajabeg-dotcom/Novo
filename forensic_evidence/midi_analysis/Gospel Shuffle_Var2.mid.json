@@ -1,0 +1,54 @@
+{
+  "file_path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/Gospel Shuffle/Gospel Shuffle_Var2.mid",
+  "filename": "Gospel Shuffle_Var2.mid",
+  "hash_sha256": "87db6365c3f03477f51bb6477db8182013ad9365598a7ed12cd48a1778940710",
+  "hash_md5": "e931caca7497113fdd92cf998297f7fa",
+  "metadata": {
+    "size_bytes": 23007,
+    "created_time": "2026-08-19T18:01:35.248576",
+    "modified_time": "1980-01-02T00:00:00",
+    "access_time": "2026-08-19T18:04:33.178806",
+    "inode": 399106,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 1,
+    "num_tracks": 23,
+    "ppq": 192,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 23007
+  },
+  "duration_ticks": 23007,
+  "ppq": 192,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    },
+    {
+      "type": "STYLE_CATEGORY",
+      "style": "Gospel Shuffle",
+      "description": "Factory style: Gospel Shuffle"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:33.180147"
+}

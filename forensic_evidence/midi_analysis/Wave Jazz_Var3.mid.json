@@ -1,0 +1,54 @@
+{
+  "file_path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/Wave Jazz/Wave Jazz_Var3.mid",
+  "filename": "Wave Jazz_Var3.mid",
+  "hash_sha256": "8a6052f16ba6743c63e7a391283ed01fb2b6d0ddfe6d2324dcdc763e9b10a5b8",
+  "hash_md5": "d4720bdd2f456d1c33e9208b7408fbbf",
+  "metadata": {
+    "size_bytes": 11119,
+    "created_time": "2026-08-19T18:01:35.496586",
+    "modified_time": "1980-01-02T00:00:00",
+    "access_time": "2026-08-19T18:04:33.702828",
+    "inode": 525078,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 1,
+    "num_tracks": 29,
+    "ppq": 192,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 11119
+  },
+  "duration_ticks": 11119,
+  "ppq": 192,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    },
+    {
+      "type": "STYLE_CATEGORY",
+      "style": "Wave Jazz",
+      "description": "Factory style: Wave Jazz"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:33.703388"
+}

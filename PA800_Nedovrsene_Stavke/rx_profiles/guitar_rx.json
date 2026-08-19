@@ -1,0 +1,197 @@
+{
+  "Clean_Guitar_RX1": {
+    "bank_msb": 127,
+    "bank_lsb": 0,
+    "program": 25,
+    "velocity_zones": [
+      {
+        "min": 1,
+        "max": 50,
+        "technique": "soft_pluck",
+        "description": "Meko trzanje"
+      },
+      {
+        "min": 51,
+        "max": 85,
+        "technique": "medium_pluck",
+        "description": "Srednje trzanje"
+      },
+      {
+        "min": 86,
+        "max": 127,
+        "technique": "hard_pluck",
+        "description": "Jako trzanje"
+      }
+    ],
+    "key_zones": {
+      "low": 40,
+      "high": 96
+    },
+    "protected_range": {
+      "start": 96,
+      "end": 108,
+      "reason": "C7+ visoke note za solo"
+    },
+    "noise_triggers": {
+      "fret_slide": {
+        "velocity_min": 60,
+        "key_range": [
+          40,
+          88
+        ]
+      },
+      "string_release": {
+        "velocity_min": 40,
+        "key_range": [
+          40,
+          96
+        ]
+      }
+    },
+    "rx_switches": {
+      "RX1": {
+        "velocity_range": [
+          1,
+          60
+        ],
+        "key_range": [
+          40,
+          84
+        ]
+      },
+      "RX2": {
+        "velocity_range": [
+          61,
+          90
+        ],
+        "key_range": [
+          40,
+          88
+        ]
+      },
+      "RX3": {
+        "velocity_range": [
+          91,
+          110
+        ],
+        "key_range": [
+          40,
+          92
+        ]
+      },
+      "RX4": {
+        "velocity_range": [
+          111,
+          127
+        ],
+        "key_range": [
+          40,
+          96
+        ]
+      }
+    },
+    "confirmed": false,
+    "confidence": 0.72,
+    "source": "Factory_MIDI_analysis"
+  },
+  "Dist_Guitar_RX1": {
+    "bank_msb": 127,
+    "bank_lsb": 0,
+    "program": 29,
+    "velocity_zones": [
+      {
+        "min": 1,
+        "max": 60,
+        "technique": "light_distortion",
+        "description": "Laga distorzija"
+      },
+      {
+        "min": 61,
+        "max": 100,
+        "technique": "medium_distortion",
+        "description": "Srednja distorzija"
+      },
+      {
+        "min": 101,
+        "max": 127,
+        "technique": "heavy_distortion",
+        "description": "Jaka distorzija"
+      }
+    ],
+    "key_zones": {
+      "low": 40,
+      "high": 96
+    },
+    "protected_range": {
+      "start": 96,
+      "end": 108,
+      "reason": "C7+ visoke note zabranjene za transpoziciju"
+    },
+    "noise_triggers": {
+      "power_chord_mute": {
+        "velocity_min": 80,
+        "key_range": [
+          40,
+          72
+        ]
+      },
+      "palm_mute": {
+        "velocity_min": 70,
+        "key_range": [
+          40,
+          84
+        ]
+      }
+    },
+    "rx_switches": {
+      "RX1": {
+        "velocity_range": [
+          1,
+          70
+        ],
+        "key_range": [
+          40,
+          80
+        ]
+      },
+      "RX2": {
+        "velocity_range": [
+          71,
+          127
+        ],
+        "key_range": [
+          40,
+          96
+        ]
+      }
+    },
+    "confirmed": false,
+    "confidence": 0.75,
+    "source": "Factory_MIDI_analysis"
+  },
+  "PowerChord_Guitar": {
+    "bank_msb": 127,
+    "bank_lsb": 0,
+    "program": 30,
+    "velocity_zones": [
+      {
+        "min": 1,
+        "max": 127,
+        "technique": "power_chord",
+        "description": "Power chord 1-127"
+      }
+    ],
+    "key_zones": {
+      "low": 36,
+      "high": 84
+    },
+    "voicing_rules": {
+      "root_fifth_octave": true,
+      "no_third": true,
+      "doubled_layers": true
+    },
+    "confirmed": false,
+    "confidence": 0.78,
+    "source": "Factory_MIDI_analysis"
+  }
+}

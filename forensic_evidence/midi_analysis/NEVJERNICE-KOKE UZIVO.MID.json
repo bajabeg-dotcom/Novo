@@ -1,0 +1,49 @@
+{
+  "file_path": "/workspace/dna_extracted/gold_dna/Gold DNA/NEVJERNICE-KOKE UZIVO.MID",
+  "filename": "NEVJERNICE-KOKE UZIVO.MID",
+  "hash_sha256": "9252fd3dec55c8742c804900c169bbfeefe7b4504149584b3d3b6ca540d5901c",
+  "hash_md5": "d03d0c2d034d745a5ffd651b2fea9807",
+  "metadata": {
+    "size_bytes": 100530,
+    "created_time": "2026-08-19T18:01:35.062568",
+    "modified_time": "2010-10-13T16:39:44",
+    "access_time": "2026-08-19T18:04:32.757789",
+    "inode": 397732,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 0,
+    "num_tracks": 1,
+    "ppq": 384,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 100530
+  },
+  "duration_ticks": 100530,
+  "ppq": 384,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:32.759507"
+}

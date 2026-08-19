@@ -1,0 +1,49 @@
+{
+  "file_path": "/workspace/dna_extracted/gold_dna/Gold DNA/GLAVA LUDA-ELMA UZIVO.MID",
+  "filename": "GLAVA LUDA-ELMA UZIVO.MID",
+  "hash_sha256": "25b67d8506706c17026446e67f817e5b9a9dfddde5d87cecbc0e9c07cd303920",
+  "hash_md5": "b6543504dad49118d2726910a19654c1",
+  "metadata": {
+    "size_bytes": 67823,
+    "created_time": "2026-08-19T18:01:34.986565",
+    "modified_time": "2010-01-08T20:26:34",
+    "access_time": "2026-08-19T18:04:32.821792",
+    "inode": 397655,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 0,
+    "num_tracks": 1,
+    "ppq": 384,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 67823
+  },
+  "duration_ticks": 67823,
+  "ppq": 384,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:32.823319"
+}

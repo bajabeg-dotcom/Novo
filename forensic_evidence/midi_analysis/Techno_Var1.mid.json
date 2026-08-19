@@ -1,0 +1,54 @@
+{
+  "file_path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/Techno/Techno_Var1.mid",
+  "filename": "Techno_Var1.mid",
+  "hash_sha256": "bce82c215798dd21fc351c6d78d96304f12e7240e4137dab3dd4aea1c461e38a",
+  "hash_md5": "a4e80cda0f9192c026c9eafa21fb62f3",
+  "metadata": {
+    "size_bytes": 1734,
+    "created_time": "2026-08-19T18:01:35.437583",
+    "modified_time": "1980-01-02T00:00:00",
+    "access_time": "2026-08-19T18:04:33.455817",
+    "inode": 524796,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 1,
+    "num_tracks": 7,
+    "ppq": 192,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 1734
+  },
+  "duration_ticks": 1734,
+  "ppq": 192,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    },
+    {
+      "type": "STYLE_CATEGORY",
+      "style": "Techno",
+      "description": "Factory style: Techno"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:33.456501"
+}

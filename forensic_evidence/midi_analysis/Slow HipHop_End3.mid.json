@@ -1,0 +1,54 @@
+{
+  "file_path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/Slow HipHop/Slow HipHop_End3.mid",
+  "filename": "Slow HipHop_End3.mid",
+  "hash_sha256": "c961a62a02fec13448bbac33a8e3d6ef557fd271b51cd241bb4e5bacc7e7dcaa",
+  "hash_md5": "7a9dd680c87ef53ed1ffbe6588d18895",
+  "metadata": {
+    "size_bytes": 3858,
+    "created_time": "2026-08-19T18:01:35.422583",
+    "modified_time": "1980-01-02T00:00:00",
+    "access_time": "2026-08-19T18:04:33.370814",
+    "inode": 524539,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 1,
+    "num_tracks": 49,
+    "ppq": 192,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 3858
+  },
+  "duration_ticks": 3858,
+  "ppq": 192,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    },
+    {
+      "type": "STYLE_CATEGORY",
+      "style": "Slow HipHop",
+      "description": "Factory style: Slow HipHop"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:33.371768"
+}

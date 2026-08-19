@@ -1,0 +1,54 @@
+{
+  "file_path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/Country Ballad 1/Country Ballad 1_Var2.mid",
+  "filename": "Country Ballad 1_Var2.mid",
+  "hash_sha256": "01aadce3398d386d249013687f930f7624fdf383baab4254487b36aed6b7e6bf",
+  "hash_md5": "8a0f54c8c4ead6802724d3254fce8415",
+  "metadata": {
+    "size_bytes": 3324,
+    "created_time": "2026-08-19T18:01:35.166573",
+    "modified_time": "1980-01-02T00:00:00",
+    "access_time": "2026-08-19T18:04:33.590823",
+    "inode": 398437,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 1,
+    "num_tracks": 14,
+    "ppq": 192,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 3324
+  },
+  "duration_ticks": 3324,
+  "ppq": 192,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    },
+    {
+      "type": "STYLE_CATEGORY",
+      "style": "Country Ballad 1",
+      "description": "Factory style: Country Ballad 1"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:33.591642"
+}

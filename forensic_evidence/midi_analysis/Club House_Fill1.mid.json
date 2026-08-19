@@ -1,0 +1,54 @@
+{
+  "file_path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/Club House/Club House_Fill1.mid",
+  "filename": "Club House_Fill1.mid",
+  "hash_sha256": "f9320c2b2e34c32c3f428e97bcc2fcf4f13dc8fd3de6fe91b34e1ceb89a3bd3a",
+  "hash_md5": "5f42915b99c6babc4e432c42a2f1ff59",
+  "metadata": {
+    "size_bytes": 1311,
+    "created_time": "2026-08-19T18:01:35.161572",
+    "modified_time": "1980-01-02T00:00:00",
+    "access_time": "2026-08-19T18:04:32.911795",
+    "inode": 398362,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 1,
+    "num_tracks": 12,
+    "ppq": 192,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 1311
+  },
+  "duration_ticks": 1311,
+  "ppq": 192,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    },
+    {
+      "type": "STYLE_CATEGORY",
+      "style": "Club House",
+      "description": "Factory style: Club House"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:32.912071"
+}

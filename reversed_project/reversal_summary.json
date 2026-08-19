@@ -1,0 +1,114 @@
+{
+  "metadata": {
+    "analysis_date": "2026-08-19T17:59:49.736736",
+    "source_paths": [
+      "/workspace/temp_dna/gold_dna/Gold DNA",
+      "/workspace/temp_dna/split_styles/Workspace_Styles"
+    ],
+    "total_files_analyzed": 3393,
+    "total_size_bytes": 34720634
+  },
+  "sample_proofs": [
+    {
+      "proof_id": "6e0c225d629958fb",
+      "original_hash": "82407bad8e612c4285a90e3b1c9972f8e08fe601f8e61411b16f3ce1af002b57",
+      "reversal_type": "DNA_MIDI_EXTRACTION",
+      "verification_status": "VERIFIED",
+      "source_file": "AKO TE DRUGI PR-SAMIR R UZIVO.MID",
+      "file_size": 119415,
+      "timestamp": "2026-08-19T17:59:49.738696",
+      "integrity_check": "PASSED"
+    },
+    {
+      "proof_id": "6047ecb563e02c84",
+      "original_hash": "a64c34c12082ee9ccc9eb781d10b5b89f79e1eeac7eec87e849621d18c5c34a1",
+      "reversal_type": "DNA_MIDI_EXTRACTION",
+      "verification_status": "VERIFIED",
+      "source_file": "BARABA-ZARE I GOCI UZIVO (2).MID",
+      "file_size": 93521,
+      "timestamp": "2026-08-19T17:59:49.739039",
+      "integrity_check": "PASSED"
+    },
+    {
+      "proof_id": "a7a3c1a4b98d0901",
+      "original_hash": "bbe0501235000578bdaa6eac743dac018f3a0a54f1aa1576ab88bd45e46f3ce7",
+      "reversal_type": "DNA_MIDI_EXTRACTION",
+      "verification_status": "VERIFIED",
+      "source_file": "BARABA SA SELA-KNINDZA UZIVO (2).MID",
+      "file_size": 79003,
+      "timestamp": "2026-08-19T17:59:49.739305",
+      "integrity_check": "PASSED"
+    },
+    {
+      "proof_id": "e3e2e7473d9981eb",
+      "original_hash": "ff7d752ecc3945c1b29afb8d1581994b8cfe90960105e1e4421eae4a4e296be3",
+      "reversal_type": "DNA_MIDI_EXTRACTION",
+      "verification_status": "VERIFIED",
+      "source_file": "JOVANOVIC RADA-MILOS B UZIVO.MID",
+      "file_size": 154029,
+      "timestamp": "2026-08-19T17:59:49.739792",
+      "integrity_check": "PASSED"
+    },
+    {
+      "proof_id": "6d5d657e9e5630ce",
+      "original_hash": "044d4908f90b20f1b290d00dd89d9063eabe876ac9739dec8c6e725da2e3beee",
+      "reversal_type": "DNA_MIDI_EXTRACTION",
+      "verification_status": "VERIFIED",
+      "source_file": "STARI VUK-ZV,TROMEDJE UZIVO.MID",
+      "file_size": 124548,
+      "timestamp": "2026-08-19T17:59:49.740196",
+      "integrity_check": "PASSED"
+    },
+    {
+      "proof_id": "eb6e74a90a97079d",
+      "original_hash": "f84449e4688f39195233c5137f44eaa16c70ef67219ee319a94a55412d1cf8d7",
+      "reversal_type": "DNA_MIDI_EXTRACTION",
+      "verification_status": "VERIFIED",
+      "source_file": "DAH ZIVOTA-NINO UZIVO.MID",
+      "file_size": 61048,
+      "timestamp": "2026-08-19T17:59:49.740405",
+      "integrity_check": "PASSED"
+    },
+    {
+      "proof_id": "e05f52e306481cc6",
+      "original_hash": "5688e94eacbb5c3a4e3201f9bbf69cc9fae19566fa11af4c1b65072dcde9d421",
+      "reversal_type": "DNA_MIDI_EXTRACTION",
+      "verification_status": "VERIFIED",
+      "source_file": "HAOS-MAJA I DENIS UZIVO.MID",
+      "file_size": 146760,
+      "timestamp": "2026-08-19T17:59:49.740865",
+      "integrity_check": "PASSED"
+    },
+    {
+      "proof_id": "ec78edcae0b15efa",
+      "original_hash": "01f1fc2f3303a048f5feafca532d4fe50b32f5fadb5b08fa3223805d6cabd0eb",
+      "reversal_type": "DNA_MIDI_EXTRACTION",
+      "verification_status": "VERIFIED",
+      "source_file": "HEJ NADO NADO-BORO DRLJ UZIVO.MID",
+      "file_size": 88391,
+      "timestamp": "2026-08-19T17:59:49.741161",
+      "integrity_check": "PASSED"
+    },
+    {
+      "proof_id": "87e92f33ec909575",
+      "original_hash": "a98c47dbdb776af68f3ad1559a4d3dbd9856db5fccc86d6ab3ed646794f6eff1",
+      "reversal_type": "DNA_MIDI_EXTRACTION",
+      "verification_status": "VERIFIED",
+      "source_file": "UDAHNI DUBOKO-NINO UZIVO.MID",
+      "file_size": 71685,
+      "timestamp": "2026-08-19T17:59:49.741399",
+      "integrity_check": "PASSED"
+    },
+    {
+      "proof_id": "af88fe15bbbc7b4b",
+      "original_hash": "c57c55fc242941313eeae9c4941e6f50b9325078d7990f889e60c31cea8765b8",
+      "reversal_type": "DNA_MIDI_EXTRACTION",
+      "verification_status": "VERIFIED",
+      "source_file": "NUSRETA - MURIZ K UZIVO.MID",
+      "file_size": 80309,
+      "timestamp": "2026-08-19T17:59:49.741666",
+      "integrity_check": "PASSED"
+    }
+  ],
+  "total_proofs": 3393
+}

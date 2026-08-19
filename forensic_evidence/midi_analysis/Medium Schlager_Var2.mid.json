@@ -1,0 +1,54 @@
+{
+  "file_path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/Medium Schlager/Medium Schlager_Var2.mid",
+  "filename": "Medium Schlager_Var2.mid",
+  "hash_sha256": "cfa30e12a9b1cf894a49909c4b7df67ae00bbe9a915c7090f3bad64e9676d2b9",
+  "hash_md5": "da4022b78349f51f40965ece4d182b44",
+  "metadata": {
+    "size_bytes": 3688,
+    "created_time": "2026-08-19T18:01:35.324579",
+    "modified_time": "1980-01-02T00:00:00",
+    "access_time": "2026-08-19T18:04:33.582823",
+    "inode": 399700,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 1,
+    "num_tracks": 18,
+    "ppq": 192,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 3688
+  },
+  "duration_ticks": 3688,
+  "ppq": 192,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    },
+    {
+      "type": "STYLE_CATEGORY",
+      "style": "Medium Schlager",
+      "description": "Factory style: Medium Schlager"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:33.583748"
+}

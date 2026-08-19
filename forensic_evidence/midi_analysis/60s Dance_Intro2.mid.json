@@ -1,0 +1,54 @@
+{
+  "file_path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/60's Dance/60's Dance_Intro2.mid",
+  "filename": "60's Dance_Intro2.mid",
+  "hash_sha256": "d689ce69ce82aab71484ebb393aa3bce11985f90ad403605e60943e1d7d3c0fd",
+  "hash_md5": "8fbb0b28b09e9d2acf8c39bb19d97437",
+  "metadata": {
+    "size_bytes": 1988,
+    "created_time": "2026-08-19T18:01:35.121571",
+    "modified_time": "1980-01-02T00:00:00",
+    "access_time": "2026-08-19T18:04:33.925837",
+    "inode": 397811,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 1,
+    "num_tracks": 13,
+    "ppq": 192,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 1988
+  },
+  "duration_ticks": 1988,
+  "ppq": 192,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    },
+    {
+      "type": "STYLE_CATEGORY",
+      "style": "60's Dance",
+      "description": "Factory style: 60's Dance"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:33.926724"
+}

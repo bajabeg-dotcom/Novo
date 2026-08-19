@@ -1,0 +1,54 @@
+{
+  "file_path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/Elektro Funk/Elektro Funk_Var2.mid",
+  "filename": "Elektro Funk_Var2.mid",
+  "hash_sha256": "507cb147e565463e270285fd310d2712a3f45153c552c030dd4639d2957a9f35",
+  "hash_md5": "fbcdb7e4d9617d9c5fae87a72a2e1ea3",
+  "metadata": {
+    "size_bytes": 3135,
+    "created_time": "2026-08-19T18:01:35.217575",
+    "modified_time": "1980-01-02T00:00:00",
+    "access_time": "2026-08-19T18:04:33.704828",
+    "inode": 398759,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 1,
+    "num_tracks": 13,
+    "ppq": 192,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 3135
+  },
+  "duration_ticks": 3135,
+  "ppq": 192,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    },
+    {
+      "type": "STYLE_CATEGORY",
+      "style": "Elektro Funk",
+      "description": "Factory style: Elektro Funk"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:33.705529"
+}

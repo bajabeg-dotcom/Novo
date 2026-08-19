@@ -1,0 +1,54 @@
+{
+  "file_path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/Real 16 Beat/Real 16 Beat_Intro1.mid",
+  "filename": "Real 16 Beat_Intro1.mid",
+  "hash_sha256": "4339cfd6b96342e89fc8ce5b7ab14aebe660a47d39759d7ed9ba659e36f0892f",
+  "hash_md5": "8d648f0b5d6b6b59d7673c20345453e5",
+  "metadata": {
+    "size_bytes": 4135,
+    "created_time": "2026-08-19T18:01:35.402582",
+    "modified_time": "1980-01-02T00:00:00",
+    "access_time": "2026-08-19T18:04:33.197807",
+    "inode": 400366,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 1,
+    "num_tracks": 18,
+    "ppq": 192,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 4135
+  },
+  "duration_ticks": 4135,
+  "ppq": 192,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    },
+    {
+      "type": "STYLE_CATEGORY",
+      "style": "Real 16 Beat",
+      "description": "Factory style: Real 16 Beat"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:33.198236"
+}

@@ -1,0 +1,49 @@
+{
+  "file_path": "/workspace/dna_extracted/gold_dna/Gold DNA/OJ BANIJO RODNI D-OGNJIST UZIVO.MID",
+  "filename": "OJ BANIJO RODNI D-OGNJIST UZIVO.MID",
+  "hash_sha256": "035e21d0c19bc5475f4a8f61c73fe2d31a76a5b5afe7f258a8b40744bfb80177",
+  "hash_md5": "e614b7c3222b4d1314d96ccb0bb5099d",
+  "metadata": {
+    "size_bytes": 91068,
+    "created_time": "2026-08-19T18:01:35.068568",
+    "modified_time": "2010-09-23T17:39:10",
+    "access_time": "2026-08-19T18:04:32.826792",
+    "inode": 397739,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 0,
+    "num_tracks": 1,
+    "ppq": 384,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 91068
+  },
+  "duration_ticks": 91068,
+  "ppq": 384,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:32.828373"
+}

@@ -1,0 +1,54 @@
+{
+  "file_path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/Big Band Fox/Big Band Fox_Var4.mid",
+  "filename": "Big Band Fox_Var4.mid",
+  "hash_sha256": "2ec642c37ddc71a0a4cd0894d644ed1200f698466970523094470f97f3a457c9",
+  "hash_md5": "26153b152dfe0fe52fb66b882a25db17",
+  "metadata": {
+    "size_bytes": 12390,
+    "created_time": "2026-08-19T18:01:35.147572",
+    "modified_time": "1980-01-02T00:00:00",
+    "access_time": "2026-08-19T18:04:32.999799",
+    "inode": 398148,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 1,
+    "num_tracks": 29,
+    "ppq": 192,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 12390
+  },
+  "duration_ticks": 12390,
+  "ppq": 192,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    },
+    {
+      "type": "STYLE_CATEGORY",
+      "style": "Big Band Fox",
+      "description": "Factory style: Big Band Fox"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:33.000855"
+}

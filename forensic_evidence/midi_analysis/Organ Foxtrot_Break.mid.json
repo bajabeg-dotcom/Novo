@@ -1,0 +1,54 @@
+{
+  "file_path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/Organ Foxtrot/Organ Foxtrot_Break.mid",
+  "filename": "Organ Foxtrot_Break.mid",
+  "hash_sha256": "d9761ea274c3125f18cb1a0205db6ed6d618c70aaace83eb5bb0cefbd61d27c5",
+  "hash_md5": "876d46f2852a71c57bc6c34c30cad367",
+  "metadata": {
+    "size_bytes": 1060,
+    "created_time": "2026-08-19T18:01:35.343580",
+    "modified_time": "1980-01-02T00:00:00",
+    "access_time": "2026-08-19T18:04:33.949838",
+    "inode": 399993,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 1,
+    "num_tracks": 11,
+    "ppq": 192,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 1060
+  },
+  "duration_ticks": 1060,
+  "ppq": 192,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    },
+    {
+      "type": "STYLE_CATEGORY",
+      "style": "Organ Foxtrot",
+      "description": "Factory style: Organ Foxtrot"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:33.950512"
+}

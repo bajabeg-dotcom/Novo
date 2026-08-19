@@ -1,0 +1,54 @@
+{
+  "file_path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/Schlager Polka/Schlager Polka_Var2.mid",
+  "filename": "Schlager Polka_Var2.mid",
+  "hash_sha256": "5fb605c0dd1daa3b247acb7f2f72c3f0f8b270860de04520c5d212fb7f4fdda8",
+  "hash_md5": "09b51713e61fa8d907408224a1e9ce16",
+  "metadata": {
+    "size_bytes": 2100,
+    "created_time": "2026-08-19T18:01:35.412582",
+    "modified_time": "1980-01-02T00:00:00",
+    "access_time": "2026-08-19T18:04:33.761830",
+    "inode": 524364,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 1,
+    "num_tracks": 14,
+    "ppq": 192,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 2100
+  },
+  "duration_ticks": 2100,
+  "ppq": 192,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    },
+    {
+      "type": "STYLE_CATEGORY",
+      "style": "Schlager Polka",
+      "description": "Factory style: Schlager Polka"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:33.762148"
+}

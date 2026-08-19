@@ -1,0 +1,54 @@
+{
+  "file_path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/Elektrik Funk/Elektrik Funk_Break.mid",
+  "filename": "Elektrik Funk_Break.mid",
+  "hash_sha256": "5d6e923b151c6a310a3b063b69f07e5ee93d0bf02c953cc5af747dc475809e31",
+  "hash_md5": "952c726696de4e9da3bf7171161ec5df",
+  "metadata": {
+    "size_bytes": 1068,
+    "created_time": "2026-08-19T18:01:35.215575",
+    "modified_time": "1980-01-02T00:00:00",
+    "access_time": "2026-08-19T18:04:33.359814",
+    "inode": 398735,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 1,
+    "num_tracks": 12,
+    "ppq": 192,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 1068
+  },
+  "duration_ticks": 1068,
+  "ppq": 192,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    },
+    {
+      "type": "STYLE_CATEGORY",
+      "style": "Elektrik Funk",
+      "description": "Factory style: Elektrik Funk"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:33.360843"
+}

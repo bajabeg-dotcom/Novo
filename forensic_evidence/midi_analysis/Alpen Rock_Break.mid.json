@@ -1,0 +1,54 @@
+{
+  "file_path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/Alpen Rock/Alpen Rock_Break.mid",
+  "filename": "Alpen Rock_Break.mid",
+  "hash_sha256": "a6a1359fbefa8a3a68f3af0c1433a9970739c83dfff80b705525819667200fbb",
+  "hash_md5": "6a52ce1d8545f5d65f9aa44fdbe8ea8f",
+  "metadata": {
+    "size_bytes": 1280,
+    "created_time": "2026-08-19T18:01:35.134571",
+    "modified_time": "1980-01-02T00:00:00",
+    "access_time": "2026-08-19T18:04:33.459818",
+    "inode": 397958,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 1,
+    "num_tracks": 14,
+    "ppq": 192,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 1280
+  },
+  "duration_ticks": 1280,
+  "ppq": 192,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    },
+    {
+      "type": "STYLE_CATEGORY",
+      "style": "Alpen Rock",
+      "description": "Factory style: Alpen Rock"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:33.460291"
+}

@@ -1,0 +1,83 @@
+{
+  "address": {
+    "bank_msb": 127,
+    "bank_lsb": 0,
+    "program": 34,
+    "channel": 0
+  },
+  "expected_name": "Slap Bass",
+  "probe_midi": {
+    "format": 1,
+    "ticks_per_beat": 480,
+    "tracks": [
+      {
+        "events": [
+          {
+            "type": "program_change",
+            "channel": 0,
+            "program": 34,
+            "time": 0
+          },
+          {
+            "type": "control_change",
+            "channel": 0,
+            "control": 7,
+            "value": 100,
+            "time": 0
+          },
+          {
+            "type": "note_on",
+            "channel": 0,
+            "note": 60,
+            "velocity": 80,
+            "time": 0
+          },
+          {
+            "type": "note_off",
+            "channel": 0,
+            "note": 60,
+            "time": 480
+          },
+          {
+            "type": "note_on",
+            "channel": 0,
+            "note": 64,
+            "velocity": 90,
+            "time": 0
+          },
+          {
+            "type": "note_off",
+            "channel": 0,
+            "note": 64,
+            "time": 480
+          },
+          {
+            "type": "note_on",
+            "channel": 0,
+            "note": 67,
+            "velocity": 85,
+            "time": 0
+          },
+          {
+            "type": "note_off",
+            "channel": 0,
+            "note": 67,
+            "time": 960
+          }
+        ]
+      }
+    ]
+  },
+  "test_instructions": {
+    "step1": "Učitaj probe MIDI na Pa800",
+    "step2": "Zabilježi stvarni naziv sounda koji se čuje",
+    "step3": "Zabilježi OS verziju i Resource verziju",
+    "step4": "Ponovi test 2 puta",
+    "step5": "Ako oba testa daju isti rezultat, označi kao confirmed"
+  },
+  "status": "pending",
+  "test_results": [],
+  "confirmed": false,
+  "os_version": null,
+  "resource_version": null
+}

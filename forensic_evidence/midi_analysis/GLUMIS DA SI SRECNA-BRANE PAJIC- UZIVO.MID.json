@@ -1,0 +1,49 @@
+{
+  "file_path": "/workspace/dna_extracted/gold_dna/Gold DNA/GLUMIS DA SI SRECNA-BRANE PAJIC- UZIVO.MID",
+  "filename": "GLUMIS DA SI SRECNA-BRANE PAJIC- UZIVO.MID",
+  "hash_sha256": "0ea28bfff63d639302c43515df8a949ed38f0e9d6bb9abcff37e7b0c08157077",
+  "hash_md5": "b7ae180db324b9f683156ceb9e9d05a0",
+  "metadata": {
+    "size_bytes": 75281,
+    "created_time": "2026-08-19T18:01:34.987565",
+    "modified_time": "2010-06-02T18:50:08",
+    "access_time": "2026-08-19T18:04:32.901795",
+    "inode": 397656,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 0,
+    "num_tracks": 1,
+    "ppq": 384,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 75281
+  },
+  "duration_ticks": 75281,
+  "ppq": 384,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:32.903162"
+}

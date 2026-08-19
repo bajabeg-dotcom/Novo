@@ -1,0 +1,54 @@
+{
+  "file_path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/Fashion Funk/Fashion Funk_Intro2.mid",
+  "filename": "Fashion Funk_Intro2.mid",
+  "hash_sha256": "0165b330b278aa312297f93cc9f2e2836aebd0019bb50034df1bacfe723165c1",
+  "hash_md5": "36db1a1f3ae0549f0bd800c9f67edfd9",
+  "metadata": {
+    "size_bytes": 1056,
+    "created_time": "2026-08-19T18:01:35.220575",
+    "modified_time": "1980-01-02T00:00:00",
+    "access_time": "2026-08-19T18:04:33.467818",
+    "inode": 398798,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 1,
+    "num_tracks": 8,
+    "ppq": 192,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 1056
+  },
+  "duration_ticks": 1056,
+  "ppq": 192,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    },
+    {
+      "type": "STYLE_CATEGORY",
+      "style": "Fashion Funk",
+      "description": "Factory style: Fashion Funk"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:33.468444"
+}

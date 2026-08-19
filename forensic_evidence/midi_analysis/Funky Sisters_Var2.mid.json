@@ -1,0 +1,54 @@
+{
+  "file_path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/Funky Sisters/Funky Sisters_Var2.mid",
+  "filename": "Funky Sisters_Var2.mid",
+  "hash_sha256": "3a8d18cf3a34267452364cddf3ee36a565c5df6205cad429bdcd4b83599b14bc",
+  "hash_md5": "bfb131db598e46247315d8f3e8ed2b4c",
+  "metadata": {
+    "size_bytes": 5732,
+    "created_time": "2026-08-19T18:01:35.241575",
+    "modified_time": "1980-01-02T00:00:00",
+    "access_time": "2026-08-19T18:04:33.450817",
+    "inode": 399036,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 1,
+    "num_tracks": 16,
+    "ppq": 192,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 5732
+  },
+  "duration_ticks": 5732,
+  "ppq": 192,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    },
+    {
+      "type": "STYLE_CATEGORY",
+      "style": "Funky Sisters",
+      "description": "Factory style: Funky Sisters"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:33.451850"
+}

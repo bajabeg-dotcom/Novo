@@ -1,0 +1,54 @@
+{
+  "file_path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/Twist/Twist_Var4.mid",
+  "filename": "Twist_Var4.mid",
+  "hash_sha256": "485754298920fc7d007c83c5a003ae12f52aa0b7eebf86cb53097305c4be179c",
+  "hash_md5": "be9382047b425d16284c966873e4eeea",
+  "metadata": {
+    "size_bytes": 4123,
+    "created_time": "2026-08-19T18:01:35.440584",
+    "modified_time": "1980-01-02T00:00:00",
+    "access_time": "2026-08-19T18:04:33.399815",
+    "inode": 524827,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 1,
+    "num_tracks": 15,
+    "ppq": 192,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 4123
+  },
+  "duration_ticks": 4123,
+  "ppq": 192,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    },
+    {
+      "type": "STYLE_CATEGORY",
+      "style": "Twist",
+      "description": "Factory style: Twist"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:33.400853"
+}

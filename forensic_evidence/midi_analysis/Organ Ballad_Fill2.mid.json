@@ -1,0 +1,54 @@
+{
+  "file_path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/Organ Ballad/Organ Ballad_Fill2.mid",
+  "filename": "Organ Ballad_Fill2.mid",
+  "hash_sha256": "b6315e8b986401be54ff82008c85b8b36d9d472187081cc8ccfc2bc577cc7467",
+  "hash_md5": "1548f248707691aeb5a0d703b19a64ae",
+  "metadata": {
+    "size_bytes": 3004,
+    "created_time": "2026-08-19T18:01:35.342580",
+    "modified_time": "1980-01-02T00:00:00",
+    "access_time": "2026-08-19T18:04:33.780831",
+    "inode": 399970,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 1,
+    "num_tracks": 18,
+    "ppq": 192,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 3004
+  },
+  "duration_ticks": 3004,
+  "ppq": 192,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    },
+    {
+      "type": "STYLE_CATEGORY",
+      "style": "Organ Ballad",
+      "description": "Factory style: Organ Ballad"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:33.782050"
+}

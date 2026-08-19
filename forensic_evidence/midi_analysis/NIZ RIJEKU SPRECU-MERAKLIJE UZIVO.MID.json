@@ -1,0 +1,49 @@
+{
+  "file_path": "/workspace/dna_extracted/gold_dna/Gold DNA/NIZ RIJEKU SPRECU-MERAKLIJE UZIVO.MID",
+  "filename": "NIZ RIJEKU SPRECU-MERAKLIJE UZIVO.MID",
+  "hash_sha256": "ae786bfcbf07909eae12ec7198a7a66be0a35be8baad89f38b5df62fb96383d9",
+  "hash_md5": "06da662b87d31aa6437177f653ad3c6c",
+  "metadata": {
+    "size_bytes": 89582,
+    "created_time": "2026-08-19T18:01:35.065568",
+    "modified_time": "2010-05-08T14:38:46",
+    "access_time": "2026-08-19T18:04:32.843793",
+    "inode": 397736,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 0,
+    "num_tracks": 1,
+    "ppq": 384,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 89582
+  },
+  "duration_ticks": 89582,
+  "ppq": 384,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:32.844746"
+}

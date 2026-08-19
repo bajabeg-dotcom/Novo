@@ -1,0 +1,49 @@
+{
+  "file_path": "/workspace/dna_extracted/gold_dna/Gold DNA/NEPOPRAVLJIV-MITAR- UZIVO.MID",
+  "filename": "NEPOPRAVLJIV-MITAR- UZIVO.MID",
+  "hash_sha256": "dc76de4ac5f1b8bcfffa3eddf323f325f2b41980d14cbeaa4814789dc37fc857",
+  "hash_md5": "e5f6acba01fa193313efcfbf46b14292",
+  "metadata": {
+    "size_bytes": 79050,
+    "created_time": "2026-08-19T18:01:35.061568",
+    "modified_time": "2010-06-02T18:50:28",
+    "access_time": "2026-08-19T18:04:32.864794",
+    "inode": 397731,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 0,
+    "num_tracks": 1,
+    "ppq": 384,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 79050
+  },
+  "duration_ticks": 79050,
+  "ppq": 384,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:32.866409"
+}

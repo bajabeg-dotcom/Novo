@@ -1,0 +1,54 @@
+{
+  "file_path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/Pop Chart 2/Pop Chart 2_Var1.mid",
+  "filename": "Pop Chart 2_Var1.mid",
+  "hash_sha256": "728bfcf3b2730b3fa6c8b6667322169ee6aac57eb5c212d7b6699010b0421858",
+  "hash_md5": "8a32cdcb10a952cdc7c7131d6d4097af",
+  "metadata": {
+    "size_bytes": 2428,
+    "created_time": "2026-08-19T18:01:35.354580",
+    "modified_time": "1980-01-02T00:00:00",
+    "access_time": "2026-08-19T18:04:32.952797",
+    "inode": 400177,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 1,
+    "num_tracks": 7,
+    "ppq": 192,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 2428
+  },
+  "duration_ticks": 2428,
+  "ppq": 192,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    },
+    {
+      "type": "STYLE_CATEGORY",
+      "style": "Pop Chart 2",
+      "description": "Factory style: Pop Chart 2"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:32.953794"
+}

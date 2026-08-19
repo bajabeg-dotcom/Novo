@@ -1,0 +1,54 @@
+{
+  "file_path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/German Waltz 3/German Waltz 3_Fill1.mid",
+  "filename": "German Waltz 3_Fill1.mid",
+  "hash_sha256": "5653e7813dab68bad72274a402a9fac421150f0111002162b339e8c482435a77",
+  "hash_md5": "d6fb5560702791bc81eff5e7de65a9ee",
+  "metadata": {
+    "size_bytes": 2408,
+    "created_time": "2026-08-19T18:01:35.246576",
+    "modified_time": "1980-01-02T00:00:00",
+    "access_time": "2026-08-19T18:04:33.923836",
+    "inode": 399086,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 1,
+    "num_tracks": 18,
+    "ppq": 192,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 2408
+  },
+  "duration_ticks": 2408,
+  "ppq": 192,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    },
+    {
+      "type": "STYLE_CATEGORY",
+      "style": "German Waltz 3",
+      "description": "Factory style: German Waltz 3"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:33.924423"
+}

@@ -1,0 +1,54 @@
+{
+  "file_path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/Samba Medley/Samba Medley_Var1.mid",
+  "filename": "Samba Medley_Var1.mid",
+  "hash_sha256": "6b4b075c903bc680533dae197e46a72fb26bdf6ea8fc84bd594620985f85d696",
+  "hash_md5": "499cb8fedd5a0f57c69de4e499c9c60a",
+  "metadata": {
+    "size_bytes": 3059,
+    "created_time": "2026-08-19T18:01:35.408582",
+    "modified_time": "1980-01-02T00:00:00",
+    "access_time": "2026-08-19T18:04:33.544821",
+    "inode": 524299,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 1,
+    "num_tracks": 7,
+    "ppq": 192,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 3059
+  },
+  "duration_ticks": 3059,
+  "ppq": 192,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    },
+    {
+      "type": "STYLE_CATEGORY",
+      "style": "Samba Medley",
+      "description": "Factory style: Samba Medley"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:33.545446"
+}

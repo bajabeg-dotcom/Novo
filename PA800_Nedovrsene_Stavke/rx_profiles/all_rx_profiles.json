@@ -1,0 +1,484 @@
+{
+  "finger_bass": {
+    "sound_name": "Finger Bass RX",
+    "rx_type": "finger_bass",
+    "bank_msb": 0,
+    "bank_lsb": 0,
+    "program": 32,
+    "version": "1.0.0",
+    "resource_version": "Pa800_OS_v1.0",
+    "velocity_zones": [
+      {
+        "min_velocity": 0,
+        "max_velocity": 60,
+        "sample_name": "finger_soft",
+        "trigger_type": "velocity",
+        "key_switch_note": null,
+        "description": "Meko sviranje"
+      },
+      {
+        "min_velocity": 61,
+        "max_velocity": 90,
+        "sample_name": "finger_medium",
+        "trigger_type": "velocity",
+        "key_switch_note": null,
+        "description": "Srednje"
+      },
+      {
+        "min_velocity": 91,
+        "max_velocity": 127,
+        "sample_name": "finger_hard",
+        "trigger_type": "velocity",
+        "key_switch_note": null,
+        "description": "Agresivno"
+      }
+    ],
+    "key_zones": [
+      {
+        "min_key": 24,
+        "max_key": 60,
+        "velocity_switch_low": "low_sample",
+        "velocity_switch_high": "high_sample",
+        "noise_trigger": "fret_noise"
+      },
+      {
+        "min_key": 61,
+        "max_key": 84,
+        "velocity_switch_low": null,
+        "velocity_switch_high": null,
+        "noise_trigger": "slide_noise"
+      }
+    ],
+    "special_rules": {
+      "glissando_threshold": 85,
+      "harmonic_trigger_velocity": 110,
+      "mute_technique_velocity": 40
+    },
+    "hardware_confirmed": false,
+    "confidence_score": 0.85
+  },
+  "picked_bass": {
+    "sound_name": "Picked Bass RX",
+    "rx_type": "picked_bass",
+    "bank_msb": 0,
+    "bank_lsb": 0,
+    "program": 33,
+    "version": "1.0.0",
+    "resource_version": "Pa800_OS_v1.0",
+    "velocity_zones": [
+      {
+        "min_velocity": 0,
+        "max_velocity": 50,
+        "sample_name": "pick_soft",
+        "trigger_type": "velocity",
+        "key_switch_note": null,
+        "description": "Lagano"
+      },
+      {
+        "min_velocity": 51,
+        "max_velocity": 85,
+        "sample_name": "pick_medium",
+        "trigger_type": "velocity",
+        "key_switch_note": null,
+        "description": "Srednje"
+      },
+      {
+        "min_velocity": 86,
+        "max_velocity": 127,
+        "sample_name": "pick_hard",
+        "trigger_type": "velocity",
+        "key_switch_note": null,
+        "description": "Jako"
+      }
+    ],
+    "key_zones": [
+      {
+        "min_key": 20,
+        "max_key": 55,
+        "velocity_switch_low": "low_pick",
+        "velocity_switch_high": "high_pick",
+        "noise_trigger": "pick_attack"
+      }
+    ],
+    "special_rules": {
+      "pick_attack_enhancement": true,
+      "string_noise_threshold": 70
+    },
+    "hardware_confirmed": false,
+    "confidence_score": 0.8
+  },
+  "slap_bass": {
+    "sound_name": "Slap Bass RX",
+    "rx_type": "slap_bass",
+    "bank_msb": 0,
+    "bank_lsb": 0,
+    "program": 34,
+    "version": "1.0.0",
+    "resource_version": "Pa800_OS_v1.0",
+    "velocity_zones": [
+      {
+        "min_velocity": 0,
+        "max_velocity": 40,
+        "sample_name": "slap_thumb_soft",
+        "trigger_type": "velocity",
+        "key_switch_note": null,
+        "description": "Thumb meko"
+      },
+      {
+        "min_velocity": 41,
+        "max_velocity": 80,
+        "sample_name": "slap_pop_medium",
+        "trigger_type": "velocity",
+        "key_switch_note": null,
+        "description": "Pop srednje"
+      },
+      {
+        "min_velocity": 81,
+        "max_velocity": 127,
+        "sample_name": "slap_pop_hard",
+        "trigger_type": "velocity",
+        "key_switch_note": null,
+        "description": "Pop jako"
+      }
+    ],
+    "key_zones": [
+      {
+        "min_key": 24,
+        "max_key": 60,
+        "velocity_switch_low": "low_slap",
+        "velocity_switch_high": "high_slap",
+        "noise_trigger": "thumb_slap"
+      }
+    ],
+    "special_rules": {
+      "slap_technique_detection": true,
+      "pop_velocity_threshold": 75
+    },
+    "hardware_confirmed": false,
+    "confidence_score": 0.78
+  },
+  "clean_guitar": {
+    "sound_name": "Clean Guitar RX",
+    "rx_type": "clean_guitar",
+    "bank_msb": 0,
+    "bank_lsb": 0,
+    "program": 25,
+    "version": "1.0.0",
+    "resource_version": "Pa800_OS_v1.0",
+    "velocity_zones": [
+      {
+        "min_velocity": 0,
+        "max_velocity": 45,
+        "sample_name": "clean_rx1",
+        "trigger_type": "velocity",
+        "key_switch_note": null,
+        "description": "RX1 - vrlo meko"
+      },
+      {
+        "min_velocity": 46,
+        "max_velocity": 65,
+        "sample_name": "clean_rx2",
+        "trigger_type": "velocity",
+        "key_switch_note": null,
+        "description": "RX2 - meko"
+      },
+      {
+        "min_velocity": 66,
+        "max_velocity": 85,
+        "sample_name": "clean_rx3",
+        "trigger_type": "velocity",
+        "key_switch_note": null,
+        "description": "RX3 - srednje"
+      },
+      {
+        "min_velocity": 86,
+        "max_velocity": 100,
+        "sample_name": "clean_rx4",
+        "trigger_type": "velocity",
+        "key_switch_note": null,
+        "description": "RX4 - jako"
+      },
+      {
+        "min_velocity": 101,
+        "max_velocity": 115,
+        "sample_name": "clean_rx5",
+        "trigger_type": "velocity",
+        "key_switch_note": null,
+        "description": "RX5 - vrlo jako"
+      },
+      {
+        "min_velocity": 116,
+        "max_velocity": 127,
+        "sample_name": "clean_rx6",
+        "trigger_type": "velocity",
+        "key_switch_note": null,
+        "description": "RX6 - maksimalno"
+      }
+    ],
+    "key_zones": [
+      {
+        "min_key": 40,
+        "max_key": 72,
+        "velocity_switch_low": "low_clean",
+        "velocity_switch_high": "high_clean",
+        "noise_trigger": "fret_noise"
+      },
+      {
+        "min_key": 73,
+        "max_key": 96,
+        "velocity_switch_low": null,
+        "velocity_switch_high": null,
+        "noise_trigger": "string_slide"
+      },
+      {
+        "min_key": 97,
+        "max_key": 127,
+        "velocity_switch_low": null,
+        "velocity_switch_high": null,
+        "noise_trigger": null
+      }
+    ],
+    "special_rules": {
+      "strum_direction_detection": true,
+      "chord_voice_detection": true,
+      "protected_zone_start": 96,
+      "rx_layers": 6
+    },
+    "hardware_confirmed": false,
+    "confidence_score": 0.82
+  },
+  "dist_guitar": {
+    "sound_name": "Dist Guitar RX",
+    "rx_type": "dist_guitar",
+    "bank_msb": 0,
+    "bank_lsb": 0,
+    "program": 30,
+    "version": "1.0.0",
+    "resource_version": "Pa800_OS_v1.0",
+    "velocity_zones": [
+      {
+        "min_velocity": 0,
+        "max_velocity": 70,
+        "sample_name": "dist_rx1",
+        "trigger_type": "velocity",
+        "key_switch_note": null,
+        "description": "RX1 - lagana distorzija"
+      },
+      {
+        "min_velocity": 71,
+        "max_velocity": 127,
+        "sample_name": "dist_rx2",
+        "trigger_type": "velocity",
+        "key_switch_note": null,
+        "description": "RX2 - jaka distorzija"
+      }
+    ],
+    "key_zones": [
+      {
+        "min_key": 40,
+        "max_key": 72,
+        "velocity_switch_low": "low_dist",
+        "velocity_switch_high": "high_dist",
+        "noise_trigger": "power_chord_trigger"
+      },
+      {
+        "min_key": 73,
+        "max_key": 96,
+        "velocity_switch_low": null,
+        "velocity_switch_high": null,
+        "noise_trigger": "bend_trigger"
+      },
+      {
+        "min_key": 97,
+        "max_key": 127,
+        "velocity_switch_low": null,
+        "velocity_switch_high": null,
+        "noise_trigger": null
+      }
+    ],
+    "special_rules": {
+      "power_chord_detection": true,
+      "bend_range_semitones": 2,
+      "protected_zone_start": 96,
+      "rx_layers": 2,
+      "factory_guitar_protection": true
+    },
+    "hardware_confirmed": false,
+    "confidence_score": 0.79
+  },
+  "power_chord": {
+    "sound_name": "PowerChord RX",
+    "rx_type": "power_chord",
+    "bank_msb": 0,
+    "bank_lsb": 0,
+    "program": 31,
+    "version": "1.0.0",
+    "resource_version": "Pa800_OS_v1.0",
+    "velocity_zones": [
+      {
+        "min_velocity": 1,
+        "max_velocity": 127,
+        "sample_name": "power_chord_full",
+        "trigger_type": "velocity",
+        "key_switch_note": null,
+        "description": "Oba layera rade 1-127 u stvarnom velocity pipelineu"
+      }
+    ],
+    "key_zones": [
+      {
+        "min_key": 36,
+        "max_key": 84,
+        "velocity_switch_low": "low_power",
+        "velocity_switch_high": "high_power",
+        "noise_trigger": "root_fifth_trigger"
+      }
+    ],
+    "special_rules": {
+      "voice_structure": "root-fifth-octave",
+      "both_layers_full_range": true,
+      "no_third_allowed": true,
+      "root_fifth_octave_only": true
+    },
+    "hardware_confirmed": false,
+    "confidence_score": 0.88
+  },
+  "pop_drum_kit": {
+    "sound_name": "Pop Std. Kit RX",
+    "rx_type": "pop_drum_kit",
+    "bank_msb": 120,
+    "bank_lsb": 0,
+    "program": 0,
+    "version": "1.0.0",
+    "resource_version": "Pa800_OS_v1.0",
+    "velocity_zones": [
+      {
+        "min_velocity": 1,
+        "max_velocity": 30,
+        "sample_name": "kick_soft",
+        "trigger_type": "velocity",
+        "key_switch_note": null,
+        "description": "Kick meko"
+      },
+      {
+        "min_velocity": 31,
+        "max_velocity": 60,
+        "sample_name": "kick_medium",
+        "trigger_type": "velocity",
+        "key_switch_note": null,
+        "description": "Kick srednje"
+      },
+      {
+        "min_velocity": 61,
+        "max_velocity": 90,
+        "sample_name": "kick_hard",
+        "trigger_type": "velocity",
+        "key_switch_note": null,
+        "description": "Kick jako"
+      },
+      {
+        "min_velocity": 91,
+        "max_velocity": 127,
+        "sample_name": "kick_max",
+        "trigger_type": "velocity",
+        "key_switch_note": null,
+        "description": "Kick max"
+      },
+      {
+        "min_velocity": 1,
+        "max_velocity": 40,
+        "sample_name": "snare_ghost",
+        "trigger_type": "velocity",
+        "key_switch_note": null,
+        "description": "Snare ghost note"
+      },
+      {
+        "min_velocity": 41,
+        "max_velocity": 80,
+        "sample_name": "snare_normal",
+        "trigger_type": "velocity",
+        "key_switch_note": null,
+        "description": "Snare normal"
+      },
+      {
+        "min_velocity": 81,
+        "max_velocity": 127,
+        "sample_name": "snare_accent",
+        "trigger_type": "velocity",
+        "key_switch_note": null,
+        "description": "Snare accent"
+      },
+      {
+        "min_velocity": 1,
+        "max_velocity": 50,
+        "sample_name": "hat_closed_soft",
+        "trigger_type": "velocity",
+        "key_switch_note": null,
+        "description": "HiHat closed meko"
+      },
+      {
+        "min_velocity": 51,
+        "max_velocity": 90,
+        "sample_name": "hat_closed_medium",
+        "trigger_type": "velocity",
+        "key_switch_note": null,
+        "description": "HiHat closed srednje"
+      },
+      {
+        "min_velocity": 91,
+        "max_velocity": 127,
+        "sample_name": "hat_open",
+        "trigger_type": "velocity",
+        "key_switch_note": null,
+        "description": "HiHat open"
+      }
+    ],
+    "key_zones": [
+      {
+        "min_key": 35,
+        "max_key": 39,
+        "velocity_switch_low": "kick_zone",
+        "velocity_switch_high": null,
+        "noise_trigger": null
+      },
+      {
+        "min_key": 38,
+        "max_key": 40,
+        "velocity_switch_low": "snare_zone",
+        "velocity_switch_high": null,
+        "noise_trigger": null
+      },
+      {
+        "min_key": 42,
+        "max_key": 46,
+        "velocity_switch_low": "hat_zone",
+        "velocity_switch_high": null,
+        "noise_trigger": null
+      },
+      {
+        "min_key": 47,
+        "max_key": 52,
+        "velocity_switch_low": "tom_zone",
+        "velocity_switch_high": null,
+        "noise_trigger": null
+      },
+      {
+        "min_key": 55,
+        "max_key": 60,
+        "velocity_switch_low": "cymbal_zone",
+        "velocity_switch_high": null,
+        "noise_trigger": null
+      }
+    ],
+    "special_rules": {
+      "limb_plausibility_check": true,
+      "ghost_note_preservation": true,
+      "fill_detection": true,
+      "ride_crash_growth": true,
+      "impossible_simultaneous_hits": [
+        "open_hat_with_closed_hat"
+      ]
+    },
+    "hardware_confirmed": false,
+    "confidence_score": 0.9
+  }
+}

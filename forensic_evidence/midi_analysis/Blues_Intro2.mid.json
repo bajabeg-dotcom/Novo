@@ -1,0 +1,54 @@
+{
+  "file_path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/Blues/Blues_Intro2.mid",
+  "filename": "Blues_Intro2.mid",
+  "hash_sha256": "c23e1140f72d713c97455309c344f9a794d67478473f1d71b865b1b7f7bb00d0",
+  "hash_md5": "0fe3c5c1f75b9087e39d7fa645a77777",
+  "metadata": {
+    "size_bytes": 6944,
+    "created_time": "2026-08-19T18:01:35.153572",
+    "modified_time": "1980-01-02T00:00:00",
+    "access_time": "2026-08-19T18:04:33.603824",
+    "inode": 398241,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 1,
+    "num_tracks": 20,
+    "ppq": 192,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 6944
+  },
+  "duration_ticks": 6944,
+  "ppq": 192,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    },
+    {
+      "type": "STYLE_CATEGORY",
+      "style": "Blues",
+      "description": "Factory style: Blues"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:33.604085"
+}

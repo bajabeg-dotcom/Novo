@@ -1,0 +1,54 @@
+{
+  "file_path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/Rock Ballad 2/Rock Ballad 2_Intro2.mid",
+  "filename": "Rock Ballad 2_Intro2.mid",
+  "hash_sha256": "8ea575310376b9a91f3f2501764007c79b11ed16bb055d994b852b93b4c6b1fc",
+  "hash_md5": "22ada175e0ad2f17730bf2a29c0413fb",
+  "metadata": {
+    "size_bytes": 5254,
+    "created_time": "2026-08-19T18:01:35.405582",
+    "modified_time": "1980-01-02T00:00:00",
+    "access_time": "2026-08-19T18:04:33.720828",
+    "inode": 400409,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 1,
+    "num_tracks": 18,
+    "ppq": 192,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 5254
+  },
+  "duration_ticks": 5254,
+  "ppq": 192,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    },
+    {
+      "type": "STYLE_CATEGORY",
+      "style": "Rock Ballad 2",
+      "description": "Factory style: Rock Ballad 2"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:33.721923"
+}

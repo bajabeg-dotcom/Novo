@@ -1,0 +1,49 @@
+{
+  "file_path": "/workspace/dna_extracted/gold_dna/Gold DNA/JA TUDJE USNE LJ-SEKA UZIVO.MID",
+  "filename": "JA TUDJE USNE LJ-SEKA UZIVO.MID",
+  "hash_sha256": "c441100b9d7da5a5f0f3e60531021b5172e7072af5901126004234d66c894d30",
+  "hash_md5": "272e5e40115bc709279715eb3e0b5287",
+  "metadata": {
+    "size_bytes": 87720,
+    "created_time": "2026-08-19T18:01:35.011566",
+    "modified_time": "2010-10-04T16:52:16",
+    "access_time": "2026-08-19T18:04:32.838793",
+    "inode": 397682,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 0,
+    "num_tracks": 1,
+    "ppq": 384,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 87720
+  },
+  "duration_ticks": 87720,
+  "ppq": 384,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:32.839632"
+}

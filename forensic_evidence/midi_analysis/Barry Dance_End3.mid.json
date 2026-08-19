@@ -1,0 +1,54 @@
+{
+  "file_path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/Barry Dance/Barry Dance_End3.mid",
+  "filename": "Barry Dance_End3.mid",
+  "hash_sha256": "e12eec8df09febe7a0c20114ba897a454cfa433e25791478e175974aca686f81",
+  "hash_md5": "13fb54799bba8b42c7d96d12a48e74e0",
+  "metadata": {
+    "size_bytes": 3534,
+    "created_time": "2026-08-19T18:01:35.143572",
+    "modified_time": "1980-01-02T00:00:00",
+    "access_time": "2026-08-19T18:04:33.884835",
+    "inode": 398097,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 1,
+    "num_tracks": 50,
+    "ppq": 192,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 3534
+  },
+  "duration_ticks": 3534,
+  "ppq": 192,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    },
+    {
+      "type": "STYLE_CATEGORY",
+      "style": "Barry Dance",
+      "description": "Factory style: Barry Dance"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:33.885800"
+}

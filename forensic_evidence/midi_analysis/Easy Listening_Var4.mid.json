@@ -1,0 +1,54 @@
+{
+  "file_path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/Easy Listening/Easy Listening_Var4.mid",
+  "filename": "Easy Listening_Var4.mid",
+  "hash_sha256": "e9610886ce258a7b41805fbb6d25138e642d7ddfb13608d520dd5d979e236e5c",
+  "hash_md5": "05947cb9cf0213d6b1eaa8a711dbf583",
+  "metadata": {
+    "size_bytes": 15626,
+    "created_time": "2026-08-19T18:01:35.213574",
+    "modified_time": "1980-01-02T00:00:00",
+    "access_time": "2026-08-19T18:04:33.540821",
+    "inode": 398707,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 1,
+    "num_tracks": 29,
+    "ppq": 192,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 15626
+  },
+  "duration_ticks": 15626,
+  "ppq": 192,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    },
+    {
+      "type": "STYLE_CATEGORY",
+      "style": "Easy Listening",
+      "description": "Factory style: Easy Listening"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:33.542090"
+}

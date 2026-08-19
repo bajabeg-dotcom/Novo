@@ -1,0 +1,54 @@
+{
+  "file_path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/Modern Latin/Modern Latin_Var1.mid",
+  "filename": "Modern Latin_Var1.mid",
+  "hash_sha256": "8704a39fd0af9789cdd4b599d25cb99c3e98e2270c68b9212804dc02a18077fe",
+  "hash_md5": "8dd4046f3a8673e7c9048ed5801f54dc",
+  "metadata": {
+    "size_bytes": 3575,
+    "created_time": "2026-08-19T18:01:35.331579",
+    "modified_time": "1980-01-02T00:00:00",
+    "access_time": "2026-08-19T18:04:33.415816",
+    "inode": 399796,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 1,
+    "num_tracks": 5,
+    "ppq": 192,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 3575
+  },
+  "duration_ticks": 3575,
+  "ppq": 192,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    },
+    {
+      "type": "STYLE_CATEGORY",
+      "style": "Modern Latin",
+      "description": "Factory style: Modern Latin"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:33.416294"
+}

@@ -1,0 +1,54 @@
+{
+  "file_path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/Hully Gully/Hully Gully_End1.mid",
+  "filename": "Hully Gully_End1.mid",
+  "hash_sha256": "3061abfa990f93404ba98a4823e8dfae13949efbf6b9c5c8f160ec4a065d6f9b",
+  "hash_md5": "1a26593f41f75ab5475bedb6418f2365",
+  "metadata": {
+    "size_bytes": 6099,
+    "created_time": "2026-08-19T18:01:35.303578",
+    "modified_time": "1980-01-02T00:00:00",
+    "access_time": "2026-08-19T18:04:33.731829",
+    "inode": 399335,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 1,
+    "num_tracks": 20,
+    "ppq": 192,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 6099
+  },
+  "duration_ticks": 6099,
+  "ppq": 192,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    },
+    {
+      "type": "STYLE_CATEGORY",
+      "style": "Hully Gully",
+      "description": "Factory style: Hully Gully"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:33.732079"
+}

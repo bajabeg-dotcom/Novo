@@ -1,0 +1,49 @@
+{
+  "file_path": "/workspace/dna_extracted/gold_dna/Gold DNA/GRMEC I UNA-GR,DRVAR UZIVO.MID",
+  "filename": "GRMEC I UNA-GR,DRVAR UZIVO.MID",
+  "hash_sha256": "18b8a42e17cbf2e8614c6f3e83d183aa6808460a245bdb6f83709207b01e07f2",
+  "hash_md5": "e7b60ea1dc327c4c7d74ef2cd6b99064",
+  "metadata": {
+    "size_bytes": 72075,
+    "created_time": "2026-08-19T18:01:34.991565",
+    "modified_time": "2010-07-30T18:43:40",
+    "access_time": "2026-08-19T18:04:32.860793",
+    "inode": 397661,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 0,
+    "num_tracks": 1,
+    "ppq": 384,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 72075
+  },
+  "duration_ticks": 72075,
+  "ppq": 384,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:32.861441"
+}

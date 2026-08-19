@@ -1,0 +1,54 @@
+{
+  "file_path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/Meditando/Meditando_Var3.mid",
+  "filename": "Meditando_Var3.mid",
+  "hash_sha256": "c9c8344fb271c8a33114e4844aca1242212c05bf1db3a4273dae6a1b4210ebeb",
+  "hash_md5": "7418a69752139f4d1fd7c2cc9ad3c99a",
+  "metadata": {
+    "size_bytes": 2838,
+    "created_time": "2026-08-19T18:01:35.321579",
+    "modified_time": "1980-01-02T00:00:00",
+    "access_time": "2026-08-19T18:04:33.505820",
+    "inode": 399645,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 1,
+    "num_tracks": 18,
+    "ppq": 192,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 2838
+  },
+  "duration_ticks": 2838,
+  "ppq": 192,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    },
+    {
+      "type": "STYLE_CATEGORY",
+      "style": "Meditando",
+      "description": "Factory style: Meditando"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:33.506287"
+}

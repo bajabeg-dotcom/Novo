@@ -1,0 +1,54 @@
+{
+  "file_path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/UnpluggedBallad3/UnpluggedBallad3_Intro1.mid",
+  "filename": "UnpluggedBallad3_Intro1.mid",
+  "hash_sha256": "cb156fd24363111af511a262fd6f7baa825ce2285bc44bc4855cf9ad6c5899d0",
+  "hash_md5": "a7015dd86353470960a53c63779d3950",
+  "metadata": {
+    "size_bytes": 7908,
+    "created_time": "2026-08-19T18:01:35.451584",
+    "modified_time": "1980-01-02T00:00:00",
+    "access_time": "2026-08-19T18:04:33.029800",
+    "inode": 525017,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 1,
+    "num_tracks": 18,
+    "ppq": 192,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 7908
+  },
+  "duration_ticks": 7908,
+  "ppq": 192,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    },
+    {
+      "type": "STYLE_CATEGORY",
+      "style": "UnpluggedBallad3",
+      "description": "Factory style: UnpluggedBallad3"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:33.030309"
+}

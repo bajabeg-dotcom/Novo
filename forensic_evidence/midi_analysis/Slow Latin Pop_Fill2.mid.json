@@ -1,0 +1,54 @@
+{
+  "file_path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/Slow Latin Pop/Slow Latin Pop_Fill2.mid",
+  "filename": "Slow Latin Pop_Fill2.mid",
+  "hash_sha256": "1487f5ea4d414ea7d60fe123e5dd7e858997369f064b5f215cbec1a3762b940b",
+  "hash_md5": "c673eaa0179a3b516470a65f95d8a315",
+  "metadata": {
+    "size_bytes": 3380,
+    "created_time": "2026-08-19T18:01:35.423583",
+    "modified_time": "1980-01-02T00:00:00",
+    "access_time": "2026-08-19T18:04:33.323812",
+    "inode": 524555,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 1,
+    "num_tracks": 20,
+    "ppq": 192,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 3380
+  },
+  "duration_ticks": 3380,
+  "ppq": 192,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    },
+    {
+      "type": "STYLE_CATEGORY",
+      "style": "Slow Latin Pop",
+      "description": "Factory style: Slow Latin Pop"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:33.324636"
+}

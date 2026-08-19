@@ -1,0 +1,49 @@
+{
+  "file_path": "/workspace/dna_extracted/gold_dna/Gold DNA/NEMOJ OVO NEMOJ-SEKI T UZIVO.MID",
+  "filename": "NEMOJ OVO NEMOJ-SEKI T UZIVO.MID",
+  "hash_sha256": "c64a35052a99f6c4cfe80be605134ca9749b94e8aa1f9f8b44760b21cfacd046",
+  "hash_md5": "0cfca23f737dfc908a9196388501fc7e",
+  "metadata": {
+    "size_bytes": 109156,
+    "created_time": "2026-08-19T18:01:35.061568",
+    "modified_time": "2010-09-23T17:37:52",
+    "access_time": "2026-08-19T18:04:32.758789",
+    "inode": 397730,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 0,
+    "num_tracks": 1,
+    "ppq": 384,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 109156
+  },
+  "duration_ticks": 109156,
+  "ppq": 384,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:32.760350"
+}

@@ -1,0 +1,54 @@
+{
+  "file_path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/Ballad 6/Ballad 6_8 2_Var3.mid",
+  "filename": "Ballad 6_8 2_Var3.mid",
+  "hash_sha256": "5c5c3c87d4a6013b3b576d40058d6502e1b21e7ac505fcc8113d43c4e3ef01c4",
+  "hash_md5": "26c2aa17362d96d4b7f14f43c450b691",
+  "metadata": {
+    "size_bytes": 2320,
+    "created_time": "2026-08-19T18:01:35.142571",
+    "modified_time": "1980-01-02T00:00:00",
+    "access_time": "2026-08-19T18:04:32.940797",
+    "inode": 398078,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 1,
+    "num_tracks": 15,
+    "ppq": 192,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 2320
+  },
+  "duration_ticks": 2320,
+  "ppq": 192,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    },
+    {
+      "type": "STYLE_CATEGORY",
+      "style": "Ballad 6",
+      "description": "Factory style: Ballad 6"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:32.941329"
+}

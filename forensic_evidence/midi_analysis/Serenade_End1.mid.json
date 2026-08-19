@@ -1,0 +1,54 @@
+{
+  "file_path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/Serenade/Serenade_End1.mid",
+  "filename": "Serenade_End1.mid",
+  "hash_sha256": "02036cc17f395a4c9697a08a30c7a6b09ff3ef28245cfebf97564752780e5151",
+  "hash_md5": "cc1ad2c5cc1194231987819fc4c9afcc",
+  "metadata": {
+    "size_bytes": 2485,
+    "created_time": "2026-08-19T18:01:35.415583",
+    "modified_time": "1980-01-02T00:00:00",
+    "access_time": "2026-08-19T18:04:33.345813",
+    "inode": 524425,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 1,
+    "num_tracks": 16,
+    "ppq": 192,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 2485
+  },
+  "duration_ticks": 2485,
+  "ppq": 192,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    },
+    {
+      "type": "STYLE_CATEGORY",
+      "style": "Serenade",
+      "description": "Factory style: Serenade"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:33.346154"
+}

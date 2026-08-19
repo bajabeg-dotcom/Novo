@@ -1,0 +1,54 @@
+{
+  "file_path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/Show Time/Show Time_Var1.mid",
+  "filename": "Show Time_Var1.mid",
+  "hash_sha256": "022c9e5ce33fda33c1268c6faec154973de513e52e94f987607a56cec10dea76",
+  "hash_md5": "b50b7f34540c14846e2ba8292dbc880a",
+  "metadata": {
+    "size_bytes": 6601,
+    "created_time": "2026-08-19T18:01:35.416583",
+    "modified_time": "1980-01-02T00:00:00",
+    "access_time": "2026-08-19T18:04:33.055801",
+    "inode": 524447,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 1,
+    "num_tracks": 20,
+    "ppq": 192,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 6601
+  },
+  "duration_ticks": 6601,
+  "ppq": 192,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    },
+    {
+      "type": "STYLE_CATEGORY",
+      "style": "Show Time",
+      "description": "Factory style: Show Time"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:33.056849"
+}

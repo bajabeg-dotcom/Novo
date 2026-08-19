@@ -1,0 +1,54 @@
+{
+  "file_path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/Disco Gully/Disco Gully_Var3.mid",
+  "filename": "Disco Gully_Var3.mid",
+  "hash_sha256": "dd884278afaa058ca5ce47d0de3e5bed68ab8e2a869613fdd6ebe29fc1a2bd60",
+  "hash_md5": "00a0a452505fce7d71b72d10d9ee2dbb",
+  "metadata": {
+    "size_bytes": 3199,
+    "created_time": "2026-08-19T18:01:35.205574",
+    "modified_time": "1980-01-02T00:00:00",
+    "access_time": "2026-08-19T18:04:33.309812",
+    "inode": 398627,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 1,
+    "num_tracks": 13,
+    "ppq": 192,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 3199
+  },
+  "duration_ticks": 3199,
+  "ppq": 192,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    },
+    {
+      "type": "STYLE_CATEGORY",
+      "style": "Disco Gully",
+      "description": "Factory style: Disco Gully"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:33.311064"
+}

@@ -1,0 +1,54 @@
+{
+  "file_path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/Jazz Club/Jazz Club_Intro3.mid",
+  "filename": "Jazz Club_Intro3.mid",
+  "hash_sha256": "502209392e6280bb754c8eb1730938a3737219ee4d333272195175e04ab5dc15",
+  "hash_md5": "81d6bff40bee07ee1f08c5d3d5134805",
+  "metadata": {
+    "size_bytes": 900,
+    "created_time": "2026-08-19T18:01:35.312578",
+    "modified_time": "1980-01-02T00:00:00",
+    "access_time": "2026-08-19T18:04:33.194807",
+    "inode": 399507,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 1,
+    "num_tracks": 50,
+    "ppq": 192,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 900
+  },
+  "duration_ticks": 900,
+  "ppq": 192,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    },
+    {
+      "type": "STYLE_CATEGORY",
+      "style": "Jazz Club",
+      "description": "Factory style: Jazz Club"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:33.195938"
+}

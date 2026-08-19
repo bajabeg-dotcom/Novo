@@ -1,0 +1,54 @@
+{
+  "file_path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/Hip Hindi Hop/Hip Hindi Hop_Var4.mid",
+  "filename": "Hip Hindi Hop_Var4.mid",
+  "hash_sha256": "442520a0bc7af48885f3a0b8ef9cbc9d066706e1937a19a0c40307810baacf9e",
+  "hash_md5": "f9280e0e3dffb9b7451e016b66294c0e",
+  "metadata": {
+    "size_bytes": 10101,
+    "created_time": "2026-08-19T18:01:35.299578",
+    "modified_time": "1980-01-02T00:00:00",
+    "access_time": "2026-08-19T18:04:33.588823",
+    "inode": 399262,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 1,
+    "num_tracks": 22,
+    "ppq": 192,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 10101
+  },
+  "duration_ticks": 10101,
+  "ppq": 192,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    },
+    {
+      "type": "STYLE_CATEGORY",
+      "style": "Hip Hindi Hop",
+      "description": "Factory style: Hip Hindi Hop"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:33.589808"
+}

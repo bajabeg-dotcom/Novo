@@ -1,0 +1,54 @@
+{
+  "file_path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/Tap Dance/Tap Dance_Var1.mid",
+  "filename": "Tap Dance_Var1.mid",
+  "hash_sha256": "1e1c8698ab96365e5d0654398583b3362faeddb2b800c8d9bddd3e84a853d9b1",
+  "hash_md5": "ca8b9b8e14ede17436e5d0cae16d57e2",
+  "metadata": {
+    "size_bytes": 4239,
+    "created_time": "2026-08-19T18:01:35.436584",
+    "modified_time": "1980-01-02T00:00:00",
+    "access_time": "2026-08-19T18:04:33.772830",
+    "inode": 524782,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 1,
+    "num_tracks": 14,
+    "ppq": 192,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 4239
+  },
+  "duration_ticks": 4239,
+  "ppq": 192,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    },
+    {
+      "type": "STYLE_CATEGORY",
+      "style": "Tap Dance",
+      "description": "Factory style: Tap Dance"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:33.773949"
+}

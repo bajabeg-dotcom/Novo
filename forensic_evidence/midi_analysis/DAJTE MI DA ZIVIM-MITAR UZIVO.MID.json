@@ -1,0 +1,49 @@
+{
+  "file_path": "/workspace/dna_extracted/gold_dna/Gold DNA/DAJTE MI DA ZIVIM-MITAR UZIVO.MID",
+  "filename": "DAJTE MI DA ZIVIM-MITAR UZIVO.MID",
+  "hash_sha256": "7e4dde7d56b4a279cea19290149404812da0dc7f46a616bb2cdfaa6bf63d2ba1",
+  "hash_md5": "eea0d9be211c6116ef3b4e8deb540c6b",
+  "metadata": {
+    "size_bytes": 91924,
+    "created_time": "2026-08-19T18:01:34.971565",
+    "modified_time": "2010-09-23T17:18:18",
+    "access_time": "2026-08-19T18:04:32.780790",
+    "inode": 397636,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 0,
+    "num_tracks": 1,
+    "ppq": 384,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 91924
+  },
+  "duration_ticks": 91924,
+  "ppq": 384,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:32.782506"
+}

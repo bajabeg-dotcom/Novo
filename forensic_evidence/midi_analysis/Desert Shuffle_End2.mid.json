@@ -1,0 +1,54 @@
+{
+  "file_path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/Desert Shuffle/Desert Shuffle_End2.mid",
+  "filename": "Desert Shuffle_End2.mid",
+  "hash_sha256": "ace1d9946f7db8561e34289b43858ba8e568a0a5e0b371dd4b4726251caee5ac",
+  "hash_md5": "e76e8ca71ab7d7a3deb851a47d2bbe6e",
+  "metadata": {
+    "size_bytes": 3627,
+    "created_time": "2026-08-19T18:01:35.203574",
+    "modified_time": "1980-01-02T00:00:00",
+    "access_time": "2026-08-19T18:04:33.821832",
+    "inode": 398604,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 1,
+    "num_tracks": 13,
+    "ppq": 192,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 3627
+  },
+  "duration_ticks": 3627,
+  "ppq": 192,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    },
+    {
+      "type": "STYLE_CATEGORY",
+      "style": "Desert Shuffle",
+      "description": "Factory style: Desert Shuffle"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:33.822103"
+}

@@ -1,0 +1,54 @@
+{
+  "file_path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/SchlagerShuffle1/SchlagerShuffle1_End3.mid",
+  "filename": "SchlagerShuffle1_End3.mid",
+  "hash_sha256": "20f3629e6940a265f6dfbc879eaa5a6b2a4900d8ff11f3a2436fd401d090ab8a",
+  "hash_md5": "275d715f965505b7afeaa750c9d6c553",
+  "metadata": {
+    "size_bytes": 3997,
+    "created_time": "2026-08-19T18:01:35.413583",
+    "modified_time": "1980-01-02T00:00:00",
+    "access_time": "2026-08-19T18:04:33.060802",
+    "inode": 524385,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 1,
+    "num_tracks": 50,
+    "ppq": 192,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 3997
+  },
+  "duration_ticks": 3997,
+  "ppq": 192,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    },
+    {
+      "type": "STYLE_CATEGORY",
+      "style": "SchlagerShuffle1",
+      "description": "Factory style: SchlagerShuffle1"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:33.061716"
+}

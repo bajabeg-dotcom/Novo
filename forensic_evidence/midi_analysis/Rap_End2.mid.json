@@ -1,0 +1,54 @@
+{
+  "file_path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/Rap/Rap_End2.mid",
+  "filename": "Rap_End2.mid",
+  "hash_sha256": "506cd349ca48c0756956756ddb14caee27954608b99725eea7587adb212f3703",
+  "hash_md5": "41a9ce9a451a8040f04313343ed1eda1",
+  "metadata": {
+    "size_bytes": 1007,
+    "created_time": "2026-08-19T18:01:35.402582",
+    "modified_time": "1980-01-02T00:00:00",
+    "access_time": "2026-08-19T18:04:33.912836",
+    "inode": 400348,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 1,
+    "num_tracks": 11,
+    "ppq": 192,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 1007
+  },
+  "duration_ticks": 1007,
+  "ppq": 192,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    },
+    {
+      "type": "STYLE_CATEGORY",
+      "style": "Rap",
+      "description": "Factory style: Rap"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:33.913243"
+}

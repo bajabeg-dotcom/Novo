@@ -1,0 +1,49 @@
+{
+  "file_path": "/workspace/dna_extracted/gold_dna/Gold DNA/KAFANAC-SABAN UZIVO.MID",
+  "filename": "KAFANAC-SABAN UZIVO.MID",
+  "hash_sha256": "647cbf3f585cb964c82bf6dd6a6db991b4e181427af59d84147195b469a5c438",
+  "hash_md5": "d3e57c0fac3da494ab7909ce592d6d08",
+  "metadata": {
+    "size_bytes": 144659,
+    "created_time": "2026-08-19T18:01:35.026567",
+    "modified_time": "2010-10-13T16:39:24",
+    "access_time": "2026-08-19T18:04:32.859793",
+    "inode": 397697,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 0,
+    "num_tracks": 1,
+    "ppq": 384,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 144659
+  },
+  "duration_ticks": 144659,
+  "ppq": 384,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:32.860809"
+}

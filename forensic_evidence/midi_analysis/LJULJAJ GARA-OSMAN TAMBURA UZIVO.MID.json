@@ -1,0 +1,49 @@
+{
+  "file_path": "/workspace/dna_extracted/gold_dna/Gold DNA/LJULJAJ GARA-OSMAN TAMBURA UZIVO.MID",
+  "filename": "LJULJAJ GARA-OSMAN TAMBURA UZIVO.MID",
+  "hash_sha256": "f41a188564f66e73565d185b60dfc2c66840603c0bcc6b98385c1d9c45220667",
+  "hash_md5": "108d6d79efb48c1e7e3f06c8025894c6",
+  "metadata": {
+    "size_bytes": 109522,
+    "created_time": "2026-08-19T18:01:35.041567",
+    "modified_time": "2010-02-10T16:21:12",
+    "access_time": "2026-08-19T18:04:32.839792",
+    "inode": 397711,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 0,
+    "num_tracks": 1,
+    "ppq": 384,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 109522
+  },
+  "duration_ticks": 109522,
+  "ppq": 384,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:32.841507"
+}

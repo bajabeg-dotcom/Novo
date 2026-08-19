@@ -1,0 +1,49 @@
+{
+  "file_path": "/workspace/dna_extracted/gold_dna/Gold DNA/GOST-SEJO KALAC UZIVO.MID",
+  "filename": "GOST-SEJO KALAC UZIVO.MID",
+  "hash_sha256": "3d3b5009771d1bb3159b2c222bd52ffc03948c685ccc811a121150040c9a12b9",
+  "hash_md5": "530fb83141b2c2e49d1cbcb6ab0f96e0",
+  "metadata": {
+    "size_bytes": 67556,
+    "created_time": "2026-08-19T18:01:34.989565",
+    "modified_time": "2010-09-19T10:08:42",
+    "access_time": "2026-08-19T18:04:32.844793",
+    "inode": 397659,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 0,
+    "num_tracks": 1,
+    "ppq": 384,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 67556
+  },
+  "duration_ticks": 67556,
+  "ppq": 384,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:32.846170"
+}

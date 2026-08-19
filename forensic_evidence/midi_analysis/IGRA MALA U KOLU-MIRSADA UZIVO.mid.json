@@ -1,0 +1,49 @@
+{
+  "file_path": "/workspace/dna_extracted/gold_dna/Gold DNA/IGRA MALA U KOLU-MIRSADA UZIVO.mid",
+  "filename": "IGRA MALA U KOLU-MIRSADA UZIVO.mid",
+  "hash_sha256": "f6c369bc26d0aa37b9c1ded14eed3f6e4f899e8739703e016c13fa706776b6fc",
+  "hash_md5": "358048da98d9c2eecec6a50674354ba0",
+  "metadata": {
+    "size_bytes": 180041,
+    "created_time": "2026-08-19T18:01:35.002566",
+    "modified_time": "2010-04-29T19:43:04",
+    "access_time": "2026-08-19T18:04:32.881794",
+    "inode": 397673,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 0,
+    "num_tracks": 1,
+    "ppq": 384,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 180041
+  },
+  "duration_ticks": 180041,
+  "ppq": 384,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:32.883161"
+}

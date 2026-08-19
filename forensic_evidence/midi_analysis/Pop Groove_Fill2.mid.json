@@ -1,0 +1,54 @@
+{
+  "file_path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/Pop Groove/Pop Groove_Fill2.mid",
+  "filename": "Pop Groove_Fill2.mid",
+  "hash_sha256": "3c1655975fff420ebe1fa38e4fe67bc389e95625502762733c7a653dbf92ba44",
+  "hash_md5": "a2dfa631afb33458516636e5f34bded1",
+  "metadata": {
+    "size_bytes": 1971,
+    "created_time": "2026-08-19T18:01:35.356580",
+    "modified_time": "1980-01-02T00:00:00",
+    "access_time": "2026-08-19T18:04:33.149805",
+    "inode": 400229,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 1,
+    "num_tracks": 14,
+    "ppq": 192,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 1971
+  },
+  "duration_ticks": 1971,
+  "ppq": 192,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    },
+    {
+      "type": "STYLE_CATEGORY",
+      "style": "Pop Groove",
+      "description": "Factory style: Pop Groove"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:33.150056"
+}

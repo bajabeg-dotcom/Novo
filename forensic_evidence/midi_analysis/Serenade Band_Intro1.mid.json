@@ -1,0 +1,54 @@
+{
+  "file_path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/Serenade Band/Serenade Band_Intro1.mid",
+  "filename": "Serenade Band_Intro1.mid",
+  "hash_sha256": "d1e69d47e0319b9bf2ba7a4ccf675cb85081282430e766f4da7b7b2d1f60ea95",
+  "hash_md5": "d3d3dcc8b3958df52d563ed5541258a7",
+  "metadata": {
+    "size_bytes": 4828,
+    "created_time": "2026-08-19T18:01:35.414582",
+    "modified_time": "1980-01-02T00:00:00",
+    "access_time": "2026-08-19T18:04:33.118804",
+    "inode": 524416,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 1,
+    "num_tracks": 17,
+    "ppq": 192,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 4828
+  },
+  "duration_ticks": 4828,
+  "ppq": 192,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    },
+    {
+      "type": "STYLE_CATEGORY",
+      "style": "Serenade Band",
+      "description": "Factory style: Serenade Band"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:33.119937"
+}

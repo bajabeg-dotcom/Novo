@@ -1,0 +1,54 @@
+{
+  "file_path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/Funk R&B/Funk R&B_Break.mid",
+  "filename": "Funk R&B_Break.mid",
+  "hash_sha256": "891ef3b249ebf79128adb2e30baa9d59ff62a2dac2665628dd90182338a55808",
+  "hash_md5": "5cb9a395ebacc9e81c3adbc34b0009a7",
+  "metadata": {
+    "size_bytes": 1677,
+    "created_time": "2026-08-19T18:01:35.235575",
+    "modified_time": "1980-01-02T00:00:00",
+    "access_time": "2026-08-19T18:04:33.817832",
+    "inode": 398970,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 1,
+    "num_tracks": 15,
+    "ppq": 192,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 1677
+  },
+  "duration_ticks": 1677,
+  "ppq": 192,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    },
+    {
+      "type": "STYLE_CATEGORY",
+      "style": "Funk R&B",
+      "description": "Factory style: Funk R&B"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:33.818948"
+}

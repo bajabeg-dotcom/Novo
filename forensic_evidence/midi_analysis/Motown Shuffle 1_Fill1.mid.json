@@ -1,0 +1,54 @@
+{
+  "file_path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/Motown Shuffle 1/Motown Shuffle 1_Fill1.mid",
+  "filename": "Motown Shuffle 1_Fill1.mid",
+  "hash_sha256": "1e95e8c77ab7b98442c4c63f5ab02ca169b52cb3933a4be0561f36b35fa2c456",
+  "hash_md5": "6a9239b30ca48a7a114a5bfb099218a9",
+  "metadata": {
+    "size_bytes": 1328,
+    "created_time": "2026-08-19T18:01:35.332579",
+    "modified_time": "1980-01-02T00:00:00",
+    "access_time": "2026-08-19T18:04:33.715828",
+    "inode": 399819,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 1,
+    "num_tracks": 12,
+    "ppq": 192,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 1328
+  },
+  "duration_ticks": 1328,
+  "ppq": 192,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    },
+    {
+      "type": "STYLE_CATEGORY",
+      "style": "Motown Shuffle 1",
+      "description": "Factory style: Motown Shuffle 1"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:33.716099"
+}

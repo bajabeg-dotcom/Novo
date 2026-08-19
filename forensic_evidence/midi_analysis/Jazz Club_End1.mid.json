@@ -1,0 +1,54 @@
+{
+  "file_path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/Jazz Club/Jazz Club_End1.mid",
+  "filename": "Jazz Club_End1.mid",
+  "hash_sha256": "a16354434add7881814f81ac94c11d43c8e77c05892c0bb4167291a08a2ffacb",
+  "hash_md5": "8fe22af9bf41dc8ed0fcfa8f85f0fc8d",
+  "metadata": {
+    "size_bytes": 1357,
+    "created_time": "2026-08-19T18:01:35.311578",
+    "modified_time": "1980-01-02T00:00:00",
+    "access_time": "2026-08-19T18:04:33.193807",
+    "inode": 399501,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 1,
+    "num_tracks": 50,
+    "ppq": 192,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 1357
+  },
+  "duration_ticks": 1357,
+  "ppq": 192,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    },
+    {
+      "type": "STYLE_CATEGORY",
+      "style": "Jazz Club",
+      "description": "Factory style: Jazz Club"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:33.195080"
+}

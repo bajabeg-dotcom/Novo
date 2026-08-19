@@ -1,0 +1,54 @@
+{
+  "file_path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/Caribbean/Caribbean_End2.mid",
+  "filename": "Caribbean_End2.mid",
+  "hash_sha256": "3b903b8a35866b3ed7b03d7914714ec89a4b22bb5e0414520ea823d54d7a58c9",
+  "hash_md5": "1b9f3a20ff0ebd4aac0e691ad144e9b5",
+  "metadata": {
+    "size_bytes": 4470,
+    "created_time": "2026-08-19T18:01:35.156572",
+    "modified_time": "1980-01-02T00:00:00",
+    "access_time": "2026-08-19T18:04:33.516820",
+    "inode": 398278,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 1,
+    "num_tracks": 15,
+    "ppq": 192,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 4470
+  },
+  "duration_ticks": 4470,
+  "ppq": 192,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    },
+    {
+      "type": "STYLE_CATEGORY",
+      "style": "Caribbean",
+      "description": "Factory style: Caribbean"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:33.517621"
+}

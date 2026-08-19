@@ -1,0 +1,54 @@
+{
+  "file_path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/Fast Big Band 1/Fast Big Band 1_End2.mid",
+  "filename": "Fast Big Band 1_End2.mid",
+  "hash_sha256": "0962ce0713b272cea2004808aadaa1fbbed42fe4c03096097e1b821c68594af9",
+  "hash_md5": "02759b697d2aa036ba1ee71816a9cb31",
+  "metadata": {
+    "size_bytes": 1017,
+    "created_time": "2026-08-19T18:01:35.221575",
+    "modified_time": "1980-01-02T00:00:00",
+    "access_time": "2026-08-19T18:04:33.811832",
+    "inode": 398807,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 1,
+    "num_tracks": 50,
+    "ppq": 192,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 1017
+  },
+  "duration_ticks": 1017,
+  "ppq": 192,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    },
+    {
+      "type": "STYLE_CATEGORY",
+      "style": "Fast Big Band 1",
+      "description": "Factory style: Fast Big Band 1"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:33.812479"
+}

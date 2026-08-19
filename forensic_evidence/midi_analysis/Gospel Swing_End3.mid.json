@@ -1,0 +1,54 @@
+{
+  "file_path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/Gospel Swing/Gospel Swing_End3.mid",
+  "filename": "Gospel Swing_End3.mid",
+  "hash_sha256": "9fb2053029f7d944206dc5823d299c7b8160e1f9d80a9861c4b43d5cb4539c99",
+  "hash_md5": "15b589a94fd502fac1bb77619868fa7a",
+  "metadata": {
+    "size_bytes": 1364,
+    "created_time": "2026-08-19T18:01:35.249576",
+    "modified_time": "1980-01-02T00:00:00",
+    "access_time": "2026-08-19T18:04:33.881835",
+    "inode": 399113,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 1,
+    "num_tracks": 50,
+    "ppq": 192,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 1364
+  },
+  "duration_ticks": 1364,
+  "ppq": 192,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    },
+    {
+      "type": "STYLE_CATEGORY",
+      "style": "Gospel Swing",
+      "description": "Factory style: Gospel Swing"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:33.882659"
+}

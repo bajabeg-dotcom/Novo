@@ -1,0 +1,54 @@
+{
+  "file_path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/Take Beat/Take Beat_End3.mid",
+  "filename": "Take Beat_End3.mid",
+  "hash_sha256": "d1f8ce0642e21e02e799679e3b17d07471b9b95d58af39a28a38bbb102ba42de",
+  "hash_md5": "35c4a53badd2d7b7b421a05efc2075e4",
+  "metadata": {
+    "size_bytes": 3039,
+    "created_time": "2026-08-19T18:01:35.434583",
+    "modified_time": "1980-01-02T00:00:00",
+    "access_time": "2026-08-19T18:04:33.948838",
+    "inode": 524748,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 1,
+    "num_tracks": 50,
+    "ppq": 192,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 3039
+  },
+  "duration_ticks": 3039,
+  "ppq": 192,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    },
+    {
+      "type": "STYLE_CATEGORY",
+      "style": "Take Beat",
+      "description": "Factory style: Take Beat"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:33.949436"
+}

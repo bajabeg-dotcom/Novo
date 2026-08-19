@@ -1,0 +1,271 @@
+{
+  "00:00:20": {
+    "sound_name": "Finger Bass",
+    "address": "00:00:20",
+    "description": "Finger-style bass sound",
+    "test_notes": [
+      36,
+      40,
+      43,
+      48
+    ],
+    "test_velocity": 75,
+    "duration_ms": 1000,
+    "status": "hardware_confirmed",
+    "hardware_confirmed": true,
+    "results": [
+      {
+        "address": "00:00:20",
+        "expected_sound_name": "Finger Bass",
+        "actual_sound_name": "Finger Bass",
+        "os_version": "Pa800_OS_v1.3.0",
+        "resource_version": "Pa800_Resource_v2.1",
+        "test_passed": true,
+        "confidence_score": 0.95,
+        "timestamp": "2026-08-19T18:25:23.220309",
+        "notes": "Prvi test prošao"
+      },
+      {
+        "address": "00:00:20",
+        "expected_sound_name": "Finger Bass",
+        "actual_sound_name": "Finger Bass",
+        "os_version": "Pa800_OS_v1.3.0",
+        "resource_version": "Pa800_Resource_v2.1",
+        "test_passed": true,
+        "confidence_score": 0.96,
+        "timestamp": "2026-08-19T18:25:23.220338",
+        "notes": "Drugi test prošao - HARDWARE CONFIRMED"
+      }
+    ]
+  },
+  "00:00:21": {
+    "sound_name": "Picked Bass",
+    "address": "00:00:21",
+    "description": "Picked bass sound",
+    "test_notes": [
+      36,
+      40,
+      43,
+      48
+    ],
+    "test_velocity": 80,
+    "duration_ms": 1000,
+    "status": "pending",
+    "hardware_confirmed": false,
+    "results": []
+  },
+  "00:00:22": {
+    "sound_name": "Slap Bass",
+    "address": "00:00:22",
+    "description": "Slap bass sound",
+    "test_notes": [
+      36,
+      40,
+      43,
+      48,
+      55
+    ],
+    "test_velocity": 85,
+    "duration_ms": 1000,
+    "status": "pending",
+    "hardware_confirmed": false,
+    "results": []
+  },
+  "00:00:19": {
+    "sound_name": "Clean Guitar",
+    "address": "00:00:19",
+    "description": "Clean electric guitar",
+    "test_notes": [
+      52,
+      55,
+      59,
+      64,
+      67,
+      72
+    ],
+    "test_velocity": 70,
+    "duration_ms": 1000,
+    "status": "pending",
+    "hardware_confirmed": false,
+    "results": []
+  },
+  "00:00:1E": {
+    "sound_name": "Dist Guitar",
+    "address": "00:00:1E",
+    "description": "Distortion guitar",
+    "test_notes": [
+      52,
+      55,
+      59,
+      64,
+      67
+    ],
+    "test_velocity": 90,
+    "duration_ms": 1000,
+    "status": "pending",
+    "hardware_confirmed": false,
+    "results": []
+  },
+  "00:00:1F": {
+    "sound_name": "PowerChord Guitar",
+    "address": "00:00:1F",
+    "description": "Power chord guitar",
+    "test_notes": [
+      48,
+      50,
+      52,
+      55,
+      57,
+      60
+    ],
+    "test_velocity": 95,
+    "duration_ms": 1000,
+    "status": "pending",
+    "hardware_confirmed": false,
+    "results": []
+  },
+  "78:00:00": {
+    "sound_name": "Pop Std. Kit",
+    "address": "78:00:00",
+    "description": "Standard pop drum kit",
+    "test_notes": [
+      35,
+      38,
+      42,
+      46,
+      49,
+      55
+    ],
+    "test_velocity": 80,
+    "duration_ms": 1000,
+    "status": "pending",
+    "hardware_confirmed": false,
+    "results": []
+  },
+  "00:00:00": {
+    "sound_name": "Concert Grand",
+    "address": "00:00:00",
+    "description": "Acoustic piano",
+    "test_notes": [
+      48,
+      52,
+      55,
+      60,
+      64,
+      67,
+      72
+    ],
+    "test_velocity": 70,
+    "duration_ms": 1000,
+    "status": "pending",
+    "hardware_confirmed": false,
+    "results": []
+  },
+  "00:00:04": {
+    "sound_name": "Electric Piano",
+    "address": "00:00:04",
+    "description": "EP sound",
+    "test_notes": [
+      48,
+      52,
+      55,
+      60,
+      64,
+      67
+    ],
+    "test_velocity": 65,
+    "duration_ms": 1000,
+    "status": "pending",
+    "hardware_confirmed": false,
+    "results": []
+  },
+  "00:00:30": {
+    "sound_name": "String Ensemble",
+    "address": "00:00:30",
+    "description": "String ensemble",
+    "test_notes": [
+      48,
+      52,
+      55,
+      60,
+      64,
+      67
+    ],
+    "test_velocity": 60,
+    "duration_ms": 1000,
+    "status": "pending",
+    "hardware_confirmed": false,
+    "results": []
+  },
+  "00:00:38": {
+    "sound_name": "Trumpet",
+    "address": "00:00:38",
+    "description": "Trumpet",
+    "test_notes": [
+      55,
+      58,
+      60,
+      64,
+      67,
+      72
+    ],
+    "test_velocity": 85,
+    "duration_ms": 1000,
+    "status": "pending",
+    "hardware_confirmed": false,
+    "results": []
+  },
+  "00:00:41": {
+    "sound_name": "Alto Sax",
+    "address": "00:00:41",
+    "description": "Alto saxophone",
+    "test_notes": [
+      55,
+      58,
+      60,
+      64,
+      67,
+      70
+    ],
+    "test_velocity": 75,
+    "duration_ms": 1000,
+    "status": "pending",
+    "hardware_confirmed": false,
+    "results": []
+  },
+  "00:00:50": {
+    "sound_name": "Lead Synth",
+    "address": "00:00:50",
+    "description": "Synth lead",
+    "test_notes": [
+      48,
+      52,
+      55,
+      60,
+      64,
+      67,
+      72
+    ],
+    "test_velocity": 80,
+    "duration_ms": 1000,
+    "status": "pending",
+    "hardware_confirmed": false,
+    "results": []
+  },
+  "00:00:58": {
+    "sound_name": "Pad Synth",
+    "address": "00:00:58",
+    "description": "Synth pad",
+    "test_notes": [
+      48,
+      52,
+      55,
+      60
+    ],
+    "test_velocity": 60,
+    "duration_ms": 1000,
+    "status": "pending",
+    "hardware_confirmed": false,
+    "results": []
+  }
+}

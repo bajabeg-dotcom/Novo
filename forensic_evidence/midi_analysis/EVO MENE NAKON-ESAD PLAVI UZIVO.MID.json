@@ -1,0 +1,49 @@
+{
+  "file_path": "/workspace/dna_extracted/gold_dna/Gold DNA/EVO MENE NAKON-ESAD PLAVI UZIVO.MID",
+  "filename": "EVO MENE NAKON-ESAD PLAVI UZIVO.MID",
+  "hash_sha256": "2ff3dd2beac21b17271dc6dc24450e253204e71af36d468fdbef04edd72ac165",
+  "hash_md5": "27a0fa7d4a55fe0af86e99369de60011",
+  "metadata": {
+    "size_bytes": 94470,
+    "created_time": "2026-08-19T18:01:34.983565",
+    "modified_time": "2010-10-04T16:51:52",
+    "access_time": "2026-08-19T18:04:32.827792",
+    "inode": 397650,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 0,
+    "num_tracks": 1,
+    "ppq": 384,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 94470
+  },
+  "duration_ticks": 94470,
+  "ppq": 384,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:32.829140"
+}

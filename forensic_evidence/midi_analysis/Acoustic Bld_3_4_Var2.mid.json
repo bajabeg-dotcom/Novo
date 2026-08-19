@@ -1,0 +1,54 @@
+{
+  "file_path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/Acoustic Bld/Acoustic Bld_3_4_Var2.mid",
+  "filename": "Acoustic Bld_3_4_Var2.mid",
+  "hash_sha256": "df64a95ac2ba8bd8bc2a2da2c82435279f66dda925ddf09b2b8cf91c9dfd732e",
+  "hash_md5": "2659965208f83106cb58df49353178e1",
+  "metadata": {
+    "size_bytes": 4526,
+    "created_time": "2026-08-19T18:01:35.130571",
+    "modified_time": "1980-01-02T00:00:00",
+    "access_time": "2026-08-19T18:04:33.335813",
+    "inode": 397912,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 1,
+    "num_tracks": 16,
+    "ppq": 192,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 4526
+  },
+  "duration_ticks": 4526,
+  "ppq": 192,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    },
+    {
+      "type": "STYLE_CATEGORY",
+      "style": "Acoustic Bld",
+      "description": "Factory style: Acoustic Bld"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:33.336193"
+}

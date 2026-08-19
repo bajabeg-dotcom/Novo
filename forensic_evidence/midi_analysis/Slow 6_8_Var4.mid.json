@@ -1,0 +1,54 @@
+{
+  "file_path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/Slow 6/Slow 6_8_Var4.mid",
+  "filename": "Slow 6_8_Var4.mid",
+  "hash_sha256": "f37c91f1ce9b81d58f71a62589e9f95f01785a9b98fb6286ed9f141f70ea8c70",
+  "hash_md5": "40afddc1f986b67894162c9be61ae700",
+  "metadata": {
+    "size_bytes": 6869,
+    "created_time": "2026-08-19T18:01:35.419583",
+    "modified_time": "1980-01-02T00:00:00",
+    "access_time": "2026-08-19T18:04:32.936796",
+    "inode": 524506,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 1,
+    "num_tracks": 26,
+    "ppq": 192,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 6869
+  },
+  "duration_ticks": 6869,
+  "ppq": 192,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    },
+    {
+      "type": "STYLE_CATEGORY",
+      "style": "Slow 6",
+      "description": "Factory style: Slow 6"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:32.937470"
+}

@@ -1,0 +1,54 @@
+{
+  "file_path": "/workspace/dna_extracted/split_factory_styles/Workspace_Styles/Love Disco/Love Disco_End1.mid",
+  "filename": "Love Disco_End1.mid",
+  "hash_sha256": "ba2cb671d85b4a7b9c1671b5ad6533d52da81af3be70e10e1b1eca50ca8b14df",
+  "hash_md5": "0bac210b71e2d5c098391676eb1c2213",
+  "metadata": {
+    "size_bytes": 9305,
+    "created_time": "2026-08-19T18:01:35.320579",
+    "modified_time": "1980-01-02T00:00:00",
+    "access_time": "2026-08-19T18:04:33.364814",
+    "inode": 399621,
+    "permissions": "644"
+  },
+  "midi_structure": {
+    "header_length": 6,
+    "format_type": 1,
+    "num_tracks": 22,
+    "ppq": 192,
+    "valid_header": true
+  },
+  "tracks_info": [
+    {
+      "track_number": 0,
+      "events_count": "parsed",
+      "instruments_detected": "multiple"
+    }
+  ],
+  "events_summary": {},
+  "tempo_changes": [],
+  "time_signatures": [],
+  "key_signatures": [],
+  "instrument_detection": [],
+  "velocity_statistics": {
+    "min_possible": 0,
+    "max_possible": 127,
+    "data_size": 9305
+  },
+  "duration_ticks": 9305,
+  "ppq": 192,
+  "forensic_markers": [
+    {
+      "type": "MThd_HEADER",
+      "offset": 0,
+      "value": "4d54686400000006",
+      "description": "Standardni MIDI header"
+    },
+    {
+      "type": "STYLE_CATEGORY",
+      "style": "Love Disco",
+      "description": "Factory style: Love Disco"
+    }
+  ],
+  "analysis_timestamp": "2026-08-19T18:04:33.365785"
+}
