@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% block content %}
+
+<section class="panel status-panel">
+  <h2>What this tool does right now</h2>
+  <p>
+    This is a preview build. It can <strong>import and analyze</strong> a
+    Standard MIDI File &mdash; parse its structure, validate it, and show
+    raw per-track facts (channel, notes, velocity, Program Change, CC,
+    SysEx) &mdash; using the same code that already processes the real
+    KORG PA800 Factory Style corpus.
+  </p>
+  <p>
+    <strong>It does not optimize MIDI yet.</strong> The GM&rarr;RX
+    mapping, Instrument Identity, RX Safety Engine, Gold DNA, and
+    Optimizer are not implemented (see
+    <code>docs/ROADMAP.md</code>, Phase 5 onward) &mdash; so there is no
+    "Optimize" button here. Building that fake would violate this
+    project's own no-black-box, evidence-based rule.
+  </p>
+</section>
+
+{% if error %}
+<section class="panel error-panel">
+  <p>{{ error }}</p>
+</section>
+{% endif %}
+
+<section class="panel upload-panel">
+  <h2>Analyze a MIDI file</h2>
+  <form action="{{ url_for('analyze') }}" method="post" enctype="multipart/form-data">
+    <input type="file" name="midi_file" accept=".mid,.midi" required>
+    <button type="submit">Analyze</button>
+  </form>
+</section>
+
+{% endblock %}

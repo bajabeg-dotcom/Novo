@@ -1,0 +1,4 @@
+# Pinned extractor used by registry/generate_pa800_factory.py.
+# The same wheel, including its license, is vendored under vendor/ so K01 can
+# be reproduced without silently selecting another extractor version.
+pypdf==6.16.0 --hash=sha256:8c47581faa1cba7006ac269da30075c929c251cc4ffbafb2bcbe260306631118

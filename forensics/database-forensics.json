@@ -1,0 +1,1533 @@
+{
+ "artifacts": {
+  "all_match": true,
+  "artifacts": [
+   {
+    "actual_sha256": "da1e4acdda288762585fc268736b464446660b8e92e7f2fa0e529e5ef4079729",
+    "artifact_id": "dna-database",
+    "exists": true,
+    "expected_sha256": "da1e4acdda288762585fc268736b464446660b8e92e7f2fa0e529e5ef4079729",
+    "match": true,
+    "size_ok": true,
+    "status": "candidate"
+   },
+   {
+    "actual_sha256": "a0f32f8886c4b51caa5022e4437daaf9794fba27ddfb9d02c12a76d186bf4cec",
+    "artifact_id": "performance-catalog",
+    "exists": true,
+    "expected_sha256": "a0f32f8886c4b51caa5022e4437daaf9794fba27ddfb9d02c12a76d186bf4cec",
+    "match": true,
+    "size_ok": true,
+    "status": "candidate"
+   },
+   {
+    "actual_sha256": "8df0350a097c8163f5d5eb1610c9e5c5b64493fbbc732902c9fd0c780e1160c0",
+    "artifact_id": "gold-performance-catalog-v2",
+    "exists": true,
+    "expected_sha256": "8df0350a097c8163f5d5eb1610c9e5c5b64493fbbc732902c9fd0c780e1160c0",
+    "match": true,
+    "size_ok": true,
+    "status": "candidate"
+   },
+   {
+    "actual_sha256": "0e71c13c2e81daf0cf69a0eb54cf74e44cfb8620d203311cdd5099c0a465480f",
+    "artifact_id": "midi-standard",
+    "exists": true,
+    "expected_sha256": "0e71c13c2e81daf0cf69a0eb54cf74e44cfb8620d203311cdd5099c0a465480f",
+    "match": true,
+    "size_ok": true,
+    "status": "experimental"
+   },
+   {
+    "actual_sha256": "24421cb6dd87b730095f28dfa2138675bc3b17f98b6616fdc2c00b9b90ea9730",
+    "artifact_id": "factory-pattern-catalog",
+    "exists": true,
+    "expected_sha256": "24421cb6dd87b730095f28dfa2138675bc3b17f98b6616fdc2c00b9b90ea9730",
+    "match": true,
+    "size_ok": true,
+    "status": "candidate"
+   }
+  ],
+  "available": true,
+  "status_histogram": {
+   "candidate": 4,
+   "experimental": 1
+  }
+ },
+ "cross_check": {
+  "corpus_unique_files": 3368,
+  "db_fingerprints": 3368,
+  "end_tick_mismatch_sample": [],
+  "end_tick_mismatches": 0,
+  "files_with_note_loss": 405,
+  "hash_coverage_complete": true,
+  "in_corpus_not_in_db": 0,
+  "in_db_not_in_corpus": 0,
+  "note_loss_top": [
+   {
+    "db_notes": 21461,
+    "lost": 5034,
+    "path": "Workspace_Styles/Pop Shuffle 3/Pop Shuffle 3_Var1.mid",
+    "smf_note_on": 26495,
+    "unbalanced": 1593
+   },
+   {
+    "db_notes": 5416,
+    "lost": 2126,
+    "path": "Workspace_Styles/Country QuikStep/Country QuikStep_Var1.mid",
+    "smf_note_on": 7542,
+    "unbalanced": 1221
+   },
+   {
+    "db_notes": 4646,
+    "lost": 2092,
+    "path": "Workspace_Styles/Schlager 3/Schlager 3_Var1.mid",
+    "smf_note_on": 6738,
+    "unbalanced": 1118
+   },
+   {
+    "db_notes": 1772,
+    "lost": 1983,
+    "path": "Workspace_Styles/Pasodoble/Pasodoble_Intro1.mid",
+    "smf_note_on": 3755,
+    "unbalanced": 491
+   },
+   {
+    "db_notes": 4604,
+    "lost": 1853,
+    "path": "Workspace_Styles/Country Ballad 2/Country Ballad 2_Var1.mid",
+    "smf_note_on": 6457,
+    "unbalanced": 963
+   },
+   {
+    "db_notes": 5294,
+    "lost": 1462,
+    "path": "Workspace_Styles/Dance Motown/Dance Motown_Var1.mid",
+    "smf_note_on": 6756,
+    "unbalanced": 696
+   },
+   {
+    "db_notes": 2006,
+    "lost": 1351,
+    "path": "Workspace_Styles/Easy Pop 2/Easy Pop 2_Intro2.mid",
+    "smf_note_on": 3357,
+    "unbalanced": 194
+   },
+   {
+    "db_notes": 2993,
+    "lost": 1013,
+    "path": "Workspace_Styles/Jazz Club/Jazz Club_Var1.mid",
+    "smf_note_on": 4006,
+    "unbalanced": 440
+   },
+   {
+    "db_notes": 1888,
+    "lost": 752,
+    "path": "Workspace_Styles/Country Pop/Country Pop_Intro1.mid",
+    "smf_note_on": 2640,
+    "unbalanced": 212
+   },
+   {
+    "db_notes": 2412,
+    "lost": 726,
+    "path": "Workspace_Styles/Gospel Swing/Gospel Swing_Intro2.mid",
+    "smf_note_on": 3138,
+    "unbalanced": 106
+   },
+   {
+    "db_notes": 3258,
+    "lost": 665,
+    "path": "Workspace_Styles/Easy Beat 1/Easy Beat 1_Var2.mid",
+    "smf_note_on": 3923,
+    "unbalanced": 217
+   },
+   {
+    "db_notes": 2220,
+    "lost": 648,
+    "path": "Workspace_Styles/Analog Beat 1/Analog Beat 1_End1.mid",
+    "smf_note_on": 2868,
+    "unbalanced": 368
+   },
+   {
+    "db_notes": 2233,
+    "lost": 558,
+    "path": "Workspace_Styles/Disco Latin/Disco Latin_Intro1.mid",
+    "smf_note_on": 2791,
+    "unbalanced": 97
+   },
+   {
+    "db_notes": 3578,
+    "lost": 547,
+    "path": "Workspace_Styles/Disco Schlager/Disco Schlager_Var4.mid",
+    "smf_note_on": 4125,
+    "unbalanced": 132
+   },
+   {
+    "db_notes": 2167,
+    "lost": 493,
+    "path": "Workspace_Styles/Fox Shuffle 2/Fox Shuffle 2_Intro1.mid",
+    "smf_note_on": 2660,
+    "unbalanced": 182
+   },
+   {
+    "db_notes": 2436,
+    "lost": 489,
+    "path": "Workspace_Styles/Kool Beat/Kool Beat_Intro1.mid",
+    "smf_note_on": 2925,
+    "unbalanced": 154
+   },
+   {
+    "db_notes": 1251,
+    "lost": 474,
+    "path": "Workspace_Styles/Guitar Beat/Guitar Beat_Var1.mid",
+    "smf_note_on": 1725,
+    "unbalanced": 103
+   },
+   {
+    "db_notes": 393,
+    "lost": 449,
+    "path": "Workspace_Styles/Standard 16 Beat/Standard 16 Beat_Var3.mid",
+    "smf_note_on": 842,
+    "unbalanced": 72
+   },
+   {
+    "db_notes": 653,
+    "lost": 448,
+    "path": "Workspace_Styles/Club House/Club House_End1.mid",
+    "smf_note_on": 1101,
+    "unbalanced": 447
+   },
+   {
+    "db_notes": 458,
+    "lost": 431,
+    "path": "Workspace_Styles/Kool Beat/Kool Beat_End2.mid",
+    "smf_note_on": 889,
+    "unbalanced": 138
+   },
+   {
+    "db_notes": 934,
+    "lost": 422,
+    "path": "Workspace_Styles/Classic Beat/Classic Beat_Var1.mid",
+    "smf_note_on": 1356,
+    "unbalanced": 138
+   },
+   {
+    "db_notes": 304,
+    "lost": 393,
+    "path": "Workspace_Styles/Classic Beat/Classic Beat_Var3.mid",
+    "smf_note_on": 697,
+    "unbalanced": 138
+   },
+   {
+    "db_notes": 4757,
+    "lost": 383,
+    "path": "Workspace_Styles/Classic Funk/Classic Funk_Intro1.mid",
+    "smf_note_on": 5140,
+    "unbalanced": 151
+   },
+   {
+    "db_notes": 2035,
+    "lost": 372,
+    "path": "Workspace_Styles/Soft 16 Beat/Soft 16 Beat_Intro1.mid",
+    "smf_note_on": 2407,
+    "unbalanced": 116
+   },
+   {
+    "db_notes": 1404,
+    "lost": 359,
+    "path": "Workspace_Styles/Fox Shuffle 1/Fox Shuffle 1_Intro1.mid",
+    "smf_note_on": 1763,
+    "unbalanced": 120
+   }
+  ],
+  "note_totals": {
+   "db_role_notes": 3653509,
+   "lost": 36525,
+   "lost_pct": 0.9898,
+   "smf_note_on": 3690034
+  },
+  "ppq_mismatch_sample": [],
+  "ppq_mismatches": 0
+ },
+ "database": {
+  "path": "/tmp/final_ex/PA800-MIDI-Enhancer/data/pa800-enhancer.db",
+  "sha256": "da1e4acdda288762585fc268736b464446660b8e92e7f2fa0e529e5ef4079729",
+  "size": 37359616
+ },
+ "fingerprints": {
+  "complete_5_role_sources": 2087,
+  "corpus_fingerprints": {
+   "factory": 3187,
+   "gold": 181
+  },
+  "corpus_sources": {
+   "factory": 3211,
+   "gold": 182
+  },
+  "counts": {
+   "fingerprints": 3368,
+   "role_notes_total": 3653509,
+   "roles": 14369,
+   "sources": 3393
+  },
+  "imported_at_range": [
+   "2026-08-19T14:00:11.697701+00:00",
+   "2026-08-19T14:06:42.115014+00:00"
+  ],
+  "invalid_role_labels": [],
+  "missing_roles": {
+   "accompaniment": 769,
+   "bass": 469,
+   "drums": 58,
+   "guitar": 794,
+   "solo": 381
+  },
+  "ppq_histogram": {
+   "120": 2,
+   "192": 3188,
+   "384": 177,
+   "480": 1
+  },
+  "referential": {
+   "clean": true,
+   "fingerprints_without_roles": 0,
+   "orphan_roles": 0,
+   "orphan_sources": 0
+  },
+  "role_histogram": {
+   "accompaniment": 2599,
+   "bass": 2899,
+   "drums": 3310,
+   "guitar": 2574,
+   "solo": 2987
+  },
+  "role_notes": {
+   "accompaniment": 1371650,
+   "bass": 212311,
+   "drums": 724096,
+   "guitar": 1025585,
+   "solo": 319867
+  },
+  "roles_per_fingerprint": {
+   "1": 247,
+   "2": 127,
+   "3": 195,
+   "4": 712,
+   "5": 2087
+  },
+  "shared_fingerprint_groups": 25,
+  "shared_fingerprint_top": [
+   [
+    "f84736379b9f87af235220dfe287c7a35bb0d8c23102e41356ba7324ef42e84d",
+    2
+   ],
+   [
+    "e9849862ca611b504ac0b890f8bfe34f592ad1cb31867f4b8b734485ddb99510",
+    2
+   ],
+   [
+    "e37d6c4c3b6d30748c95631f61e2b8d7cbf5e29c4bb91d9b40ff538544ee5e95",
+    2
+   ],
+   [
+    "be1aa936286070eb61660f1384fe9873ca5bf1f48e53aafcd3066881d6d501d1",
+    2
+   ],
+   [
+    "bb8a422b99160244691d1378ae90d2cba6d3a8f225f2fe5342fee3f8c3b5bed3",
+    2
+   ],
+   [
+    "ba73c8c956fc1725ca7af32115fcebb57ffe96646d314e1b2304d613679df8ae",
+    2
+   ],
+   [
+    "90b2e7a6996baae3b38d0b17cee5f8099f8aba53f477ee80faed7147cce96efb",
+    2
+   ],
+   [
+    "8d8cf506b10cb67fd87eb2a07f16bccfbf50e1fa29cb0fb0681323f8f20ea44d",
+    2
+   ],
+   [
+    "8985c6332a6a7b5edd075c80b801b5fe83ade61a11b26be2c5163697a886451d",
+    2
+   ],
+   [
+    "87545502681ffaff2f5554db03607fcaa05de99a2f61459feec9bc876b92c11a",
+    2
+   ]
+  ],
+  "zero_note_roles": 0
+ },
+ "integrity": {
+  "application_id": 0,
+  "encoding": "UTF-8",
+  "foreign_key_details": [],
+  "foreign_key_violations": 0,
+  "freelist_count": 3277,
+  "integrity_check": [
+   "ok"
+  ],
+  "journal_mode": "delete",
+  "ok": true,
+  "page_count": 9121,
+  "page_size": 4096,
+  "user_version": 0
+ },
+ "schema": {
+  "empty_tables": [
+   "dataset_groups",
+   "dataset_members",
+   "device_profiles",
+   "hardware_tests",
+   "music_annotations",
+   "music_chords",
+   "music_sections",
+   "music_songs",
+   "music_sources",
+   "music_tracks",
+   "style_elements",
+   "style_families"
+  ],
+  "index_count": 11,
+  "indices": [
+   "idx_device_profiles_sha256",
+   "idx_hardware_tests_status",
+   "idx_fingerprint_kind",
+   "idx_fingerprint_source_hash",
+   "idx_fingerprint_role",
+   "idx_music_sources_corpus",
+   "idx_music_sections_song_tick",
+   "idx_music_tracks_song_role",
+   "idx_music_chords_song_tick",
+   "idx_style_elements_family_type",
+   "idx_annotations_entity"
+  ],
+  "populated_tables": [
+   "app_metadata",
+   "midi_fingerprint_roles",
+   "midi_fingerprint_sources",
+   "midi_fingerprints"
+  ],
+  "table_count": 16,
+  "tables": {
+   "app_metadata": {
+    "columns": [
+     {
+      "name": "key",
+      "notnull": false,
+      "pk": true,
+      "type": "TEXT"
+     },
+     {
+      "name": "value",
+      "notnull": true,
+      "pk": false,
+      "type": "TEXT"
+     }
+    ],
+    "foreign_keys": [],
+    "has_check": false,
+    "rows": 1
+   },
+   "dataset_groups": {
+    "columns": [
+     {
+      "name": "group_id",
+      "notnull": false,
+      "pk": true,
+      "type": "TEXT"
+     },
+     {
+      "name": "split",
+      "notnull": true,
+      "pk": false,
+      "type": "TEXT"
+     },
+     {
+      "name": "grouping_reason",
+      "notnull": true,
+      "pk": false,
+      "type": "TEXT"
+     },
+     {
+      "name": "split_seed",
+      "notnull": true,
+      "pk": false,
+      "type": "INTEGER"
+     }
+    ],
+    "foreign_keys": [],
+    "has_check": true,
+    "rows": 0
+   },
+   "dataset_members": {
+    "columns": [
+     {
+      "name": "group_id",
+      "notnull": true,
+      "pk": true,
+      "type": "TEXT"
+     },
+     {
+      "name": "source_id",
+      "notnull": true,
+      "pk": true,
+      "type": "TEXT"
+     }
+    ],
+    "foreign_keys": [
+     {
+      "from": "source_id",
+      "table": "music_sources",
+      "to": "source_id"
+     },
+     {
+      "from": "group_id",
+      "table": "dataset_groups",
+      "to": "group_id"
+     }
+    ],
+    "has_check": false,
+    "rows": 0
+   },
+   "device_profiles": {
+    "columns": [
+     {
+      "name": "profile_id",
+      "notnull": true,
+      "pk": true,
+      "type": "TEXT"
+     },
+     {
+      "name": "profile_version",
+      "notnull": true,
+      "pk": true,
+      "type": "TEXT"
+     },
+     {
+      "name": "schema_version",
+      "notnull": true,
+      "pk": false,
+      "type": "INTEGER"
+     },
+     {
+      "name": "sha256",
+      "notnull": true,
+      "pk": false,
+      "type": "TEXT"
+     },
+     {
+      "name": "json_text",
+      "notnull": true,
+      "pk": false,
+      "type": "TEXT"
+     },
+     {
+      "name": "imported_at",
+      "notnull": true,
+      "pk": false,
+      "type": "TEXT"
+     }
+    ],
+    "foreign_keys": [],
+    "has_check": false,
+    "rows": 0
+   },
+   "hardware_tests": {
+    "columns": [
+     {
+      "name": "case_id",
+      "notnull": true,
+      "pk": true,
+      "type": "TEXT"
+     },
+     {
+      "name": "case_version",
+      "notnull": true,
+      "pk": true,
+      "type": "TEXT"
+     },
+     {
+      "name": "status",
+      "notnull": true,
+      "pk": false,
+      "type": "TEXT"
+     },
+     {
+      "name": "manifest_sha256",
+      "notnull": true,
+      "pk": false,
+      "type": "TEXT"
+     },
+     {
+      "name": "json_text",
+      "notnull": true,
+      "pk": false,
+      "type": "TEXT"
+     },
+     {
+      "name": "imported_at",
+      "notnull": true,
+      "pk": false,
+      "type": "TEXT"
+     }
+    ],
+    "foreign_keys": [],
+    "has_check": true,
+    "rows": 0
+   },
+   "midi_fingerprint_roles": {
+    "columns": [
+     {
+      "name": "fingerprint_id",
+      "notnull": true,
+      "pk": true,
+      "type": "TEXT"
+     },
+     {
+      "name": "role",
+      "notnull": true,
+      "pk": true,
+      "type": "TEXT"
+     },
+     {
+      "name": "note_count",
+      "notnull": true,
+      "pk": false,
+      "type": "INTEGER"
+     },
+     {
+      "name": "vector_json",
+      "notnull": true,
+      "pk": false,
+      "type": "TEXT"
+     },
+     {
+      "name": "features_json",
+      "notnull": true,
+      "pk": false,
+      "type": "TEXT"
+     }
+    ],
+    "foreign_keys": [
+     {
+      "from": "fingerprint_id",
+      "table": "midi_fingerprints",
+      "to": "fingerprint_id"
+     }
+    ],
+    "has_check": true,
+    "rows": 14369
+   },
+   "midi_fingerprint_sources": {
+    "columns": [
+     {
+      "name": "source_locator",
+      "notnull": true,
+      "pk": true,
+      "type": "TEXT"
+     },
+     {
+      "name": "corpus_kind",
+      "notnull": true,
+      "pk": true,
+      "type": "TEXT"
+     },
+     {
+      "name": "source_sha256",
+      "notnull": true,
+      "pk": false,
+      "type": "TEXT"
+     },
+     {
+      "name": "fingerprint_id",
+      "notnull": true,
+      "pk": false,
+      "type": "TEXT"
+     },
+     {
+      "name": "imported_at",
+      "notnull": true,
+      "pk": false,
+      "type": "TEXT"
+     }
+    ],
+    "foreign_keys": [
+     {
+      "from": "fingerprint_id",
+      "table": "midi_fingerprints",
+      "to": "fingerprint_id"
+     }
+    ],
+    "has_check": true,
+    "rows": 3393
+   },
+   "midi_fingerprints": {
+    "columns": [
+     {
+      "name": "fingerprint_id",
+      "notnull": false,
+      "pk": true,
+      "type": "TEXT"
+     },
+     {
+      "name": "schema_version",
+      "notnull": true,
+      "pk": false,
+      "type": "INTEGER"
+     },
+     {
+      "name": "source_sha256",
+      "notnull": true,
+      "pk": false,
+      "type": "TEXT"
+     },
+     {
+      "name": "source_locator",
+      "notnull": true,
+      "pk": false,
+      "type": "TEXT"
+     },
+     {
+      "name": "corpus_kind",
+      "notnull": true,
+      "pk": false,
+      "type": "TEXT"
+     },
+     {
+      "name": "ppq",
+      "notnull": true,
+      "pk": false,
+      "type": "INTEGER"
+     },
+     {
+      "name": "end_tick",
+      "notnull": true,
+      "pk": false,
+      "type": "INTEGER"
+     },
+     {
+      "name": "imported_at",
+      "notnull": true,
+      "pk": false,
+      "type": "TEXT"
+     }
+    ],
+    "foreign_keys": [],
+    "has_check": true,
+    "rows": 3368
+   },
+   "music_annotations": {
+    "columns": [
+     {
+      "name": "annotation_id",
+      "notnull": false,
+      "pk": true,
+      "type": "TEXT"
+     },
+     {
+      "name": "entity_type",
+      "notnull": true,
+      "pk": false,
+      "type": "TEXT"
+     },
+     {
+      "name": "entity_id",
+      "notnull": true,
+      "pk": false,
+      "type": "TEXT"
+     },
+     {
+      "name": "annotation_type",
+      "notnull": true,
+      "pk": false,
+      "type": "TEXT"
+     },
+     {
+      "name": "value_json",
+      "notnull": true,
+      "pk": false,
+      "type": "TEXT"
+     },
+     {
+      "name": "origin",
+      "notnull": true,
+      "pk": false,
+      "type": "TEXT"
+     },
+     {
+      "name": "confidence",
+      "notnull": true,
+      "pk": false,
+      "type": "REAL"
+     },
+     {
+      "name": "reviewer",
+      "notnull": false,
+      "pk": false,
+      "type": "TEXT"
+     },
+     {
+      "name": "created_at",
+      "notnull": true,
+      "pk": false,
+      "type": "TEXT"
+     }
+    ],
+    "foreign_keys": [],
+    "has_check": true,
+    "rows": 0
+   },
+   "music_chords": {
+    "columns": [
+     {
+      "name": "chord_id",
+      "notnull": false,
+      "pk": true,
+      "type": "TEXT"
+     },
+     {
+      "name": "song_id",
+      "notnull": true,
+      "pk": false,
+      "type": "TEXT"
+     },
+     {
+      "name": "start_tick",
+      "notnull": true,
+      "pk": false,
+      "type": "INTEGER"
+     },
+     {
+      "name": "end_tick",
+      "notnull": true,
+      "pk": false,
+      "type": "INTEGER"
+     },
+     {
+      "name": "root_pitch_class",
+      "notnull": false,
+      "pk": false,
+      "type": "INTEGER"
+     },
+     {
+      "name": "quality",
+      "notnull": false,
+      "pk": false,
+      "type": "TEXT"
+     },
+     {
+      "name": "bass_pitch_class",
+      "notnull": false,
+      "pk": false,
+      "type": "INTEGER"
+     },
+     {
+      "name": "confidence",
+      "notnull": true,
+      "pk": false,
+      "type": "REAL"
+     },
+     {
+      "name": "evidence_json",
+      "notnull": true,
+      "pk": false,
+      "type": "TEXT"
+     }
+    ],
+    "foreign_keys": [
+     {
+      "from": "song_id",
+      "table": "music_songs",
+      "to": "song_id"
+     }
+    ],
+    "has_check": true,
+    "rows": 0
+   },
+   "music_sections": {
+    "columns": [
+     {
+      "name": "section_id",
+      "notnull": false,
+      "pk": true,
+      "type": "TEXT"
+     },
+     {
+      "name": "song_id",
+      "notnull": true,
+      "pk": false,
+      "type": "TEXT"
+     },
+     {
+      "name": "section_type",
+      "notnull": true,
+      "pk": false,
+      "type": "TEXT"
+     },
+     {
+      "name": "variation_level",
+      "notnull": false,
+      "pk": false,
+      "type": "INTEGER"
+     },
+     {
+      "name": "start_tick",
+      "notnull": true,
+      "pk": false,
+      "type": "INTEGER"
+     },
+     {
+      "name": "end_tick",
+      "notnull": true,
+      "pk": false,
+      "type": "INTEGER"
+     },
+     {
+      "name": "confidence",
+      "notnull": true,
+      "pk": false,
+      "type": "REAL"
+     },
+     {
+      "name": "evidence_json",
+      "notnull": true,
+      "pk": false,
+      "type": "TEXT"
+     }
+    ],
+    "foreign_keys": [
+     {
+      "from": "song_id",
+      "table": "music_songs",
+      "to": "song_id"
+     }
+    ],
+    "has_check": true,
+    "rows": 0
+   },
+   "music_songs": {
+    "columns": [
+     {
+      "name": "song_id",
+      "notnull": false,
+      "pk": true,
+      "type": "TEXT"
+     },
+     {
+      "name": "source_id",
+      "notnull": true,
+      "pk": false,
+      "type": "TEXT"
+     },
+     {
+      "name": "ppq",
+      "notnull": false,
+      "pk": false,
+      "type": "INTEGER"
+     },
+     {
+      "name": "end_tick",
+      "notnull": true,
+      "pk": false,
+      "type": "INTEGER"
+     },
+     {
+      "name": "tempo_bpm",
+      "notnull": false,
+      "pk": false,
+      "type": "REAL"
+     },
+     {
+      "name": "meter_numerator",
+      "notnull": false,
+      "pk": false,
+      "type": "INTEGER"
+     },
+     {
+      "name": "meter_denominator",
+      "notnull": false,
+      "pk": false,
+      "type": "INTEGER"
+     },
+     {
+      "name": "key_label",
+      "notnull": false,
+      "pk": false,
+      "type": "TEXT"
+     },
+     {
+      "name": "key_confidence",
+      "notnull": false,
+      "pk": false,
+      "type": "REAL"
+     },
+     {
+      "name": "style_family_id",
+      "notnull": false,
+      "pk": false,
+      "type": "TEXT"
+     },
+     {
+      "name": "analysis_schema",
+      "notnull": true,
+      "pk": false,
+      "type": "INTEGER"
+     },
+     {
+      "name": "analysis_json",
+      "notnull": true,
+      "pk": false,
+      "type": "TEXT"
+     }
+    ],
+    "foreign_keys": [
+     {
+      "from": "source_id",
+      "table": "music_sources",
+      "to": "source_id"
+     }
+    ],
+    "has_check": true,
+    "rows": 0
+   },
+   "music_sources": {
+    "columns": [
+     {
+      "name": "source_id",
+      "notnull": false,
+      "pk": true,
+      "type": "TEXT"
+     },
+     {
+      "name": "sha256",
+      "notnull": true,
+      "pk": false,
+      "type": "TEXT"
+     },
+     {
+      "name": "locator",
+      "notnull": true,
+      "pk": false,
+      "type": "TEXT"
+     },
+     {
+      "name": "archive_chain_json",
+      "notnull": true,
+      "pk": false,
+      "type": "TEXT"
+     },
+     {
+      "name": "corpus_kind",
+      "notnull": true,
+      "pk": false,
+      "type": "TEXT"
+     },
+     {
+      "name": "evidence_status",
+      "notnull": true,
+      "pk": false,
+      "type": "TEXT"
+     }
+    ],
+    "foreign_keys": [],
+    "has_check": true,
+    "rows": 0
+   },
+   "music_tracks": {
+    "columns": [
+     {
+      "name": "track_segment_id",
+      "notnull": false,
+      "pk": true,
+      "type": "TEXT"
+     },
+     {
+      "name": "song_id",
+      "notnull": true,
+      "pk": false,
+      "type": "TEXT"
+     },
+     {
+      "name": "track_index",
+      "notnull": true,
+      "pk": false,
+      "type": "INTEGER"
+     },
+     {
+      "name": "channel",
+      "notnull": true,
+      "pk": false,
+      "type": "INTEGER"
+     },
+     {
+      "name": "start_tick",
+      "notnull": true,
+      "pk": false,
+      "type": "INTEGER"
+     },
+     {
+      "name": "end_tick",
+      "notnull": true,
+      "pk": false,
+      "type": "INTEGER"
+     },
+     {
+      "name": "role",
+      "notnull": true,
+      "pk": false,
+      "type": "TEXT"
+     },
+     {
+      "name": "bank_msb",
+      "notnull": false,
+      "pk": false,
+      "type": "INTEGER"
+     },
+     {
+      "name": "bank_lsb",
+      "notnull": false,
+      "pk": false,
+      "type": "INTEGER"
+     },
+     {
+      "name": "program",
+      "notnull": false,
+      "pk": false,
+      "type": "INTEGER"
+     },
+     {
+      "name": "role_confidence",
+      "notnull": true,
+      "pk": false,
+      "type": "REAL"
+     },
+     {
+      "name": "evidence_json",
+      "notnull": true,
+      "pk": false,
+      "type": "TEXT"
+     }
+    ],
+    "foreign_keys": [
+     {
+      "from": "song_id",
+      "table": "music_songs",
+      "to": "song_id"
+     }
+    ],
+    "has_check": true,
+    "rows": 0
+   },
+   "style_elements": {
+    "columns": [
+     {
+      "name": "style_element_id",
+      "notnull": false,
+      "pk": true,
+      "type": "TEXT"
+     },
+     {
+      "name": "style_family_id",
+      "notnull": true,
+      "pk": false,
+      "type": "TEXT"
+     },
+     {
+      "name": "song_id",
+      "notnull": false,
+      "pk": false,
+      "type": "TEXT"
+     },
+     {
+      "name": "element_type",
+      "notnull": true,
+      "pk": false,
+      "type": "TEXT"
+     },
+     {
+      "name": "variation_level",
+      "notnull": false,
+      "pk": false,
+      "type": "INTEGER"
+     },
+     {
+      "name": "start_tick",
+      "notnull": true,
+      "pk": false,
+      "type": "INTEGER"
+     },
+     {
+      "name": "end_tick",
+      "notnull": true,
+      "pk": false,
+      "type": "INTEGER"
+     },
+     {
+      "name": "metadata_json",
+      "notnull": true,
+      "pk": false,
+      "type": "TEXT"
+     }
+    ],
+    "foreign_keys": [
+     {
+      "from": "song_id",
+      "table": "music_songs",
+      "to": "song_id"
+     },
+     {
+      "from": "style_family_id",
+      "table": "style_families",
+      "to": "style_family_id"
+     }
+    ],
+    "has_check": true,
+    "rows": 0
+   },
+   "style_families": {
+    "columns": [
+     {
+      "name": "style_family_id",
+      "notnull": false,
+      "pk": true,
+      "type": "TEXT"
+     },
+     {
+      "name": "name",
+      "notnull": true,
+      "pk": false,
+      "type": "TEXT"
+     },
+     {
+      "name": "meter",
+      "notnull": false,
+      "pk": false,
+      "type": "TEXT"
+     },
+     {
+      "name": "tempo_min",
+      "notnull": false,
+      "pk": false,
+      "type": "REAL"
+     },
+     {
+      "name": "tempo_max",
+      "notnull": false,
+      "pk": false,
+      "type": "REAL"
+     },
+     {
+      "name": "evidence_status",
+      "notnull": true,
+      "pk": false,
+      "type": "TEXT"
+     },
+     {
+      "name": "metadata_json",
+      "notnull": true,
+      "pk": false,
+      "type": "TEXT"
+     }
+    ],
+    "foreign_keys": [],
+    "has_check": true,
+    "rows": 0
+   }
+  }
+ },
+ "vectors": {
+  "bad_json": 0,
+  "consistent_dimension": true,
+  "constant_dimensions": [],
+  "dimension_histogram": {
+   "48": 4000
+  },
+  "dimension_ranges": {
+   "0": {
+    "max": 0.8994,
+    "mean": 0.3138,
+    "min": 0.0002
+   },
+   "1": {
+    "max": 0.9764,
+    "mean": 0.4304,
+    "min": 0.0
+   },
+   "10": {
+    "max": 0.9962,
+    "mean": 0.266,
+    "min": 0.0
+   },
+   "11": {
+    "max": 0.8483,
+    "mean": 0.0161,
+    "min": 0.0
+   },
+   "12": {
+    "max": 1.0,
+    "mean": 0.2149,
+    "min": 0.0
+   },
+   "13": {
+    "max": 0.5,
+    "mean": 0.0282,
+    "min": 0.0
+   },
+   "14": {
+    "max": 0.5,
+    "mean": 0.0545,
+    "min": 0.0
+   },
+   "15": {
+    "max": 0.802,
+    "mean": 0.0398,
+    "min": 0.0
+   },
+   "16": {
+    "max": 0.6,
+    "mean": 0.0792,
+    "min": 0.0
+   },
+   "17": {
+    "max": 0.5714,
+    "mean": 0.0293,
+    "min": 0.0
+   },
+   "18": {
+    "max": 0.6667,
+    "mean": 0.0661,
+    "min": 0.0
+   },
+   "19": {
+    "max": 0.5,
+    "mean": 0.0436,
+    "min": 0.0
+   },
+   "2": {
+    "max": 0.9062,
+    "mean": 0.1693,
+    "min": 0.0
+   },
+   "20": {
+    "max": 0.7578,
+    "mean": 0.0852,
+    "min": 0.0
+   },
+   "21": {
+    "max": 0.5385,
+    "mean": 0.0309,
+    "min": 0.0
+   },
+   "22": {
+    "max": 0.5,
+    "mean": 0.0594,
+    "min": 0.0
+   },
+   "23": {
+    "max": 0.75,
+    "mean": 0.0426,
+    "min": 0.0
+   },
+   "24": {
+    "max": 0.8333,
+    "mean": 0.0904,
+    "min": 0.0
+   },
+   "25": {
+    "max": 0.4,
+    "mean": 0.0331,
+    "min": 0.0
+   },
+   "26": {
+    "max": 1.0,
+    "mean": 0.0642,
+    "min": 0.0
+   },
+   "27": {
+    "max": 0.75,
+    "mean": 0.0386,
+    "min": 0.0
+   },
+   "28": {
+    "max": 1.0,
+    "mean": 0.2196,
+    "min": 0.0
+   },
+   "29": {
+    "max": 1.0,
+    "mean": 0.0322,
+    "min": 0.0
+   },
+   "3": {
+    "max": 1.0,
+    "mean": 0.7422,
+    "min": 0.0079
+   },
+   "30": {
+    "max": 1.0,
+    "mean": 0.0825,
+    "min": 0.0
+   },
+   "31": {
+    "max": 1.0,
+    "mean": 0.0512,
+    "min": 0.0
+   },
+   "32": {
+    "max": 1.0,
+    "mean": 0.1052,
+    "min": 0.0
+   },
+   "33": {
+    "max": 1.0,
+    "mean": 0.0541,
+    "min": 0.0
+   },
+   "34": {
+    "max": 1.0,
+    "mean": 0.1116,
+    "min": 0.0
+   },
+   "35": {
+    "max": 1.0,
+    "mean": 0.1305,
+    "min": 0.0
+   },
+   "36": {
+    "max": 1.0,
+    "mean": 0.0443,
+    "min": 0.0
+   },
+   "37": {
+    "max": 1.0,
+    "mean": 0.0723,
+    "min": 0.0
+   },
+   "38": {
+    "max": 1.0,
+    "mean": 0.06,
+    "min": 0.0
+   },
+   "39": {
+    "max": 0.8333,
+    "mean": 0.0363,
+    "min": 0.0
+   },
+   "4": {
+    "max": 1.0271,
+    "mean": 0.2533,
+    "min": 0.0
+   },
+   "40": {
+    "max": 1.0,
+    "mean": 0.0371,
+    "min": 0.0
+   },
+   "41": {
+    "max": 0.9231,
+    "mean": 0.0415,
+    "min": 0.0
+   },
+   "42": {
+    "max": 1.0,
+    "mean": 0.0701,
+    "min": 0.0
+   },
+   "43": {
+    "max": 1.0,
+    "mean": 0.0294,
+    "min": 0.0
+   },
+   "44": {
+    "max": 1.0,
+    "mean": 0.0117,
+    "min": 0.0
+   },
+   "45": {
+    "max": 0.4615,
+    "mean": 0.0037,
+    "min": 0.0
+   },
+   "46": {
+    "max": 0.4851,
+    "mean": 0.0048,
+    "min": 0.0
+   },
+   "47": {
+    "max": 1.0,
+    "mean": 0.0321,
+    "min": 0.0
+   },
+   "5": {
+    "max": 38.935,
+    "mean": 0.266,
+    "min": 0.0
+   },
+   "6": {
+    "max": 44.7889,
+    "mean": 0.3389,
+    "min": 0.0
+   },
+   "7": {
+    "max": 1.0,
+    "mean": 0.5773,
+    "min": 0.0
+   },
+   "8": {
+    "max": 1.0,
+    "mean": 0.4782,
+    "min": 0.0
+   },
+   "9": {
+    "max": 1.0,
+    "mean": 0.6178,
+    "min": 0.0
+   }
+  },
+  "feature_keys": {
+   "chord_ratio": 4000,
+   "density_per_quarter": 4000,
+   "drum_classes": 4000,
+   "duration_mean_quarters": 4000,
+   "duration_std_quarters": 4000,
+   "note_count": 4000,
+   "onset_grid": 4000,
+   "pitch_classes": 4000,
+   "pitch_max": 4000,
+   "pitch_mean": 4000,
+   "pitch_min": 4000,
+   "pitch_std": 4000,
+   "repetition_ratio": 4000,
+   "role": 4000,
+   "short_ratio": 4000,
+   "syncopation_ratio": 4000,
+   "trill_ratio": 4000,
+   "velocity_mean": 4000,
+   "velocity_std": 4000
+  },
+  "inf_values": 0,
+  "nan_values": 0,
+  "note_count_mismatch": 0,
+  "per_role_dimensions": {
+   "accompaniment": [
+    48
+   ],
+   "bass": [
+    48
+   ],
+   "drums": [
+    48
+   ],
+   "guitar": [
+    48
+   ],
+   "solo": [
+    48
+   ]
+  },
+  "sampled": 4000
+ }
+}

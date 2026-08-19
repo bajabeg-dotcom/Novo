@@ -1,0 +1,28 @@
+[project]
+name = "korg-pa800-optimizer"
+version = "0.1.0"
+description = "KORG PA800 GM -> RX Musical Intelligence Optimizer"
+requires-python = ">=3.11"
+dependencies = [
+    "mido>=1.2.10",
+    "pytest>=7.4.0",
+    "Flask>=3.0.0",
+]
+
+# NOTE: this project is intentionally independent from the repo-root
+# pyproject.toml (which packages src/factory_intelligence). No code under
+# korg_pa800_optimizer/ imports from factory_intelligence or x10_think_midi,
+# and nothing outside this directory should import from korg_optimizer.
+
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+korg_optimizer = ["gui/templates/*.html", "gui/static/*.css"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

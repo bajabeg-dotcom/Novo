@@ -1,0 +1,113 @@
+:root {
+  --bg: #0f1216;
+  --panel: #171b21;
+  --border: #2a2f38;
+  --text: #e6e8eb;
+  --muted: #9aa4b2;
+  --accent: #4f8cff;
+  --ok: #2fb170;
+  --warning: #d99a2b;
+  --error: #d9463f;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0 1.5rem 3rem;
+}
+
+.page-header {
+  padding: 1.5rem 0 1rem;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 1.5rem;
+}
+
+.page-header h1 { margin: 0 0 0.25rem; font-size: 1.5rem; }
+.subtitle { margin: 0; color: var(--muted); }
+
+main { max-width: 960px; margin: 0 auto; }
+
+.panel {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.status-panel p { color: var(--muted); line-height: 1.5; }
+.status-panel strong { color: var(--text); }
+
+.error-panel { border-color: var(--error); color: var(--error); }
+
+.upload-panel form { display: flex; gap: 0.75rem; align-items: center; flex-wrap: wrap; }
+
+button, input[type="file"] {
+  font-size: 0.95rem;
+}
+
+button {
+  background: var(--accent);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 0.5rem 1.1rem;
+  cursor: pointer;
+}
+
+button:hover { opacity: 0.9; }
+
+table { border-collapse: collapse; width: 100%; }
+
+.facts-table th {
+  text-align: left;
+  color: var(--muted);
+  font-weight: 500;
+  padding: 0.35rem 1rem 0.35rem 0;
+  vertical-align: top;
+  white-space: nowrap;
+}
+
+.facts-table td { padding: 0.35rem 0; }
+
+.tracks-table {
+  font-size: 0.9rem;
+}
+
+.tracks-table th, .tracks-table td {
+  border-bottom: 1px solid var(--border);
+  padding: 0.4rem 0.6rem;
+  text-align: left;
+}
+
+.hint { color: var(--muted); font-size: 0.9rem; }
+
+.badge {
+  display: inline-block;
+  padding: 0.1rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.badge-ok { background: rgba(47, 177, 112, 0.15); color: var(--ok); }
+.badge-warning { background: rgba(217, 154, 43, 0.15); color: var(--warning); }
+.badge-error { background: rgba(217, 70, 63, 0.15); color: var(--error); }
+.badge-unknown { background: rgba(154, 164, 178, 0.15); color: var(--muted); }
+
+.issue-list { margin: 0.25rem 0 0.75rem; padding-left: 1.25rem; }
+.issue-list-error { color: var(--error); }
+.issue-list-warning { color: var(--warning); }
+
+footer {
+  max-width: 960px;
+  margin: 2rem auto 0;
+  color: var(--muted);
+  font-size: 0.85rem;
+  border-top: 1px solid var(--border);
+  padding-top: 1rem;
+}

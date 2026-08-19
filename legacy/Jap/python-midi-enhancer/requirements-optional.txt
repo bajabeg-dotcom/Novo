@@ -1,0 +1,6 @@
+# Osnovna analiza radi i bez ovih paketa.
+# NumPy je preporucen za statistiku, a ostali paketi prosiruju MIDI analizu.
+numpy
+mido
+pretty_midi
+music21

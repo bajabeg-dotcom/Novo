@@ -1,0 +1,18 @@
+# Local environments
+.venv/
+venv/
+__pycache__/
+*.pyc
+*.egg-info/
+
+# Runtime databases (rebuildable / per-run; see docs/DATABASE_ARCHITECTURE.md)
+data/databases/*.db
+data/databases/*.sqlite
+data/databases/*.sqlite3
+
+# Generated output, keep directory placeholders
+output/*
+!output/README.md
+reports/*
+!reports/README.md
+!reports/*.md.template

@@ -1,0 +1,1238 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{enumitem}
+\usepackage{xurl}
+\urlstyle{tt}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.7\baselineskip}
+
+\title{Prijedlog pravila za Python MIDI Enhancer}
+\author{}
+\date{}
+
+\begin{document}
+\maketitle
+
+\section{Cilj projekta}
+
+Python MIDI Enhancer učitava, analizira i poboljšava MIDI datoteke. Program mora
+sačuvati glazbenu namjeru originala, a svaka izmjena mora biti razumljiva,
+mjerljiva i reverzibilna.
+
+\section{Korist, organizacija i način rada sustava}
+
+\subsection{Glavne koristi}
+
+Najveća korist sustava nije samo automatska promjena velocityja, nego
+razumijevanje uloge svakog MIDI događaja prije donošenja odluke. Time se
+postižu sljedeće koristi:
+
+\begin{enumerate}[label=B\arabic*.]
+    \item \textbf{Zaštita glazbene namjere.} Solo, riff, podloga, bass, Guitar
+    Mode i pojedinačni drum element ne primaju isto pravilo samo zato što se
+    nalaze u istom Styleu ili koriste isti Sound.
+
+    \item \textbf{Točnost za Pa800.} Instrument se povezuje punom adresom
+    \texttt{CC00.CC32.PC}, dok se RX, Guitar Mode, Drum Kit i drugi posebni
+    mehanizmi obrađuju prema vlastitim pravilima.
+
+    \item \textbf{Korištenje tvorničkog iskustva.} Factory Styles daju
+    empirijske primjere kako je Korg koristio instrument u Intro, Variation,
+    Fill, Break i Ending kontekstu. Ti podaci dopunjuju priručnik, ali ga ne
+    zamjenjuju.
+
+    \item \textbf{Odvojeni profili iste zvučne boje.} Isti instrument može
+    imati različit radni velocity, trajanje i gustoću kao solo, akordska
+    podloga, riff ili fixed-note fraza. Sustav te profile ne miješa.
+
+    \item \textbf{Objašnjiv rezultat.} Svaka klasifikacija i izmjena navodi
+    korišteno pravilo, ulazna mjerenja, razinu sigurnosti i izvor dokaza.
+
+    \item \textbf{Sigurnost i reverzibilnost.} Original ostaje netaknut, a
+    izlaz se ponovno parsira i uspoređuje događaj po događaj prije prihvaćanja.
+
+    \item \textbf{Postupan razvoj.} Loader, klasifikator, pojedini Engine i
+    verifier mogu se završiti i testirati zasebno. Pogreška u jednom modulu ne
+    mora ugroziti cijelu aplikaciju.
+
+    \item \textbf{Proširivost.} Novi instrument, Style izvor ili budući uređaj
+    dodaje se profilom i adapterom, bez prepisivanja cijelog optimizera.
+\end{enumerate}
+
+\subsection{Planirana organizacija}
+
+Sustav se organizira u slojeve s jasno ograničenom odgovornošću:
+
+\begin{description}[style=nextline]
+    \item[Core Loader i MIDI parser]
+    Čitaju bajtove, provjeravaju strukturu, stvaraju kontrolni zbroj i grade
+    nepromjenjivi model događaja. Ne donose glazbene odluke.
+
+    \item[Source adapteri]
+    Tumače strukturu konkretnog izvora, primjerice obični SMF, Pa800 Style SMF
+    ili Style Works kolekciju. Adapter određuje Style Element, CV, valjani broj
+    taktova i ulogu kanala, ali ne optimizira sadržaj.
+
+    \item[Pa800 registar]
+    Sadrži službenu adresu, naziv, vrstu i stranice priručnika za svaki Sound i
+    Drum Kit. To je identitetski sloj, a ne skup preporučenih izmjena.
+
+    \item[Context Classifier]
+    Određuje je li zapis Drum, Perc, Bass, chordal accompaniment, line/riff,
+    solo-kandidat, fixed Intro/Ending, Guitar/RX obrazac ili nepoznat slučaj.
+
+    \item[Zajednički Instrument Engine]
+    Računa univerzalna mjerenja: note, velocity, trajanje, raspon, polifoniju,
+    gustoću, kontrolere, artikulacije i vremenski položaj.
+
+    \item[Family Engine]
+    Dodaje pravila obitelji kao što su bass, piano, strings, brass, reed,
+    guitar, organ, synth i drugi tipovi instrumenata. Akustična, električna,
+    elektromehanička i sintetizirana izvedba ostaju odvojene kada je razlika
+    potvrđena.
+
+    \item[Specijalizirani Engine]
+    Obrađuje ponašanje koje se ne može svesti na obične note: Drum Engine,
+    Guitar Mode, RX/DNC artikulacije, NRPN i druge službeno potvrđene mehanizme.
+
+    \item[Profil pojedinog instrumenta]
+    Za svaki \texttt{CC00.CC32.PC} čuva službeni identitet i odvojene
+    empirijske profile za solo, chordal, riff, fixed i druge potvrđene načine
+    korištenja. Profil je podatak, a ne zasebna kopija programskog koda.
+
+    \item[Policy Engine]
+    Uspoređuje analizu s dopuštenim pravilima i odlučuje smije li proizvesti
+    prijedlog. Primjerice, 35\% dopušta samo potvrđenoj podlozi, a 50\%
+    potvrđenoj sekundarnoj perkusiji.
+
+    \item[Change Engine]
+    Na radnu kopiju primjenjuje samo korisnički potvrđene prijedloge. Ne smije
+    samostalno mijenjati instrument, tonalitet, note ili strukturu.
+
+    \item[Verifier]
+    Ponovno parsira rezultat, provjerava Note On/Off parove, strukturu,
+    kontrolere i sve neizmijenjene događaje te blokira neispravan izlaz.
+
+    \item[Report i GUI]
+    Prikazuju činjenice, procjene, dokaze, upozorenja, prijedloge i razliku
+    između originala i radne kopije. GUI ne sadrži skrivena glazbena pravila.
+\end{description}
+
+\subsection{Kako će obrada raditi}
+
+Jedno pokretanje prolazi kroz strogo definiran tok:
+
+\begin{enumerate}[label=W\arabic*.]
+    \item Korisnik odabire MIDI, mapu ili ZIP. Loader bilježi metapodatke i
+    SHA-256 te original otvara samo za čitanje.
+
+    \item Parser provjerava MIDI strukturu i pretvara događaje u nepromjenjivi
+    zajednički model, uz očuvanje sirovih bajtova i izvornog redoslijeda.
+
+    \item Source adapter prepoznaje vrstu izvora. Kod Style Worksa razdvaja
+    Style, Element, CV i uloge te ograničava analizu na deklarirani broj
+    taktova.
+
+    \item Instrument Resolver prati Bank Select i Program Change po kanalu i
+    vremenu te povezuje puni \texttt{CC00.CC32.PC} sa službenim registrom.
+
+    \item Context Classifier zasebno klasificira svaki Element/CV/track. Bez
+    potvrđene ili dovoljno pouzdane uloge obrada ostaje read-only.
+
+    \item Odgovarajući zajednički, obiteljski i specijalizirani Engine računaju
+    profil. Guitar Mode ide Guitar Engineu, Drum Kit Drum Engineu, a normalni
+    bass Bass Family Engineu.
+
+    \item Profil se uspoređuje samo s odgovarajućim Factory Style kontekstom.
+    Solo se uspoređuje sa solo primjerima, a rhythm guitar s rhythm-guitar
+    primjerima; statistike različitih uloga ne miješaju se.
+
+    \item Analyze prikazuje izmjerene činjenice. Suggest dodaje moguće izmjene
+    s formulom, rizikom i pravilom. Nijedan prijedlog još ne mijenja MIDI.
+
+    \item Korisnik pojedinačno ili jasno ograničenom grupom potvrđuje željene
+    prijedloge. Change Engine ih primjenjuje na zasebnu radnu kopiju.
+
+    \item Verifier uspoređuje radnu kopiju s originalnim modelom. Ako postoji
+    neočekivana razlika, spremanje se blokira i rezultat dobiva status
+    \texttt{FAIL}.
+
+    \item Tek nakon uspješne provjere stvaraju se nova MIDI datoteka, JSON
+    izvještaj, dnevnik promjena i SHA-256 izlaza.
+\end{enumerate}
+
+Ovakva organizacija znači da nijedan Engine ne mora znati kako se čita ZIP,
+crta GUI ili sprema datoteka. Svaki modul prima provjerene podatke, izvršava
+jedan ograničen zadatak i vraća rezultat s dokazom.
+
+\section{Osnovna pravila}
+
+\begin{enumerate}[label=R\arabic*.]
+    \item Originalna MIDI datoteka nikada se ne mijenja izravno.
+    Rezultat se sprema kao nova datoteka.
+
+    \item Analiza se uvijek izvršava prije bilo kakvog poboljšavanja.
+
+    \item Program mora jasno razdvojiti činjenice pronađene u MIDI datoteci od
+    procjena i prijedloga koje generira enhancer.
+
+    \item Korisnik mora moći uključiti ili isključiti svaku vrstu poboljšanja.
+
+    \item Zadane postavke moraju biti konzervativne i ne smiju značajno
+    promijeniti melodiju, harmoniju, ritam ili dinamiku.
+
+    \item Svaka promjena mora biti zabilježena u izvještaju: vrsta promjene,
+    lokacija, stara vrijednost i nova vrijednost.
+
+    \item Prije spremanja program mora provjeriti rezultat. Mora prijaviti
+    neispravne, izgubljene i nezatvorene note.
+\end{enumerate}
+
+\section{Jedini izvor istine za Korg Pa800}
+
+Normativni izvori za Pa800-specifične funkcije službeni su Korgovi priručnici
+\emph{KORG Pa800 2.0 User's Manual (E12)} i \emph{KORG Pa800 2.0 Advanced Edit
+Manual (E5)}. Lokalno su spremljeni kao
+\path{prism-uploads/Pa800-201UM-ENG.pdf} i
+\path{prism-uploads/Pa800_AE_E.pdf}. Forumi,
+videozapisi, drugi modeli Korg uređaja i programske pretpostavke ne mogu biti
+dokaz ponašanja Pa800 uređaja.
+
+User's Manual ima 344 PDF stranice i SHA-256 kontrolni zbroj
+\path{b7df16fb0113d998a6411ea1c28971707021da8bc0b728aff98eafcceb57c71b}.
+Advanced Edit Manual ima 124 PDF stranice i SHA-256 kontrolni zbroj
+\path{6bcda56658a89eda31e9fe62a2b744df5cecaaf478e050d3256ad6440c0d413e}.
+Za popis tvorničkih Soundova i Drum Kitova normativan je User's Manual, dok se
+Advanced Edit Manual koristi za detalje uređivanja i ponašanja zvuka.
+
+Svako tehničko pravilo vezano uz Pa800 mora u dnevniku navesti točne stranice
+priručnika na kojima je potvrđeno. Ako priručnik ne daje odgovor, funkcija se
+označava kao nepotvrđena i ne implementira se kao činjenica.
+
+\section{Modularni način razvoja}
+
+Projekt se od sada razvija strogo modul po modul. Za svaki modul vrijedi
+sljedeći redoslijed:
+
+\begin{enumerate}[label=M\arabic*.]
+    \item definirati jednu ograničenu funkciju i kriterij uspjeha;
+    \item pronaći i zapisati relevantne stranice Pa800 priručnika;
+    \item implementirati samo definirani opseg;
+    \item izvršiti automatski test i sačuvati naziv testne naredbe;
+    \item zapisati koje su datoteke i funkcije promijenjene;
+    \item dodijeliti status \texttt{PASS}, \texttt{FAIL} ili
+    \texttt{BLOCKED};
+    \item prijeći na ovisni modul samo kada su svi njegovi deklarirani
+    preduvjeti \texttt{PASS}; nepovezani \texttt{BLOCKED} ili \texttt{FAIL}
+    modul ne zaustavlja neovisnu razvojnu granu.
+\end{enumerate}
+
+Trajna evidencija nalazi se u datoteci \texttt{MODULE\_LOG.md}. Status
+\texttt{PASS} znači da je funkcija implementirana, test izvršen i dokaz iz
+priručnika naveden kada je funkcija Pa800-specifična. Status \texttt{FAIL}
+znači da test nije prošao, dok \texttt{BLOCKED} označava nedostajući službeni
+izvor, biblioteku, grafičko okruženje ili drugi obavezni preduvjet.
+
+\section{Zatvoreni sustav pravila i dokazivanja}
+
+Nijedna odluka aplikacije ne smije nastati iz prešutne pretpostavke. Svaki
+rezultat, upozorenje, prijedlog ili izmjena mora navesti pravilo koje ga je
+proizvelo, ulazne podatke na kojima se pravilo temelji i razinu sigurnosti.
+Obavezni statusi svake tvrdnje su:
+
+\begin{description}[style=nextline]
+    \item[\texttt{CONFIRMED}] Tvrdnja je izravno zapisana u MIDI događaju,
+    službenom Pa800 priručniku ili drugom unaprijed odobrenom normativnom
+    izvoru.
+    \item[\texttt{DERIVED}] Vrijednost je deterministički izračunata iz
+    potvrđenih događaja, primjerice broj nota, trajanje ili polifonija.
+    \item[\texttt{INFERRED}] Rezultat je heuristička procjena. Mora sadržavati
+    pravilo, korištena mjerenja i postotak pouzdanosti.
+    \item[\texttt{CONFLICT}] Dva ili više izvora daju različite rezultate.
+    Nijedan se ne proglašava pobjednikom bez unaprijed definiranog pravila
+    prioriteta.
+    \item[\texttt{UNKNOWN}] Nema dovoljno podataka za zaključak.
+    \item[\texttt{UNSUPPORTED}] Događaj je prepoznat kao valjan, ali ga
+    trenutni modul ne zna protumačiti.
+\end{description}
+
+Za statuse \texttt{CONFLICT}, \texttt{UNKNOWN} i \texttt{UNSUPPORTED} vrijedi
+obavezno završno pravilo: sačuvati izvorne bajtove, prijaviti razlog i ne
+primijeniti izmjenu. Nedostatak pravila nikada ne znači dopuštenje za zadanu
+vrijednost, General MIDI zamjenu, brisanje događaja ili nagađanje instrumenta.
+
+\section{Pravila učitavanja i analize}
+
+Program u početnoj fazi mora prepoznati:
+
+\begin{itemize}
+    \item MIDI format, broj trackova i rezoluciju u tickovima;
+    \item trajanje, tempo i promjene tempa;
+    \item takt i promjene oznake takta;
+    \item note, njihov početak, trajanje i velocity;
+    \item kanale, programe, instrumente i percussion kanal;
+    \item raspon tonova i polifoniju svakog tracka;
+    \item kontrolne poruke, pitch bend i sustain pedal;
+    \item moguće probleme u strukturi datoteke.
+\end{itemize}
+
+Nepoznati događaji ne smiju se automatski brisati. Ako ih program ne može
+obraditi, mora ih sačuvati ili jasno upozoriti korisnika.
+
+\subsection{Stroga pravila učitavanja}
+
+Učitavanje je zaseban modul koji ne optimizira i ne ispravlja sadržaj. Za svaki
+ulaz vrijede sljedeća pravila:
+
+\begin{enumerate}[label=L\arabic*.]
+    \item Prije parsiranja bilježe se izvorni naziv, relativna putanja,
+    veličina, vrijeme izmjene i SHA-256 kontrolni zbroj.
+
+    \item Ekstenzija \texttt{.mid} ili \texttt{.midi} nije dokaz valjanosti.
+    Datoteka se prihvaća kao Standard MIDI File tek nakon provjere zaglavlja
+    \texttt{MThd}, duljine zaglavlja i svih \texttt{MTrk} blokova.
+
+    \item Provjeravaju se MIDI format 0, 1 ili 2, deklarirani broj trackova,
+    division, granice svakog bloka, variable-length vrijednosti, running
+    status i End-of-Track događaj.
+
+    \item SMPTE division ne smije se tumačiti kao PPQ. Ako modul nema podršku
+    za SMPTE vrijeme, datoteka se učitava samo za očuvanje i dobiva status
+    \texttt{UNSUPPORTED} za glazbenu vremensku analizu.
+
+    \item Svaki događaj dobiva fizički track, MIDI kanal ako postoji,
+    apsolutni tick, izvorni redni broj na tom ticku, delta vrijeme i sirove
+    bajtove. Time se kasnije može dokazati da struktura nije promijenjena.
+
+    \item Running status mora se razriješiti za analizu, ali se pri spremanju
+    ne smije proizvoljno prepisati ako je cilj bajtovno očuvanje neizmijenjenih
+    događaja.
+
+    \item Note On s velocityjem nula analizira se kao Note Off, ali se njegov
+    izvorni oblik pamti i ne pretvara automatski u drugi statusni bajt.
+
+    \item Nepotpuna nota, događaj izvan granice tracka, nevažeći VLQ ili
+    nedostajući End-of-Track prijavljuje se s točnom lokacijom. Parser ne smije
+    nastaviti preko nepoznate granice kao da je sadržaj ispravan.
+
+    \item SysEx, meta-događaji, RPN, NRPN i nepoznati kontroleri čuvaju se u
+    izvornom redoslijedu čak i kada ih analiza ne koristi.
+
+    \item ZIP ili mapa obrađuje se kao skup zasebnih izvora. Ne smije se
+    mijenjati arhiv, redoslijed datoteka ni nazivi bez izričitog izvoza u novu
+    lokaciju.
+
+    \item Dvije datoteke jednakog naziva ne smatraju se jednakima bez jednakog
+    kontrolnog zbroja. Duplikati se bilježe, ali se ne brišu automatski.
+
+    \item Nakon učitavanja ponovno se računa SHA-256 originala. Ako se razlikuje
+    od početnog zbroja, obrada se prekida statusom \texttt{FAIL}.
+\end{enumerate}
+
+\subsection{Pravila identiteta instrumenta}
+
+Instrument se povezuje prvenstveno prema stvarnom MIDI stanju kanala, a ne
+prema nazivu tracka. Identitet se izračunava sljedećim redoslijedom:
+
+\begin{enumerate}[label=I\arabic*.]
+    \item \texttt{CC0} postavlja Bank Select MSB, \texttt{CC32} postavlja Bank
+    Select LSB, a Program Change aktivira program u trenutno odabranoj banci.
+    Puni identifikator prikazuje se kao \texttt{CC00.CC32.PC}.
+
+    \item Bank Select stanje prati se zasebno za svaki MIDI kanal i kroz
+    vremenski slijed događaja. Kasniji Program Change ne smije koristiti
+    bankovne vrijednosti drugog kanala.
+
+    \item Identitet vrijedi od ticka Program Change događaja do sljedeće
+    potvrđene promjene. Jedan track zato može imati više vremenskih segmenata i
+    više instrumenata.
+
+    \item Kada su sva tri podatka prisutna, adresa se traži u službenom Pa800
+    registru. Potpuno podudaranje dobiva status \texttt{CONFIRMED}.
+
+    \item Tekstualni naziv Sounda ili instrumenta služi kao neovisna kontrola.
+    Ako se naziv i službena adresa ne slažu, rezultat je \texttt{CONFLICT};
+    adresa se ne prepisuje prema tekstu niti se tekst briše.
+
+    \item Ako nedostaje \texttt{CC0} ili \texttt{CC32}, vrijednost se može
+    naslijediti samo iz ranijeg događaja istoga kanala u istom MIDI toku.
+    Vrijednost se ne prenosi iz drugog CV-a, Style Elementa, datoteke ili
+    susjednog tracka.
+
+    \item Banka \texttt{0.0} ne pretpostavlja se samo zato što kontroleri
+    nedostaju. GM zadana banka dopuštena je jedino kada je GM/GM2 način
+    potvrđen odgovarajućim SysExom, dokumentiranim formatom izvora ili izričitom
+    korisničkom postavkom.
+
+    \item Sam Program Change, naziv tracka ili glazbeni raspon nisu dovoljni za
+    potvrdu Pa800 Sounda. Takav rezultat ostaje \texttt{INFERRED} ili
+    \texttt{UNKNOWN}.
+
+    \item Svaki Style Element, CV i uloga Drum, Perc, Bass ili Acc1--Acc5 ima
+    vlastiti zapis instrumenta. Instrument se ne prenosi između njih samo zato
+    što imaju jednak naziv uloge.
+
+    \item User Sound i User Drum Kit adresa potvrđuje lokaciju, ali ne i sadržaj
+    korisničkog slota. Naziv i stvarni multisample ostaju \texttt{UNKNOWN} bez
+    podataka iz konkretnog uređaja ili SET-a.
+
+    \item Remap adresa čuva i traženu adresu i službenu ciljnu adresu. Izvještaj
+    ne smije sakriti da je uređaj izvršio remap.
+
+    \item Drum Kit je identitet kompleta, dok je svaka korištena MIDI nota
+    zaseban drum element. Element dobiva naziv samo iz mappinga potvrđenog za
+    taj konkretni kit.
+\end{enumerate}
+
+\subsection{Odvajanje obitelji instrumenata i Engine profila}
+
+Klasifikator najprije odvaja \emph{pitched instrument}, \emph{Drum Kit},
+\emph{percussion kit}, \emph{sound effect} i \emph{unknown}. Bubanj se ne
+obrađuje kroz Engine melodijskih instrumenata. Za melodijske instrumente Engine
+odvojeno bilježi akustičnu, električnu, elektromehaničku i sintetiziranu
+obitelj. Ako službeni naziv ili adresa ne potvrđuju obitelj, klasifikacija ostaje
+\texttt{INFERRED}.
+
+Svaki profil melodijskog instrumenta mora sadržavati puni službeni identitet,
+obitelj, fizički ili očekivani tonski raspon, potvrđeni raspon korišten u
+uzorku, minimalni i maksimalni velocity, radni velocity interval, distribuciju
+i krivulju velocityja, tipičnu polifoniju, artikulacije, trajanje, gustoću,
+pedale, kontrolere, pitch bend, ulogu solo ili podloga te izvore svakog pravila.
+Vrijednosti dobivene iz Factory Styles označavaju se kao empirijski profil, a
+ne kao fizička granica stvarnog instrumenta.
+
+Empirijski podaci ne smiju se spojiti u jedan zajednički profil instrumenta.
+Za svaku službenu adresu \texttt{CC00.CC32.PC} vode se odvojeni kontekstualni
+profili: \texttt{ACCOMP\_CHORDAL}, \texttt{ACCOMP\_LINE\_RIFF},
+\texttt{SOLO\_CANDIDATE}, \texttt{FIXED\_INTRO\_ENDING},
+\texttt{GUITAR\_RX\_PATTERN} i \texttt{UNKNOWN}. Velocity, raspon, trajanje i
+gustoća solo zapisa nikada se ne koriste za izračun podloge, niti se statistika
+podloge primjenjuje na solo zapis.
+
+Drum Engine za svaku notu zasebno čuva kit adresu, broj note, potvrđeni naziv
+elementa, glavnu ili sekundarnu ulogu, velocity statistiku, položaj u taktu,
+učestalost, flam ili simultani udar, choke grupu ako je dokazana, NRPN stanje i
+mogući RX/DNC ili velocity-switch rizik. Nepoznat mapping ne smije se zamijeniti
+General MIDI nazivom.
+
+\subsection{Poseban analizator Pa800 Factory Styles}
+
+Factory Style korpus analizira se odvojeno od optimizera. Njegov zadatak je
+izvući dokazive obrasce, a ne mijenjati izvezene MIDI datoteke.
+
+Ovaj analizator nema funkciju postavljanja zvuka. Ne smije dodavati niti
+mijenjati Bank Select, Program Change, Sound, Style Performance ili Original
+Style Sounds postavku. Adresa \texttt{CC00.CC32.PC} koristi se isključivo kao
+ključ kojim se opaženi obrazac povezuje s već registriranim instrumentom.
+Factory Styles dopunjuju ono što User's Manual ne propisuje kao fiksnu
+vrijednost, primjerice stvarne velocity distribucije, gustoću, fraziranje i
+način korištenja instrumenta u različitim Style kontekstima.
+
+\begin{enumerate}[label=S\arabic*.]
+    \item Mapa predstavlja kolekciju, podmapa kandidata za Style, a svaka MIDI
+    datoteka kandidata za jedan Style Element. Naziv datoteke je trag, ali se
+    potvrđuje sadržajem i tekstualnim meta-događajima.
+
+    \item Obavezno se razlikuju Variation 1--4, Intro 1--3, Fill 1--2,
+    Break/Fill 3 i Ending 1--3. Nijedan element ne smije se spojiti s drugim u
+    zajedničku velocity statistiku bez oznake izvora.
+
+    \item Svaki element se dijeli na CV1--CV6 kada postoje. Variation može imati
+    do šest CV-ova, a ostali elementi do dva. Prazni CV placeholder nije isto
+    što i nedostajući ili oštećeni CV.
+
+    \item Svaki CV mora zasebno mapirati Drum, Perc, Bass i Acc1--Acc5. Službeni
+    kanalni raspored 10, 11, 9 i 12--16 koristi se kao dokaz uloge samo za
+    potvrđeni Pa800 Style izvor.
+
+    \item Style Works Format 1 izvoz obrađuje poseban read-only adapter. Ne
+    proglašava se izvornim Pa800 Format 0 Style MIDI-jem i ne dobiva izmišljene
+    Korg markere.
+
+    \item Deklarirani broj taktova uspoređuje se s vremenskim potpisom i zadnjim
+    sadržajnim događajem. Umjetno udaljen End-of-Track ne smije povećati
+    glazbeno trajanje elementa.
+
+    \item Style Works track može iza deklarirane granice sadržavati zaostale
+    događaje i tekst drugih Style Elemenata. Valjani prozor završava na
+    \texttt{broj taktova × trajanje takta}; događaji iza njega ne ulaze u
+    statistiku aktivnog elementa, ali se čuvaju i prijavljuju.
+
+    \item Za svaki element i CV mjere se: note, velocity distribucija i
+    percentili, pozicija naglasaka, gustoća, sinkopa, swing, trajanja,
+    polifonija, instrumenti, kontroleri, raspon, ponavljanje uzorka i tišina.
+
+    \item Analiza prijelaza uspoređuje Variation--Fill--Variation,
+    Intro--Variation i Variation--Ending. Fill se ne ocjenjuje kao samostalna
+    petlja bez konteksta ulazne i izlazne varijacije.
+
+    \item Analiza Acc trackova mora razlikovati fiksne note, transponirajuće
+    akorde, riff, arpeggio, pad i solo frazu. Bez službenih NTT/NTR, Key/Chord i
+    Chord Table podataka rezultat ostaje heuristički.
+
+    \item Parametri koji nisu prisutni u Style Works MIDI izvozu ne smiju se
+    rekonstruirati kao činjenice. Bilježe se u popisu nedostajućih podataka za
+    eventualni SET, uređaj ili ručni unos.
+
+    \item Nepotpuni Style ostaje analiziran kao nepotpun skup. Program ne smije
+    kopirati element iz drugog Stylea da bi umjetno zadovoljio očekivanih 13
+    elemenata.
+\end{enumerate}
+
+\subsection{Stroga razlika između ritma, podloge i solo tracka}
+
+Pojam \emph{Style track} opisuje mjesto unutar Style strukture, ali ne dokazuje
+da je sadržaj ritmička podloga. User's Manual na tiskanoj stranici 134
+(PDF stranica 138) izričito dopušta da Acc track sadrži melodijski ili
+harmonijski obrazac. Na tiskanoj stranici 116 (PDF stranica 120) navodi se da su
+Parallel NTT tablice prikladne melodijskim dijelovima, Fixed tablice akordskim
+trackovima, a Intro 1 i Ending 1 u tvorničkim Styleovima standardno koriste
+No Transpose i često sadrže snimljenu progresiju. Style Works izvoz ne sadrži
+NTT, NTR, Key/Chord ni Chord Table; njihovo odsustvo potvrđuje i postupak SMF
+uvoza na tiskanoj stranici 135 (PDF stranica 139).
+
+Zbog toga se klasifikacija izvršava sljedećim redoslijedom:
+
+\begin{enumerate}[label=T\arabic*.]
+    \item \texttt{RHYTHM\_DRUM} potvrđuje se samo za Drum track i
+    \texttt{RHYTHM\_PERC} samo za Perc track potvrđen Pa800 kanalnim rasporedom
+    ili drugim izričitim metapodatkom. Oni se obrađuju kroz Drum Engine, ne kroz
+    melodijski Instrument Engine.
+
+    \item Bass track dobiva status \texttt{BASS\_ACCOMP}. Prema priručniku
+    njegova je Style funkcija pratiti korijen prepoznatog akorda. Pokretna bass
+    linija ne proglašava se solo dionicom samo zato što je monofona.
+
+    \item Prije melodijske klasifikacije moraju se izdvojiti Guitar Mode
+    kontrolne note, strumming naredbe, power-chord tipke i RX noise/articulation
+    note. Ako Track Type i mapping nisu dostupni, zapis dobiva
+    \texttt{GUITAR\_RX\_PATTERN} ili \texttt{UNKNOWN}; velik tonski raspon tada
+    nije dokaz solo sviranja.
+
+    \item Acc zapis je \texttt{ACCOMP\_CHORDAL} kada najmanje 30\% početaka
+    sadrži dvije ili više istodobnih nota ili kada jedan početak sadrži najmanje
+    tri note. Ovo opisuje teksturu; ne dokazuje skriveni NTT Track Type.
+
+    \item Acc zapis je konzervativni \texttt{SOLO\_CANDIDATE} samo kada nakon
+    uklanjanja potvrđenih kontrolnih/artikulacijskih nota ima najmanje šest
+    nota, najmanje 95\% monofonih početaka, najviše dvije istodobne i dvije
+    preklopljene note, najmanje pet različitih visina, raspon od najmanje devet
+    polutonova i prosječno melodijsko kretanje od najmanje 1,5 polutona.
+
+    \item Monofoni Acc zapis koji pokazuje ponavljajući motiv, arpeggio,
+    ostinato, kratko ritmičko sjeckanje ili ne zadovoljava sve solo uvjete dobiva
+    \texttt{ACCOMP\_LINE\_RIFF}. Ne smije se automatski proglasiti ni podlogom
+    ni solom.
+
+    \item Melodijski ili akordski sadržaj Intro 1 i Ending 1 dodatno dobiva
+    oznaku \path{FIXED_INTRO_ENDING_CANDIDATE}. Oznaka postaje
+    \texttt{CONFIRMED} samo ako SET, uređaj ili drugi službeni izvor potvrdi
+    No Transpose/NTT postavku.
+
+    \item Fill, Break, Intro, Ending i Variation analiziraju se odvojeno.
+    Kratka prijelazna fraza ne ulazi u radni velocity profil kontinuirane
+    pratnje samo zato što koristi isti instrument i isti Acc broj.
+
+    \item Strings, brass, guitar, piano ili bilo koja druga obitelj ne dobiva
+    ulogu prema nazivu instrumenta. Strings može biti akordska podloga,
+    monofona kontramelodija ili solo; odluku donosi sadržaj pojedinog
+    Elementa/CV-a.
+
+    \item Samo \texttt{ACCOMP\_CHORDAL} koji je dodatno potvrđen kao Lower,
+    pad ili chord podloga može koristiti pravilo smanjenja od 35\%.
+    Statusi \path{SOLO_CANDIDATE}, \path{ACCOMP_LINE_RIFF},
+    \path{FIXED_INTRO_ENDING_CANDIDATE}, \path{GUITAR_RX_PATTERN} i
+    \path{UNKNOWN} ne mijenjaju velocity automatski.
+
+    \item Korisnik može ručno potvrditi ili ispraviti ulogu, ali izvještaj mora
+    sačuvati izvorni automatski rezultat, ručnu odluku i vrijeme odluke.
+\end{enumerate}
+
+\subsection{Rezultat analize učitanog Factory Style korpusa}
+
+Arhiv \path{prism-uploads/Split Factory Styles.zip} koristi se kao empirijski,
+read-only izvor i ima SHA-256
+\path{ffb95cc191ba2bfc0c9b2b09494adaeb61c61bcda0fa4a9e4d83302e281d8f5e}.
+Sadrži 3.211 valjanih MIDI datoteka i 252 prepoznata Style skupa. Nakon
+ograničavanja svakog elementa na deklarirani broj taktova pronađeno je 29.639
+aktivnih track zapisa.
+
+Među 14.162 aktivna Acc zapisa s najmanje šest nota, početna verzija gore
+navedenih pravila daje 6.554 \texttt{ACCOMP\_CHORDAL} zapisa (46,28\%), 3.362
+\texttt{ACCOMP\_LINE\_RIFF} zapisa (23,74\%), 1.143 konzervativna
+\texttt{SOLO\_CANDIDATE} zapisa (8,07\%), 2.449
+\texttt{GUITAR\_RX\_PATTERN} zapisa (17,29\%) i 654 neriješena zapisa
+(4,62\%). Ovo su rezultati determinističke klasifikacije, a ne tvorničke NTT
+postavke.
+
+Solo-kandidati nisu ograničeni na Intro. Pronađena su 303 među 1.840 analiziranih
+Acc zapisa u Intro 1, 262 među 1.929 u Ending 1 te ukupno 379 među 5.956 Acc
+zapisa u Variation 1--4. Time je dokazano da aplikacija ne smije primijeniti
+jedan zajednički \emph{Style velocity} profil na sve Acc trackove.
+
+\subsection{Minimalni rezultat analize}
+
+Analiza mora proizvesti hijerarhijski rezultat koji redom obuhvaća kolekciju,
+Style, Element, CV, ulogu, kanal, instrument i notu. Za svaku razinu navodi
+izvor, status dokaza, upozorenja i mjerenja. Samo prikaz ukupnog minimuma,
+maksimuma i prosjeka velocityja nije dovoljan kriterij završene analize.
+
+\section{Pravila poboljšavanja}
+
+\subsection{Timing i kvantizacija}
+
+Kvantizacija mora imati podesivu jačinu. Potpuna kvantizacija nije zadana jer
+može ukloniti prirodan osjećaj izvedbe. Note se ne smiju pomaknuti preko granice
+koja bi promijenila njihov redoslijed ili proizvela neželjeno preklapanje.
+
+\subsection{Dinamika}
+
+Velocity se mijenja unutar dopuštenog raspona od 1 do 127. Enhancer mora
+sačuvati relativne naglaske i ne smije sve note izjednačiti na istu vrijednost.
+
+\subsection{Relativna dinamika podloga i sekundarne perkusije}
+
+Smanjenje dinamike uvijek je relativno prema izvornoj velocity vrijednosti, a
+ne postavljanje svih nota na fiksni broj. Time se čuvaju naglasci izvođača i
+odnos tihih i snažnih udara.
+
+\begin{enumerate}[label=V\arabic*.]
+    \item Track potvrđen kao \emph{Lower}, chordal accompaniment ili harmonijska
+    podloga smanjuje se za 35\%, odnosno nova vrijednost računa se kao
+    \texttt{round(velocity * 0.65)}.
+
+    \item Strings track potvrđen kao solo ili lead ne smanjuje se. Strings se
+    smanjuje 35\% samo kada je potvrđen kao podloga, pad ili akordska pratnja.
+
+    \item Sekundarna perkusija na MIDI kanalu 10 smanjuje se za 50\%, odnosno
+    nova vrijednost računa se kao \texttt{round(velocity * 0.50)}.
+
+    \item Kick, bass drum, snare, side stick, clap, hi-hat, tomovi i glavni
+    cymbal elementi smatraju se glavnim drum elementima i ovo pravilo ih ne
+    smanjuje.
+
+    \item Conga, bongo, timbale, agogo, cabasa, maracas, whistle, guiro,
+    claves, wood block, cuica, triangle i srodni ukrasni elementi smatraju se
+    sekundarnom perkusijom kada je njihov identitet potvrđen.
+
+    \item Izračunata Note On velocity vrijednost nikada ne smije pasti ispod 1
+    niti prijeći 127. Note On s velocityjem 0 ostaje Note Off semantika i ne
+    pretvara se u zvučnu notu.
+
+    \item General MIDI note mapping koristi se samo kada je potvrđen GM ili GM2
+    Drum Kit. Kod RX, User, oriental, ethnic i drugih Pa800-specifičnih kitova
+    nota se ne proglašava određenim elementom samo prema GM tablici.
+
+    \item Ako smanjenje može prijeći tvornički velocity-switch prag i aktivirati
+    drugi sample ili RX sloj, promjena se u načinu \emph{Suggest} samo prijavljuje.
+    Primjenjuje se tek kada su pragovi poznati ili korisnik izričito potvrdi
+    promjenu.
+
+    \item Ako uloga tracka nije sigurno potvrđena, velocity se ne mijenja.
+    Program prikazuje prijedlog i razloge klasifikacije.
+\end{enumerate}
+
+Izraz \emph{kanal 10} označava MIDI kanal 10, odnosno internu nultu vrijednost
+kanala 9. Ne označava deseti fizički track u MIDI datoteci.
+
+\subsection{Stroga NRPN pravila za Pa800 Drum parametre}
+
+NRPN poruke tretiraju se kao povezani, redoslijedom osjetljivi skup događaja.
+Za Pa800 Drum parametre službeni slijed čine \texttt{CC99} kao NRPN MSB,
+\texttt{CC98} kao NRPN LSB i \texttt{CC6} kao Data Entry. Vrijednost
+\texttt{CC98} određuje drum element, odnosno MIDI notu 0--127. Ako izvor
+sadrži \texttt{CC38} ili dodatne Data Entry poruke, one se čuvaju bez
+nagađanja njihova značenja.
+
+Službeni Pa800 NRPN MSB brojevi za Drum parametre su:
+
+\begin{description}[style=nextline]
+    \item[20] filter cutoff;
+    \item[21] filter resonance;
+    \item[22] EG attack time;
+    \item[23] EG decay time;
+    \item[24] coarse tune;
+    \item[25] fine tune;
+    \item[26] volume;
+    \item[28] panpot;
+    \item[29] reverb, odnosno FX1 send;
+    \item[30] modulation, odnosno FX2 send.
+\end{description}
+
+NRPN skup mora ostati na istom MIDI kanalu, u istom tracku i u izvornom
+redoslijedu. Program ga ne smije razdvojiti, sortirati samo prema broju
+kontrolera, premjestiti iza druge note ili ukloniti kao višak. Nepoznat ili
+nepotpun NRPN slijed čuva se nepromijenjen i prijavljuje kao upozorenje.
+
+\subsection{Očuvanje strukture i tekstualnih događaja}
+
+Promjena velocityja ne smije mijenjati MIDI format, division, broj i redoslijed
+trackova, apsolutni tick događaja, redoslijed događaja na jednakom ticku,
+Program Change, Bank Select, SysEx, NRPN, RPN ni druge kontrolne poruke.
+
+Svi tekstualni meta-događaji čuvaju se bajt-po-bajt kad god njihov sadržaj nije
+izričito uređivan. To uključuje opći tekst, copyright, naziv tracka, naziv
+instrumenta, lyrics, marker i cue point. Nepoznat meta-događaj ili nestandardno
+kodiranje ne smije se automatski normalizirati, prevesti ili izbrisati.
+
+Prije spremanja uspoređuju se originalna i nova datoteka. Izvan izričito
+odobrenih velocity vrijednosti ne smije postojati nijedna sadržajna razlika.
+Rezultat se uvijek sprema kao nova MIDI datoteka.
+
+\subsection{Trajanje nota}
+
+Program može ukloniti vrlo kratke slučajne note i ispraviti problematična
+preklapanja samo iznad korisnički definiranog praga. Takve promjene moraju biti
+označene kao potencijalno destruktivne.
+
+\subsection{Melodija i harmonija}
+
+Automatska promjena visine tona, akorda ili tonaliteta nije dopuštena u
+osnovnom načinu rada. Takve funkcije pripadaju posebnom kreativnom načinu i
+zahtijevaju izričitu potvrdu korisnika.
+
+\section{Načini rada}
+
+\begin{description}[style=nextline]
+    \item[Analyze] Samo učitavanje i analiza, bez promjene MIDI sadržaja.
+    \item[Suggest] Analiza i popis predloženih promjena, bez automatske primjene.
+    \item[Enhance] Primjena samo odabranih i potvrđenih poboljšanja.
+\end{description}
+
+\section{Izlaz programa}
+
+Svako pokretanje treba moći proizvesti:
+
+\begin{itemize}
+    \item čitljiv sažetak analize;
+    \item strukturirani JSON izvještaj;
+    \item novu MIDI datoteku, ako su promjene primijenjene;
+    \item dnevnik svih upozorenja i izvršenih promjena.
+\end{itemize}
+
+Naziv izlazne datoteke treba sadržavati sufiks, primjerice
+\texttt{naziv\_enhanced.mid}, kako bi original ostao netaknut.
+
+\subsection{Pravila izvještaja i spremanja}
+
+JSON izvještaj mora sadržavati verziju sheme, podatke o izvoru, kontrolne
+zbrojeve, odabrani parser, konfiguraciju, hijerarhiju Style podataka, sve
+potvrđene i procijenjene instrumente, upozorenja, prijedloge i dnevnik promjena.
+Svaka izmjena mora imati stabilni ID pravila kako bi se rezultat mogao ponovno
+izračunati i testirati.
+
+Spremanje izmijenjenog MIDI-ja dopušteno je samo ako su ispunjene sve kapije:
+
+\begin{enumerate}[label=E\arabic*.]
+    \item originalni SHA-256 i dalje odgovara datoteci koja je učitana;
+    \item nema neriješenog \texttt{BLOCKING} upozorenja;
+    \item svaka izmjena pripada izričito uključenom i potvrđenom pravilu;
+    \item rezultat se može ponovno parsirati bez nove strukturne greške;
+    \item broj nota, Note On/Off parovi i vrijeme događaja odgovaraju očekivanoj
+    vrsti izmjene;
+    \item svi neizmijenjeni događaji jednaki su izvornim događajima;
+    \item izlazni naziv nije jednak ulaznom nazivu u istoj lokaciji;
+    \item izračunat je SHA-256 izlaza i spremljen u izvještaj.
+\end{enumerate}
+
+Ako ijedna kapija ne prođe, privremeni rezultat se ne proglašava dovršenim
+MIDI-jem. Aplikacija čuva dijagnostički izvještaj i dodjeljuje status
+\texttt{FAIL}.
+
+\section{Pravila konfiguracije, testiranja i verzioniranja}
+
+Svi pragovi, uključujući 35\% za Lower/chord podloge i 50\% za sekundarne
+perkusije, moraju biti imenovane konfiguracijske vrijednosti s jedinicom,
+dopuštenim rasponom, zadanom vrijednošću i izvorom pravila. Nevažeća vrijednost
+ne smije se tiho ograničiti ili zamijeniti zadanom; konfiguracija se odbija uz
+jasnu poruku.
+
+Svaki modul mora imati najmanje:
+
+\begin{itemize}
+    \item unit test za svako pravilo i graničnu vrijednost;
+    \item test valjanog, nepotpunog, konfliktnog i nepodržanog ulaza;
+    \item round-trip test koji dokazuje očuvanje neizmijenjenih događaja;
+    \item regression test za svaki pronađeni stvarni problem;
+    \item golden izvještaj za najmanje jedan mali, ručno provjeren MIDI primjer;
+    \item test determinističnosti ponovljenim pokretanjem iste analize;
+    \item test da Analyze i Suggest ne mijenjaju izvorni kontrolni zbroj.
+\end{itemize}
+
+Promjena registra, JSON sheme, klasifikacijskog pravila ili formule zahtijeva
+novu verziju odgovarajuće komponente. Stari izvještaj mora ostati čitljiv ili
+dobiti jasan status nepodržane verzije; ne smije se tiho reinterpretirati prema
+novim pravilima.
+
+\section{Predloženi redoslijed razvoja}
+
+\begin{enumerate}
+    \item pouzdano učitavanje i analiza MIDI datoteke;
+    \item validacija i izrada izvještaja;
+    \item prikaz piano-rolla i statistike;
+    \item prijedlozi za timing, velocity i trajanje nota;
+    \item kontrolirana primjena poboljšanja;
+    \item usporedba originalne i poboljšane verzije;
+    \item napredna harmonijska i kreativna obrada.
+\end{enumerate}
+
+\section{Kriterij uspjeha prve verzije}
+
+Prva verzija je uspješna kada može učitati valjanu MIDI datoteku, prikazati
+točan sažetak njezine strukture i glazbenih događaja te završiti bez ikakve
+promjene originalne datoteke.
+
+\section{Grafičko sučelje i pokriće aplikacije}
+
+Aplikacija uključuje moderno tamno desktop sučelje s uvozom datoteka
+\texttt{.mid} i \texttt{.midi}. Nakon uvoza prikazuje sažetak formata, broj
+izvornih trackova, trajanje, početni tempo, ukupan broj nota i status analize.
+
+Glavni dio sučelja sadrži 16 stalnih track-kartica. Svaka kartica prikazuje
+broj tracka, izvor podataka, službeni broj i naziv prepoznatog instrumenta,
+ikonu procijenjenog instrumenta, broj nota, najveću polifoniju i postotak
+pouzdanosti zaključka. Odabirom kartice korisnik dobiva detalje o kanalima,
+rasponu nota i dokazima korištenim pri prepoznavanju.
+
+\subsection{Pravila ponašanja aplikacije}
+
+Sučelje je upravljački sloj, a ne mjesto na kojem se skrivaju glazbena pravila.
+Sva pravila moraju postojati u testabilnim modulima i davati isti rezultat u
+GUI-u, naredbenom retku i automatskom testu.
+
+\begin{enumerate}[label=A\arabic*.]
+    \item Uvoz nikada automatski ne pokreće izmjenu. Nakon učitavanja aplikacija
+    ulazi u način \emph{Analyze}.
+
+    \item Aplikacija mora razlikovati obični SMF, potvrđeni Pa800 Style MIDI,
+    Style Works izvoz, zbirku datoteka i nepodržani format. Odabir parsera mora
+    biti prikazan korisniku zajedno s razlogom.
+
+    \item Svaki posao ima jedinstveni ID, izvorni SHA-256, vrijeme pokretanja,
+    verziju parsera, verziju registra, verziju skupa pravila i aktivnu
+    konfiguraciju.
+
+    \item Rezultat parsera je nepromjenjivi model izvora. Moduli prijedloga i
+    izmjena rade nad zasebnom radnom kopijom i ne mogu prepisati originalni
+    model.
+
+    \item Kartica mora jasno razlikovati fizički track, logički MIDI kanal,
+    Style ulogu i CV. Broj kartice nikada se ne smije predstaviti kao MIDI
+    kanal bez oznake.
+
+    \item Uz svaki instrument prikazuju se puni broj, službeni naziv, status
+    dokaza i izvor. Kod statusa \texttt{INFERRED} prikazuju se postotak i sva
+    pravila koja su sudjelovala u procjeni.
+
+    \item Status \texttt{UNKNOWN} ne smije se automatski tumačiti kao User
+    Sound. Aplikacija odvojeno prikazuje \path{FACTORY_CONFIRMED},
+    \path{USER_SLOT_CONFIRMED}, \path{UNKNOWN}, \path{CONFLICT} i
+    \path{INCOMPLETE_ADDRESS}. User slot potvrđuje lokaciju, ali ne i naziv
+    ili stvarni sadržaj zvuka.
+
+    \item Korisnik mora moći odabrati vremenski segment instrumenta i zamijeniti
+    ga potvrđenim Factory Soundom. Zamjena se ne primjenjuje samim odabirom u
+    pregledniku: GUI zasebno prikazuje ciljnu adresu, pogođeni kanal, početni
+    tick, završni tick i gumb \emph{Apply replacement}.
+
+    \item Preglednik Factory Soundova koristi produkcijski registar. Filtrira
+    po obitelji instrumenta, glazbenoj ulozi, rasponu i kompatibilnosti
+    uređaja. Prijedlog nije automatska odluka; konačni Factory Sound bira
+    korisnik.
+
+    \item Zamjena se izvršava po Program Change segmentu, a ne slijepo za cijeli
+    fizički track. Ako track mijenja instrument tijekom pjesme, svaki segment
+    ima zasebnu karticu, odluku i dnevnik promjene.
+
+    \item Primjena Factory Sounda smije promijeniti samo odobrene Bank Select
+    \texttt{CC00}, \texttt{CC32} i Program Change vrijednosti za odabrani
+    segment. Note, velocity, tempo, metar, kontroleri, SysEx, tekstovi i drugi
+    segmenti ostaju nepromijenjeni. Nedostajući Bank Select ne smije se tiho
+    pretpostaviti niti umetnuti bez jasnog prijedloga i potvrde.
+
+    \item Prije primjene prikazuje se razlika \emph{izvorna adresa $\to$ ciljna
+    Factory adresa}. Nakon primjene dostupni su Undo, vraćanje izvornog Sounda
+    i verifier koji ponovno parsira izlaz i blokira svaku neočekivanu razliku.
+
+    \item Upozorenja imaju razine \texttt{INFO}, \texttt{WARNING},
+    \texttt{ERROR} i \texttt{BLOCKING}. \texttt{BLOCKING} onemogućuje Enhance
+    i spremanje izmijenjene datoteke, ali ne mora onemogućiti read-only izvoz
+    analize.
+
+    \item Korisnik mora moći filtrirati rezultat po Styleu, elementu, CV-u,
+    ulozi, kanalu, instrumentu, noti, statusu dokaza i upozorenju bez promjene
+    samih podataka.
+
+    \item Prikaz instrumenta mora odvojiti službenu definiciju iz User's
+    Manuala od empirijskih kartica \emph{Chordal}, \emph{Line/Riff},
+    \emph{Solo candidate}, \emph{Fixed Intro/Ending} i \emph{Guitar/RX}.
+    Factory Style statistika ne smije biti prikazana kao tvornička Sound
+    postavka niti nuditi automatsku promjenu Sounda.
+
+    \item Na razini svakog Elementa/CV-a aplikacija mora prikazati klasifikaciju
+    tracka prije prikaza bilo kakvog velocity prijedloga. Ako klasifikacija nije
+    \texttt{ACCOMP\_CHORDAL} ili potvrđena sekundarna perkusija, pravila 35\% i
+    50\% ostaju zaključana.
+
+    \item Svaki prijedlog prikazuje staru vrijednost, novu vrijednost, formulu,
+    pogođene događaje, mogući rizik i pravilo. Grupna potvrda dopuštena je samo
+    za istu vrstu pravila i jasno prikazan opseg.
+
+    \item \emph{Undo} prije spremanja vraća radnu kopiju na prethodno stanje.
+    Nakon spremanja povrat se osigurava zadržavanjem originala i dnevnikom
+    promjena, a ne prepisivanjem izvora.
+
+    \item Prekid ili greška analize ne smije ostaviti djelomični JSON označen
+    kao potpun. Izvještaj dobiva status \texttt{PARTIAL} i popis nedovršenih
+    koraka.
+
+    \item Analiza iste datoteke s jednakim pravilima i konfiguracijom mora biti
+    deterministička. Ako rezultat ovisi o nasumičnosti, seed mora biti zapisan,
+    ali nasumičnost nije dopuštena u osnovnom Analyze načinu.
+
+    \item Aplikacija ne smije slati MIDI sadržaj, nazive ili kontrolne zbrojeve
+    na mrežu bez zasebne izričite korisničke dozvole.
+
+    \item Zatvaranje aplikacije tijekom neizvezenog rada mora ponuditi
+    odustajanje, spremanje izvještaja ili nastavak rada. Nikada ne smije potajno
+    spremiti izmijenjeni MIDI preko originala.
+\end{enumerate}
+
+\subsection{Mapiranje MIDI formata}
+
+MIDI Format 0 sadrži jedan fizički track, ali može koristiti svih 16 MIDI
+kanala. Aplikacija zato kanale 1--16 prikazuje kao zasebne logičke trackove.
+Time se različiti instrumenti unutar jedne Format 0 datoteke ne spajaju u jednu
+nejasnu karticu.
+
+MIDI Format 1 sadrži više fizičkih trackova. Aplikacija izravno mapira fizičke
+trackove 1--16 na odgovarajuće kartice. Track koji sadrži tempo, oznaku takta i
+druge meta-događaje, ali nema note, označava se kao \emph{Conductor / Meta}.
+Neiskorišteni slotovi ostaju jasno označeni kao prazni.
+
+\subsection{Prepoznavanje instrumenta i uloge tracka}
+
+Zaključak o instrumentu ne temelji se na samo jednom podatku. Aplikacija
+kombinira sljedeće metode:
+
+\begin{enumerate}
+    \item \textbf{Program Change} poruku i svih 128 General MIDI programa;
+    \item standardni percussion kanal 10 za prepoznavanje bubnjeva i udaraljki;
+    \item naziv tracka i ključne riječi poput piano, bass, guitar, strings,
+    brass, lead, pad i drums;
+    \item prosječni i ukupni tonski raspon;
+    \item najveću polifoniju i odnos melodijskog i akordskog sviranja;
+    \item profil trajanja nota za razlikovanje melodijske, ritmičke i prateće
+    uloge.
+\end{enumerate}
+
+Eksplicitna MIDI informacija ima veću težinu od heurističke procjene. Ako
+Program Change nije zapisan, aplikacija može predložiti glazbenu ulogu, ali
+prikazuje nižu pouzdanost i navodi korištene dokaze. Time se procjena nikada ne
+predstavlja kao sigurna činjenica.
+
+\subsection{Registracija svih Pa800 instrumenata i Drum Kitova}
+
+Svaki Pa800 instrument, zvuk, Drum Kit i percussion kit mora bez izuzetka biti
+registriran pod svojim punim službenim brojem iz priručnika. Ovo pravilo vrijedi
+za sve tvorničke banke i sve kategorije; nijedna stavka ne smije biti
+preskočena. Službeni broj sastoji se od MIDI vrijednosti \texttt{CC00.CC32.PC},
+odnosno Bank Select MSB, Bank Select LSB i Program Change. Svaka komponenta mora
+biti u rasponu 0--127. Broj se prikazuje kao jedna adresa i glavni je
+identifikator stavke. Neposredno nakon broja zapisuje se službeni naziv iz
+PDF-a, primjerice \texttt{121.0.33 --- Finger Bass GM} ili
+\texttt{120.0.5 --- Standard Kit RX1}. Redoslijed je uvijek broj pa naziv.
+
+Broj i naziv moraju se prepisati točno iz službenog PDF-a, bez pretvaranja u
+General MIDI broj, skraćivanja, prevođenja ili nagađanja značenja pojedinih
+dijelova broja. Instrument se ne smije proglasiti registriranim ako nedostaje
+broj ili ako veza između broja i naziva nije potvrđena u priručniku. Ako više
+instrumenata ili Drum Kitova ima jednak ili sličan naziv, razlikuju se prema
+punom službenom broju. Svaki instrument i svaki Drum Kit mora imati vlastiti
+zaseban zapis; jedan zapis ili broj ne smije se zajednički dodijeliti većem broju
+različitih stavki.
+
+Registar za svaki instrument i svaki Drum Kit mora sadržavati najmanje puni
+službeni broj, službeni naziv, vrstu stavke i broj stranice PDF-a na kojoj je
+par potvrđen. Sučelje, tekstualni sažetak i JSON izvještaj prikazuju službeni
+broj prije naziva. Potpunost registra provjerava se usporedbom broja zapisa sa
+svim stavkama navedenim u službenom PDF-u. Ako nedostaje makar jedan instrument
+ili Drum Kit, registar ne može dobiti status \texttt{PASS}. Ako službeni PDF
+nije dostupan ili ne prođe provjeru kontrolnog zbroja, Pa800 registar dobiva
+status \texttt{BLOCKED} i ne popunjava se prema neslužbenim izvorima.
+
+Službene bankovne tablice na tiskanim stranicama 275--283 i zasebna Drum Kit
+tablica na tiskanoj stranici 295 izvor su produkcijskog K01 registra.
+Reproducibilni generator prihvaća samo potvrđeni SHA-256 priručnika i pinned
+PDF extractor, stvara kanonski JSON, a produkcijski lookup radi isključivo za
+čitanje. Aktualni generator i testovi potvrđuju 1.006 Factory Sound adresa i 65
+izričito imenovanih Drum Kit adresa, ukupno 1.071 jedinstvenu punu adresu.
+Adrese 120.0.48 i 120.0.49 sačuvane su kao dvije zasebne adrese sa službenim
+nazivom \texttt{Orchestra Kit GM}. K01 ima ograničeni read-only
+\texttt{PASS}; ne obuhvaća K02 rezoluciju niti MIDI izmjene.
+
+Na tiskanoj stranici 295 priručnik istodobno navodi imenovane stavke
+\texttt{120.0.57 --- SFX Kit 2} i \texttt{120.0.58 --- Synth Kit} te raspon
+\texttt{57--63 (remap to 56)}. K01 čuva izričito imenovane stavke 57 i 58,
+označava preklop kao \texttt{CONFLICT} i ne primjenjuje remap preko imenovanih
+stavki. Nepreklopljeni dio 59--63 ostaje zabilježen u službenom remap retku za
+budući K02, bez promjene MIDI događaja.
+
+\subsection{Što aplikacija može detektirati}
+
+Za cijelu MIDI datoteku aplikacija detektira format, rezoluciju, trajanje,
+tempo i njegove promjene, oznake takta i tonaliteta, broj trackova, kanale,
+programe, kontrolne poruke, sustain pedal, pitch bend, percussion događaje i
+strukturne probleme.
+
+Za svaki track ili logički kanal detektira naziv, broj nota, tonski raspon,
+velocity statistiku, gustoću nota, prosječno trajanje, najveću polifoniju,
+omjer monofonih i akordskih početaka te korištene General MIDI programe. Na
+temelju tih mjerenja može prepoznati ili predložiti sljedeće uloge:
+
+\begin{itemize}
+    \item conductor ili meta track;
+    \item drum i percussion groove;
+    \item bass liniju;
+    \item lead ili melodijsku liniju;
+    \item akordsku pratnju;
+    \item pad ili dugotrajnu harmonijsku teksturu;
+    \item arpeggio ili brzi motiv;
+    \item rhythm guitar, solo guitar i power-chord guitar;
+    \item opći melodijski ili ritmički part kada nema dovoljno dokaza za užu
+    klasifikaciju.
+\end{itemize}
+
+\subsection{Pravila za prepoznavanje glazbene uloge}
+
+Pravila su deterministička i prikazuju korištena mjerenja. Eksplicitni podaci,
+poput MIDI kanala i Program Change poruke, uvijek imaju prednost pred
+heuristikom.
+
+\begin{enumerate}[label=D\arabic*.]
+    \item \textbf{Percussion} se potvrđuje kada se najmanje 50\% nota nalazi na
+    standardnom MIDI kanalu 10.
+
+    \item \textbf{Bass line} se predlaže kada je prosječna visina niža od MIDI
+    note 48 i najmanje 65\% početaka nota je monofono.
+
+    \item \textbf{Pad / sustained harmony} zahtijeva prosječno trajanje od
+    najmanje dvije četvrtinke i najveću polifoniju od najmanje tri note.
+
+    \item \textbf{Chordal accompaniment} se predlaže kada najmanje 35\%
+    početaka sadrži dvije ili više istodobnih nota ili kada je najveća
+    polifonija najmanje četiri.
+
+    \item \textbf{Arpeggio / fast motif} zahtijeva najmanje dvije note po
+    četvrtinki, najmanje 75\% monofonih početaka i prosječno trajanje note do
+    0,75 četvrtinke.
+
+    \item \textbf{Lead / melody} zahtijeva prosječnu visinu od najmanje MIDI
+    note 60 i najmanje 75\% monofonih početaka.
+
+    \item Ako nijedno pravilo nema dovoljno dokaza, koristi se neutralna oznaka
+    \emph{Melodic / rhythmic part} s nižom pouzdanošću.
+\end{enumerate}
+
+\subsection{Posebna pravila za gitaru}
+
+Guitar uloga analizira se samo kada Program Change pripada General MIDI guitar
+programima 25--32 ili kada naziv tracka izričito sadrži riječ \emph{guitar} ili
+\emph{gitara}. Time se sprječava proglašavanje svakog akordskog instrumenta
+gitarom.
+
+\begin{enumerate}[label=G\arabic*.]
+    \item \textbf{Power-chord guitar} zahtijeva najmanje dva akordska udara u
+    kojima postoji odnos root--fifth, odnosno interval čiste kvinte. Struktura
+    ne smije sadržavati malu ili veliku tercu, a najmanje 50\% svih akordskih
+    udara mora zadovoljiti ovo pravilo. Oktava je dopuštena.
+
+    \item \textbf{Solo guitar} zahtijeva najmanje 75\% monofonih početaka,
+    najveću polifoniju do dvije note i najviše 25\% akordskih početaka. Pitch
+    bend nije obavezan, ali povećava pouzdanost solo zaključka.
+
+    \item \textbf{Rhythm guitar} prepoznaje se kada najmanje 30\% početaka
+    sadrži akord ili kada najveća polifonija iznosi najmanje tri. Pravilo za
+    power chord provjerava se prvo, kako power-chord part ne bi bio označen samo
+    kao opća rhythm guitar.
+
+    \item Ako je guitar instrument potvrđen, ali nijedan obrazac nije dovoljno
+    izražen, prikazuje se \emph{Guitar part (uncertain role)} umjesto izmišljene
+    precizne klasifikacije.
+\end{enumerate}
+
+Ova pravila opisuju sadržaj MIDI događaja, a ne stvarni zvuk snimke. Ako MIDI
+ne sadrži ispravan Program Change ili naziv tracka, aplikacija može pouzdano
+opisati obrazac nota, ali ne može sa sigurnošću dokazati da je part odsviran na
+gitari.
+
+\subsection{Ikone instrumenata}
+
+Kartice koriste ugrađene glazbene ikone za piano, gitaru, bass, gudače, brass,
+reed, flaute, synthesizer, vokal, efekte i percussion. Uz ikonu se uvijek
+prikazuje tekstualni naziv, pa sučelje ostaje razumljivo i na sustavu koji nema
+potpunu podršku za slikovne glifove.
+
+\subsection{Rezultati i sigurnost}
+
+GUI radi u načinu \emph{Analyze}: ne mijenja uvezeni MIDI. Analiza provjerava
+SHA-256 kontrolni zbroj originala, prikazuje upozorenja te omogućava izvoz
+potpunog JSON izvještaja. Dodatne biblioteke koriste se automatski kada su
+dostupne, dok ugrađeni parser osigurava osnovni rad bez vanjskih MIDI paketa.
+
+\section{Status prve verzije}
+
+U trenutačnom snapshotu implementirani su učitavanje i validacija MIDI
+datoteke, analiza glazbenih događaja, provjera očuvanja originala, tekstualni i
+JSON izvještaj te automatsko povezivanje dostupnih biblioteka. Ugrađeni parser
+ostaje osnovni mehanizam, \texttt{numpy} proširuje statistiku, a
+\texttt{mido}, \texttt{pretty\_midi} i \texttt{music21} uključuju se kada su
+dostupni. Mapiranje formata 0 i 1, prikazni model od 16 trackova, višemetodno
+prepoznavanje instrumenata te klasifikacija rhythm, solo i power-chord guitar
+uloga imaju opće MIDI testove. Format 2 sada ima zaseban read-only testni scope:
+svaki track ostaje neovisna sekvenca, bez izmišljene globalne tempo mape ili
+trajanja. \texttt{tkinter} 8.6 je dostupan, a workspace-only Xvfb omogućio je
+stvarni automatizirani test Tk prozora, 16 kartica, Format 0 analize/JSON izvoza
+i Format 2 read-only prikaza. Native desktop pakiranje i ljudski UX ostaju
+necertificirani. Produkcijski K01 registar, generator, kanonski adresni JSON,
+immutable lookup i namjenski testovi sada su prisutni; K01 ima ograničeni
+read-only \texttt{PASS}. K02 resolver sada povezuje stvarne M10 segmente s K01
+dokazom i ima ograničeni read-only \texttt{PASS}. Immutable Change Plan i
+Suggest Policy Engine također imaju ograničeni \texttt{PASS}, ali uvijek vraćaju
+\texttt{apply\_authorized=false}. K03-P user-selected proposal builder,
+in-memory Change Engine, rollback, independent Verifier i atomic verified
+writer sada su prisutni u ograničenom scopeu. Bounded programatska K03 zamjena
+smije stvoriti samo novi \texttt{\_enhanced} MIDI i JSON nakon svih USER/V01 kapija.
+Bounded GUI workflow za izbor, preview, USER potvrdu, V01, W01 save i rollback
+također je prisutan; automatski Enhance nije uključen. Ostali
+Pa800-specifični moduli dobivaju zaseban status tek nakon vlastite
+implementacije i dokaza. Pravila za buduće načine \emph{Suggest} i
+\emph{Enhance} ostaju obavezna pri nastavku razvoja.
+
+Read-only Style Works Loader ima status \texttt{PASS}. Automatski je učitao i
+validirao svih 3.211 MIDI datoteka iz arhiva, prepoznao 252 Style skupa,
+razdvojio Element/CV/ulogu i dokazao očuvanje izvornog ZIP SHA-256 zbroja.
+Element \path{Fox Shuffle 1_Break.mid} s konfliktnim oznakama \texttt{1 Bar} i
+\texttt{5 Bars} sačuvan je, ali ispravno blokiran za vremensku analizu.
+
+Read-only Context Classifier M07 ima status \texttt{PASS}. Generička jezgra i
+Style adapter odvojeno vraćaju strukturnu ulogu, glazbenu funkciju, encoding,
+fixed Intro/Ending kandidat, RX rizik i sigurnosnu politiku. Drum, Perc i Bass
+imaju prioritet pred melodijskom heuristikom; bliski onseti grupiraju se prema
+PPQ-u; Guitar Mode se ne zaključuje samo iz raspona nota; višekanalni konflikt
+blokira klasifikaciju. Puni corpus smoke test obradio je 3.211 datoteka i
+65.021 track-slice rezultat bez iznimke, uz nepromijenjen SHA-256 arhiva.
+
+M07 je isključivo analizator i ne autorizira \emph{Enhance}.
+
+Analyze-only Measure/Phrase Analyzer M08 ima status \texttt{PASS}. Iz
+eksplicitnih tempo i metar događaja gradi vremensku mapu, određuje mjeru, beat
+i tick svakog događaja, pronalazi egzaktno ponovljene mjere te označava
+konzervativne kandidate granica fraza nakon duge stanke. Konfliktne oznake
+tempa ili metra blokiraju vremensko tumačenje, a Style adapter koristi samo
+potvrđeni M06 vremenski prozor. M08 ne kvantizira, ne pomiče i ne briše MIDI
+događaje te ne autorizira \emph{Humanize}, strumming ili drugi \emph{Enhance}.
+
+Read-only Instrument Measurement Engine M09 ima status \texttt{PASS}. Za svaki
+potvrđeni part računa raspon nota, velocity, trajanje u tickovima i beatovima,
+gustoću, sounding i onset polifoniju, kontrolere, pitch bend i aftertouch. Kada
+su dostupni M08 podaci, stvara zasebne statistike po mjeri i kandidatu fraze.
+Nezatvorene ili orphan note daju status \texttt{PARTIAL}, dok blokirani M07 ili
+M08 kontekst daje \texttt{BLOCKED}. M09 nasljeđuje najstrožu sigurnosnu
+politiku i ne sadrži \emph{Suggest}, \emph{Change}, \emph{Humanize} ili writer
+funkciju.
+
+Read-only Instrument Segmenter M10 ima status \texttt{PASS}. Po MIDI kanalu
+prati \texttt{CC00}, \texttt{CC32} i Program Change te razdvaja part na
+vremenske segmente sa zasebnim M09 profilom. Potpuna adresa prikazuje se kao
+\texttt{CC00.CC32.PC}; nepotpuna ostaje \texttt{INCOMPLETE}, a događaji prije
+prvog programa \texttt{NO\_PROGRAM}. Izvorni event order određuje granicu kada
+događaji dijele tick, a note preko Program Change granice dobivaju upozorenje.
+M10 ne proglašava Factory/User identitet: svaki segment ostaje
+\texttt{UNRESOLVED} i nijedan se događaj ne mijenja. Datoteka
+\texttt{instrument\_segmenter.py} i njezini namjenski testovi prisutni su u
+trenutačnom Git snapshotu. K01 Factory lookup i K02 read-only resolver sada su
+dovršeni. K02 vraća zaseban immutable rezultat i namjerno ne prepisuje izvorni
+M10 \texttt{UNRESOLVED} segment niti bilo koji MIDI događaj.
+
+Naknadni neovisni testni audit proširio je izravno pokriće M08--M10. Svaki od
+ta tri modula sada ima devet namjenskih testova. Ispravljeni su potpuni potpis
+egzaktnog ponavljanja, faza mjere u prozoru koji ne počinje na ticku nula,
+provjera SHA-256/PPQ/prozora M09 timelinea, višetrack zaštita, gustoća bez
+potvrđenog prozora, otvorena nota preko Program Change granice, jedinstveni
+ordinali i neodređeni cross-track redoslijed.
+
+Zaseban izvršni corpus test ponovno obrađuje svih 3.211 Factory MIDI datoteka
+i 65.021 track-slice. Provjerava 82.917 M10 segmenata, fiksne statusne
+raspodjele, deterministički rezultatni digest i nepromijenjen SHA-256 izvornog
+ZIP-a. Status \texttt{PASS} ostaje ograničen na izravno testirani read-only
+scope; GUI, identity, writer, Enhance i hardware ponašanje time nisu
+certificirani.
+
+Evidence Registry Foundation G00 ima status \texttt{PASS}. Kanonski JSON
+registar i deterministički generirani Markdown odvajaju dokaz, implementaciju,
+validaciju i certifikaciju. Validator provjerava ID namespace, reference,
+lokalne putanje, SHA-256 zbrojeve, prisutnost registriranih testova i obaveznu
+izolaciju dokumenata označenih kao \texttt{IDEA\_CATALOG}. Time se ne tvrdi da
+validator sam dokazuje glazbenu ispravnost: svaka domenska tvrdnja i dalje
+zahtijeva vlastiti reproducibilni test i izvor.
+
+M07 corpus rezultat sada ima zaseban reproducibilni test koji ponovno obrađuje
+svih 3.211 datoteka i provjerava 65.021 rezultat, uključujući raspodjelu
+\texttt{CLASSIFIED}, \texttt{UNCERTAIN} i \texttt{BLOCKED}. DNA paket je
+zabilježen kao djelomično validiran jer sadrži i bajtovno jednaku kopiju
+Factory arhiva; ta kopija ne smije ući u budući Gold training ili evaluation
+skup.
+
+\section{Završno potvrđeno stanje i sljedeći razvojni korak}
+
+U stvarnom snapshotu prisutni su opći MIDI moduli M01--M05, read-only moduli
+M06--M10 i G00 Evidence Registry Foundation. Aktualni puni testni run mora se
+zapisati u \texttt{MODULE\_LOG.md}; povijesne brojke same nisu dokaz. Navedeni
+read-only moduli ne autoriziraju \emph{Enhance}.
+
+K01 Factory registry ima produkcijski generator, kanonski JSON, immutable
+lookup i namjenski test te ograničeni read-only status \texttt{PASS}. K02
+resolver nad stvarnim M10 segmentima također ima ograničeni read-only
+\texttt{PASS}. Immutable Change Plan, Suggest Policy Engine, K03-P proposal,
+in-memory Change Engine, independent Verifier i atomic writer sada su prisutni.
+Bounded K03 backend i automatizirani GUI save/rollback workflow imaju
+ograničeni \texttt{PASS}; automatski \emph{Enhance} ostaje \texttt{NO-GO}.
+Implementirani K02 statusi su
+\texttt{FACTORY\_CONFIRMED}, \texttt{USER\_SLOT\_CONFIRMED},
+\texttt{UNKNOWN}, \texttt{CONFLICT}, \texttt{INCOMPLETE\_ADDRESS} i
+\texttt{NO\_PROGRAM}; nijedan status sam ne autorizira promjenu.
+
+A01 Workspace Persistence Probe i A02 Repository Inventory Auditor imaju
+ograničeni governance \texttt{PASS}. A01 checkpoint ponovno je provjeren nakon
+sljedeće korisničke poruke: commit, Python datoteke i testovi ostali su prisutni
+i bajtovno jednaki. A02 inventar nad aktualnim \texttt{git ls-tree} popisom
+nema error ni warning nalaz za dokumentirane produkcijske, testne i generatorske
+artefakte. Ovaj status ne certificira glazbenu ispravnost. M01 Format 2 test
+sada je dovršen za ograničeni read-only scope. Izravni core-parity guard također
+uspoređuje oba parsera na sintetičkim rubovima i svih 3.211 Factory MIDI
+ulaza. Automatizirani Tk runtime također je potvrđen na lokalnom virtualnom
+displayu. Reprodukcijski K01 generator, lookup, K02 resolver, immutable Change
+Plan, Suggest Policy Engine i K03-P user-selected proposal builder sada su
+dovršeni u svojim ograničenim scopeovima. Windows \texttt{install.bat} i
+\texttt{run.bat} imaju statički testirani status \texttt{PARTIAL}; stvarno
+Windows/Tk izvršavanje čeka korisnički računar. Bounded GUI tok za USER
+selection, preview, approval, independent verification, atomic save i rollback
+sada je dovršen u automatiziranom virtual-display scopeu. R01 Factory
+kontekstualni profili također su dovršeni kao reference-only podaci bez
+miješanja uloga. S01 exact-profile velocity outlier pravilo sada može stvoriti
+samo immutable Suggest plan uz stroge context/support kapije; C01 namjerno ne
+podržava primjenu Note On velocity mutacije. G02 sada isključuje exact Factory
+container iz DNA paketa, deduplicira Gold i potvrđuje source-disjoint evaluation
+manifest. M07 statistička kalibracija ostaje \texttt{BLOCKED} jer Gold nema
+ručno potvrđene per-part role labele. V02 specialized velocity Apply/Verifier
+scope sada postoji, ali zahtijeva zasebni USER acknowledgement da su
+velocity-switch/RX pragovi nepoznati te provodi max 8/max 32/1--127 kapije.
+Generic i automatski Apply ostaju blokirani. Sljedeći korak je povezati S01/V02
+s GUI preview/approval/risk-ack/save tokom; automatski Enhance ostaje zabranjen.
+
+\end{document}

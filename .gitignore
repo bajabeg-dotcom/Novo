@@ -1,0 +1,19 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# veliki podaci - vanjski, provjereni preko data/artifact-manifest.json
+data/*.db
+data/*.json
+!data/artifact-manifest.json
+data/models/
+corpus/
+evidence/pa800-manual/

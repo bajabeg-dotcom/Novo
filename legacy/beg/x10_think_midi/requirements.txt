@@ -1,0 +1,24 @@
+# X10 Think - Python MIDI Intelligence Engine
+# Requirements
+
+# Core dependencies
+PyYAML>=6.0
+
+# GUI (optional)
+PyQt6>=6.4.0
+
+# Development dependencies
+pytest>=7.0.0
+pytest-cov>=4.0.0
+black>=23.0.0
+flake8>=6.0.0
+mypy>=1.0.0
+
+# Documentation
+Sphinx>=6.0.0
+sphinx-rtd-theme>=1.2.0
+
+# Build and packaging
+setuptools>=65.0.0
+wheel>=0.38.0
+pyinstaller>=5.0.0

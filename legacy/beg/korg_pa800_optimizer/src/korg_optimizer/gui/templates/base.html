@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>{% block title %}KORG PA800 Optimizer{% endblock %}</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <header class="page-header">
+    <h1>KORG PA800 GM &rarr; RX Optimizer</h1>
+    <p class="subtitle">Evidence &amp; Analysis preview &mdash; Phase 1-4</p>
+  </header>
+  <main>
+    {% block content %}{% endblock %}
+  </main>
+  <footer>
+    <p>
+      Deterministic, evidence-based analysis only. No MIDI file is ever
+      modified by this tool.
+    </p>
+  </footer>
+</body>
+</html>

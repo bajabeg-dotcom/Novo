@@ -1,0 +1,104 @@
+{% extends "base.html" %}
+{% block content %}
+
+<p><a href="{{ url_for('index') }}">&larr; analyze another file</a></p>
+
+<section class="panel">
+  <h2>{{ result.original_filename }}</h2>
+  <table class="facts-table">
+    <tr><th>SHA-256</th><td><code>{{ result.sha256_hash }}</code></td></tr>
+    <tr><th>Size</th><td>{{ result.byte_size }} bytes</td></tr>
+    <tr><th>Format</th><td>{{ result.format }}</td></tr>
+    <tr><th>PPQ (ticks/beat)</th><td>{{ result.ppq }}</td></tr>
+    <tr><th>Tracks</th><td>{{ result.track_count }}</td></tr>
+    <tr><th>Duration</th><td>{{ "%.1f"|format(result.duration_seconds) }}s ({{ result.duration_ticks }} ticks)</td></tr>
+    <tr><th>Tempo events</th><td>{{ result.tempo_events }}</td></tr>
+    <tr><th>Time signature events</th><td>{{ result.time_signature_events }}</td></tr>
+    <tr>
+      <th>Structural validity</th>
+      <td>
+        {% if result.is_valid %}
+          <span class="badge badge-ok">VALID</span>
+        {% else %}
+          <span class="badge badge-error">INVALID</span>
+        {% endif %}
+      </td>
+    </tr>
+  </table>
+
+  {% if result.validation_errors %}
+  <h3>Validation errors</h3>
+  <ul class="issue-list issue-list-error">
+    {% for msg in result.validation_errors %}<li>{{ msg }}</li>{% endfor %}
+  </ul>
+  {% endif %}
+
+  {% if result.validation_warnings %}
+  <h3>Validation warnings</h3>
+  <ul class="issue-list issue-list-warning">
+    {% for msg in result.validation_warnings %}<li>{{ msg }}</li>{% endfor %}
+  </ul>
+  {% endif %}
+</section>
+
+<section class="panel">
+  <h2>Style Element evidence (filename-derived)</h2>
+  <p class="hint">
+    Only meaningful for files that follow KORG's own
+    <code>&lt;StyleName&gt;_&lt;Section&gt;.mid</code> export convention
+    &mdash; an arbitrary song upload will correctly show
+    <span class="badge badge-unknown">UNKNOWN</span>.
+  </p>
+  <table class="facts-table">
+    <tr><th>Style name</th><td>{{ result.style_name or "&mdash;" }}</td></tr>
+    <tr><th>Section</th><td>{{ result.style_section or "&mdash;" }}</td></tr>
+    <tr>
+      <th>Evidence level</th>
+      <td>
+        <span class="badge badge-{{ 'ok' if result.section_evidence_level == 'CONFIRMED' else 'unknown' }}">
+          {{ result.section_evidence_level }}
+        </span>
+      </td>
+    </tr>
+    {% if result.style_name_filename_mismatch %}
+    <tr>
+      <th>Filename mismatch</th>
+      <td><span class="badge badge-warning">flagged</span> &mdash; filename prefix disagrees with its directory name (recorded raw, not corrected).</td>
+    </tr>
+    {% endif %}
+  </table>
+</section>
+
+<section class="panel">
+  <h2>Tracks</h2>
+  <table class="tracks-table">
+    <thead>
+      <tr>
+        <th>#</th><th>Name</th><th>Ch</th><th>Notes</th>
+        <th>Pitch range</th><th>Velocity range</th>
+        <th>CC used</th><th>Program changes</th><th>SysEx</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for t in result.tracks %}
+      <tr>
+        <td>{{ t.index }}</td>
+        <td>{{ t.name or "&mdash;" }}</td>
+        <td>{{ t.channel if t.channel is not none else "&mdash;" }}</td>
+        <td>{{ t.note_count }}</td>
+        <td>{{ t.pitch_range or "&mdash;" }}</td>
+        <td>{{ t.velocity_range or "&mdash;" }}</td>
+        <td>{{ t.cc_numbers_used|join(", ") if t.cc_numbers_used else "&mdash;" }}</td>
+        <td>
+          {% if t.program_changes %}
+            {% for pc in t.program_changes %}ch{{ pc.channel }}:prog {{ pc.program }}{% if not loop.last %}, {% endif %}{% endfor %}
+          {% else %}&mdash;{% endif %}
+        </td>
+        <td>{{ t.sysex_count }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</section>
+
+{% endblock %}

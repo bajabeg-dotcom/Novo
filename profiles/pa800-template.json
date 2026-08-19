@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "profile_version": "0.1.0",
+  "profile_id": "pa800-template",
+  "model": "Korg Pa800",
+  "os_version": null,
+  "musical_resources_version": null,
+  "sources": [],
+  "sounds": [],
+  "drum_kits": [],
+  "rhythms": [],
+  "evidence": {},
+  "extensions": {
+    "status": "template-only",
+    "warning": "Do not add CC0/CC32/PC, drum or articulation data without evidence."
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "schema_version": 1,
+  "strategy_id": "pa800-factory-performance-defaults",
+  "default_drum_kit": {
+    "name": "Pop Std. Kit RX",
+    "bank_msb": 120,
+    "bank_lsb": 0,
+    "program": 4,
+    "channel": 10,
+    "status": "factory_reference",
+    "evidence": [
+      "Split Factory Styles/Standard 8 Beat",
+      "Split Factory Styles/Standard 16 Beat",
+      "Split Factory Styles/Organ Ballad"
+    ]
+  },
+  "power_chord": {
+    "name": "Power Chords",
+    "bank_msb": 121,
+    "bank_lsb": 4,
+    "program": 30,
+    "preferred_role": "ACC3",
+    "status": "factory_reference",
+    "oscillators": [
+      {"layer": 1, "velocity_min": 1, "velocity_max": 127},
+      {"layer": 2, "velocity_min": 1, "velocity_max": 127}
+    ],
+    "velocity_switches_articulation": false,
+    "evidence": [
+      "Split Factory Styles/Rock Ballad 2",
+      "Split Factory Styles/Medium 6"
+    ],
+    "rules": [
+      "Use root-fifth-octave voicing without introducing a major or minor third.",
+      "Learn onset, duration, inversion and strum offsets from the matching Factory element.",
+      "Do not convert a melodic or clean-guitar track into Power Chords solely from its program number.",
+      "Both oscillator layers sound from velocity 1 through 127; velocity controls dynamics only and must not select mute, harmonic, slap or slide articulation.",
+      "Prefer Var3/Var4, rock-oriented fills and endings; keep Var1 sparse unless Factory evidence says otherwise."
+    ]
+  },
+  "dist_guitar_rx": {
+    "names": ["Dist Guitar RX1", "Dist Guitar RX2"],
+    "oscillator_count": 3,
+    "oscillators": [
+      {
+        "oscillator": 1,
+        "low_sample": "Dist Guitar",
+        "high_sample": "Dist Guitar Harmonic",
+        "switch": 114,
+        "velocity_min": 88,
+        "velocity_max": 127
+      },
+      {
+        "oscillator": 2,
+        "low_sample": "Dist Guitar 2 Mute 1",
+        "high_sample": "Dist Guitar 2 Mute 2",
+        "switch": 49,
+        "velocity_min": 1,
+        "velocity_max": 87
+      },
+      {
+        "oscillator": 3,
+        "sample": "Noise",
+        "velocity_min": 1,
+        "velocity_max": 127,
+        "key_min": "C7",
+        "key_max": "G9",
+        "absolute_trigger": true
+      }
+    ],
+    "rules": [
+      "Velocity 1 through 87 selects the mute oscillator layer.",
+      "Velocity 88 through 127 selects the distortion/harmonic oscillator layer.",
+      "C7 through G9 are absolute noise triggers and must never be transposed or chord-harmonized."
+    ],
+    "status": "user_hardware_reference"
+  },
+  "groove_levels": {
+    "foundation": {
+      "density_ratio_max": 1.15,
+      "drum_elements": ["kick", "snare", "closed_hat"],
+      "guitar_roles": ["sparse_comping", "clean_strum"]
+    },
+    "developed": {
+      "density_ratio_max": 1.55,
+      "drum_elements": ["kick", "snare", "closed_hat", "open_hat", "light_percussion", "transition_tom"],
+      "guitar_roles": ["syncopated_comping", "muted_strum", "selective_power_chord"]
+    },
+    "full": {
+      "density_ratio_max": null,
+      "drum_elements": ["kick", "snare", "ghost_snare", "closed_hat", "open_hat", "ride", "crash", "toms", "percussion"],
+      "guitar_roles": ["full_strum", "power_chord", "counter_rhythm"]
+    }
+  },
+  "fill_policy": {
+    "fill1": "short transition preserving the current groove skeleton",
+    "fill2": "higher-energy transition allowed to add toms, open hat and crash preparation",
+    "break": "intentional reduction or stop; never fill every empty subdivision",
+    "selection": "match meter, grouping, tempo family, drum kit mapping and measured variation intensity"
+  }
+}

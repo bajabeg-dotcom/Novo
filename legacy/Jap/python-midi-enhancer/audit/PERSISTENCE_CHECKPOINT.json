@@ -1,0 +1,12 @@
+{
+  "schema_version": "1.0.0",
+  "token": "16ebf358-7bbd-4810-9215-d8e2928ba6c7",
+  "created_at": "2026-08-14T09:47:32+00:00",
+  "expected_commit": "70bc744d28fabccfea306416c331c7c915fa7290",
+  "required_files": {
+    "tools/workspace_persistence_probe.py": "3027b5c3414e8b4d70d7245d261da81e23a9992f7ec6382f0cc0678082c705a1",
+    "tests/test_workspace_persistence.py": "b92068dee2cf8fd763ce49ef77593a084f1250fa629b0a95573f577077f8f400",
+    "tools/repository_inventory.py": "ae868ff17b3d5322f62c95472ec9c05d04f75dbf6bf47106e4ee15aaf98d16ca",
+    "tests/test_repository_inventory.py": "b3404e78debaa1e5e6c060c1aefa9deae7456d7f7bba53974c9f9c6667a65a40"
+  }
+}

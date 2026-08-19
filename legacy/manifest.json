@@ -1,0 +1,99 @@
+{
+ "DNA": {
+  "bytes_archived": 103157,
+  "excluded": [],
+  "excluded_bytes": 0,
+  "excluded_count": 0,
+  "files_archived": 6
+ },
+ "Factory": {
+  "bytes_archived": 3087900,
+  "excluded": [
+   {
+    "path": "Pa800-201UM-ENG.pdf",
+    "sha256": "b7df16fb0113d998a6411ea1c28971707021da8bc0b728aff98eafcceb57c71b",
+    "size": 23348361
+   },
+   {
+    "path": "prism-uploads/DNA.zip",
+    "sha256": "125f4486625db44f7cdd49bd670aff252a961c88ea14741ec970ec3ae5eec85a",
+    "size": 21922630
+   }
+  ],
+  "excluded_bytes": 45270991,
+  "excluded_count": 2,
+  "files_archived": 232
+ },
+ "Jap": {
+  "bytes_archived": 16484546,
+  "excluded": [
+   {
+    "path": "python-midi-enhancer/prism-uploads/Pa800-201UM-ENG.pdf",
+    "sha256": "b7df16fb0113d998a6411ea1c28971707021da8bc0b728aff98eafcceb57c71b",
+    "size": 23348361
+   },
+   {
+    "path": "python-midi-enhancer/prism-uploads/DNA.zip",
+    "sha256": "125f4486625db44f7cdd49bd670aff252a961c88ea14741ec970ec3ae5eec85a",
+    "size": 21922630
+   },
+   {
+    "path": "python-midi-enhancer/prism-uploads/Split Factory Styles.zip",
+    "sha256": "ffb95cc191ba2bfc0c9b2b09494adaeb61c61bcda0fa4a9e4d83302e281d8f5e",
+    "size": 15478625
+   },
+   {
+    "path": "python-midi-enhancer/prism-uploads/Pa800_AE_E.pdf",
+    "sha256": "6bcda56658a89eda31e9fe62a2b744df5cecaaf478e050d3256ad6440c0d413e",
+    "size": 4370273
+   },
+   {
+    "path": "python-midi-enhancer/loaded-data/xvfb-runtime/packages/xvfb_2%3a21.1.16-1.3+deb13u3_amd64.deb",
+    "sha256": "365da2b6c93339f34337c434a9489bb6411a240fa47b9f49693d3091745f28c2",
+    "size": 3198040
+   },
+   {
+    "path": "python-midi-enhancer/loaded-data/xvfb-runtime/packages/xserver-common_2%3a21.1.16-1.3+deb13u3_all.deb",
+    "sha256": "dc1d37303c103b23c40cd1ea694c5c6561e0e8dc1734a73c7a0ae0ef080e7fcc",
+    "size": 2410088
+   },
+   {
+    "path": "python-midi-enhancer/loaded-data/xvfb-runtime/root/usr/share/doc/xserver-common/changelog.gz",
+    "sha256": "ec5f0e2507c1114b1d9901a63edb69e60d403465c905347a78d52d236563ab23",
+    "size": 2377556
+   },
+   {
+    "path": "python-midi-enhancer/loaded-data/xvfb-runtime/root/usr/share/doc/xvfb/changelog.gz",
+    "sha256": "ec5f0e2507c1114b1d9901a63edb69e60d403465c905347a78d52d236563ab23",
+    "size": 2377556
+   },
+   {
+    "path": "python-midi-enhancer/loaded-data/xvfb-runtime/root/usr/bin/Xvfb",
+    "sha256": "14e8ec7d8209bbaf105f9ade27a80b65f01709346690d18fbadb6116ada34912",
+    "size": 2131520
+   },
+   {
+    "path": "python-midi-enhancer/loaded-data/xvfb-runtime/root/usr/bin/Xvfb-local",
+    "sha256": "55f1307458dca0da274dd54b8d3f6532ee5ca8b1c6f617b5176e2fca55276e22",
+    "size": 2131520
+   }
+  ],
+  "excluded_bytes": 79746169,
+  "excluded_count": 10,
+  "files_archived": 584
+ },
+ "a": {
+  "bytes_archived": 2633761,
+  "excluded": [],
+  "excluded_bytes": 0,
+  "excluded_count": 0,
+  "files_archived": 27
+ },
+ "beg": {
+  "bytes_archived": 35708379,
+  "excluded": [],
+  "excluded_bytes": 0,
+  "excluded_count": 0,
+  "files_archived": 3836
+ }
+}
