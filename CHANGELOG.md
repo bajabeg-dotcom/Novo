@@ -4,19 +4,32 @@ Faza A i pocetak faze B iz PLAN_REVIZIJE.md.
 
 ## Dodano
 - `src/` layout i editable instalacija; paket se ucitava iz bilo kojeg cwd.
-- `tests/`: 120 testova pisanih za v0.27.0 API (SMF round-trip, export
-  garancije, CLI ugovor, forenzicke invarijante).
+- `tests/`: 155 testova pisanih za v0.27.0 API (SMF round-trip, export
+  garancije, CLI ugovor, forenzicke invarijante, ugovor o ocuvanju).
 - `legacy/`: arhiva 5 prethodnih repozitorija, 4.685 fajlova + MANIFEST.md
   sa SHA-256 svakog izuzetog velikog fajla.
 - `evidence/`: K01 Pa800 Factory registar (1.071 adresa) i Oscilatori.txt.
 - `tools/forensics/`: nezavisni SMF parser i forenzicki alati za korpus i bazu.
 - `FORENZIKA.md`, `PLAN_REVIZIJE.md`, `ANALIZA_I_REVIZIJA.md`.
 - `ci/ci.yml`: matrica Python 3.11-3.13 x Ubuntu/Windows.
+- `tests/regression/test_preservation_contract.py`: 20 testova koji trajno
+  zakljucavaju ocuvanje trackova, nota, lyricsa, pitch benda i sustaina.
+  Ukljucuje reprodukciju incidenta "Nevera moja" (16/8.340 -> 7/4.492).
+- `tests/regression/test_rx_trigger_zones.py`: 15 testova RX trigger zona;
+  fiksira granicu na "od 96 (C7) ukljucivo".
+- `NEDOVRSENO.md`: radni spisak nedovrsenog sa statusom svake stavke.
 
 ## Popravljeno
 - CLI vise ne izbacuje Python traceback na ocekivane greske (nepostojeca
   datoteka, neispravan SMF). Sada kratka poruka i izlazni kod 2.
   `PA800_ENHANCER_TRACEBACK=1` vraca puni traceback za debugiranje.
+- Dokumentacija: guitar RX noise zona je "od 96 (C7)", ne "iznad 96".
+
+## Poznate rupe (zabiljezene kao strict xfail)
+- Drum adresa 120.0.4 je hardkodirana u `optimize/conservative.py:45` i
+  dodjeljuje se i bez ijednog dokaza iz kataloga.
+- Konzervativni i velocity optimizer ne citaju RX oscillator konfiguraciju
+  iz `config/performance-defaults.json`.
 
 # Changelog
 

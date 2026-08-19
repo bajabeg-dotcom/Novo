@@ -25,7 +25,7 @@ Aplikacijska dokumentacija sa svih 43 komande: `README_APP.md`.
 | Putanja | Sadržaj |
 |---|---|
 | `src/pa800_enhancer/` | izvorni kod, 105 modula, 15.583 LOC |
-| `tests/` | 120 testova (unit, integration, forenzičke invarijante) |
+| `tests/` | 155 testova (unit, integration, regression) |
 | `tools/forensics/` | nezavisni SMF parser i forenzički alati |
 | `tools/archive_legacy.py` | arhivator starih repozitorija |
 | `evidence/` | K01 Pa800 registar (1.071 adresa), Oscilatori.txt |
@@ -43,6 +43,7 @@ Aplikacijska dokumentacija sa svih 43 komande: `README_APP.md`.
 | `ANALIZA_I_REVIZIJA.md` | analiza zatečenog stanja, nedostaci, DNA.zip |
 | `PLAN_REVIZIJE.md` | plan u 6 faza (A–F) do verzije 1.0.0 |
 | `FORENZIKA.md` | puna forenzika korpusa i baze |
+| `NEDOVRSENO.md` | radni spisak nedovršenog sa statusom svake stavke |
 | `CHANGELOG.md` | istorija verzija |
 | `legacy/MANIFEST.md` | šta je arhivirano i šta je izuzeto (sa SHA-256) |
 
