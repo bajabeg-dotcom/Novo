@@ -40,6 +40,7 @@ def run(*args: str, cwd=None) -> subprocess.CompletedProcess:
         text=True,
         cwd=cwd,
         timeout=180,
+        check=False,
     )
 
 

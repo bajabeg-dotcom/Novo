@@ -14,6 +14,7 @@ Dvije odvojene tvrdnje:
 
 from __future__ import annotations
 
+import itertools
 import json
 from pathlib import Path
 
@@ -84,7 +85,7 @@ class TestConfiguredOscillators:
 
         assert spans[0][0] == 1
         assert spans[-1][1] == 127
-        for (_, previous_max), (next_min, _) in zip(spans, spans[1:]):
+        for (_, previous_max), (next_min, _) in itertools.pairwise(spans):
             assert next_min == previous_max + 1, "velocity zone moraju biti susjedne"
 
     def test_power_chord_layers_span_full_velocity(self, config: dict) -> None:
@@ -118,7 +119,6 @@ class TestOptimizerIsOscillatorAware:
         from pa800_enhancer.optimize.velocity import VelocityRangeModule
         from pa800_enhancer.profiles.rx import builtin_rx_profiles
         from pa800_enhancer.smf.reader import SmfReader
-
         from tests.conftest import build_midi
 
         # Nota na velocity 90 = Radni zona (53-113) na Finger Bass RX.
@@ -141,7 +141,6 @@ class TestOptimizerIsOscillatorAware:
         from pa800_enhancer.optimize.velocity import VelocityRangeModule
         from pa800_enhancer.profiles.rx import builtin_rx_profiles
         from pa800_enhancer.smf.reader import SmfReader
-
         from tests.conftest import build_midi
 
         # Nota 100 = C7+, apsolutni okidac.
@@ -162,7 +161,6 @@ class TestOptimizerIsOscillatorAware:
         """Regresija: stari put mora raditi tacno kao prije."""
         from pa800_enhancer.optimize.velocity import VelocityRangeModule
         from pa800_enhancer.smf.reader import SmfReader
-
         from tests.conftest import build_midi
 
         data = build_midi(

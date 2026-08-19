@@ -51,3 +51,79 @@ markers = [
 [tool.coverage.run]
 source = ["pa800_enhancer"]
 branch = true
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+extend-exclude = ["legacy", "build", "dist", "evidence"]
+
+[tool.ruff.lint]
+# Strogo na novom kodu; naslijedjeni v0.27.0 moduli se ciste postupno.
+select = ["E", "F", "W", "I", "UP", "B", "SIM", "RUF", "PL", "TRY", "ISC"]
+ignore = [
+  "E501",     # duzinu linije pokriva formatter
+  "PLR0912",  # naslijedjene funkcije imaju mnogo grana
+  "PLR0913",
+  "PLR0915",
+  "PLR2004",  # magicne vrijednosti su ceste u MIDI konstantama
+  "TRY003",
+  "TRY300",
+  "B008",
+]
+
+[tool.ruff.lint.per-file-ignores]
+# Testovi smiju koristiti assert na sirokim izuzecima i lokalne importe.
+"tests/**" = ["B017", "PLC0415", "F841", "PLR0914"]
+# Zatecen v0.27.0 kod: ciscenje ide uz funkcionalne izmjene, ne masovno.
+"src/pa800_enhancer/cli.py" = ["ALL"]
+"src/pa800_enhancer/ui/**" = ["ALL"]
+"src/pa800_enhancer/analysis/**" = ["E", "I", "UP", "SIM", "RUF", "PL", "TRY", "ISC", "B"]
+"src/pa800_enhancer/arranging/**" = ["E", "I", "UP", "SIM", "RUF", "PL", "TRY", "ISC", "B"]
+"src/pa800_enhancer/domain/**" = ["E", "I", "UP", "SIM", "RUF", "PL", "TRY", "ISC", "B"]
+"src/pa800_enhancer/export/**" = ["E", "I", "UP", "SIM", "RUF", "PL", "TRY", "ISC", "B"]
+"src/pa800_enhancer/hardware/**" = ["E", "I", "UP", "SIM", "RUF", "PL", "TRY", "ISC", "B"]
+"src/pa800_enhancer/planning/**" = ["E", "I", "UP", "SIM", "RUF", "PL", "TRY", "ISC", "B"]
+"src/pa800_enhancer/profiles/catalog.py" = ["E", "I", "UP", "SIM", "RUF", "PL", "TRY", "ISC", "B"]
+"src/pa800_enhancer/profiles/loader.py" = ["E", "I", "UP", "SIM", "RUF", "PL", "TRY", "ISC", "B"]
+"src/pa800_enhancer/profiles/models.py" = ["E", "I", "UP", "SIM", "RUF", "PL", "TRY", "ISC", "B"]
+"src/pa800_enhancer/profiles/schema.py" = ["E", "I", "UP", "SIM", "RUF", "PL", "TRY", "ISC", "B"]
+"src/pa800_enhancer/profiles/builtin_rhythms.py" = ["ALL"]
+"src/pa800_enhancer/profiles/hardware_promotion.py" = ["E", "I", "UP", "SIM", "RUF", "PL", "TRY", "ISC", "B"]
+"src/pa800_enhancer/project/**" = ["E", "I", "UP", "SIM", "RUF", "PL", "TRY", "ISC", "B"]
+"src/pa800_enhancer/retrieval/**" = ["E", "I", "UP", "SIM", "RUF", "PL", "TRY", "ISC", "B"]
+"src/pa800_enhancer/smf/**" = ["E", "I", "UP", "SIM", "RUF", "PL", "TRY", "ISC", "B"]
+"src/pa800_enhancer/validation/**" = ["E", "I", "UP", "SIM", "RUF", "PL", "TRY", "ISC", "B"]
+"src/pa800_enhancer/evaluation/**" = ["E", "I", "UP", "SIM", "RUF", "PL", "TRY", "ISC", "B"]
+"src/pa800_enhancer/optimize/articulation.py" = ["E", "I", "UP", "SIM", "RUF", "PL", "TRY", "ISC", "B"]
+"src/pa800_enhancer/optimize/auto_workflow.py" = ["E", "I", "UP", "SIM", "RUF", "PL", "TRY", "ISC", "B"]
+"src/pa800_enhancer/optimize/base.py" = ["E", "I", "UP", "SIM", "RUF", "PL", "TRY", "ISC", "B"]
+"src/pa800_enhancer/optimize/controller_thinning.py" = ["E", "I", "UP", "SIM", "RUF", "PL", "TRY", "ISC", "B"]
+"src/pa800_enhancer/optimize/drum_mapping.py" = ["E", "I", "UP", "SIM", "RUF", "PL", "TRY", "ISC", "B"]
+"src/pa800_enhancer/optimize/engine.py" = ["E", "I", "UP", "SIM", "RUF", "PL", "TRY", "ISC", "B"]
+"src/pa800_enhancer/optimize/expression_conversion.py" = ["E", "I", "UP", "SIM", "RUF", "PL", "TRY", "ISC", "B"]
+"src/pa800_enhancer/optimize/history.py" = ["E", "I", "UP", "SIM", "RUF", "PL", "TRY", "ISC", "B"]
+"src/pa800_enhancer/optimize/initialization_update.py" = ["E", "I", "UP", "SIM", "RUF", "PL", "TRY", "ISC", "B"]
+"src/pa800_enhancer/optimize/modules.py" = ["E", "I", "UP", "SIM", "RUF", "PL", "TRY", "ISC", "B"]
+"src/pa800_enhancer/optimize/performance.py" = ["E", "I", "UP", "SIM", "RUF", "PL", "TRY", "ISC", "B"]
+"src/pa800_enhancer/optimize/performance_batch.py" = ["E", "I", "UP", "SIM", "RUF", "PL", "TRY", "ISC", "B"]
+"src/pa800_enhancer/optimize/pipeline.py" = ["E", "I", "UP", "SIM", "RUF", "PL", "TRY", "ISC", "B"]
+"src/pa800_enhancer/optimize/policy.py" = ["E", "I", "UP", "SIM", "RUF", "PL", "TRY", "ISC", "B"]
+"src/pa800_enhancer/optimize/ppq.py" = ["E", "I", "UP", "SIM", "RUF", "PL", "TRY", "ISC", "B"]
+"src/pa800_enhancer/optimize/proposal_adapters.py" = ["E", "I", "UP", "SIM", "RUF", "PL", "TRY", "ISC", "B"]
+"src/pa800_enhancer/optimize/proposals.py" = ["E", "I", "UP", "SIM", "RUF", "PL", "TRY", "ISC", "B"]
+"src/pa800_enhancer/optimize/quantize.py" = ["E", "I", "UP", "SIM", "RUF", "PL", "TRY", "ISC", "B"]
+"src/pa800_enhancer/optimize/simulation.py" = ["E", "I", "UP", "SIM", "RUF", "PL", "TRY", "ISC", "B"]
+"src/pa800_enhancer/optimize/sound_mapping.py" = ["E", "I", "UP", "SIM", "RUF", "PL", "TRY", "ISC", "B"]
+"src/pa800_enhancer/optimize/velocity.py" = ["E", "I", "UP", "SIM", "RUF", "PL", "TRY", "ISC", "B"]
+"src/pa800_enhancer/app.py" = ["ALL"]
+"src/pa800_enhancer/artifacts.py" = ["ALL"]
+"src/pa800_enhancer/config.py" = ["ALL"]
+"src/pa800_enhancer/corpus.py" = ["ALL"]
+"src/pa800_enhancer/database.py" = ["ALL"]
+"src/pa800_enhancer/dna*.py" = ["ALL"]
+"src/pa800_enhancer/generator.py" = ["ALL"]
+"src/pa800_enhancer/analysis_repository.py" = ["ALL"]
+"src/pa800_enhancer/reference_learning.py" = ["ALL"]
+"src/pa800_enhancer/resources.py" = ["ALL"]
+"src/pa800_enhancer/strategy.py" = ["ALL"]
+"src/pa800_enhancer/windows_setup.py" = ["ALL"]

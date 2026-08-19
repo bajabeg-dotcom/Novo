@@ -25,7 +25,7 @@ Aplikacijska dokumentacija sa svih 43 komande: `README_APP.md`.
 | Putanja | Sadržaj |
 |---|---|
 | `src/pa800_enhancer/` | izvorni kod, 105 modula, 15.583 LOC |
-| `tests/` | 194 testa (unit, integration, regression) |
+| `tests/` | 222 testa (unit, integration, regression) |
 | `tools/forensics/` | nezavisni SMF parser i forenzički alati |
 | `tools/archive_legacy.py` | arhivator starih repozitorija |
 | `evidence/` | K01 Pa800 registar (1.071 adresa), Oscilatori.txt |

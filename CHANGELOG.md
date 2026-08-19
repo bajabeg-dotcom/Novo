@@ -26,6 +26,14 @@ Faza A i pocetak faze B iz PLAN_REVIZIJE.md.
   oscilatorskih zona. Apsolutni okidaci (C7-G9) se ne diraju; izmjena koja bi
   promijenila artikulaciju se skrati na granicu zone ili odbaci; profil ispod
   `documented` ne moze odobriti automatsku izmjenu.
+- `optimize/leveling.py`: konzervativni CC7 output leveling za originalne
+  trackove. Cetiri zastite: namjerno tihi layer se ne dize, bass/kick masking,
+  anti-clipping budzet i ogranicenje pomaka (light/balanced/strong). Velocity
+  se nikada ne dira.
+- Ruff lint konfiguracija: strogo na novom kodu, postupno na naslijedjenom.
+  `ruff check .` prolazi bez greske.
+- CI dobija tri nova joba: lint, coverage prag (70 % na kriticnim modulima,
+  trenutno 81 %) i zaseban job za regresijski ugovor o ocuvanju.
 
 ## Popravljeno
 - CLI vise ne izbacuje Python traceback na ocekivane greske (nepostojeca
@@ -36,12 +44,17 @@ Faza A i pocetak faze B iz PLAN_REVIZIJE.md.
 ## Promijenjeno
 - `VelocityRangeModule` prima `rx_profile` i postuje oscilatorske zone.
   Bez profila ponasanje je nepromijenjeno.
+- `optimize_conservatively` prima `drum_kit`; podrazumijevani kit se ucitava
+  iz `config/performance-defaults.json` uz provjeru dokaza. Svako mapiranje
+  nosi `evidence_status` i `evidence_source`, a svaki preskoceni kanal nosi
+  `reason`.
 - Ispravka praga: SlapFing/SlapPick Bass RX radni oscilator prelazi na 87,
   ne 94. Ceka PCG/Sound Edit potvrdu na uredjaju.
 
-## Poznate rupe (zabiljezene kao strict xfail)
-- Drum adresa 120.0.4 je hardkodirana u `optimize/conservative.py:45` i
-  dodjeljuje se i bez ijednog dokaza iz kataloga.
+## Popravljene rupe
+- **N1**: drum adresa 120.0.4 vise nije hardkodirana. Dolazi iz konfiguracije
+  i odbija se ako je status ispod `documented` ili ako nema navedenog izvora.
+- **N2**: konzervativni i velocity optimizer sada citaju RX oscillator profile.
 
 # Changelog
 

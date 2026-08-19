@@ -20,28 +20,30 @@ from typing import Any
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
-from smf_probe import SmfError, probe, summarize  # noqa: E402
+from smf_probe import SmfError, probe, summarize
 
 GM_DRUM_CHANNEL = 10
 
 
+GM_FAMILY_RANGES = (
+    (0, 7, "piano"),
+    (24, 31, "guitar"),
+    (32, 39, "bass"),
+    (40, 55, "strings"),
+    (56, 79, "brass_wind"),
+)
+
+
 def classify_role(channel: int, programs: list[int]) -> str:
-    """Gruba GM klasifikacija — samo za agregatnu statistiku, ne za odluke."""
+    """Gruba GM klasifikacija -- samo za agregatnu statistiku, ne za odluke."""
     if channel == GM_DRUM_CHANNEL:
         return "drums"
     if not programs:
         return "unknown"
-    p = programs[0]
-    if 32 <= p <= 39:
-        return "bass"
-    if 24 <= p <= 31:
-        return "guitar"
-    if 0 <= p <= 7:
-        return "piano"
-    if 40 <= p <= 55:
-        return "strings"
-    if 56 <= p <= 79:
-        return "brass_wind"
+    program = programs[0]
+    for low, high, name in GM_FAMILY_RANGES:
+        if low <= program <= high:
+            return name
     return "other"
 
 
@@ -85,7 +87,7 @@ def _pct(values: list[float], q: float) -> float | None:
     if not values:
         return None
     ordered = sorted(values)
-    idx = min(len(ordered) - 1, max(0, int(round(q * (len(ordered) - 1)))))
+    idx = min(len(ordered) - 1, max(0, round(q * (len(ordered) - 1))))
     return ordered[idx]
 
 

@@ -22,7 +22,7 @@ Tri pravila, po vaznosti:
 from __future__ import annotations
 
 from dataclasses import dataclass, replace
-from enum import Enum
+from enum import StrEnum
 
 from ..profiles.rx import (
     RxProfileSet,
@@ -32,7 +32,7 @@ from ..profiles.rx import (
 )
 
 
-class GuardVerdict(str, Enum):
+class GuardVerdict(StrEnum):
     ALLOWED = "allowed"
     CLAMPED = "clamped"
     BLOCKED_TRIGGER = "blocked_absolute_trigger"

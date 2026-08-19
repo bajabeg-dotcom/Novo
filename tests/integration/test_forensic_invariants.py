@@ -168,6 +168,6 @@ class TestCorpusInvariants:
         for path in sorted(corpus_root.rglob("*.mid"))[:200]:
             try:
                 reader.read(path)
-            except Exception as error:  # noqa: BLE001 - test prijavljuje sve
+            except Exception as error:
                 failures.append((path.name, str(error)))
         assert not failures, f"neuspjeli fajlovi: {failures[:5]}"

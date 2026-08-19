@@ -17,14 +17,12 @@ posao (P0 2.1), a ne softverski. Ovdje se tvrdi samo da se nista ne gubi.
 
 from __future__ import annotations
 
-import struct
 from dataclasses import dataclass
 
 import pytest
 
 from pa800_enhancer.optimize.conservative import optimize_conservatively
 from pa800_enhancer.smf.reader import SmfReader
-
 from tests.conftest import build_midi
 
 
@@ -135,7 +133,7 @@ def rich_song(tmp_path):
     channels = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
     programs = [0, 48, 33, 25, 4, 61, 66, 73, 33, 0, 66, 0, 28, 27, 16]
 
-    for index, (channel, program) in enumerate(zip(channels, programs)):
+    for index, (channel, program) in enumerate(zip(channels, programs, strict=True)):
         status_on = 0x90 | ((channel - 1) & 0x0F)
         status_off = 0x80 | ((channel - 1) & 0x0F)
         status_cc = 0xB0 | ((channel - 1) & 0x0F)
@@ -151,7 +149,7 @@ def rich_song(tmp_path):
         # 20 nota po tracku
         for n in range(20):
             pitch = 40 + (index * 3 + n) % 48
-            events.append((0 if n else 0, bytes([status_on, pitch, 64 + (n % 40)])))
+            events.append((0, bytes([status_on, pitch, 64 + (n % 40)])))
             events.append((ppq // 4, bytes([status_off, pitch, 0])))
         # pitch bend i sustain samo na nekim trackovima
         if index % 3 == 0:
@@ -352,27 +350,102 @@ class TestEmptyAndEdgeCases:
         assert note_multiset(result.song) == before
         assert len(result.song.tracks) == len(song.tracks)
 
-    @pytest.mark.xfail(
-        strict=True,
-        reason=(
-            "P0 2.1 / 2.3: drum adresa (120,0,4) 'Pop Std. Kit RX' je "
-            "hardkodirana u conservative.py:45 i dodjeljuje se cak i kada "
-            "katalog nema nijedan dokaz. Config je oznacava kao "
-            "'factory_reference', ne 'hardware_confirmed'. Prema ugovoru "
-            "iz spiska nedovrsenog, nepoznat slucaj mora ostati nepromijenjen. "
-            "Test postaje zelen kada adresa dodje iz dokaza/profila."
-        ),
-    )
-    def test_drum_kit_requires_evidence(self, rich_song) -> None:
+    def test_drum_kit_comes_from_evidence_not_hardcode(self, rich_song) -> None:
+        """Rupa N1 zatvorena: bez izvora nema drum adrese.
+
+        Ranije je 120.0.4 bila hardkodirana u conservative.py i dodjeljivala
+        se i uz prazan katalog. Sada `drum_kit=None` znaci da se drum kanal
+        preskace, a ne nagadja.
+        """
         empty = FakeCatalog(elements=())
         song = SmfReader().read(rich_song)
 
-        result = optimize_conservatively(song, empty)
+        result = optimize_conservatively(song, empty, drum_kit=None)
 
         assert result.mappings == (), (
             "bez dokaza se ne smije dodijeliti nijedna adresa, "
             "ukljucujuci podrazumijevani drum kit"
         )
+
+    def test_skipped_channels_carry_a_reason(self, rich_song) -> None:
+        empty = FakeCatalog(elements=())
+        song = SmfReader().read(rich_song)
+
+        result = optimize_conservatively(song, empty, drum_kit=None)
+
+        assert result.skipped_details, "preskoceni kanali moraju biti objasnjeni"
+        for detail in result.skipped_details:
+            assert detail.reason, f"kanal {detail.channel} nema razlog"
+        # Drum kanal mora biti medju preskocenima, i to sa jasnim razlogom.
+        drums = [d for d in result.skipped_details if d.role == "drums"]
+        assert drums and "drum" in drums[0].reason.lower()
+
+    def test_drum_kit_below_evidence_threshold_is_refused(
+        self, rich_song
+    ) -> None:
+        from pa800_enhancer.optimize.conservative import DrumKitReference
+
+        guess = DrumKitReference(
+            name="Nagadjanje",
+            bank_msb=120,
+            bank_lsb=0,
+            program=4,
+            evidence_status="hypothesis",
+            evidence=("pretpostavka",),
+        )
+        song = SmfReader().read(rich_song)
+
+        result = optimize_conservatively(
+            song, FakeCatalog(elements=()), drum_kit=guess
+        )
+
+        assert result.mappings == ()
+        assert any("hypothesis" in d.reason for d in result.skipped_details)
+
+    def test_drum_kit_without_evidence_list_is_refused(self, rich_song) -> None:
+        from pa800_enhancer.optimize.conservative import DrumKitReference
+
+        undocumented = DrumKitReference(
+            name="Bez izvora",
+            bank_msb=120,
+            bank_lsb=0,
+            program=4,
+            evidence_status="documented",
+            evidence=(),  # tvrdi da je dokumentovan, ali ne navodi cime
+        )
+        song = SmfReader().read(rich_song)
+
+        result = optimize_conservatively(
+            song, FakeCatalog(elements=()), drum_kit=undocumented
+        )
+
+        assert result.mappings == ()
+
+    def test_configured_drum_kit_is_applied_with_provenance(
+        self, rich_song
+    ) -> None:
+        """Sa validnim izvorom kit se primjenjuje I nosi trag odakle je."""
+        song = SmfReader().read(rich_song)
+
+        result = optimize_conservatively(song, FakeCatalog(elements=()))
+
+        drums = [m for m in result.mappings if m.role == "drums"]
+        assert len(drums) == 1
+        assert drums[0].evidence_status == "documented"
+        assert drums[0].evidence_source.startswith("config:")
+
+    def test_every_mapping_records_its_evidence(self, rich_song, catalog) -> None:
+        song = SmfReader().read(rich_song)
+        result = optimize_conservatively(song, catalog)
+
+        assert result.mappings
+        for mapping in result.mappings:
+            assert mapping.evidence_status in (
+                "documented",
+                "software_verified",
+                "hardware_confirmed",
+            )
+            assert mapping.evidence_source
 
     def test_single_track_song(self, simple_midi, catalog) -> None:
         song = SmfReader().read(simple_midi)

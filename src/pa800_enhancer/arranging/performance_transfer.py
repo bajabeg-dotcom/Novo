@@ -3,7 +3,7 @@ from __future__ import annotations
 import hashlib
 from dataclasses import dataclass, replace
 
-from ..reference_learning import LearnedInstrumentProfile, ReferenceCatalog
+from ..reference_learning import ReferenceCatalog
 from .transform import ArrangedPattern
 
 

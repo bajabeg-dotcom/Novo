@@ -10,7 +10,7 @@ from concurrent.futures import ProcessPoolExecutor
 from dataclasses import asdict, dataclass
 from pathlib import Path
 
-from ..analysis.notes import Note, pair_notes
+from ..analysis.notes import pair_notes
 from ..smf.reader import SmfReader
 
 

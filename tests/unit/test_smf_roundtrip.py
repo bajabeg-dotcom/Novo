@@ -13,7 +13,6 @@ from pa800_enhancer.smf.errors import SmfStructureError
 from pa800_enhancer.smf.reader import SmfReader
 from pa800_enhancer.smf.vlq import decode_vlq, encode_vlq
 from pa800_enhancer.smf.writer import PreserveWriter, SmfWriter
-
 from tests.conftest import build_midi
 
 
